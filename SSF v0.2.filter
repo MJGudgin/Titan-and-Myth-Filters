@@ -109,6 +109,7 @@ Show
 	SetTextColor 209 187 113
 	SetBorderColor 245 214 113 150
 	#SetBackgroundColor 30 30 30
+	PlayEffect Yellow
 	MinimapIcon 2 Yellow Circle
 	CustomAlertSound "boss_stun.wav"
 
@@ -465,13 +466,26 @@ Show
 Show
 	Class Incubator
 	SetFontSize 45
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	SetBackgroundColor 249 150 25 255
+	SetTextColor 249 150 25
+	SetBorderColor 249 150 25 150
 	DisableDropSound True
 	PlayEffect White
 	MinimapIcon 2 White Circle
 	CustomAlertSound "hero_unsheath.wav"
+	
+#=================================
+#			Incursion
+#=================================
+	
+Show 
+	Class "Incursion Item"
+	SetFontSize 45
+	SetTextColor 74 230 58 255              # TEXTCOLOR:	 Quest
+	SetBorderColor 74 230 58                # BORDERCOLOR:	 Quest Item
+	SetBackgroundColor 0 0 0 255            # BACKGROUND:	 Neutral T2
+	PlayEffect Green
+	MinimapIcon 1 Green Hexagon
+CustomAlertSound "hero_unsheath.wav"
 
 #=================================
 #			Blight
