@@ -62,6 +62,7 @@ Show
 	SetFontSize 40
 	SetTextColor 245 225 160
 	SetBorderColor 245 225 160
+	PlayEffect White Temp
 	
 Show
 	Class Currency
@@ -227,7 +228,7 @@ Show
 #T1
 Show
 	Class "Divination"
-	BaseType "Divine Justice" "Heterochromia" "The Throne" "Blessing of God" "Buried Treasure" "Friendship" "Hunter's Reward" "Void of the Elements" "Left to Fate" "The Price of Loyalty" "The Professor" "The Sacrifice" "Underground Forest" "Alone in the Darkness"  "The Bargain" "The Chosen" "The Escape" "The Jeweller's Boon" "The Primordial" "The Rite of Elements" "The Undaunted" "Boon of the First Ones" "Bowyer's Dream" "The Bones" "The Celestial Justicar" "The Dapper Prodigy" "The Dark Mage" "The Dreamer" "The Englightened" "The Porcupine" "The Warlord" "Deathly Designs" "Emperor of Purity" "More is Never Enough" "Pride of the First Ones" "The Ethereal" "The Obscured" "The Sword King's Salute" "The Wilted Rose" "The Wind" "Arrogance of the Vaal" "Pride Before the Fall" "Remembrance" "The Cacophany" "The Eye of Terror" "The King's Heart" "The Offering" "The Valykrie" "The Wolven King's Bite" "The World Eater" "Azyran's Reward" "Etched in Blood" "Harmony of Souls" "Humility" "The Endless Dark" "The Iron Bard" "The Pact" "Vanity" "Volatile Power" "The Celestial Stone" "The Last One's Standing" "Time Lost Relic" "The Artist" "The Chains that Bind" "The Sephirot" "The Hoarder" "The Cataclysm" "Rebirth"
+	BaseType "Divine Justice" "Heterochromia" "The Throne" "Blessing of God" "Buried Treasure" "Friendship" "Hunter's Reward" "Void of the Elements" "Left to Fate" "The Price of Loyalty" "The Professor" "The Sacrifice" "Underground Forest" "Alone in the Darkness"  "The Bargain" "The Chosen" "The Escape" "The Jeweller's Boon" "The Primordial" "The Rite of Elements" "The Undaunted" "Boon of the First Ones" "Bowyer's Dream" "The Bones" "The Celestial Justicar" "The Dapper Prodigy" "The Dark Mage" "The Dreamer" "The Enlightened" "The Porcupine" "The Warlord" "Deathly Designs" "Emperor of Purity" "More is Never Enough" "Pride of the First Ones" "The Ethereal" "The Obscured" "The Sword King's Salute" "The Wilted Rose" "The Wind" "Arrogance of the Vaal" "Pride Before the Fall" "Remembrance" "The Cacophony" "The Eye of Terror" "The King's Heart" "The Offering" "The Valkyrie" "The Wolven King's Bite" "The World Eater" "Azyran's Reward" "Etched in Blood" "Harmony of Souls" "Humility" "The Endless Dark" "The Iron Bard" "The Pact" "Vanity" "Volatile Power" "The Celestial Stone" "The Last One Standing" "Time-Lost Relic" "The Artist" "The Chains that Bind" "The Sephirot" "The Hoarder" "The Cataclysm" "Rebirth"
 	SetFontSize 40
 	SetTextColor 0 0 0
 	SetBorderColor 0 255 220 150
@@ -239,7 +240,7 @@ Show
 #T2
 Show
 	Class "Divination"
-	BaseType "Chaotic Disposition" "The Cartographer" "The Void" "Cameria's Cut" "The Heroic Shot" "Monochrome" "The Gemcutter" "The Journey" "The Survivalist" "Forbidden Power" "The Body" "The Breach" "The Fool" "The Hale Heart" "The Messenger" "The Stormcaller" "The Wolf's Legacy" "Audacity" "Earth Drinker" "Hope" "Perfection" "Squandered Prosperity" "The Landing" "The Lion" "The Mayor" "The Puzzle" "The Realm" "The Side Quest" "The Wolf" "Vinia's Token" "Boon of Justice" "The Deal" "The Penitent" "Burning Blood" "The Beast" "The Calling" "The Damned" "The Fox" "The Inventor" "The Life Thief" "The Oath" "The One With All" "The Pack Leader" "The Skeleton" "The Summoner" "The Twilight Moon" "The Wretched" "Blind Venture" "Demigod's Designs" "Dialla's Subjugation" "Lucky Connections" "Scholar of the Seas" "The Formless Sea" "The Trial" "The Union" "Treasure Hunter" "The Aesthete" "The Dreamland" "The Encroaching Darkness" "The Scavenger" "The Undisputed" "The Wrath" "A Dab of Ink" "Coveted Possession" "Gift of the Gemling Queen" "Lucky Deck" "No Traces" "The Admirer" "The Betrayal" "The Hunger" "The Poet" "The Seeker" "The Valley of Steel Boxes" "The Innocent" "Lingering Remnants" "Imperial Legacy" 
+	BaseType "Chaotic Disposition" "The Cartographer" "The Void" "Cameria's Cut" "The Heroic Shot" "Monochrome" "The Gemcutter" "The Journey" "The Survivalist" "Forbidden Power" "The Body" "The Breach" "The Fool" "The Hale Heart" "The Messenger" "The Stormcaller" "The Wolf's Legacy" "Audacity" "Earth Drinker" "Hope" "Perfection" "Squandered Prosperity" "The Landing" "The Lion" "The Mayor" "The Puzzle" "The Realm" "The Side Quest" "The Wolf" "Vinia's Token" "Boon of Justice" "The Deal" "The Penitent" "Burning Blood" "The Beast" "The Calling" "The Damned" "The Fox" "The Inventor" "The Life Thief" "The Oath" "The One With All" "The Pack Leader" "The Skeleton" "The Summoner" "The Twilight Moon" "The Wretched" "Blind Venture" "Demigod's Wager" "Dialla's Subjugation" "Lucky Connections" "Scholar of the Seas" "The Formless Sea" "The Trial" "The Union" "Treasure Hunter" "The Aesthete" "The Dreamland" "The Encroaching Darkness" "The Scavenger" "The Undisputed" "The Wrath" "A Dab of Ink" "Coveted Possession" "Gift of the Gemling Queen" "Lucky Deck" "No Traces" "The Admirer" "The Betrayal" "The Hunger" "The Poet" "The Seeker" "The Valley of Steel Boxes" "The Innocent" "Lingering Remnants" "Imperial Legacy" 
 	SetFontSize 40
 	SetTextColor 0 255 210 255
 	SetBorderColor 0 250 255 150
@@ -251,8 +252,8 @@ Show
 Show
 	Class "Divination"
 	BaseType "Gemcutter's Promise" "Last Hope" "Sambodhi's Vow" "Three Voices" "Jack in the Box" "Merciless Armament" "Nook's Crown" "The Garish Power" "The Surveyor" "The Wolverine" "Emperor's Luck" "Hubris" "Mitts" "The Battle Born" "The Flora's Gift" "The Gambler" "The Gladiator" "The Master Artisan" "The Mercenary" "The Explorer" "The Lord in Black" "Loyalty" "The Mad King" "Three Faces in the Dark" "The Risk" "Glimmer of Hope" "Lost Worlds" "The Cursed King" "Doedre's Madness" "The Hermit" "The Jester" "The Soul" "The Tyrant"
-	SetFontSize 35
-	SetTextColor 0 215 175
+	SetFontSize 30
+	SetTextColor 0 255 240
 	SetBorderColor 0 215 175 150
 	PlayEffect White Temp
 	MinimapIcon 2 White Triangle
@@ -261,8 +262,8 @@ Show
 #T4 (Remaining)
 Show
 	Class "Divination"
-	SetFontSize 30
-	SetTextColor 0 215 175
+	SetFontSize 25
+	SetTextColor 0 255 240
 	SetBorderColor 0 215 175 150
 	PlayEffect White Temp
 	MinimapIcon 2 White Triangle
