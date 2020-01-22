@@ -252,9 +252,9 @@ Show
 Show
 	Class "Divination"
 	BaseType "Gemcutter's Promise" "Last Hope" "Sambodhi's Vow" "Three Voices" "Jack in the Box" "Merciless Armament" "Nook's Crown" "The Garish Power" "The Surveyor" "The Wolverine" "Emperor's Luck" "Hubris" "Mitts" "The Battle Born" "The Flora's Gift" "The Gambler" "The Gladiator" "The Master Artisan" "The Mercenary" "The Explorer" "The Lord in Black" "Loyalty" "The Mad King" "Three Faces in the Dark" "The Risk" "Glimmer of Hope" "Lost Worlds" "The Cursed King" "Doedre's Madness" "The Hermit" "The Jester" "The Soul" "The Tyrant"
-	SetFontSize 30
-	SetTextColor 0 255 240
-	SetBorderColor 0 215 175 150
+	SetFontSize 35
+	SetTextColor 0 255 210 255
+	SetBorderColor 0 250 255 150
 	PlayEffect White Temp
 	MinimapIcon 2 White Triangle
 	CustomAlertSound "hero_unsheath.wav"
@@ -262,7 +262,7 @@ Show
 #T4 (Remaining)
 Show
 	Class "Divination"
-	SetFontSize 25
+	SetFontSize 35
 	SetTextColor 0 255 240
 	SetBorderColor 0 215 175 150
 	PlayEffect White Temp
@@ -752,7 +752,7 @@ Hide
 #			High Rares
 #=================================
 
-Hide
+Show
 	Rarity Rare
 	ItemLevel >= 85
 
