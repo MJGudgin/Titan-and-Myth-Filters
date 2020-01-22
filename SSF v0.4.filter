@@ -143,10 +143,17 @@ Show
 Show
 	Class Quest
 	SetFontSize 45
-	SetTextColor 20 160 195
-	SetBorderColor 0 210 255 150
-	SetBackgroundColor 255 255 255
-	PlayEffect Blue
+	SetTextColor 20 255 68
+	SetBorderColor 20 255 68 150
+	PlayEffect Green
+	
+Show
+	Class "Labyrinth"
+	SetFontSize 45
+	SetTextColor 20 255 68
+	SetBorderColor 20 255 68 150
+	PlayEffect Green
+	
 
 #=================================
 #			Maps
@@ -408,6 +415,7 @@ Show
 	SetFontSize 45
 	MinimapIcon 1 Brown Circle
 	
+	
 #=================================
 #			Scarabs
 #=================================
@@ -648,7 +656,7 @@ Show
 	SocketGroup RGB
 	SetFontSize 36
 	SetTextColor 255 255 255
-	SetBackgroundColor 90 140 80
+	#SetBackgroundColor 90 140 80
 	SetBorderColor 0 255 255 150
 	
 Show
@@ -657,7 +665,7 @@ Show
 	SocketGroup RGB
 	SetFontSize 36
 	SetTextColor 255 255 255
-	SetBackgroundColor 90 140 80
+	#SetBackgroundColor 90 140 80
 	SetBorderColor 0 255 255 150
 
 #=================================
