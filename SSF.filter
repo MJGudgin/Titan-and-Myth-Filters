@@ -329,7 +329,7 @@ Show
 	
 Show
 	Class Gems
-	BaseType "Empower" "Enlighten" "Vaal Breach"
+	BaseType "Empower" "Enlighten" "Enhance" "Vaal Breach"
 	SetFontSize 40
 	SetBorderColor 0 250 255 150
 	SetBackgroundColor 6 0 60
@@ -755,6 +755,122 @@ Hide
 Show
 	Rarity Rare
 	ItemLevel >= 85
+	
+#=================================
+#			Links
+#=================================
+	
+Show
+	LinkedSockets >= 4
+	SetFontSize 60
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+#=================================
+#			Leveling Rares
+#=================================
+
+Show
+	Rarity Rare
+	Class "Ring" "Amulet" "Belt"
+	SetFontSize 60
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+
+Show
+	Rarity Rare
+	ItemLevel <= 12
+	SetFontSize 60
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+
+Show
+	Rarity Rare
+	ItemLevel < 15
+	DropLevel > 5
+	SetFontSize 60
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150	
+	
+Show
+	Rarity Rare
+	ItemLevel < 20
+	DropLevel > 10
+	SetFontSize 60
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	Rarity Rare
+	ItemLevel < 25
+	DropLevel > 15
+	SetFontSize 60
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	Rarity Rare
+	ItemLevel < 30
+	DropLevel > 20
+	SetFontSize 60
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+
+Show
+	Rarity Rare
+	ItemLevel < 35
+	DropLevel > 25
+	SetFontSize 60
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+
+Show
+	Rarity Rare
+	ItemLevel < 35
+	DropLevel > 25
+	SetFontSize 60
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	Rarity Rare
+	ItemLevel < 40
+	DropLevel > 30
+	SetFontSize 60
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	Rarity Rare
+	ItemLevel < 45
+	DropLevel > 35
+	SetFontSize 60
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	Rarity Rare
+	ItemLevel < 50
+	DropLevel > 40
+	SetFontSize 60
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+
+Show
+	Rarity Rare	
+	ItemLevel < 55
+	DropLevel > 45
+	SetFontSize 60
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	Rarity Rare	
+	ItemLevel < 60
+	DropLevel > 50
+	SetFontSize 60
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
 
 #=================================
 #		Hide Catch-All
