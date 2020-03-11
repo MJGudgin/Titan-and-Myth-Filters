@@ -32,7 +32,7 @@ Show
 Show
 	Class Currency
 	BaseType "Silver Coin"
-	SetFontSize 50
+	SetFontSize 40
 	SetTextColor 174 130 180
 	SetBorderColor 174 130 180
 
@@ -372,7 +372,7 @@ Show
 	# MinimapIcon 1 White Diamond
 	# CustomAlertSound "hero_unsheath.wav"
 	
-#Show 
+# Show 
 	# BaseType "Simulacrum Splinter" "Simulacrum"
 	# SetFontSize 45
 	# SetTextColor 255 255 255
@@ -398,7 +398,7 @@ Show
 Show
 	Class "Abyss Jewel"
 	ItemLevel >= 82
-	SetFontSize 45
+	SetFontSize 40
 	SetTextColor 130 200 140
 	SetBorderColor 130 200 140 150
 	PlayEffect Green Temp
@@ -412,7 +412,7 @@ Show
 Show
 	Class "Jewel"
 	Rarity = Rare
-	SetFontSize 45
+	SetFontSize 40
 	SetTextColor 130 200 140
 	SetBorderColor 130 200 140 150
 	PlayEffect Green Temp
@@ -681,6 +681,17 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 0 Brown Star
 	CustomAlertSound "bell_hit.wav"
+	
+Show
+	BaseType "Unset Ring" "Sorcerer Gloves" "Ezomyte Staff" "Agate Amulet"
+	Rarity = Unique
+	SetFontSize 50
+	SetTextColor 250 142 27
+	SetBorderColor 250 142 27 150
+	PlayEffect Yellow
+	MinimapIcon 0 Brown Star
+	CustomAlertSound "bell_hit.wav"
+	
 
 Show
 	Rarity Unique
@@ -809,6 +820,7 @@ Show
 #Life Mods
 Show
 	Identified True
+	Corrupted False
 	HasExplicitMod "Prime" "Rapturous"
 	SetFontSize 45
 	SetTextColor 235 220 50
@@ -817,7 +829,9 @@ Show
 	
 Show
 	Identified True
+	Corrupted False
 	DropLevel < 81
+	AreaLevel < 70
 	HasExplicitMod "Vigorous" "Fecund"
 	SetFontSize 45
 	SetTextColor 235 220 50
@@ -826,8 +840,10 @@ Show
 	
 Show
 	Identified True
+	Corrupted False
+	Class "Ring" "Amulet"
 	DropLevel < 54
-	HasExplicitMod "Virile"
+	HasExplicitMod "Virile" "Athlete's"
 	SetFontSize 45
 	SetTextColor 235 220 50
 	SetBorderColor 255 240 40 150
@@ -836,6 +852,7 @@ Show
 #Res Mods
 Show
 	Identified True
+	Corrupted False
 	HasExplicitMod "of Haast" "of Bameth" "of Tzteosh" "of Ephij"
 	SetFontSize 45
 	SetTextColor 235 220 50
@@ -844,7 +861,9 @@ Show
 	
 Show
 	Identified True
+	Corrupted False
 	DropLevel < 84
+	AreaLevel < 70
 	HasExplicitMod "of Exile" "of the Ice" "of the Magma" "of the Lightning"
 	SetFontSize 45
 	SetTextColor 235 220 50
@@ -853,7 +872,9 @@ Show
 
 Show
 	Identified True
+	Corrupted False
 	DropLevel < 72
+	AreaLevel < 60
 	HasExplicitMod "of the Polar Bear" "of the Volcano" "of the Maelstrom"
 	SetFontSize 45
 	SetTextColor 235 220 50
@@ -863,6 +884,7 @@ Show
 #Spell Damage
 Show
 	Identified True
+	Corrupted False
 	HasExplicitMod "Runic"
 	SetFontSize 45
 	SetTextColor 235 220 50
@@ -871,7 +893,9 @@ Show
 
 Show
 	Identified True
+	Corrupted False
 	DropLevel < 84
+	AreaLevel < 70
 	HasExplicitMod "Glyphic" "Incanter's"
 	SetFontSize 45
 	SetTextColor 235 220 50
@@ -880,7 +904,9 @@ Show
 
 Show
 	Identified True
+	Corrupted False
 	DropLevel < 58
+	AreaLevel < 50
 	HasExplicitMod "Occultist's" "Professor's"
 	SetFontSize 45
 	SetTextColor 235 220 50
@@ -890,6 +916,7 @@ Show
 #Chaos Damage
 Show
 	Identified True
+	Corrupted False
 	HasExplicitMod "Disintegrating"
 	SetFontSize 45
 	SetTextColor 235 220 50
@@ -898,6 +925,7 @@ Show
 	
 Show
 	Identified True
+	Corrupted False
 	DropLevel < 78
 	HasExplicitMod "Atrophying"
 	SetFontSize 45
@@ -908,6 +936,7 @@ Show
 #Phys Damage
 Show
 	Identified True
+	Corrupted False
 	HasExplicitMod "Merciless" "Flaring"
 	SetFontSize 45
 	SetTextColor 235 220 50
@@ -917,6 +946,7 @@ Show
 #Level of Skill Gems
 Show
 	Identified True
+	Corrupted False
 	HasExplicitMod "Lava Conjurer's" "Winter Beckoner's" "Tempest Master's" "Splintermind's" "Tecton's" "Weaponmaster's"
 	SetFontSize 45
 	SetTextColor 235 220 50
@@ -928,6 +958,7 @@ Show
 #35%
 Show
 	Identified True
+	Corrupted False
 	HasExplicitMod "Hellion's" 
 	SetFontSize 45
 	SetTextColor 235 220 50
@@ -937,6 +968,7 @@ Show
 #30%	
 Show
 	Identified True
+	Corrupted False
 	DropLevel < 86
 	HasExplicitMod "Cheetah's" 
 	SetFontSize 45
@@ -947,6 +979,7 @@ Show
 #25%	
 Show
 	Identified True
+	Corrupted False
 	DropLevel < 55
 	HasExplicitMod "Gazelle's" 
 	SetFontSize 45
@@ -957,6 +990,7 @@ Show
 #20%	
 Show
 	Identified True
+	Corrupted False
 	DropLevel < 40
 	HasExplicitMod "Stallion's" 
 	SetFontSize 45
@@ -1078,6 +1112,74 @@ Show
 	SetTextColor 235 220 50
 	SetBorderColor 255 240 40 150
 	
+Show
+	Rarity Rare	
+	ItemLevel < 65
+	DropLevel > 55
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	Rarity Rare	
+	ItemLevel < 70
+	DropLevel > 60
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+
+Show
+	Rarity Rare	
+	ItemLevel < 75
+	DropLevel > 65
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	Rarity Rare	
+	ItemLevel < 80
+	DropLevel > 70
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+#=================================
+#			Leveling Magic
+#=================================
+	
+Show
+	Rarity Magic
+	ItemLevel <= 12
+	SetFontSize 30
+	SetTextColor 20 145 210
+	SetBorderColor 20 140 210 150
+	
+Show
+	Rarity Magic
+	ItemLevel < 15
+	DropLevel > 5
+	SetFontSize 30
+	SetTextColor 20 145 210
+	SetBorderColor 20 140 210 150
+	
+Show
+	Rarity Magic
+	ItemLevel < 20
+	DropLevel > 10
+	SetFontSize 30
+	SetTextColor 20 145 210
+	SetBorderColor 20 140 210 150
+	
+Show
+	Rarity Magic
+	ItemLevel < 25
+	DropLevel > 15
+	SetFontSize 30
+	SetTextColor 20 145 210
+	SetBorderColor 20 140 210 150
+	
+	
 #=================================
 #			Chaos Recipe
 #=================================
@@ -1093,6 +1195,7 @@ Hide
 	
 Show
 	LinkedSockets >= 4
+	DropLevel < 30
 	SetFontSize 60
 	SetTextColor 235 220 50
 	SetBorderColor 255 240 40 150
@@ -1105,7 +1208,13 @@ Show
 	Class "Life Flasks"
 	SetFontSize 35
 	SetTextColor 150 255 255
-	SetBorderColor 200 255 255 150	
+	SetBorderColor 200 255 255 150
+
+Show
+	Class "Mana Flask"
+	SetFontSize 30
+	SetTextColor 150 255 255
+	SetBorderColor 200 255 255 150
 	
 
 Show
