@@ -3,7 +3,44 @@
 #			1/8/20
 #=================================
 
-#Currency
+#=================================
+#		Table of Contents
+#=================================
+
+# Currency
+# Quest Items
+# Maps
+# Div Cards - NEEDS UNCOMMENTING
+# Prophecies
+# Gems
+# Delirium - NEEDS UNCOMMENTING
+# Abyss
+# Jewels
+# Chancing Bases
+# Influence
+# Harbinger
+# Essence
+# Delve
+# Scarabs  - NEEDS UNCOMMENTING
+# Betrayal
+# Breach/Legion
+# Incursion
+# Blight
+# Metamorph
+# Uniques
+# Fragments
+# Enchantments
+# Six Sockets/Links
+# Chromatic Recipe
+# Atlas Bases
+# Specific Affix Filter
+# Leveling Rares
+# Leveling Magic
+# Chaos Recipe
+# Four Links
+# Flasks
+# Vendor Recipe
+# Hide Catch-All
 
 
 #=================================
@@ -13,15 +50,20 @@
 Show 
 	Class Currency
 	BaseType "Scroll of Wisdom"
+	AreaLevel < 75
 	SetFontSize 30
 	SetBorderColor 100 0 0 150
 	
 Show
 	Class Currency
 	BaseType "Portal Scroll"
+	AreaLevel < 75
 	SetFontSize 35
-	#SetTextColor 45 145 190
 	SetBorderColor 45 180 235 140
+	
+Hide 
+	Class Currency
+	BaseType "Scroll of Wisdom" "Portal Scroll"
 	
 Show
 	Class Currency
@@ -41,8 +83,9 @@ Show
 	Class Currency
 	BaseType "Orb of Transmutation" "Orb of Alteration" "Orb of Augmentation" "Orb of Chance"
 	SetFontSize 35
-	SetTextColor 85 225 255
-	SetBorderColor 85 225 255 150
+	SetTextColor 113 180 209
+	SetBorderColor 113 180 209 150
+	SetBackgroundColor 30 30 30
 	
 #Rare Item Currency
 Show
@@ -90,9 +133,8 @@ Show
 	Class Currency
 	BaseType "Orb of Fusing" "Jeweller's Orb" "Chromatic Orb"
 	SetFontSize 40
-	SetTextColor 113 180 209
-	SetBorderColor 113 180 209 150
-	SetBackgroundColor 30 30 30
+	SetTextColor 85 225 255
+	SetBorderColor 85 225 255 150
 	
 #Quality Currency
 Show
@@ -256,7 +298,6 @@ Show
 	SetTextColor 0 255 210 255
 	SetBorderColor 0 250 255 150
 	PlayEffect White Temp
-	MinimapIcon 2 White Triangle
 	CustomAlertSound "hero_unsheath.wav"
 
 #T4 (Remaining)
@@ -266,7 +307,6 @@ Show
 	SetTextColor 0 255 240
 	SetBorderColor 0 215 175 150
 	PlayEffect White Temp
-	MinimapIcon 2 White Triangle
 	CustomAlertSound "hero_unsheath.wav"
 	
 Show
@@ -515,7 +555,7 @@ Show
 
 Show
 	Class "Map Fragments"
-	BaseType "Gilded Bestiary Scarab" "Gilded Cartography Scarab" "Gilded Legion Scarab" "Gilded Sulphite Scarab" "Polished Sulphite Scarab"
+	BaseType "Gilded Bestiary Scarab" "Gilded Cartography Scarab" "Gilded Legion Scarab" "Gilded Sulphite Scarab" #"Gilded Metamorph Scarab"
 	SetBorderColor 0 255 220 150
 	SetTextColor 255 175 0 
 	SetFontSize 50
@@ -532,19 +572,6 @@ Show
 	PlayEffect Blue Temp
 	MinimapIcon 2 Blue Circle
 	CustomAlertSound "hero_unsheath.wav"
-	
-#=================================
-#			Breach
-#=================================
-
-#Show
-#	Class Currency
-#	BaseType "Splinter of Xoph" "Splinter of Tul" "Splinter of Esh" "Splinter of Uul-Netol"
-#	SetFontSize 45
-#	SetTextColor 185 0 255 255
-#	SetBorderColor 185 0 255 150
-#	MinimapIcon 2 White Hexagon
-#	CustomAlertSound "bell_rise.wav"
 
 #=================================
 #			Betrayal
@@ -606,9 +633,9 @@ Show
 Show 
 	Class "Incursion Item"
 	SetFontSize 45
-	SetTextColor 74 230 58 255              # TEXTCOLOR:	 Quest
-	SetBorderColor 74 230 58                # BORDERCOLOR:	 Quest Item
-	SetBackgroundColor 0 0 0 255            # BACKGROUND:	 Neutral T2
+	SetTextColor 74 230 58 255
+	SetBorderColor 74 230 58
+	SetBackgroundColor 0 0 0 255
 	PlayEffect Green
 	MinimapIcon 1 Green Hexagon
 	CustomAlertSound "hero_unsheath.wav"
@@ -802,7 +829,7 @@ Show
 	SetBorderColor 0 255 255 150
 
 #=================================
-#		Crafting Bases
+#		Atlas Bases
 #=================================
 
 Show
@@ -1195,7 +1222,7 @@ Hide
 	
 Show
 	LinkedSockets >= 4
-	DropLevel < 30
+	AreaLevel <= 30
 	SetFontSize 60
 	SetTextColor 235 220 50
 	SetBorderColor 255 240 40 150
@@ -1206,12 +1233,14 @@ Show
 
 Show
 	Class "Life Flasks"
+	AreaLevel < 68
 	SetFontSize 35
 	SetTextColor 150 255 255
 	SetBorderColor 200 255 255 150
 
 Show
 	Class "Mana Flask"
+	AreaLevel < 68
 	SetFontSize 30
 	SetTextColor 150 255 255
 	SetBorderColor 200 255 255 150
