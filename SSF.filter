@@ -817,7 +817,7 @@ Show
 	
 Show
 	Identified True
-	#DropLevel < 81
+	DropLevel < 81
 	HasExplicitMod "Vigorous" "Fecund"
 	SetFontSize 45
 	SetTextColor 235 220 50
@@ -964,6 +964,14 @@ Show
 	SetBorderColor 255 240 40 150
 	PlayEffect White
 	
+#Double corrupted
+Show
+	Corrupted True
+	CorruptedMods >= 2
+	SetFontSize 45
+	SetTextColor 255 0 30
+	SetBorderColor 255 0 30 150
+	
 #=================================
 #			Leveling Rares
 #=================================
@@ -1106,6 +1114,18 @@ Show
 	SetFontSize 30
 	SetTextColor 150 255 255
 	SetBorderColor 200 255 255 150	
+	
+#=================================
+#			Vendor Recipe
+#=================================
+
+Show
+	BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+	Quality >= 20
+	SetFontSize 40
+	SetTextColor 245 225 160
+	SetBorderColor 245 225 160
+	PlayEffect White Temp
 
 #=================================
 #		Hide Catch-All
