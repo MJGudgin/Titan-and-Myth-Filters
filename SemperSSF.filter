@@ -1,6 +1,6 @@
 #=================================
 #	Sempervivum SSF Filter v1.0
-#			1/8/20
+#			3/12/20
 #=================================
 
 #=================================
@@ -463,15 +463,15 @@ Show
 #		Chancing Bases
 #=================================
 
-Show
-	Corrupted False
-	Rarity Normal
-	BaseType "Sorcerer Gloves" "Unset Ring" "Ezomyte Staff"
-	SetFontSize 80
-	SetTextColor 255 255 255 255
-	SetBorderColor 255 255 225 255
-	PlayEffect White
-	MinimapIcon 2 White Circle
+# Show
+	# Corrupted False
+	# Rarity Normal
+	# BaseType "Sorcerer Gloves" "Unset Ring" "Ezomyte Staff"
+	# SetFontSize 80
+	# SetTextColor 255 255 255 255
+	# SetBorderColor 255 255 225 255
+	# PlayEffect White
+	# MinimapIcon 2 White Circle
 
 	
 #=================================
@@ -710,15 +710,16 @@ Show
 	MinimapIcon 0 Brown Star
 	CustomAlertSound "bell_hit.wav"
 	
-Show
-	BaseType "Unset Ring" "Sorcerer Gloves" "Ezomyte Staff" "Agate Amulet"
-	Rarity = Unique
-	SetFontSize 50
-	SetTextColor 250 142 27
-	SetBorderColor 250 142 27 150
-	PlayEffect Yellow
-	MinimapIcon 0 Brown Star
-	CustomAlertSound "bell_hit.wav"
+#Highlight specific Uniques you're looking for here
+# Show
+	# BaseType "Unset Ring" "Sorcerer Gloves" "Ezomyte Staff" "Agate Amulet"
+	# Rarity = Unique
+	# SetFontSize 50
+	# SetTextColor 250 142 27
+	# SetBorderColor 250 142 27 150
+	# PlayEffect Yellow
+	# MinimapIcon 0 Brown Star
+	# CustomAlertSound "bell_hit.wav"
 	
 
 Show

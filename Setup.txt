@@ -1,0 +1,29 @@
+#=================================
+#	Sempervivum SSF Filter v1.0
+#			3/12/20
+#=================================
+
+Setup:
+	Download the SemperSSF.filter and the .wave files from the github repository
+	Move the .filter file and the .wav files to your 'my games/path of exile' directory
+	Swap to SemperSSF.filter in the in-game UI options
+
+Editing:
+	Chancing Bases
+		Uncomment Chancing Bases section and add the bases you're looking for after 'BaseType' - Lines 466-474
+
+	Unique Highlighting
+		Uncomment Uniques section and add the bases you're looking for after 'BaseType' - Lines 714-722
+
+	Delirium Setup
+		Uncomment the Delirium Div cards in the Div card section (Remove the #) - Lines 262, 274, 286, 297
+		Uncomment the Metamorph Scarab in the Scarab section - Line 559
+		Uncomment the Delirium section - Line 406-432
+
+	Chaos Recipe
+		Chaos Recipe can be toggled on by changing line 1340 to Show instead of Hide
+	
+	
+This filter is rather simple and should easy enough to tweak to your preferences.
+
+If you have any issues or feedback feel free to contact me via Discord at Sempervivum#9627
