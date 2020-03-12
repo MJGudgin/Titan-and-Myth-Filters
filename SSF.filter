@@ -1,5 +1,5 @@
 #=================================
-#	Sempervivum SSF Filter v0.1
+#	Sempervivum SSF Filter v1.0
 #			1/8/20
 #=================================
 
@@ -210,7 +210,7 @@ Show
 	SetBorderColor 245 225 160
 	PlayEffect Brown
 	MinimapIcon 2 Brown Circle
-CustomAlertSound "buzzer_startle_01.wav"
+	CustomAlertSound "buzzer_startle_01.wav"
 
 Show
 	MapTier >= 16
@@ -220,7 +220,7 @@ Show
 	SetBorderColor 245 225 160
 	PlayEffect Red
 	MinimapIcon 1 Red Square
-CustomAlertSound "buzzer_startle_01.wav"
+	CustomAlertSound "buzzer_startle_01.wav"
 
 Show
 	MapTier >= 11
@@ -230,7 +230,7 @@ Show
 	SetBorderColor 245 225 160
 	PlayEffect Red
 	MinimapIcon 1 Red Square
-CustomAlertSound "buzzer_startle_01.wav"
+	CustomAlertSound "buzzer_startle_01.wav"
 
 Show
 	MapTier >= 6
@@ -240,7 +240,7 @@ Show
 	SetBorderColor 245 225 160
 	PlayEffect Red Temp
 	MinimapIcon 1 Yellow Square
-CustomAlertSound "buzzer_startle_02.wav"
+	CustomAlertSound "buzzer_startle_02.wav"
 
 Show
 	MapTier >= 1
@@ -249,7 +249,7 @@ Show
 	SetTextColor 255 255 255
 	SetBorderColor 245 225 160
 	MinimapIcon 1 White Square
-CustomAlertSound "buzzer_startle_03.wav"
+	CustomAlertSound "buzzer_startle_03.wav"
 	
 #=================================
 #			Div Cards
