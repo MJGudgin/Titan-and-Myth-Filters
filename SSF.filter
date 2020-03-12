@@ -36,6 +36,7 @@
 # Specific Affix Filter
 # Leveling Rares
 # Leveling Magic
+# High Level Bases
 # Chaos Recipe
 # Four Links
 # Flasks
@@ -1037,6 +1038,21 @@ Show
 #			Leveling Rares
 #=================================
 
+Hide
+	Class "Ring"
+	BaseType "Breach Ring" "Iron Ring" "Gold Ring" "Moonstone Ring" "Paua Ring"
+	AreaLevel > 72
+	
+Hide
+	Class "Belt"
+	BaseType "Chain Belt" "Rustic Sash" "Heavy Belt" "Cloth Belt" "Studded Belt"
+	AreaLevel > 72
+
+Hide
+	Class "Amulet"
+	BaseType "Coral Amulet" "Paua Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Gold Amulet"
+	AreaLevel > 72
+
 Show
 	Rarity Rare
 	Class "Ring" "Amulet" "Belt"
@@ -1206,6 +1222,115 @@ Show
 	SetTextColor 20 145 210
 	SetBorderColor 20 140 210 150
 	
+#=================================
+#			High Level Bases
+#=================================	
+
+#Armour
+Show
+	ItemLevel >= 75
+	Rarity Rare
+	BaseType "Glorious Plate" "Assassin's Garb" "Vaal Regalia" "Triumphant Lamellar" "Saintly Chainmail" "Carnal Armour" "Sacrificial Garb"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	ItemLevel >= 75
+	Rarity Rare
+	BaseType "Titan Greaves" "Slink Boots" "Sorcerer Boots"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	ItemLevel >= 75
+	Rarity Rare
+	BaseType "Slink Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	ItemLevel >= 75
+	Rarity Rare
+	BaseType "Eternal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Deicide Mask"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+#Weapons
+Show
+	ItemLevel >= 75
+	Rarity Rare
+	BaseType "Runic Hatchet" "Fleshripper"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	ItemLevel >= 75
+	Rarity Rare
+	BaseType "Maraketh Bow"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	ItemLevel >= 75
+	Rarity Rare
+	BaseType "Gemini Claw"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	ItemLevel >= 75
+	Rarity Rare
+	BaseType "Sai" "Demon Dagger"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	ItemLevel >= 75
+	Rarity Rare
+	BaseType "Behemoth Mace" "Coronal Maul"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	ItemLevel >= 75
+	Rarity Rare
+	BaseType "Eclipse Staff" "Judgement Staff"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	ItemLevel >= 75
+	Rarity Rare
+	BaseType "Tiger Hook" "Dragoon Sword" "Harpy Rapier" "Infernal Sword" "Exquisite Blade"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	ItemLevel >= 75
+	Rarity Rare
+	BaseType "Prophecy Wand" "Profane Wand"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	ItemLevel >= 75
+	Rarity Rare
+	BaseType "Ornate Quiver" "Spike-Point Arrow Quiver"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
 	
 #=================================
 #			Chaos Recipe
