@@ -15,11 +15,6 @@ Editing:
 	Unique Highlighting
 		Uncomment Uniques section and add the bases you're looking for after 'BaseType' - Lines 714-722
 
-	Delirium Setup
-		Uncomment the Delirium Div cards in the Div card section (Remove the #) - Lines 262, 274, 286, 297
-		Uncomment the Metamorph Scarab in the Scarab section - Line 559
-		Uncomment the Delirium section - Line 406-432
-
 	Chaos Recipe
 		Chaos Recipe can be toggled on by changing line 1340 to Show instead of Hide
 	

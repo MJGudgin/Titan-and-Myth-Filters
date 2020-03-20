@@ -469,7 +469,7 @@ Show
 Show
 	Corrupted False
 	Rarity Normal
-	BaseType "Sorcerer Gloves" "Ezomyte Staff"
+	BaseType "Studded Belt" "Diamond Ring"
 	SetFontSize 80
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 225 255
@@ -714,7 +714,7 @@ Show
 	CustomAlertSound "bell_hit.wav"
 	
 Show
-	BaseType "Unset Ring" "Sorcerer Gloves" "Ezomyte Staff" "Agate Amulet" "Timeless Jewel" "Prismatic Jewel" "Sulphur Flask" "Ruby Flask" "Sanctified Life Flask"
+	BaseType "Unset Ring" "Studded Belt" "Diamond Ring" "Agate Amulet" "Timeless Jewel" "Prismatic Jewel" "Sulphur Flask" "Ruby Flask" "Sanctified Life Flask"
 	Rarity = Unique
 	SetFontSize 50
 	SetTextColor 250 142 27
@@ -855,8 +855,9 @@ Show
 	HasExplicitMod "Prime" "Rapturous"
 	SetFontSize 45
 	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
+	SetBorderColor 250 200 255 150
 	PlayEffect Pink
+	MinimapIcon 1 Pink Moon
 	
 Show
 	Identified True
@@ -866,8 +867,9 @@ Show
 	HasExplicitMod "Vigorous" "Fecund"
 	SetFontSize 45
 	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
+	SetBorderColor 250 200 255 150
 	PlayEffect Pink
+	MinimapIcon 1 Pink Moon
 	
 Show
 	Identified True
@@ -877,8 +879,9 @@ Show
 	HasExplicitMod "Virile" "Athlete's"
 	SetFontSize 45
 	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
+	SetBorderColor 250 200 255 150
 	PlayEffect Pink
+	MinimapIcon 1 Pink Moon
 	
 #Res Mods
 Show
@@ -887,8 +890,9 @@ Show
 	HasExplicitMod "of Haast" "of Bameth" "of Tzteosh" "of Ephij"
 	SetFontSize 45
 	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
+	SetBorderColor 250 200 255 150
 	PlayEffect Pink
+	MinimapIcon 1 Pink Moon
 	
 Show
 	Identified True
@@ -898,8 +902,9 @@ Show
 	HasExplicitMod "of Exile" "of the Ice" "of the Magma" "of the Lightning"
 	SetFontSize 45
 	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
+	SetBorderColor 250 200 255 150
 	PlayEffect Pink
+	MinimapIcon 1 Pink Moon
 
 Show
 	Identified True
@@ -909,8 +914,9 @@ Show
 	HasExplicitMod "of the Polar Bear" "of the Volcano" "of the Maelstrom"
 	SetFontSize 45
 	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
+	SetBorderColor 250 200 255 150
 	PlayEffect Pink
+	MinimapIcon 1 Pink Moon
 	
 #Spell Damage
 Show
@@ -919,8 +925,9 @@ Show
 	HasExplicitMod "Runic"
 	SetFontSize 45
 	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
+	SetBorderColor 250 200 255 150
 	PlayEffect Pink
+	MinimapIcon 1 Pink Moon
 
 Show
 	Identified True
@@ -930,8 +937,9 @@ Show
 	HasExplicitMod "Glyphic" "Incanter's"
 	SetFontSize 45
 	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
+	SetBorderColor 250 200 255 150
 	PlayEffect Pink
+	MinimapIcon 1 Pink Moon
 
 Show
 	Identified True
@@ -941,8 +949,9 @@ Show
 	HasExplicitMod "Occultist's" "Professor's"
 	SetFontSize 45
 	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
+	SetBorderColor 250 200 255 150
 	PlayEffect Pink
+	MinimapIcon 1 Pink Moon
 
 #Chaos Damage
 Show
@@ -951,8 +960,9 @@ Show
 	HasExplicitMod "Disintegrating"
 	SetFontSize 45
 	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
+	SetBorderColor 250 200 255 150
 	PlayEffect Pink
+	MinimapIcon 1 Pink Moon
 	
 Show
 	Identified True
@@ -961,8 +971,9 @@ Show
 	HasExplicitMod "Atrophying"
 	SetFontSize 45
 	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
+	SetBorderColor 250 200 255 150
 	PlayEffect Pink
+	MinimapIcon 1 Pink Moon
 
 #Phys Damage
 Show
@@ -971,8 +982,9 @@ Show
 	HasExplicitMod "Merciless" "Flaring"
 	SetFontSize 45
 	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
+	SetBorderColor 250 200 255 150
 	PlayEffect Pink
+	MinimapIcon 1 Pink Moon
 	
 #Level of Skill Gems
 Show
@@ -981,8 +993,9 @@ Show
 	HasExplicitMod "Lava Conjurer's" "Winter Beckoner's" "Tempest Master's" "Splintermind's" "Tecton's" "Weaponmaster's"
 	SetFontSize 45
 	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
+	SetBorderColor 250 200 255 150
 	PlayEffect Pink
+	MinimapIcon 1 Pink Moon
 	
 #Movement Speed
 
@@ -993,8 +1006,9 @@ Show
 	HasExplicitMod "Hellion's" 
 	SetFontSize 45
 	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
+	SetBorderColor 250 200 255 150
 	PlayEffect Pink
+	MinimapIcon 1 Pink Moon
 	
 #30%	
 Show
@@ -1004,8 +1018,9 @@ Show
 	HasExplicitMod "Cheetah's" 
 	SetFontSize 45
 	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
+	SetBorderColor 250 200 255 150
 	PlayEffect Pink
+	MinimapIcon 1 Pink Moon
 	
 #25%	
 Show
@@ -1015,8 +1030,9 @@ Show
 	HasExplicitMod "Gazelle's" 
 	SetFontSize 45
 	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
+	SetBorderColor 250 200 255 150
 	PlayEffect Pink
+	MinimapIcon 1 Pink Moon
 	
 #20%	
 Show
@@ -1026,8 +1042,9 @@ Show
 	HasExplicitMod "Stallion's" 
 	SetFontSize 45
 	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
+	SetBorderColor 250 200 255 150
 	PlayEffect Pink
+	MinimapIcon 1 Pink Moon
 	
 #Double corrupted
 Show
@@ -1036,6 +1053,8 @@ Show
 	SetFontSize 45
 	SetTextColor 255 0 30
 	SetBorderColor 255 0 30 150
+	PlayEffect Red
+	MinimapIcon 1 Red Moon
 	
 #=================================
 #			Leveling Rares
@@ -1348,12 +1367,13 @@ Hide
 #			Links
 #=================================
 	
-Show
-	LinkedSockets >= 4
-	AreaLevel <= 30
-	SetFontSize 60
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
+# Show
+	# LinkedSockets >= 4
+	# AreaLevel <= 30
+	# SetFontSize 60
+	# SetTextColor 255 255 255
+	# SetBorderColor 255 255 255 150
+	# PlayEffect White Temp
 	
 #=================================
 #			Flasks
