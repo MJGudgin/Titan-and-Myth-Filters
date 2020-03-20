@@ -10,13 +10,13 @@ Setup:
 
 Editing:
 	Chancing Bases
-		Uncomment Chancing Bases section and add the bases you're looking for after 'BaseType' - Lines 466-474
+		Uncomment Chancing Bases section and add the bases you're looking for after 'BaseType' - Lines 469-477
 
 	Unique Highlighting
-		Uncomment Uniques section and add the bases you're looking for after 'BaseType' - Lines 714-722
+		Uncomment Uniques section and add the bases you're looking for after 'BaseType' - Lines 716-724
 
 	Chaos Recipe
-		Chaos Recipe can be toggled on by changing line 1340 to Show instead of Hide
+		Chaos Recipe can be toggled on by changing line 1370 to Show instead of Hide
 	
 	
 This filter is rather simple and should easy enough to tweak to your preferences.
