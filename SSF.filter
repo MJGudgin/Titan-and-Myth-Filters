@@ -335,6 +335,14 @@ Show
 	CustomAlertSound "boss_stun.wav"
 	
 #=================================
+#			Talisman
+#=================================
+
+Hide
+	Class "Amulet"
+	BaseType "Talisman"
+	
+#=================================
 #			Gems
 #=================================
 
@@ -469,7 +477,7 @@ Show
 Show
 	Corrupted False
 	Rarity Normal
-	BaseType "Studded Belt" "Diamond Ring"
+	BaseType "Sorcerer Gloves" "Agate Amulet"
 	SetFontSize 80
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 225 255
@@ -504,7 +512,7 @@ Show
 	
 Show
 	Class Currency
-	BaseType "Orb of Binding" "Binding Shard" "Engineer's Orb" "Engineer's Shard" "Ancient Shard" "Annulment Shard" "Transmutation Shard" "Chaos Shard" "Alchemy Shard" "Alteration Shard"
+	BaseType "Orb of Binding" "Binding Shard" "Engineer's Orb" "Engineer's Shard" "Ancient Shard" "Annulment Shard" "Transmutation Shard" "Chaos Shard" "Regal Shard" "Alchemy Shard" "Alteration Shard"
 	SetFontSize 35
 	SetTextColor 30 180 255
 	SetBorderColor 30 180 255 150
@@ -714,7 +722,7 @@ Show
 	CustomAlertSound "bell_hit.wav"
 	
 Show
-	BaseType "Unset Ring" "Studded Belt" "Diamond Ring" "Agate Amulet" "Timeless Jewel" "Prismatic Jewel" "Sulphur Flask" "Ruby Flask" "Sanctified Life Flask"
+	BaseType "Unset Ring" "Studded Belt" "Diamond Ring" "Agate Amulet" "Timeless Jewel" "Prismatic Jewel" "Sulphur Flask" "Ruby Flask" "Sanctified Life Flask" "Imperial Claw"
 	Rarity = Unique
 	SetFontSize 50
 	SetTextColor 250 142 27
@@ -979,7 +987,8 @@ Show
 Show
 	Identified True
 	Corrupted False
-	HasExplicitMod "Merciless" "Flaring"
+	HasExplicitMod "Merciless" "Tyrannical" "Cruel"
+	HasExplicitMod "Razor-sharp" "Tempered" "Flaring"
 	SetFontSize 45
 	SetTextColor 235 220 50
 	SetBorderColor 250 200 255 150
