@@ -804,7 +804,7 @@ Show
 	
 /*	
 Show
-	BaseType "Unset Ring" "Studded Belt" "Diamond Ring" "Agate Amulet" "Timeless Jewel" "Prismatic Jewel" "Sulphur Flask" "Ruby Flask" "Sanctified Life Flask" "Imperial Claw"
+	BaseType 
 	Rarity = Unique
 	SetFontSize 50
 	SetTextColor 250 142 27
