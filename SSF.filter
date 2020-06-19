@@ -425,7 +425,7 @@ Show
 	SetBackgroundColor 30 30 30
 	PlayEffect Orange
 	MinimapIcon 2 Orange Circle
-	CustomAlertSound "hero_unsheath.wav"
+	CustomAlertSound "lift_arrive.wav"
 
 Show
 	Class "Map Fragments"
@@ -437,7 +437,7 @@ Show
 	SetFontSize 50
 	PlayEffect Blue
 	MinimapIcon 1 Blue Circle
-	CustomAlertSound "boss_stun.wav"
+	CustomAlertSound "crystal_break_2.wav"
 	
 Show
 	BaseType "Tribute to the Goddess" "Gift to the Goddess" "Dedication to the Goddess"
@@ -448,16 +448,27 @@ Show
 	PlayEffect Blue
 	
 Show
-	Class HarvestInfrastructure
+	Class "Harvest Infrastructure"
 	SetFontSize 45
 	SetTextColor 90 250 205 
 	SetBackgroundColor 35 35 25
 	SetBorderColor 90 250 205 150
 	PlayEffect White UpsideDownHouse
-	CustomAlertSound "hero_unsheath.wav"
+	CustomAlertSound "water_cut_01.wav"
 	
 Show
-	Class Harvest Seed
+	Class "Harvest Seed"
+	BaseType "Primal Blisterfruit" "Vivid Scalefruit" "Wild Thornfruit"
+	SetFontSize 45
+	SetTextColor 255 255 255
+	SetBackgroundColor 35 35 25
+	SetBorderColor 255 255 255 150
+	PlayEffect White
+	MinimapIcon 0 White Circle
+	CustomAlertSound "bell_hit.wav"
+	
+Show
+	Class "Harvest Seed"
 	BaseType "Primal"
 	SetFontSize 40
 	SetTextColor 0 255 255 
@@ -468,7 +479,7 @@ Show
 	CustomAlertSound "moss_charger_leafy_explode.wav"
 
 Show	
-	Class Harvest Seed
+	Class "Harvest Seed"
 	BaseType "Vivid"
 	SetFontSize 40
 	SetTextColor 245 210 65 
@@ -479,7 +490,7 @@ Show
 	CustomAlertSound "plant_trap_bite.wav"
 
 Show
-	Class Harvest Seed
+	Class "Harvest Seed"
 	BaseType "Wild"
 	SetFontSize 40
 	SetTextColor 200 45 190 
@@ -654,7 +665,7 @@ Show
 	SetFontSize 50
 	PlayEffect Blue
 	MinimapIcon 1 Blue Circle
-	CustomAlertSound "boss_stun.wav"
+	CustomAlertSound "crystal_break_2.wav"
 
 Show
 	Class "Map Fragments"
@@ -664,7 +675,7 @@ Show
 	SetFontSize 45
 	PlayEffect Blue Temp
 	MinimapIcon 2 Blue Circle
-	CustomAlertSound "hero_unsheath.wav"
+	CustomAlertSound "crystal_break_2.wav"
 
 #=================================
 #			Betrayal
@@ -1580,5 +1591,13 @@ Sounds
 		Medium Tier - buzzer_startle_02.wav
 		Low Tier - buzzer_startle_03.wav
 	Influence/Enchantment - hero_parry.wav
+	Seeds
+		Primal - moss_charger_leafy_explode.wav
+		Vivid - plant_trap_bite.wav
+		Wild - vine_plat_land.wav
+	Harvest Scroll Things - lift_arrive.wav
+	Harvest Infrastructure - water_cut_01.wav
+	Scarabs - crystal_break_2.wav
+	
 		
 */
