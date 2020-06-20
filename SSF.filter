@@ -285,7 +285,7 @@ Show
 #T2
 Show
 	Class "Divination"
-	BaseType "Chaotic Disposition" "The Cartographer" "The Void" "Cameria's Cut" "The Heroic Shot" "Monochrome" "The Gemcutter" "The Journey" "The Survivalist" "Forbidden Power" "The Body" "The Breach" "The Fool" "The Hale Heart" "The Messenger" "The Stormcaller" "The Wolf's Legacy" "Audacity" "Earth Drinker" "Hope" "Perfection" "Squandered Prosperity" "The Landing" "The Lion" "The Mayor" "The Puzzle" "The Realm" "The Side Quest" "The Wolf" "Vinia's Token" "Boon of Justice" "The Deal" "The Penitent" "Burning Blood" "The Beast" "The Calling" "The Damned" "The Fox" "The Inventor" "The Life Thief" "The Oath" "The One With All" "The Pack Leader" "The Skeleton" "The Summoner" "The Twilight Moon" "The Wretched" "Blind Venture" "Demigod's Wager" "Dialla's Subjugation" "Lucky Connections" "Scholar of the Seas" "The Formless Sea" "The Trial" "The Union" "Treasure Hunter" "The Aesthete" "The Dreamland" "The Encroaching Darkness" "The Scavenger" "The Undisputed" "The Wrath" "A Dab of Ink" "Coveted Possession" "Gift of the Gemling Queen" "Lucky Deck" "No Traces" "The Admirer" "The Betrayal" "The Hunger" "The Poet" "The Seeker" "The Valley of Steel Boxes" "The Innocent" "Lingering Remnants" "Imperial Legacy" "The Tinkerer's Table" "Prometheus' Armory"
+	BaseType "Chaotic Disposition" "The Cartographer" "The Void" "Cameria's Cut" "The Heroic Shot" "Monochrome" "The Gemcutter" "The Journey" "The Survivalist" "Forbidden Power" "The Body" "The Breach" "The Fool" "The Hale Heart" "The Messenger" "The Stormcaller" "The Wolf's Legacy" "Audacity" "Earth Drinker" "Hope" "Perfection" "Squandered Prosperity" "The Landing" "The Lion" "The Mayor" "The Puzzle" "The Realm" "The Side Quest" "The Wolf" "Vinia's Token" "Boon of Justice" "The Deal" "The Penitent" "Burning Blood" "The Beast" "The Calling" "The Damned" "The Fox" "The Inventor" "The Life Thief" "The Oath" "The One With All" "The Pack Leader" "The Skeleton" "The Summoner" "The Twilight Moon" "The Wretched" "Blind Venture" "Demigod's Wager" "Dialla's Subjugation" "Lucky Connections" "Scholar of the Seas" "The Formless Sea" "The Trial" "The Union" "Treasure Hunter" "The Aesthete" "The Dreamland" "The Encroaching Darkness" "The Scavenger" "The Undisputed" "The Wrath" "A Dab of Ink" "Coveted Possession" "Gift of the Gemling Queen" "Lucky Deck" "No Traces" "The Admirer" "The Betrayal" "The Hunger" "The Poet" "The Seeker" "The Valley of Steel Boxes" "The Innocent" "Lingering Remnants" "Imperial Legacy" "The Tinkerer's Table" "Prometheus' Armoury"
 	SetFontSize 40
 	SetTextColor 0 255 210 255
 	SetBorderColor 0 250 255 150
@@ -417,8 +417,7 @@ Show
 
 Show
 	Class Currency
-	BaseType "Infused Engineer's Orb" "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll"
-			"Facetor's Lens"
+	BaseType "Infused Engineer's Orb" "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Facetor's Lens"
 	SetFontSize 40
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
@@ -429,9 +428,7 @@ Show
 
 Show
 	Class "Map Fragments"
-	BaseType "Winged Cartography Scarab" "Winged Reliquary Scarab" "Winged Bestiary Scarab" "Winged Shaper Scarab" "Winged Elder Scarab" "Winged Sulphite Scarab" 
-			"Winged Divination Scarab"	"Winged Torment Scarab" "Winged Ambush Scarab" "Winged Harbinger Scarab" "Winged Perandus Scarab" "Winged Breach Scarab"
-			"Winged Legion Scarab" "Winged Metamorph Scarab"
+	BaseType "Winged Cartography Scarab" "Winged Reliquary Scarab" "Winged Bestiary Scarab" "Winged Shaper Scarab" "Winged Elder Scarab" "Winged Sulphite Scarab" "Winged Divination Scarab"	"Winged Torment Scarab" "Winged Ambush Scarab" "Winged Harbinger Scarab" "Winged Perandus Scarab" "Winged Breach Scarab" "Winged Legion Scarab" "Winged Metamorph Scarab"
 	SetBorderColor 0 255 220 150
 	SetTextColor 255 175 0 
 	SetFontSize 50
@@ -446,15 +443,6 @@ Show
 	SetBackgroundColor 35 35 25
 	SetBorderColor 90 250 205 150
 	PlayEffect Blue
-	
-Show
-	Class "Harvest Infrastructure"
-	SetFontSize 45
-	SetTextColor 90 250 205 
-	SetBackgroundColor 35 35 25
-	SetBorderColor 90 250 205 150
-	PlayEffect White UpsideDownHouse
-	CustomAlertSound "water_cut_01.wav"
 	
 Show
 	Class "Harvest Seed"
@@ -565,17 +553,17 @@ Show
 #		Chancing Bases
 #=================================
 
-/*
-Show
-	Corrupted False
-	Rarity Normal
-	BaseType 
-	SetFontSize 80
-	SetTextColor 255 255 255 255
-	SetBorderColor 255 255 225 255
-	PlayEffect Grey
-	MinimapIcon 2 Grey Circle
-*/
+
+#Show
+#	Corrupted False
+#	Rarity Normal
+#	BaseType 
+#	SetFontSize 80
+#	SetTextColor 255 255 255 255
+#	SetBorderColor 255 255 225 255
+#	PlayEffect Grey
+#	MinimapIcon 2 Grey Circle
+#
 	
 #=================================
 #			Influence
@@ -813,17 +801,17 @@ Show
 	MinimapIcon 0 Brown Star
 	CustomAlertSound "bell_hit.wav"
 	
-/*	
-Show
-	BaseType 
-	Rarity = Unique
-	SetFontSize 50
-	SetTextColor 250 142 27
-	SetBorderColor 250 142 27 150
-	PlayEffect Yellow
-	MinimapIcon 0 Brown Star
-	CustomAlertSound "bell_hit.wav"
-*/
+
+#Show
+#	BaseType 
+#	Rarity = Unique
+#	SetFontSize 50
+#	SetTextColor 250 142 27
+#	SetBorderColor 250 142 27 150
+#	PlayEffect Yellow
+#	MinimapIcon 0 Brown Star
+#	CustomAlertSound "bell_hit.wav"
+
 
 Show
 	Rarity Unique
@@ -846,7 +834,6 @@ Show
 	SetBorderColor 90 250 205 150
 	PlayEffect Blue
 	
-Show
 Show
 	Class "Map Fragments"
 	SetFontSize 45
@@ -1537,67 +1524,64 @@ Hide
 #		Notes
 #=================================
 
-/*
-Shape Options
-	Circle
-	Diamond
-	Hexagon
-	Square
-	Star
-	Triangle
-	Cross
-	Moon
-	Raindrop
-	Kite
-	Pentagon
-	UpsideDownHouse
-Shape Size Options
-	0 (Large)
-	1 (Medium)
-	2 (Small)
-Shape Colour Options
-	Red 
-	Green 
-	Blue 
-	Brown 
-	White 
-	Yellow 
-	Cyan 
-	Grey 
-	Orange 
-	Pink 
-	Purple 
-Beam Colour Options
-	Red 
-	Green 
-	Blue 
-	Brown 
-	White 
-	Yellow 
-	Cyan 
-	Grey 
-	Orange 
-	Pink 
-	Purple
-Beam Options
-	Temp
-	
-Sounds
-	High Value Currency/Card - dream_orb_pickup.wav
-	High Value Item - bell_hit.wav
-	Splinters - pot_death_1.wav
-	Maps
-		High Tier - buzzer_startle_01.wav
-		Medium Tier - buzzer_startle_02.wav
-		Low Tier - buzzer_startle_03.wav
-	Influence/Enchantment - hero_parry.wav
-	Seeds
-		Primal - moss_charger_leafy_explode.wav
-		Vivid - plant_trap_bite.wav
-		Wild - vine_plat_land.wav
-	Harvest Scroll Things - lift_arrive.wav
-	Harvest Infrastructure - water_cut_01.wav
-	Scarabs - crystal_break_2.wav
-	
-		
-*/
+
+#Shape Options
+#	Circle
+#	Diamond
+#	Hexagon
+#	Square
+#	Star
+#	Triangle
+#	Cross
+#	Moon
+#	Raindrop
+#	Kite
+#	Pentagon
+#	UpsideDownHouse
+#Shape Size Options
+#	0 (Large)
+#	1 (Medium)
+#	2 (Small)
+#Shape Colour Options
+#	Red 
+#	Green 
+#	Blue 
+#	Brown 
+#	White 
+#	Yellow 
+#	Cyan 
+#	Grey 
+#	Orange 
+#	Pink 
+#	Purple 
+#Beam Colour Options
+#	Red 
+#	Green 
+#	Blue 
+#	Brown 
+#	White 
+#	Yellow 
+#	Cyan 
+#	Grey 
+#	Orange 
+#	Pink 
+#	Purple
+#Beam Options
+#	Temp
+#	
+#Sounds
+#	High Value Currency/Card - dream_orb_pickup.wav
+#	High Value Item - bell_hit.wav
+#	Splinters - pot_death_1.wav
+#	Maps
+#		High Tier - buzzer_startle_01.wav
+#		Medium Tier - buzzer_startle_02.wav
+#		Low Tier - buzzer_startle_03.wav
+#	Influence/Enchantment - hero_parry.wav
+#	Seeds
+#		Primal - moss_charger_leafy_explode.wav
+#		Vivid - plant_trap_bite.wav
+#		Wild - vine_plat_land.wav
+#	Harvest Scroll Things - lift_arrive.wav
+#	Harvest Infrastructure - water_cut_01.wav
+#	Scarabs - crystal_break_2.wav
