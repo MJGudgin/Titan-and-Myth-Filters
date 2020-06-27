@@ -52,14 +52,15 @@
 Show 
 	Class Currency
 	BaseType "Scroll of Wisdom"
-	AreaLevel < 75
+	AreaLevel < 70
+	AreaLevel < 70
 	SetFontSize 30
 	SetBorderColor 100 0 0 150
 	
 Show
 	Class Currency
 	BaseType "Portal Scroll"
-	AreaLevel < 75
+	AreaLevel < 70
 	SetFontSize 35
 	SetBorderColor 45 180 235 140
 	
@@ -84,8 +85,16 @@ Show
 # Magic Item Currency
 Show
 	Class Currency
-	BaseType "Orb of Transmutation" "Orb of Alteration" "Orb of Augmentation" "Orb of Chance"
+	BaseType "Orb of Transmutation" "Orb of Alteration" "Orb of Augmentation"
 	SetFontSize 35
+	SetTextColor 60 195 255
+	SetBorderColor 60 195 255 150
+	SetBackgroundColor 30 30 30
+	
+Show
+	Class Currency
+	BaseType "Orb of Chance"
+	SetFontSize 40
 	SetTextColor 60 195 255
 	SetBorderColor 60 195 255 150
 	SetBackgroundColor 30 30 30
@@ -155,7 +164,7 @@ Show
 	SetTextColor 209 187 113
 	SetBorderColor 245 214 113 150
 	#SetBackgroundColor 30 30 30
-	PlayEffect Cyan Temp
+	PlayEffect Cyan
 	MinimapIcon 2 Cyan Circle
 	CustomAlertSound "boss_stun.wav"
 
@@ -310,7 +319,7 @@ Show
 	SetTextColor 0 255 240
 	SetBorderColor 0 215 175 150
 	PlayEffect Cyan Temp
-	CustomAlertSound "hero_unsheath.wav"
+	#CustomAlertSound "hero_unsheath.wav"
 	
 Show
 	BaseType "Stacked Deck"
@@ -387,6 +396,13 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 2 Yellow Raindrop
 	CustomAlertSound "bell_hit.wav"
+
+Show
+	Class Gems
+	Quality >= 15
+	SetFontSize 40
+	SetBorderColor 0 250 255 150
+	SetBackgroundColor 6 0 60
 
 Show
 	Class Gems
@@ -470,9 +486,9 @@ Show
 	Class "Harvest Seed"
 	BaseType "Vivid"
 	SetFontSize 40
-	SetTextColor 245 210 65 
+	SetTextColor 255 228 51
 	SetBackgroundColor 35 35 25
-	SetBorderColor 245 210 65  150
+	SetBorderColor 255 228 51 150
 	PlayEffect Yellow Temp
 	MinimapIcon 1 Yellow Circle
 	CustomAlertSound "plant_trap_bite.wav"
@@ -548,22 +564,36 @@ Show
 	SetBorderColor 130 200 140 150
 	PlayEffect Green Temp
 	
-		
 #=================================
-#		Chancing Bases
+#		Crafting Bases
 #=================================
-
 
 #Show
 #	Corrupted False
 #	Rarity Normal
-#	BaseType 
+#	Class "Staves"
+#	ItemLevel >= 79
 #	SetFontSize 80
 #	SetTextColor 255 255 255 255
 #	SetBorderColor 255 255 225 255
 #	PlayEffect Grey
 #	MinimapIcon 2 Grey Circle
-#
+	
+#=================================
+#		Chancing Bases
+#=================================
+
+
+Show
+	Corrupted False
+	Rarity Normal
+	BaseType "Diamond Ring" "Mesh Gloves"
+	SetFontSize 80
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 225 255
+	PlayEffect Grey
+	MinimapIcon 2 Grey Circle
+
 	
 #=================================
 #			Influence
@@ -929,9 +959,9 @@ Show
 Show
 	BaseType "Opal Ring" "Prismatic Ring" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Blue Pearl Amulet" "Bone Helmet" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Stygian Vise" "Two-Toned Boots" "Vanguard Belt"
 	SetFontSize 60
-	SetTextColor 255 255 80
-	SetBorderColor 255 255 80 150
-	PlayEffect Yellow
+	SetTextColor 232 203 121
+	SetBorderColor 232 203 121 150
+	PlayEffect Brown
 	CustomAlertSound "hero_unsheath.wav"
 	
 #=================================
@@ -1022,8 +1052,8 @@ Show
 Show
 	Identified True
 	Corrupted False
-	DropLevel < 84
-	AreaLevel < 70
+	#DropLevel < 84
+	#AreaLevel < 70
 	HasExplicitMod "Glyphic" "Incanter's"
 	SetFontSize 45
 	SetTextColor 235 220 50
@@ -1148,12 +1178,68 @@ Show
 	MinimapIcon 1 Red Moon
 	
 #=================================
+#			Chaos Recipe
+#=================================
+
+# 2 Chaos Recipe
+#Show
+#	Rarity Rare
+#	Identified False
+#	ItemLevel >= 60
+#	ItemLevel <= 74
+#	SetFontSize 30
+#	SetTextColor 235 220 50
+#	SetBackgroundColor 154 158 70 140
+#	SetBorderColor 255 255 255 140
+#	MinimapIcon 2 Yellow Triangle
+	
+# 1 Chaos Recipe
+#Show
+#	Rarity Rare
+#	Identified True
+#	ItemLevel >= 60
+#	ItemLevel <= 74
+#	SetFontSize 35
+#	SetTextColor 235 220 50
+#	SetBorderColor 255 240 40 150
+
+#=================================
+#			Regal Recipe
+#=================================
+
+# 2 Regal Recipe
+#Show
+#	Rarity Rare
+#	Identified False
+#	ItemLevel >= 75
+#	ItemLevel <= 100
+#	SetFontSize 30
+#	SetTextColor 235 220 50
+#	SetBackgroundColor 68 138 173 140
+#	SetBorderColor 255 255 255 140
+#	MinimapIcon 2 Blue Triangle
+	
+# 1 Regal Recipe
+#Show
+#	Rarity Rare
+#	Identified True
+#	ItemLevel >= 75
+#	ItemLevel <= 100
+#	SetFontSize 35
+#	SetTextColor 235 220 50
+#	SetBorderColor 255 240 40 150
+	
+#=================================
 #			Leveling Rares
 #=================================
 
 Hide
 	Class "Ring"
-	BaseType "Breach Ring" "Iron Ring" "Gold Ring" "Moonstone Ring" "Paua Ring"
+	BaseType "Breach Ring"
+
+Hide
+	Class "Ring"
+	BaseType "Iron Ring" "Gold Ring" "Moonstone Ring" "Paua Ring"
 	AreaLevel > 72
 	
 Hide
@@ -1445,15 +1531,8 @@ Show
 	SetTextColor 235 220 50
 	SetBorderColor 255 240 40 150
 	
-#=================================
-#			Chaos Recipe
-#=================================
 
-Hide
-	Rarity Rare
-	ItemLevel >= 60
-	ItemLevel <= 74
-	
+
 #=================================
 #			Links
 #=================================
@@ -1472,21 +1551,21 @@ Hide
 
 Show
 	Class "Life Flasks"
-	AreaLevel < 68
+	AreaLevel < 65
 	SetFontSize 35
 	SetTextColor 150 255 255
 	SetBorderColor 200 255 255 150
 
 Show
 	Class "Mana Flask"
-	AreaLevel < 68
+	AreaLevel < 65
 	SetFontSize 30
 	SetTextColor 150 255 255
 	SetBorderColor 200 255 255 150
 	
 
 Show
-	AreaLevel < 70
+	AreaLevel < 75
 	BaseType "Basalt Flask" "Bismuth Flask" "Diamond Flask" "Granite Flask" "Jade Flask" "Quicksilver Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Stibnite Flask" "Topaz Flask"
 	SetFontSize 30
 	SetTextColor 150 255 255
