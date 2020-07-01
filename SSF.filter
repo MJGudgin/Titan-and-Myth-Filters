@@ -956,19 +956,28 @@ Show
 
 Show
 	BaseType "Opal Ring" "Prismatic Ring" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Blue Pearl Amulet" "Bone Helmet" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Stygian Vise" "Two-Toned Boots" "Vanguard Belt"
+	ItemLevel >= 80
 	SetFontSize 60
 	SetTextColor 232 203 121
 	SetBorderColor 232 203 121 150
 	PlayEffect Brown
 	CustomAlertSound "hero_unsheath.wav"
+
+#Show
+#	BaseType "Opal Ring" "Prismatic Ring" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Blue Pearl Amulet" "Bone Helmet" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Stygian Vise" "Two-Toned Boots" "Vanguard Belt"
+#	SetFontSize 60
+#	SetTextColor 232 203 121
+#	SetBorderColor 232 203 121 150
+#	PlayEffect Brown
+#	CustomAlertSound "hero_unsheath.wav"
 	
 #=================================
 #		Specific Affix Filter
 #=================================
 
 #Life Mods
-Show
 	Identified True
+Show
 	Corrupted False
 	HasExplicitMod "Prime" "Rapturous"
 	SetFontSize 45
@@ -1206,16 +1215,16 @@ Show
 #=================================
 
 # 2 Regal Recipe
-#Show
-#	Rarity Rare
-#	Identified False
-#	ItemLevel >= 75
-#	ItemLevel <= 100
-#	SetFontSize 30
-#	SetTextColor 235 220 50
-#	SetBackgroundColor 68 138 173 140
-#	SetBorderColor 255 255 255 140
-#	MinimapIcon 2 Blue Triangle
+Show
+	Rarity Rare
+	Identified False
+	ItemLevel >= 75
+	ItemLevel <= 100
+	SetFontSize 30
+	SetTextColor 235 220 50
+	SetBackgroundColor 68 138 173 140
+	SetBorderColor 255 255 255 140
+	MinimapIcon 2 Blue Triangle
 	
 # 1 Regal Recipe
 #Show
