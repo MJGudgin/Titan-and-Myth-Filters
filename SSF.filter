@@ -39,7 +39,7 @@
 # Leveling Magic
 # High Level Bases
 # Chaos Recipe
-# Four Links
+# Four LinkLinks
 # Flasks
 # Vendor Recipe
 # Hide Catch-All
@@ -464,9 +464,9 @@ Show
 	Class "Harvest Seed"
 	BaseType "Primal Blisterfruit" "Vivid Scalefruit" "Wild Thornfruit"
 	SetFontSize 45
-	SetTextColor 255 255 255
-	SetBackgroundColor 35 35 25
-	SetBorderColor 255 255 255 150
+	SetTextColor 0 255 255 
+	SetBackgroundColor 200 45 190
+	SetBorderColor 255 228 51 150
 	PlayEffect White
 	MinimapIcon 0 White Circle
 	CustomAlertSound "bell_hit.wav"
@@ -584,15 +584,13 @@ Show
 #=================================
 
 
-Show
-	Corrupted False
-	Rarity Normal
-	BaseType "Diamond Ring" "Mesh Gloves"
-	SetFontSize 80
-	SetTextColor 255 255 255 255
-	SetBorderColor 255 255 225 255
-	PlayEffect Grey
-	MinimapIcon 2 Grey Circle
+#Show
+#	Corrupted False
+#	Rarity Normal
+#	BaseType "Mesh Gloves"
+#	SetFontSize 80
+#	PlayEffect Grey
+#	MinimapIcon 2 Grey Circle
 
 	
 #=================================
@@ -833,7 +831,7 @@ Show
 	
 
 #Show
-#	BaseType 
+#	BaseType "Mesh Gloves"
 #	Rarity = Unique
 #	SetFontSize 50
 #	SetTextColor 250 142 27
@@ -903,14 +901,6 @@ Show
 #=================================
 
 Show
-	Sockets 6
-	Rarity <= Rare
-	SetFontSize 45
-	SetTextColor 255 255 255
-	SetBorderColor 255 255 255 150
-	PlayEffect White
-	
-Show
 	LinkedSockets 6
 	SetFontSize 50
 	SetTextColor 229 190 66
@@ -929,6 +919,14 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Cross
 	CustomAlertSound "boss_stun.wav"
+	
+Show
+	Sockets 6
+	Rarity <= Rare
+	SetFontSize 45
+	SetTextColor 255 255 255
+	SetBorderColor 255 255 255 150
+	PlayEffect White
 
 #=================================
 #		Chromatic Recipe
@@ -1182,16 +1180,16 @@ Show
 #=================================
 
 # 2 Chaos Recipe
-#Show
-#	Rarity Rare
-#	Identified False
-#	ItemLevel >= 60
-#	ItemLevel <= 74
-#	SetFontSize 30
-#	SetTextColor 235 220 50
-#	SetBackgroundColor 154 158 70 140
-#	SetBorderColor 255 255 255 140
-#	MinimapIcon 2 Yellow Triangle
+Show
+	Rarity Rare
+	Identified False
+	ItemLevel >= 60
+	ItemLevel <= 74
+	SetFontSize 30
+	SetTextColor 235 220 50
+	SetBackgroundColor 154 158 70 140
+	SetBorderColor 255 255 255 140
+	MinimapIcon 2 Yellow Triangle
 	
 # 1 Chaos Recipe
 #Show
