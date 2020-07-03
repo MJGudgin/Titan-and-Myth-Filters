@@ -504,6 +504,15 @@ Show
 	MinimapIcon 1 Pink Circle
 	CustomAlertSound "vine_plat_land.wav"
 	
+Show
+	BaseType "Bud" "Flower" "Blossom"
+	SetFontSize 40
+	SetTextColor 110 175 90
+	SetBorderColor 110 175 90 150
+	PlayEffect Green
+	MinimapIcon 1 Green Circle
+	CustomAlertSound "moss_charger_leafy_explode.wav"
+	
 
 #=================================
 #			Delirium
@@ -544,7 +553,7 @@ Show
 
 Show
 	Class "Abyss Jewel"
-	ItemLevel >= 82
+	#ItemLevel >= 80
 	SetFontSize 40
 	SetTextColor 130 200 140
 	SetBorderColor 130 200 140 150
@@ -584,13 +593,13 @@ Show
 #=================================
 
 
-#Show
-#	Corrupted False
-#	Rarity Normal
-#	BaseType "Mesh Gloves"
-#	SetFontSize 80
-#	PlayEffect Grey
-#	MinimapIcon 2 Grey Circle
+Show
+	Corrupted False
+	Rarity Normal
+	BaseType "Paua Amulet"
+	SetFontSize 80
+	PlayEffect Grey
+	MinimapIcon 2 Grey Circle
 
 	
 #=================================
@@ -723,7 +732,7 @@ Show
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
-	MinimapIcon 2 White Kite
+	MinimapIcon 2 Purple Kite
 	CustomAlertSound "pot_death_1.wav"
 	
 Show
@@ -733,7 +742,7 @@ Show
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
 	PlayEffect White
-	MinimapIcon 2 White Kite
+	MinimapIcon 2 Purple Kite
 	CustomAlertSound "boss_stun.wav"
 	
 Show
@@ -745,6 +754,16 @@ Show
 	PlayEffect Orange
 	MinimapIcon 2 Orange Kite
 	CustomAlertSound "hero_unsheath.wav"
+	
+Show
+	Class "Fragments"
+	BaseType "Breachstone" 
+	SetFontSize 45
+	SetTextColor 185 0 255 255
+	SetBorderColor 185 0 255 150
+	PlayEffect Purple
+	MinimapIcon 0 Purple Kite
+	CustomAlertSound "boss_stun.wav"
 	
 #=================================
 #			Incursion
@@ -910,15 +929,15 @@ Show
 	MinimapIcon 0 Yellow Cross
 	CustomAlertSound "bell_hit.wav"
 	
-Show
-	LinkedSockets 5
-	SetFontSize 45
-	SetTextColor 229 190 66
-	SetBorderColor 245 214 113 150
-	SetBackgroundColor 120 120 120
-	PlayEffect Yellow
-	MinimapIcon 1 Yellow Cross
-	CustomAlertSound "boss_stun.wav"
+#Show
+#	LinkedSockets 5
+#	SetFontSize 45
+#	SetTextColor 229 190 66
+#	SetBorderColor 245 214 113 150
+#	SetBackgroundColor 120 120 120
+#	PlayEffect Yellow
+#	MinimapIcon 1 Yellow Cross
+#	CustomAlertSound "boss_stun.wav"
 	
 Show
 	Sockets 6
@@ -926,7 +945,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 255 255
 	SetBorderColor 255 255 255 150
-	PlayEffect White
+	PlayEffect White Temp
 
 #=================================
 #		Chromatic Recipe
@@ -1183,58 +1202,6 @@ Show
 	SetBorderColor 255 0 30 150
 	PlayEffect Red
 	MinimapIcon 1 Red Moon
-	
-#=================================
-#			Chaos Recipe
-#=================================
-
-# 2 Chaos Recipe
-Show
-	Rarity Rare
-	Identified False
-	ItemLevel >= 60
-	ItemLevel <= 74
-	SetFontSize 30
-	SetTextColor 235 220 50
-	SetBackgroundColor 154 158 70 140
-	SetBorderColor 255 255 255 140
-	MinimapIcon 2 Yellow Triangle
-	
-# 1 Chaos Recipe
-#Show
-#	Rarity Rare
-#	Identified True
-#	ItemLevel >= 60
-#	ItemLevel <= 74
-#	SetFontSize 35
-#	SetTextColor 235 220 50
-#	SetBorderColor 255 240 40 150
-
-#=================================
-#			Regal Recipe
-#=================================
-
-# 2 Regal Recipe
-Show
-	Rarity Rare
-	Identified False
-	ItemLevel >= 75
-	ItemLevel <= 100
-	SetFontSize 30
-	SetTextColor 235 220 50
-	SetBackgroundColor 68 138 173 140
-	SetBorderColor 255 255 255 140
-	MinimapIcon 2 Blue Triangle
-	
-# 1 Regal Recipe
-#Show
-#	Rarity Rare
-#	Identified True
-#	ItemLevel >= 75
-#	ItemLevel <= 100
-#	SetFontSize 35
-#	SetTextColor 235 220 50
-#	SetBorderColor 255 240 40 150
 	
 #=================================
 #			Leveling Rares
@@ -1538,7 +1505,57 @@ Show
 	SetTextColor 235 220 50
 	SetBorderColor 255 240 40 150
 	
+#=================================
+#			Chaos Recipe
+#=================================
 
+# 2 Chaos Recipe
+#Show
+#	Rarity Rare
+#	Identified False
+#	ItemLevel >= 60
+#	ItemLevel <= 74
+#	SetFontSize 30
+#	SetTextColor 235 220 50
+#	SetBackgroundColor 154 158 70 140
+#	SetBorderColor 255 255 255 140
+#	MinimapIcon 2 Yellow Triangle
+	
+# 1 Chaos Recipe
+#Show
+#	Rarity Rare
+#	Identified True
+#	ItemLevel >= 60
+#	ItemLevel <= 74
+#	SetFontSize 35
+#	SetTextColor 235 220 50
+#	SetBorderColor 255 240 40 150
+
+#=================================
+#			Regal Recipe
+#=================================
+
+# 2 Regal Recipe
+#Show
+#	Rarity Rare
+#	Identified False
+#	ItemLevel >= 75
+#	ItemLevel <= 100
+#	SetFontSize 30
+#	SetTextColor 235 220 50
+#	SetBackgroundColor 68 138 173 140
+#	SetBorderColor 255 255 255 140
+#	MinimapIcon 2 Blue Triangle
+	
+# 1 Regal Recipe
+#Show
+#	Rarity Rare
+#	Identified True
+#	ItemLevel >= 75
+#	ItemLevel <= 100
+#	SetFontSize 35
+#	SetTextColor 235 220 50
+#	SetBorderColor 255 240 40 150
 
 #=================================
 #			Links
