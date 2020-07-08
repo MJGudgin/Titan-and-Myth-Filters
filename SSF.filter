@@ -1151,7 +1151,7 @@ Show
 
 Show
 	BaseType "Opal Ring" "Prismatic Ring" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Blue Pearl Amulet" "Bone Helmet" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Stygian Vise" "Two-Toned Boots" "Vanguard Belt"
-	ItemLevel >= 80
+	#ItemLevel >= 80
 	SetFontSize 60
 	SetTextColor 232 203 121
 	SetBorderColor 232 203 121 150
@@ -1555,7 +1555,7 @@ Show
 Show
 	ItemLevel >= 75
 	Rarity Rare
-	BaseType "Glorious Plate" "Assassin's Garb" "Vaal Regalia" "Triumphant Lamellar" "Saintly Chainmail" "Carnal Armour" "Sacrificial Garb"
+	BaseType "Glorious Plate" "Assassin's Garb" "Vaal Regalia" "Triumphant Lamellar" "Saintly Chainmail" "Carnal Armour" "Sacrificial Garb" "Astral Plate"
 	SetFontSize 35
 	SetTextColor 235 220 50
 	SetBorderColor 255 240 40 150
@@ -1589,7 +1589,7 @@ Show
 Show
 	ItemLevel >= 75
 	Rarity Rare
-	BaseType "Runic Hatchet" "Fleshripper"
+	BaseType "Royal Axe" "Runic Hatchet" "Fleshripper" "Vaal Axe"
 	SetFontSize 35
 	SetTextColor 235 220 50
 	SetBorderColor 255 240 40 150
@@ -1674,16 +1674,31 @@ Show
 #=================================
 
 # 2 Chaos Recipe
-#Show
-#	Rarity Rare
-#	Identified False
-#	ItemLevel >= 60
-#	ItemLevel <= 74
-#	SetFontSize 30
-#	SetTextColor 235 220 50
-#	SetBackgroundColor 154 158 70 140
-#	SetBorderColor 255 255 255 140
-#	MinimapIcon 2 Yellow Triangle
+Show
+	Class "Helmet" "Gloves" "Body Armour" "Boots" "Belt" "Ring" "Amulet"
+	Rarity Rare
+	Identified False
+	ItemLevel >= 60
+	ItemLevel <= 74
+	SetFontSize 30
+	SetTextColor 235 220 50
+	SetBackgroundColor 154 158 70 140
+	SetBorderColor 255 255 255 140
+	MinimapIcon 2 Yellow Triangle
+
+Show
+	Class "Wand" "Mace" "Dagger" "Sword"
+	Rarity Rare
+	Identified False
+	ItemLevel >= 60
+	ItemLevel <= 74
+	Width <= 1
+	Height <= 3
+	SetFontSize 30
+	SetTextColor 235 220 50
+	SetBackgroundColor 154 158 70 140
+	SetBorderColor 255 255 255 140
+	MinimapIcon 2 Yellow Triangle
 	
 # 1 Chaos Recipe
 #Show
