@@ -1098,6 +1098,16 @@ Show
 	MinimapIcon 1 Orange Pentagon
 	CustomAlertSound "hero_unsheath.wav"
 
+Show
+	Class "Map Fragments"
+	BaseType "Divine Vessel"
+	SetFontSize 45
+	SetTextColor 210 35 65 255
+	SetBorderColor 210 35 65 150
+	SetBackgroundColor 0 0 0
+	PlayEffect Brown
+	MinimapIcon 1 Brown Pentagon
+
 # Don't think this should ever be needed	
 Show 
 	Class "Pantheon Soul"
