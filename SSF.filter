@@ -49,6 +49,8 @@
 #			Currency
 #=================================
 
+
+
 Show 
 	Class Currency
 	BaseType "Scroll of Wisdom"
@@ -74,7 +76,7 @@ Show
 	Class Currency
 	BaseType "Blacksmith's Whetstone" "Armourer's Scrap"
 	SetFontSize 25
-	SetTextColor 125 125 125
+	SetTextColor 150 150 150
 	
 Show
 	Class Currency
@@ -573,15 +575,15 @@ Show
 #		Crafting Bases
 #=================================
 
-#Show
-#	Corrupted False
-#	BaseType
-#	#ItemLevel >= 79
-#	SetFontSize 80
-#	SetTextColor 255 255 255 255
-#	SetBorderColor 255 255 225 255
-#	PlayEffect White
-#	MinimapIcon 2 White Triangle
+Show
+	Corrupted False
+	BaseType "Lion Sword" "Exquisite Blade"
+	ItemLevel >= 83
+	SetFontSize 80
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 225 255
+	PlayEffect White
+	MinimapIcon 2 White Triangle
 	
 #=================================
 #		Chancing Bases
@@ -760,6 +762,7 @@ Show
 	SetBorderColor 240 240 240 150
 	PlayEffect Yellow Temp
 	MinimapIcon 2 Yellow Moon
+	
 
 #=================================
 #			Breach/Legion
@@ -947,7 +950,6 @@ Show
 	SetBorderColor 255 0 0 180
 	PlayEffect Red
 	MinimapIcon 2 Red Moon
-	
 
 #=================================
 #			Blight
@@ -1117,7 +1119,8 @@ Show
 	SetBackgroundColor 159 15 213 255
 	PlayEffect White
 	CustomAlertSound "hero_unsheath.wav"
-	
+
+
 #=================================
 #			Enchantments
 #=================================
@@ -1160,29 +1163,28 @@ Show
 #=================================
 
 Show
-	BaseType "Opal Ring" "Prismatic Ring" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Blue Pearl Amulet" "Bone Helmet" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Stygian Vise" "Two-Toned Boots" "Vanguard Belt"
-	#ItemLevel >= 80
-	SetFontSize 60
+	BaseType "Opal Ring" "Prismatic Ring" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Blue Pearl Amulet" "Bone Helmet" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Two-Toned Boots" "Vanguard Belt" "Stygian Vise"
+	ItemLevel >= 83
+	SetFontSize 50
 	SetTextColor 232 203 121
 	SetBorderColor 232 203 121 150
 	PlayEffect Brown
 	CustomAlertSound "hero_unsheath.wav"
 
-#Show
-#	BaseType "Opal Ring" "Prismatic Ring" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Blue Pearl Amulet" "Bone Helmet" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Stygian Vise" "Two-Toned Boots" "Vanguard Belt"
-#	SetFontSize 60
-#	SetTextColor 232 203 121
-#	SetBorderColor 232 203 121 150
-#	PlayEffect Brown
-#	CustomAlertSound "hero_unsheath.wav"
+Show
+	BaseType "Opal Ring" "Prismatic Ring" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Blue Pearl Amulet" "Bone Helmet" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Two-Toned Boots" "Vanguard Belt" "Stygian Vise"
+	SetFontSize 40
+	SetTextColor 232 203 121
+	SetBorderColor 232 203 121 150
+	CustomAlertSound "hero_unsheath.wav"
 	
 #=================================
 #		Specific Affix Filter
 #=================================
 
 #Life Mods
-	Identified True
 Show
+	Identified True
 	Corrupted False
 	HasExplicitMod "Prime" "Rapturous"
 	SetFontSize 45
