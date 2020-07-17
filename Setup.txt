@@ -4,9 +4,9 @@
 #=================================
 
 Setup:
-	Download the SemperSSF.filter and the .wave files from the github repository
-	Move the .filter file and the .wav files to your 'my games/path of exile' directory
-	Swap to SemperSSF.filter in the in-game UI options
+	Download the Public.filter from the github repository
+	Move the .filter file to your 'my games/path of exile' directory
+	Swap to Public.filter in the in-game UI options
 
 Editing:
 	Chancing Bases
