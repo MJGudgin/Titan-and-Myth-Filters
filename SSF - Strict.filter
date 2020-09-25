@@ -48,25 +48,6 @@
 #=================================
 #			Currency
 #=================================
-
-
-
-Show 
-	Class Currency
-	BaseType "Scroll of Wisdom"
-	AreaLevel < 70
-	AreaLevel < 70
-	SetFontSize 30
-	SetBorderColor 100 0 0 150
-
-
-
-Show
-	Class Currency
-	BaseType "Portal Scroll"
-	AreaLevel < 70
-	SetFontSize 35
-	SetBorderColor 45 180 235 140
 	
 Hide 
 	Class Currency
@@ -409,13 +390,6 @@ Show
 	SetFontSize 40
 	SetBorderColor 0 250 255 150
 	SetBackgroundColor 6 0 60
-	
-Show
-	Class Gems
-	Quality >= 5
-	SetFontSize 30
-	SetBorderColor 0 250 255 150
-	SetBackgroundColor 6 0 60
 
 Show
 	Class Gems
@@ -438,13 +412,6 @@ Show
 	BaseType "Vaal"
 	SetFontSize 40
 	SetBorderColor 255 0 0 150
-	SetBackgroundColor 6 0 60
-
-Show
-	Class Gems
-	AreaLevel <= 10
-	SetFontSize 40
-	SetBorderColor 0 250 255 150
 	SetBackgroundColor 6 0 60
 	
 #=================================
@@ -599,26 +566,12 @@ Show
 Show
 	Corrupted False
 	BaseType "Imperial Claw"
-	ItemLevel >= 86
+	ItemLevel >= 84
 	SetFontSize 80
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 225 255
 	PlayEffect White
 	MinimapIcon 2 White Triangle
-	
-#=================================
-#		Chancing Bases
-#=================================
-
-
-#Show
-#	Corrupted False
-#	Rarity Normal
-#	BaseType
-#	SetFontSize 80
-#	PlayEffect Grey
-#	MinimapIcon 2 Grey Triangle
-
 	
 #=================================
 #			Influence
@@ -1168,16 +1121,7 @@ Show
 	PlayEffect Orange
 	MinimapIcon 0 Orange Cross
 	CustomAlertSound "bell_hit.wav"
-	
-#Show
-#	LinkedSockets 5
-#	SetFontSize 45
-#	SetTextColor 229 190 66
-#	SetBorderColor 245 214 113 150
-#	SetBackgroundColor 120 120 120
-#	PlayEffect White
-#	MinimapIcon 1 White Cross
-#	CustomAlertSound "boss_stun.wav"
+
 
 #=================================
 #		Atlas Bases
@@ -1185,19 +1129,13 @@ Show
 
 Show
 	BaseType "Opal Ring" "Prismatic Ring" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Blue Pearl Amulet" "Bone Helmet" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Two-Toned Boots" "Vanguard Belt" "Stygian Vise"
-	ItemLevel >= 83
+	ItemLevel >= 84
 	SetFontSize 50
 	SetTextColor 232 203 121
 	SetBorderColor 232 203 121 150
 	PlayEffect Brown
 	CustomAlertSound "hero_unsheath.wav"
 
-Show
-	BaseType "Opal Ring" "Prismatic Ring" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Blue Pearl Amulet" "Bone Helmet" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Two-Toned Boots" "Vanguard Belt" "Stygian Vise"
-	SetFontSize 40
-	SetTextColor 232 203 121
-	SetBorderColor 232 203 121 150
-	CustomAlertSound "hero_unsheath.wav"
 	
 #=================================
 #		Specific Affix Filter
@@ -1412,452 +1350,6 @@ Show
 	PlayEffect Brown
 	MinimapIcon 1 Brown Moon
 	
-#=================================
-#			Leveling Rares
-#=================================
-
-Hide
-	Class "Ring"
-	BaseType "Breach Ring"
-
-#Show
-#	Class "Ring"
-#	BaseType "Iron Ring" "Gold Ring" "Moonstone Ring" "Paua Ring"
-#	AreaLevel > 72
-	
-#Show
-#	Class "Belt"
-#	BaseType "Chain Belt" "Rustic Sash" "Heavy Belt" "Cloth Belt" "Studded Belt"
-#	AreaLevel > 72
-
-#Show
-#	Class "Amulet"
-#	BaseType "Coral Amulet" "Paua Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Gold Amulet"
-#	AreaLevel > 72
-
-#Show
-#	Rarity Rare
-#	Class "Ring" "Amulet" "Belt"
-#	SetFontSize 35
-#	SetTextColor 235 220 50
-#	SetBorderColor 255 240 40 150
-
-Show
-	Rarity Rare
-	ItemLevel <= 12
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-
-Show
-	Rarity Rare
-	ItemLevel < 15
-	DropLevel > 5
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150	
-	
-Show
-	Rarity Rare
-	ItemLevel < 20
-	DropLevel > 10
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-	
-Show
-	Rarity Rare
-	ItemLevel < 25
-	DropLevel > 15
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-	
-Show
-	Rarity Rare
-	ItemLevel < 30
-	DropLevel > 20
-	SetFontSize 60
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-
-Show
-	Rarity Rare
-	ItemLevel < 35
-	DropLevel > 25
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-
-Show
-	Rarity Rare
-	ItemLevel < 35
-	DropLevel > 25
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-	
-Show
-	Rarity Rare
-	ItemLevel < 40
-	DropLevel > 30
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-	
-Show
-	Rarity Rare
-	ItemLevel < 45
-	DropLevel > 35
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-	
-Show
-	Rarity Rare
-	ItemLevel < 50
-	DropLevel > 40
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-
-Show
-	Rarity Rare	
-	ItemLevel < 55
-	DropLevel > 45
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-	
-Show
-	Rarity Rare	
-	ItemLevel < 60
-	DropLevel > 50
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-	
-Show
-	Rarity Rare	
-	ItemLevel < 65
-	DropLevel > 55
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-	
-#=================================
-#			Leveling Magic
-#=================================
-	
-Show
-	Rarity Magic
-	ItemLevel <= 12
-	SetFontSize 30
-	SetTextColor 20 145 210
-	SetBorderColor 20 140 210 150
-	
-Show
-	Rarity Magic
-	ItemLevel < 15
-	DropLevel > 5
-	SetFontSize 30
-	SetTextColor 20 145 210
-	SetBorderColor 20 140 210 150
-	
-Show
-	Rarity Magic
-	ItemLevel < 20
-	DropLevel > 10
-	SetFontSize 30
-	SetTextColor 20 145 210
-	SetBorderColor 20 140 210 150
-	
-Show
-	Rarity Magic
-	ItemLevel < 25
-	DropLevel > 15
-	SetFontSize 30
-	SetTextColor 20 145 210
-	SetBorderColor 20 140 210 150	
-	
-#=================================
-#			High Level Bases
-#=================================	
-
-#Armour
-Show
-	ItemLevel >= 75
-	Rarity Rare
-	BaseType "Glorious Plate" "Assassin's Garb" "Vaal Regalia" "Triumphant Lamellar" "Saintly Chainmail" "Carnal Armour" "Sacrificial Garb" "Astral Plate"
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-
-
-Show
-	ItemLevel >= 75
-	Rarity Rare
-	BaseType "Titan Greaves" "Slink Boots" "Sorcerer Boots"
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-	
-Show
-	ItemLevel >= 75
-	Rarity Rare
-	BaseType "Slink Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts"
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-
-Show
-	ItemLevel >= 75
-	Rarity Rare
-	BaseType "Eternal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Deicide Mask"
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-	
-#Weapons
-Show
-	ItemLevel >= 75
-	Rarity Rare
-	BaseType "Royal Axe" "Runic Hatchet" "Fleshripper" "Vaal Axe"
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-	
-Show
-	ItemLevel >= 75
-	Rarity Rare
-	BaseType "Maraketh Bow"
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-	
-Show
-	ItemLevel >= 75
-	Rarity Rare
-	BaseType "Gemini Claw"
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-
-Show
-	ItemLevel >= 75
-	Rarity Rare
-	BaseType ==  "Sai" "Demon Dagger"
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-	
-Show
-	ItemLevel >= 75
-	Rarity Rare
-	BaseType "Behemoth Mace" "Coronal Maul"
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-	
-Show
-	ItemLevel >= 75
-	Rarity Rare
-	BaseType "Eclipse Staff" "Judgement Staff"
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-	
-Show
-	ItemLevel >= 75
-	Rarity Rare
-	BaseType "Midnight Blade" "Tiger Hook" "Dragoon Sword" "Harpy Rapier" "Infernal Sword" "Exquisite Blade"
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-	
-Show
-	ItemLevel >= 75
-	Rarity Rare
-	BaseType "Prophecy Wand" "Profane Wand"
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-	
-Show
-	ItemLevel >= 75
-	Rarity Rare
-	BaseType "Ornate Quiver" "Spike-Point Arrow Quiver"
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-	
-#Shields
-
-Show
-	ItemLevel >= 75
-	Rarity Rare
-	BaseType "Colossal Tower Shield"
-	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
-
-
-#=================================
-#			Chaos Recipe
-#=================================
-
-# 2 Chaos Recipe
-Show
-	Class "Helmet" "Gloves" "Body Armour" "Boots" "Belt" "Ring" "Amulet"
-	Rarity Rare
-	Identified False
-	ItemLevel >= 60
-	ItemLevel <= 74
-	SetFontSize 30
-	SetTextColor 235 220 50
-	SetBackgroundColor 154 158 70 140
-	SetBorderColor 255 255 255 140
-	MinimapIcon 2 Yellow Triangle
-
-Show
-	Class "Wand" "Mace" "Dagger" "Sword"
-	Rarity Rare
-	Identified False
-	ItemLevel >= 60
-	ItemLevel <= 74
-	Width <= 1
-	Height <= 3
-	SetFontSize 30
-	SetTextColor 235 220 50
-	SetBackgroundColor 154 158 70 140
-	SetBorderColor 255 255 255 140
-	MinimapIcon 2 Yellow Triangle
-	
-# 1 Chaos Recipe
-#Show
-#	Rarity Rare
-#	Identified True
-#	ItemLevel >= 60
-#	ItemLevel <= 74
-#	SetFontSize 35
-#	SetTextColor 235 220 50
-#	SetBorderColor 255 240 40 150
-
-# 2 Chaos Recipe UNCAPPED (USE AT YOUR OWN RISK)
-#Show
-#	Rarity Rare
-#	Identified False
-#	ItemLevel >= 60
-#	SetFontSize 30
-#	SetTextColor 235 220 50
-#	SetBackgroundColor 154 158 70 140
-#	SetBorderColor 255 255 255 140
-#	MinimapIcon 2 Yellow Triangle
-
-#=================================
-#			Regal Recipe
-#=================================
-
-# 2 Regal Recipe
-#Show
-#	Rarity Rare
-#	Identified False
-#	ItemLevel >= 75
-#	ItemLevel <= 100
-#	SetFontSize 30
-#	SetTextColor 235 220 50
-#	SetBackgroundColor 68 138 173 140
-#	SetBorderColor 255 255 255 140
-#	MinimapIcon 2 Blue Triangle
-	
-# 1 Regal Recipe
-#Show
-#	Rarity Rare
-#	Identified True
-#	ItemLevel >= 75
-#	ItemLevel <= 100
-#	SetFontSize 35
-#	SetTextColor 235 220 50
-#	SetBorderColor 255 240 40 150
-
-#=================================
-#			Links
-#=================================
-	
-# Show
-	# LinkedSockets >= 4
-	# AreaLevel <= 30
-	# SetFontSize 60
-	# SetTextColor 255 255 255
-	# SetBorderColor 255 255 255 150
-	# PlayEffect White Temp
-	
-#=================================
-#			Flasks
-#=================================
-
-Show
-	Class "Life Flasks"
-	AreaLevel < 65
-	SetFontSize 35
-	SetTextColor 150 255 255
-	SetBorderColor 200 255 255 150
-
-Show
-	Class "Mana Flask"
-	AreaLevel < 65
-	SetFontSize 30
-	SetTextColor 150 255 255
-	SetBorderColor 200 255 255 150
-	
-
-Show
-	AreaLevel < 75
-	BaseType "Basalt Flask" "Bismuth Flask" "Diamond Flask" "Granite Flask" "Jade Flask" "Quicksilver Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Stibnite Flask" "Topaz Flask"
-	SetFontSize 30
-	SetTextColor 150 255 255
-	SetBorderColor 200 255 255 150	
-	
-#=================================
-#			Vendor Recipe
-#=================================
-
-Show
-	BaseType "Stone Hammer" "Rock Breaker" "Gavel"
-	Quality >= 20
-	SetFontSize 40
-	SetTextColor 245 225 160
-	SetBorderColor 245 225 160
-	PlayEffect White Temp
-
-#=================================
-#		Chromatic Recipe/sockets
-#=================================
-
-Show
-	Width <= 2
-	Height <= 2
-	SocketGroup RGB
-	SetFontSize 36
-	SetTextColor 255 255 255
-	SetBorderColor 0 255 255 150
-	
-Show
-	Width <= 1
-	Height <= 3
-	SocketGroup RGB
-	SetFontSize 36
-	SetTextColor 255 255 255
-	SetBorderColor 0 255 255 150
-	
-Show
-	Sockets 6
-	Rarity <= Rare
-	SetFontSize 45
-	SetTextColor 255 255 255
-	SetBorderColor 255 255 255 150
-	PlayEffect White Temp
-
 #=================================
 #		Hide Catch-All
 #=================================
