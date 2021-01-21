@@ -672,28 +672,28 @@ Show
 #		Crafting Bases
 #=================================
 
-Show
-	Corrupted False
-	BaseType "Imperial Claw"
-	ItemLevel >= 86
-	SetFontSize 80
-	SetTextColor 255 255 255 255
-	SetBorderColor 255 255 225 255
-	PlayEffect White
-	MinimapIcon 2 White Triangle
+#Show
+#	Corrupted False
+#	BaseType "Imperial Claw"
+#	ItemLevel >= 86
+#	SetFontSize 80
+#	SetTextColor 255 255 255 255
+#	SetBorderColor 255 255 225 255
+#	PlayEffect White
+#	MinimapIcon 2 White Triangle
 	
 #=================================
 #		Chancing Bases
 #=================================
 
 
-Show
-	Corrupted False
-	Rarity Normal
-	BaseType "Short Bow"
-	SetFontSize 80
-	PlayEffect Grey
-	MinimapIcon 2 Grey Triangle
+#Show
+#	Corrupted False
+#	Rarity Normal
+#	BaseType "Short Bow"
+#	SetFontSize 80
+#	PlayEffect Grey
+#	MinimapIcon 2 Grey Triangle
 
 	
 #=================================
