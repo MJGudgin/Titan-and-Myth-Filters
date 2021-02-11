@@ -170,7 +170,7 @@ Show
 #Rare Currency
 Show
 	Class Currency
-	BaseType "Exalted Orb" "Mirror Shard" "Mirror of Kalandra"
+	BaseType "Exalted Orb" "Exalted Shard" "Mirror Shard" "Mirror of Kalandra"
 	SetFontSize 50
 	SetTextColor 40 40 40
 	SetBorderColor 40 40 40 150
@@ -762,7 +762,7 @@ Show
 	
 Show
 	Class Currency
-	BaseType "Orb of Binding" "Binding Shard" "Engineer's Orb" "Engineer's Shard" "Annulment Shard" "Transmutation Shard" "Chaos Shard" "Regal Shard" "Alchemy Shard" "Alteration Shard" "Exalted Shard"
+	BaseType "Orb of Binding" "Binding Shard" "Engineer's Orb" "Engineer's Shard" "Annulment Shard" "Transmutation Shard" "Chaos Shard" "Regal Shard" "Alchemy Shard" "Alteration Shard" 
 	SetFontSize 35
 	SetTextColor 30 180 255
 	SetBorderColor 30 180 255 150
@@ -898,7 +898,16 @@ Show
 	
 Show
 	Class Currency
-	BaseType "Blessing of Xoph" "Xoph's Breachstone" "Xoph's Charged Breachstone" "Xoph's Enriched Breachstone" "Xoph's Pure Breachstone"
+	BaseType "Blessing of Xoph"
+	SetFontSize 45
+	SetTextColor 185 0 255 255
+	SetBorderColor 185 0 255 150
+	PlayEffect White
+	MinimapIcon 1 Red Kite
+	
+Show
+	Class "Map Fragments"
+	BaseType "Xoph's Breachstone" "Xoph's Charged Breachstone" "Xoph's Enriched Breachstone" "Xoph's Pure Breachstone"
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
@@ -907,7 +916,16 @@ Show
 	
 Show
 	Class Currency
-	BaseType "Blessing of Esh" "Esh's Breachstone" "Esh's Charged Breachstone" "Esh's Enriched Breachstone" "Chayula's Pure Breachstone"
+	BaseType "Blessing of Esh"
+	SetFontSize 45
+	SetTextColor 185 0 255 255
+	SetBorderColor 185 0 255 150
+	PlayEffect White
+	MinimapIcon 1 Blue Kite
+
+Show
+	Class "Map Fragments"
+	BaseType "Esh's Breachstone" "Esh's Charged Breachstone" "Esh's Enriched Breachstone" "Chayula's Pure Breachstone"
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
@@ -916,7 +934,16 @@ Show
 
 Show
 	Class Currency
-	BaseType "Blessing of Tul" "Tul's Breachstone" "Tul's Charged Breachstone" "Tul's Enriched Breachstone" "Tul's Pure Breachstone"
+	BaseType "Blessing of Tul"
+	SetFontSize 45
+	SetTextColor 185 0 255 255
+	SetBorderColor 185 0 255 150
+	PlayEffect White
+	MinimapIcon 1 White Kite
+	
+Show
+	Class "Map Fragments"
+	BaseType "Tul's Breachstone" "Tul's Charged Breachstone" "Tul's Enriched Breachstone" "Tul's Pure Breachstone"
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
@@ -925,7 +952,16 @@ Show
 	
 Show
 	Class Currency
-	BaseType "Blessing of Uul-Netol" "Uul-Netol's Breachstone" "Uul-Netol's Charged Breachstone" "Uul-Netol's Enriched Breachstone" "Uul-Netol's Pure Breachstone"
+	BaseType "Blessing of Uul-Netol"
+	SetFontSize 45
+	SetTextColor 185 0 255 255
+	SetBorderColor 185 0 255 150
+	PlayEffect White
+	MinimapIcon 1 Grey Kite
+	
+Show
+	Class "Map Fragments"
+	BaseType "Uul-Netol's Breachstone" "Uul-Netol's Charged Breachstone" "Uul-Netol's Enriched Breachstone" "Uul-Netol's Pure Breachstone"
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
@@ -934,12 +970,22 @@ Show
 	
 Show
 	Class Currency
-	BaseType "Blessing of Chayula" "Chayula's Breachstone" "Chayula's Charged Breachstone" "Chayula's Enriched Breachstone" "Chayula's Pure Breachstone"
+	BaseType "Blessing of Chayula"
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
 	PlayEffect White
 	MinimapIcon 1 Purple Kite
+	
+Show
+	Class "Map Fragments"
+	BaseType "Chayula's Breachstone" "Chayula's Charged Breachstone" "Chayula's Enriched Breachstone" "Chayula's Pure Breachstone"
+	SetFontSize 45
+	SetTextColor 185 0 255 255
+	SetBorderColor 185 0 255 150
+	PlayEffect White
+	MinimapIcon 1 Purple Kite
+
 
 #=================================
 #			Legion
@@ -986,7 +1032,7 @@ Show
 	MinimapIcon 2 Yellow Kite
 	
 Show
-	Class Currency
+	Class "Map Fragments"
 	BaseType "Timeless Vaal Emblem" "Timeless Templar Emblem" "Timeless Karui Emblem" "Timeless Eternal Emblem" "Timeless Maraketh Emblem"
 	SetFontSize 50
 	SetTextColor 185 0 255 255
@@ -1619,29 +1665,29 @@ Show
 #		Chromatic Recipe/sockets
 #=================================
 
-Show
-	Width <= 2
-	Height <= 2
-	SocketGroup RGB
-	SetFontSize 36
-	SetTextColor 255 255 255
-	SetBorderColor 0 255 255 150
+#Show
+#	Width <= 2
+#	Height <= 2
+#	SocketGroup RGB
+#	SetFontSize 36
+#	SetTextColor 255 255 255
+#	SetBorderColor 0 255 255 150
 	
-Show
-	Width <= 1
-	Height <= 3
-	SocketGroup RGB
-	SetFontSize 36
-	SetTextColor 255 255 255
-	SetBorderColor 0 255 255 150
+#Show
+#	Width <= 1
+#	Height <= 3
+#	SocketGroup RGB
+#	SetFontSize 36
+#	SetTextColor 255 255 255
+#	SetBorderColor 0 255 255 150
 	
-Show
-	Sockets 6
-	Rarity <= Rare
-	SetFontSize 45
-	SetTextColor 255 255 255
-	SetBorderColor 255 255 255 150
-	PlayEffect White Temp
+#Show
+#	Sockets 6
+#	Rarity <= Rare
+#	SetFontSize 45
+#	SetTextColor 255 255 255
+#	SetBorderColor 255 255 255 150
+#	PlayEffect White Temp
 
 	
 #=================================

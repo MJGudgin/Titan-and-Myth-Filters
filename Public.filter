@@ -101,10 +101,20 @@ Show
 	SetBorderColor 60 195 255 150
 	SetBackgroundColor 30 30 30
 	
+Show
+	Class Currency
+	BaseType "Orb of Alteration"
+	SetFontSize 40
+	SetTextColor 60 195 255
+	SetBorderColor 60 195 255 150
+	SetBackgroundColor 30 30 30
+	PlayEffect Blue
+	MinimapIcon 2 Blue Circle
+
 #Rare Item Currency
 Show
 	Class Currency
-	BaseType "Orb of Alteration" "Orb of Alchemy" "Regal Orb" "Chaos Orb"
+	BaseType "Orb of Alchemy" "Regal Orb" "Chaos Orb"
 	SetFontSize 40
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
@@ -170,7 +180,7 @@ Show
 #Rare Currency
 Show
 	Class Currency
-	BaseType "Exalted Orb" "Mirror Shard" "Mirror of Kalandra"
+	BaseType "Exalted Orb" "Exalted Shard" "Mirror Shard" "Mirror of Kalandra"
 	SetFontSize 50
 	SetTextColor 40 40 40
 	SetBorderColor 40 40 40 150
@@ -280,7 +290,7 @@ Show
 #T1
 Show
 	Class "Divination"
-	BaseType "Divine Justice" "Heterochromia" "The Throne" "Blessing of God" "Buried Treasure" "Friendship" "Hunter's Reward" "Void of the Elements" "Left to Fate" "The Price of Loyalty" "The Professor" "The Sacrifice" "Underground Forest" "Alone in the Darkness"  "The Bargain" "The Chosen" "The Escape" "The Jeweller's Boon" "The Primordial" "The Rite of Elements" "The Undaunted" "Boon of the First Ones" "Bowyer's Dream" "The Bones" "The Celestial Justicar" "The Dapper Prodigy" "The Dark Mage" "The Dreamer" "The Enlightened" "The Porcupine" "The Warlord" "Deathly Designs" "Emperor of Purity" "More is Never Enough" "Pride of the First Ones" "The Ethereal" "The Obscured" "The Sword King's Salute" "The Wilted Rose" "The Wind" "Arrogance of the Vaal" "Pride Before the Fall" "Remembrance" "The Cacophony" "The Eye of Terror" "The King's Heart" "The Offering" "The Valkyrie" "The Wolven King's Bite" "The World Eater" "Azyran's Reward" "Etched in Blood" "Harmony of Souls" "Humility" "The Endless Dark" "The Iron Bard" "The Pact" "Vanity" "Volatile Power" "The Celestial Stone" "The Last One Standing" "Time-Lost Relic" "The Artist" "The Chains that Bind" "The Sephirot" "The Hoarder" "The Cataclysm" "Rebirth" "Council of Cats" "The Tumbleweed" "The Hive of Knowledge" "Gift of Asenath" "A Note in the Wind" "The Sustenance" "The Awakened" "A Familiar Call" "The Long Con" "The Bitter Blossom" "Fateful Meeting"
+	BaseType "Divine Justice" "Heterochromia" "The Throne" "Blessing of God" "Buried Treasure" "Friendship" "Hunter's Reward" "Void of the Elements" "Left to Fate" "The Price of Loyalty" "The Professor" "The Sacrifice" "Underground Forest" "Alone in the Darkness"  "The Bargain" "The Chosen" "The Escape" "The Jeweller's Boon" "The Primordial" "The Rite of Elements" "The Undaunted" "Boon of the First Ones" "Bowyer's Dream" "The Bones" "The Celestial Justicar" "The Dapper Prodigy" "The Dark Mage" "The Dreamer" "The Enlightened" "The Porcupine" "The Warlord" "Deathly Designs" "Emperor of Purity" "More is Never Enough" "Pride of the First Ones" "The Ethereal" "The Obscured" "The Wilted Rose" "The Wind" "Arrogance of the Vaal" "Pride Before the Fall" "Remembrance" "The Cacophony" "The Eye of Terror" "The King's Heart" "The Offering" "The Valkyrie" "The Wolven King's Bite" "The World Eater" "Azyran's Reward" "Etched in Blood" "Harmony of Souls" "Humility" "The Endless Dark" "The Iron Bard" "The Pact" "Vanity" "Volatile Power" "The Celestial Stone" "The Last One Standing" "Time-Lost Relic" "The Artist" "The Chains that Bind" "The Sephirot" "The Hoarder" "The Cataclysm" "Rebirth" "Council of Cats" "The Tumbleweed" "The Hive of Knowledge" "Gift of Asenath" "A Note in the Wind" "The Sustenance" "The Awakened" "A Familiar Call" "The Long Con" "The Bitter Blossom" "Fateful Meeting"
 	SetFontSize 40
 	SetTextColor 0 0 0
 	SetBorderColor 0 255 220 150
@@ -291,7 +301,7 @@ Show
 #T2
 Show
 	Class "Divination"
-	BaseType "Chaotic Disposition" "The Cartographer" "The Void" "Cameria's Cut" "The Heroic Shot" "Monochrome" "The Gemcutter" "The Journey" "The Survivalist" "Forbidden Power" "The Body" "The Breach" "The Fool" "The Hale Heart" "The Messenger" "The Stormcaller" "The Wolf's Legacy" "Audacity" "Earth Drinker" "Hope" "Perfection" "Squandered Prosperity" "The Landing" "The Lion" "The Mayor" "The Puzzle" "The Realm" "The Side Quest" "The Wolf" "Vinia's Token" "Boon of Justice" "The Deal" "The Penitent" "Burning Blood" "The Beast" "The Calling" "The Damned" "The Fox" "The Inventor" "The Life Thief" "The Oath" "The One With All" "The Pack Leader" "The Skeleton" "The Summoner" "The Twilight Moon" "The Wretched" "Blind Venture" "Demigod's Wager" "Dialla's Subjugation" "Lucky Connections" "Scholar of the Seas" "The Formless Sea" "The Trial" "The Union" "Treasure Hunter" "The Aesthete" "The Dreamland" "The Encroaching Darkness" "The Scavenger" "The Undisputed" "The Wrath" "A Dab of Ink" "Coveted Possession" "Gift of the Gemling Queen" "Lucky Deck" "No Traces" "The Admirer" "The Betrayal" "The Hunger" "The Poet" "The Seeker" "The Valley of Steel Boxes" "The Innocent" "Lingering Remnants" "Imperial Legacy" "The Tinkerer's Table" "Prometheus' Armoury" "The Academic" "Unchained" "The Unexpected Prize" "Cursed Words" "Acclimatisation" "Haunting Shadows" "The Whiteout" "Society's Remorse" "Dying Light" "The Astromancer" "Keeper's Corruption" "Reckless Ambition" "Love Through Ice" "Draped in Dreams" "The Patient" "The Long Watch" "The Bear Woman" "Brotherhood in Exile"
+	BaseType "Chaotic Disposition" "The Cartographer" "The Void" "Cameria's Cut" "The Heroic Shot" "Monochrome" "The Gemcutter" "The Journey" "The Survivalist" "Forbidden Power" "The Body" "The Breach" "The Fool" "The Hale Heart" "The Messenger" "The Stormcaller" "The Wolf's Legacy" "Audacity" "Earth Drinker" "Hope" "Perfection" "Squandered Prosperity" "The Landing" "The Lion" "The Mayor" "The Puzzle" "The Realm" "The Side Quest" "The Wolf" "Vinia's Token" "Boon of Justice" "The Deal" "The Penitent" "Burning Blood" "The Beast" "The Calling" "The Damned" "The Fox" "The Inventor" "The Life Thief" "The Oath" "The One With All" "The Pack Leader" "The Skeleton" "The Summoner" "The Twilight Moon" "The Wretched" "Blind Venture" "Demigod's Wager" "Dialla's Subjugation" "Lucky Connections" "Scholar of the Seas" "The Formless Sea" "The Trial" "The Union" "Treasure Hunter" "The Aesthete" "The Dreamland" "The Encroaching Darkness" "The Scavenger" "The Undisputed" "The Wrath" "A Dab of Ink" "Coveted Possession" "Gift of the Gemling Queen" "Lucky Deck" "No Traces" "The Admirer" "The Betrayal" "The Hunger" "The Poet" "The Seeker" "The Valley of Steel Boxes" "The Innocent" "Lingering Remnants" "Imperial Legacy" "The Tinkerer's Table" "Prometheus' Armoury" "The Academic" "Unchained" "The Unexpected Prize" "Cursed Words" "Acclimatisation" "Haunting Shadows" "The Whiteout" "Society's Remorse" "Dying Light" "The Astromancer" "Keeper's Corruption" "Reckless Ambition" "Love Through Ice" "Draped in Dreams" "The Patient" "The Long Watch" "The Bear Woman" "Brotherhood in Exile" "The Sword King's Salute"
 	SetFontSize 40
 	SetTextColor 0 255 210 255
 	SetBorderColor 0 250 255 150
@@ -485,7 +495,7 @@ Show
 Show
 	Class Currency
 	BaseType "Rogue's Marker"
-	SetFontSize 35
+	SetFontSize 40
 	SetBorderColor 215 50 25 150
 	SetTextColor 215 50 25
 	
@@ -510,7 +520,7 @@ Show
 	
 Show
 	Class "Contract"
-	SetFontSize 40
+	SetFontSize 45
 	SetBorderColor 180 70 15 150
 	SetTextColor 180 70 15
 	PlayEffect Brown
@@ -518,14 +528,14 @@ Show
 	
 Show
 	Class "Blueprint"
-	SetFontSize 40
+	SetFontSize 45
 	SetBorderColor 40 110 150 150
 	SetTextColor 40 110 150
 	MinimapIcon 1 Blue Square
 	
 Show
 	Class "Heist Cloak" "Heist Brooch" "Heist Tool" "Heist Gear"
-	SetFontSize 35
+	SetFontSize 40
 	SetBorderColor 140 70 30 150
 	SetTextColor 140 70 30
 	PlayEffect Brown
@@ -672,15 +682,15 @@ Show
 #		Crafting Bases
 #=================================
 
-Show
-	Corrupted False
-	BaseType "Imperial Claw"
-	ItemLevel >= 86
-	SetFontSize 80
-	SetTextColor 255 255 255 255
-	SetBorderColor 255 255 225 255
-	PlayEffect White
-	MinimapIcon 2 White Triangle
+#Show
+#	Corrupted False
+#	BaseType "Imperial Claw"
+#	ItemLevel >= 86
+#	SetFontSize 80
+#	SetTextColor 255 255 255 255
+#	SetBorderColor 255 255 225 255
+#	PlayEffect White
+#	MinimapIcon 2 White Triangle
 	
 #=================================
 #		Chancing Bases
@@ -689,8 +699,9 @@ Show
 
 Show
 	Corrupted False
-	Rarity Normal
-	BaseType "Short Bow"
+	ItemLevel >= 83
+#	Rarity Normal
+	BaseType "Harbinger Bow"
 	SetFontSize 80
 	PlayEffect Grey
 	MinimapIcon 2 Grey Triangle
@@ -762,7 +773,7 @@ Show
 	
 Show
 	Class Currency
-	BaseType "Orb of Binding" "Binding Shard" "Engineer's Orb" "Engineer's Shard" "Annulment Shard" "Transmutation Shard" "Chaos Shard" "Regal Shard" "Alchemy Shard" "Alteration Shard" "Exalted Shard"
+	BaseType "Orb of Binding" "Binding Shard" "Engineer's Orb" "Engineer's Shard" "Annulment Shard" "Transmutation Shard" "Chaos Shard" "Regal Shard" "Alchemy Shard" "Alteration Shard" 
 	SetFontSize 35
 	SetTextColor 30 180 255
 	SetBorderColor 30 180 255 150
@@ -898,7 +909,16 @@ Show
 	
 Show
 	Class Currency
-	BaseType "Blessing of Xoph" "Xoph's Breachstone" "Xoph's Charged Breachstone" "Xoph's Enriched Breachstone" "Xoph's Pure Breachstone"
+	BaseType "Blessing of Xoph"
+	SetFontSize 45
+	SetTextColor 185 0 255 255
+	SetBorderColor 185 0 255 150
+	PlayEffect White
+	MinimapIcon 1 Red Kite
+	
+Show
+	Class "Map Fragments"
+	BaseType "Xoph's Breachstone" "Xoph's Charged Breachstone" "Xoph's Enriched Breachstone" "Xoph's Pure Breachstone"
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
@@ -907,7 +927,16 @@ Show
 	
 Show
 	Class Currency
-	BaseType "Blessing of Esh" "Esh's Breachstone" "Esh's Charged Breachstone" "Esh's Enriched Breachstone" "Chayula's Pure Breachstone"
+	BaseType "Blessing of Esh"
+	SetFontSize 45
+	SetTextColor 185 0 255 255
+	SetBorderColor 185 0 255 150
+	PlayEffect White
+	MinimapIcon 1 Blue Kite
+
+Show
+	Class "Map Fragments"
+	BaseType "Esh's Breachstone" "Esh's Charged Breachstone" "Esh's Enriched Breachstone" "Chayula's Pure Breachstone"
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
@@ -916,7 +945,16 @@ Show
 
 Show
 	Class Currency
-	BaseType "Blessing of Tul" "Tul's Breachstone" "Tul's Charged Breachstone" "Tul's Enriched Breachstone" "Tul's Pure Breachstone"
+	BaseType "Blessing of Tul"
+	SetFontSize 45
+	SetTextColor 185 0 255 255
+	SetBorderColor 185 0 255 150
+	PlayEffect White
+	MinimapIcon 1 White Kite
+	
+Show
+	Class "Map Fragments"
+	BaseType "Tul's Breachstone" "Tul's Charged Breachstone" "Tul's Enriched Breachstone" "Tul's Pure Breachstone"
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
@@ -925,7 +963,16 @@ Show
 	
 Show
 	Class Currency
-	BaseType "Blessing of Uul-Netol" "Uul-Netol's Breachstone" "Uul-Netol's Charged Breachstone" "Uul-Netol's Enriched Breachstone" "Uul-Netol's Pure Breachstone"
+	BaseType "Blessing of Uul-Netol"
+	SetFontSize 45
+	SetTextColor 185 0 255 255
+	SetBorderColor 185 0 255 150
+	PlayEffect White
+	MinimapIcon 1 Grey Kite
+	
+Show
+	Class "Map Fragments"
+	BaseType "Uul-Netol's Breachstone" "Uul-Netol's Charged Breachstone" "Uul-Netol's Enriched Breachstone" "Uul-Netol's Pure Breachstone"
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
@@ -934,12 +981,22 @@ Show
 	
 Show
 	Class Currency
-	BaseType "Blessing of Chayula" "Chayula's Breachstone" "Chayula's Charged Breachstone" "Chayula's Enriched Breachstone" "Chayula's Pure Breachstone"
+	BaseType "Blessing of Chayula"
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
 	PlayEffect White
 	MinimapIcon 1 Purple Kite
+	
+Show
+	Class "Map Fragments"
+	BaseType "Chayula's Breachstone" "Chayula's Charged Breachstone" "Chayula's Enriched Breachstone" "Chayula's Pure Breachstone"
+	SetFontSize 45
+	SetTextColor 185 0 255 255
+	SetBorderColor 185 0 255 150
+	PlayEffect White
+	MinimapIcon 1 Purple Kite
+
 
 #=================================
 #			Legion
@@ -986,7 +1043,7 @@ Show
 	MinimapIcon 2 Yellow Kite
 	
 Show
-	Class Currency
+	Class "Map Fragments"
 	BaseType "Timeless Vaal Emblem" "Timeless Templar Emblem" "Timeless Karui Emblem" "Timeless Eternal Emblem" "Timeless Maraketh Emblem"
 	SetFontSize 50
 	SetTextColor 185 0 255 255
@@ -1215,14 +1272,14 @@ Show
 	PlayEffect Orange
 	MinimapIcon 0 Orange Cross
 	
-#Show
-#	LinkedSockets 5
-#	SetFontSize 45
-#	SetTextColor 229 190 66
-#	SetBorderColor 245 214 113 150
-#	SetBackgroundColor 120 120 120
-#	PlayEffect White
-#	MinimapIcon 1 White Cross
+Show
+	LinkedSockets 5
+	SetFontSize 45
+	SetTextColor 229 190 66
+	SetBorderColor 245 214 113 150
+	SetBackgroundColor 120 120 120
+	PlayEffect White
+	MinimapIcon 1 White Cross
 
 #=================================
 #		Atlas Bases
@@ -1332,7 +1389,7 @@ Show
 Show
 	ItemLevel >= 75
 	Rarity Rare
-	BaseType "Midnight Blade" "Tiger Hook" "Dragoon Sword" "Harpy Rapier" "Infernal Sword" "Exquisite Blade"
+	BaseType "Midnight Blade" "Tiger Hook" "Dragoon Sword" "Harpy Rapier" "Infernal Sword" "Exquisite Blade" "Legion Sword"
 	SetFontSize 35
 	SetTextColor 235 220 50
 	SetBorderColor 255 240 40 150
@@ -1358,7 +1415,7 @@ Show
 Show
 	ItemLevel >= 75
 	Rarity Rare
-	BaseType "Colossal Tower Shield"
+	BaseType "Ezomyte Tower Shield" "Colossal Tower Shield"
 	SetFontSize 35
 	SetTextColor 235 220 50
 	SetBorderColor 255 240 40 150
@@ -1896,13 +1953,13 @@ Show
 #			Links
 #=================================
 	
- #Show
-#	 LinkedSockets >= 4
-#	 AreaLevel <= 30
-#	 SetFontSize 60
-#	 SetTextColor 255 255 255
-#	 SetBorderColor 255 255 255 150
-#	 PlayEffect White Temp
+Show
+	 LinkedSockets >= 4
+	 AreaLevel <= 30
+	 SetFontSize 60
+	 SetTextColor 255 255 255
+	 SetBorderColor 255 255 255 150
+	 PlayEffect White Temp
 	
 
 #=================================
