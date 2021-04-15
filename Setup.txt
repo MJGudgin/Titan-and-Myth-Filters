@@ -1,22 +1,35 @@
-#=================================
-#	Sempervivum SSF Filter v1.0
-#			3/12/20
-#=================================
+#===================================================#
+#	Sempervivum SSF Filter v1.3.14		    #
+#			3/12/20			    #
+#===================================================#
 
 Setup:
-	Download the Public.filter from the github repository
+	Download the SSF.filter from the github repository
 	Move the .filter file to your 'my games/path of exile' directory
-	Swap to Public.filter in the in-game UI options
+	Swap to SSF.filter in the in-game UI options
 
 Editing:
+	Crafting Bases
+		Remove the #'s at the start of lines 701-709 and add the bases you're looking for in quotation marks  				after 'BaseType' and the change the ItemLevel line to the minimum item level. 
+
+		For example: 
+				BaseType "Mesh Gloves" 
+				ItemLevel >= 86
+
 	Chancing Bases
-		Uncomment Chancing Bases section and add the bases you're looking for after 'BaseType' - Lines 557-567
+		Remove the #'s at the start of lines 715-721 and add the bases you're looking for in quotation marks  				after 'BaseType'.
+
+		For example: 
+				BaseType "Mesh Gloves" 
 
 	Unique Highlighting
-		Uncomment Uniques section and add the bases you're looking for after 'BaseType' - Lines 805-815
+		Remove the #'s at the start of lines 1205-1212 and the bases you're looking for in quotation marks  				after 'BaseType'.
+
+		For example: 
+				BaseType "Mesh Gloves" 
 
 	Chaos Recipe
-		Chaos Recipe can be toggled on by changing line 1451 to Show instead of Hide
+		Chaos Recipe can be toggled on by removing the #'s at the start of lines 1955 through 1990
 	
 	
 This filter is rather simple and should easy enough to tweak to your preferences.

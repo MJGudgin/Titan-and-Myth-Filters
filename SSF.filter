@@ -1,7 +1,7 @@
-#=================================
-#	Sempervivum SSF Filter v1.6
-#			1/13/21
-#=================================
+#====================================#
+#	Sempervivum SSF Filter v1.3.14	 #
+#			1/13/21					 #
+#====================================#
 
 #=================================
 #		Table of Contents
@@ -712,14 +712,13 @@ Show
 #		Chancing Bases
 #=================================
 
-
-Show
-	Corrupted False
-	Rarity Normal
-	BaseType "Jingling Spirit Shield"
-	SetFontSize 80
-	PlayEffect Grey
-	MinimapIcon 2 Grey Triangle
+#Show
+#	Corrupted False
+#	Rarity Normal
+#	BaseType
+#	SetFontSize 80
+#	PlayEffect Grey
+#	MinimapIcon 2 Grey Triangle
 
 	
 #=================================
@@ -1204,7 +1203,7 @@ Show
 	
 
 #Show
-#	BaseType "Mesh Gloves"
+#	BaseType
 #	Rarity = Unique
 #	SetFontSize 50
 #	SetTextColor 250 142 27
