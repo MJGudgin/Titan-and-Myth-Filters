@@ -45,12 +45,22 @@
 # Vendor Recipe
 # Hide Catch-All
 
+#=================================
+#			Override
+#=================================
+
+Show
+	BaseType "Diamond Flask" "Silver Flask"
+	SetFontSize 55
+	SetTextColor 150 255 255
+	SetBorderColor 200 255 255 150	
+	PlayEffect White
+	MinimapIcon 0 White Circle
+	CustomAlertSound "hero_unsheath.wav"
 
 #=================================
 #			Currency
 #=================================
-
-
 
 Show 
 	Class Currency
@@ -114,7 +124,7 @@ Show
 #Rare Item Currency
 Show
 	Class Currency
-	BaseType "Orb of Alchemy" "Regal Orb" "Chaos Orb"
+	BaseType "Orb of Alchemy" "Regal Orb" "Chaos Orb" "Veiled Chaos Orb"
 	SetFontSize 40
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
@@ -288,7 +298,7 @@ Show
 #T0
 Show
 	Class "Divination"
-	BaseType "The Polymath" "The Samurai's Eye" "Abandoned Wealth" "Beauty Through Death" "Immortal Resolve" "Succor of the Sinless" "Alluring Bounty" "The Doctor" "The Nurse" "House of Mirrors" "The Demon" "The Immortal" "The Saint's Treasure" "The Dragon's Heart" "The Fiend" "Wealth and Power" "Seven Years Bad Luck" "The Cheater" "The Strategist" "The Progeny of Lunaris" "The Eldritch Decay" "The Greatest Intentions" "The White Knight" "Peaceful Moments" "The Gulf" "Triskaidekaphobia" "Unrequited Love" "Desecrated Virtue" "Brother's Stash"
+	BaseType "The Polymath" "The Samurai's Eye" "Abandoned Wealth" "Beauty Through Death" "Immortal Resolve" "Succor of the Sinless" "Alluring Bounty" "The Doctor" "The Nurse" "House of Mirrors" "The Demon" "The Immortal" "The Saint's Treasure" "The Dragon's Heart" "The Fiend" "Wealth and Power" "Seven Years Bad Luck" "The Cheater" "The Strategist" "The Progeny of Lunaris" "The Eldritch Decay" "The Greatest Intentions" "The White Knight" "Peaceful Moments" "The Gulf" "Triskaidekaphobia" "Unrequited Love" "Desecrated Virtue" "Brother's Stash" "Winter's Embrace" "Sombodhi's Wisdom" "The Enthusiasts" "Broken Promises" "Brush, Paint and Palette" "Deadly Joy" "The Adventuring Spirit" "The Eternal War" "Prejudice" "The Shortcut" "The Card Sharp" "A Modest Request" "Luminous Trove" "The Hook"
 	SetFontSize 50
 	SetTextColor 0 0 0
 	SetBorderColor 0 255 210 255
@@ -510,6 +520,8 @@ Show
 	SetFontSize 40
 	SetBorderColor 215 50 25 150
 	SetTextColor 215 50 25
+	PlayEffect Red
+	MinimapIcon 2 Red Circle
 	
 Show
 	Class Currency
@@ -568,16 +580,6 @@ Show
 	SetBackgroundColor 30 30 30
 	PlayEffect Orange
 	MinimapIcon 2 Orange Circle
-
-Show
-	Class "Map Fragments"
-	BaseType "Winged Cartography Scarab" "Winged Reliquary Scarab" "Winged Bestiary Scarab" "Winged Shaper Scarab" "Winged Elder Scarab" "Winged Sulphite Scarab" "Winged Divination Scarab"	"Winged Torment Scarab" "Winged Ambush Scarab" "Winged Harbinger Scarab" "Winged Perandus Scarab" "Winged Breach Scarab" "Winged Legion Scarab" "Winged Metamorph Scarab"
-	SetBorderColor 0 255 220 150
-	SetTextColor 255 175 0 
-	SetFontSize 50
-	PlayEffect Blue
-	MinimapIcon 1 Blue Pentagon
-	CustomAlertSound "dream_orb_pickup.wav"
 	
 Show
 	BaseType "Tribute to the Goddess" "Gift to the Goddess" "Dedication to the Goddess"
@@ -713,9 +715,8 @@ Show
 
 Show
 	Corrupted False
-	ItemLevel >= 83
-#	Rarity Normal
-	BaseType "Harbinger Bow"
+	Rarity Normal
+	BaseType "Jingling Spirit Shield"
 	SetFontSize 80
 	PlayEffect Grey
 	MinimapIcon 2 Grey Triangle
@@ -846,7 +847,17 @@ Show
 
 Show
 	Class "Map Fragments"
-	BaseType "Gilded Bestiary Scarab" "Gilded Cartography Scarab" "Gilded Legion Scarab" "Gilded Sulphite Scarab" "Gilded Metamorph Scarab"
+	BaseType "Winged Cartography Scarab" "Winged Reliquary Scarab" "Winged Bestiary Scarab" "Winged Shaper Scarab" "Winged Elder Scarab" "Winged Sulphite Scarab" "Winged Divination Scarab"	"Winged Torment Scarab" "Winged Ambush Scarab" "Winged Harbinger Scarab" "Winged Perandus Scarab" "Winged Breach Scarab" "Winged Legion Scarab" "Winged Metamorph Scarab" "Winged Blight Scarab" "Winged Abyss Scarab"
+	SetBorderColor 0 255 220 150
+	SetTextColor 255 175 0 
+	SetFontSize 50
+	PlayEffect Blue
+	MinimapIcon 1 Blue Pentagon
+	CustomAlertSound "dream_orb_pickup.wav"
+
+Show
+	Class "Map Fragments"
+	BaseType "Gilded Bestiary Scarab" "Gilded Cartography Scarab" "Gilded Legion Scarab" "Gilded Sulphite Scarab" "Gilded Metamorph Scarab" "Gilded Blight Scarab" "Gilded Abyss Scarab"
 	SetBorderColor 0 255 220 150
 	SetTextColor 255 175 0 
 	SetFontSize 50
@@ -1096,7 +1107,7 @@ Show
 	SetFontSize 45
 	SetTextColor 249 150 25
 	SetBorderColor 249 150 25 150
-	DisableDropSound True
+	#DisableDropSound True
 	
 #=================================
 #			Incursion
@@ -1133,6 +1144,16 @@ Show
 #			Blight
 #=================================
 
+Show
+	Class Currency
+	BaseType "Silver Oil" "Golden Oil" "Tainted Oil"
+	SetBackgroundColor 30 30 30
+	SetBorderColor 250 185 0 150
+	SetTextColor 250 185 0
+	SetFontSize 40
+	MinimapIcon 0 Brown Circle
+	CustomAlertSound "water_cut_01.wav"
+	
 Show
 	Class Currency
 	BaseType "Oil"
@@ -1203,6 +1224,14 @@ Show
 #=================================
 #			Fragments
 #=================================
+
+Show
+	BaseType "Scared Blossom" "Vaal Reliquary Key" "Chronicle of Atzoatl" "Inscribed Ultimatum"
+	SetFontSize 45
+	SetTextColor 210 35 65 255
+	SetBorderColor 210 35 65 150
+	SetBackgroundColor 0 0 0
+	PlayEffect Green
 
 Show
 	BaseType "Offering to the Goddess"
@@ -1321,6 +1350,7 @@ Show
 	MinimapIcon 0 Orange Cross
 	
 Show
+	AreaLevel <= 60
 	LinkedSockets 5
 	SetFontSize 45
 	SetTextColor 229 190 66
@@ -1334,7 +1364,7 @@ Show
 #=================================
 
 Show
-	BaseType "Opal Ring" "Prismatic Ring" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Blue Pearl Amulet" "Bone Helmet" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Two-Toned Boots" "Vanguard Belt" "Stygian Vise"
+	BaseType "Opal Ring" "Prismatic Ring" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Blue Pearl Amulet" "Bone Helmet" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Two-Toned Boots" "Vanguard Belt" "Stygian Vise" "Seaglass Amulet" "Blessed Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
 	ItemLevel >= 83
 	SetFontSize 50
 	SetTextColor 232 203 121
@@ -1342,7 +1372,7 @@ Show
 	PlayEffect Brown
 
 Show
-	BaseType "Opal Ring" "Prismatic Ring" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Blue Pearl Amulet" "Bone Helmet" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Two-Toned Boots" "Vanguard Belt" "Stygian Vise"
+	BaseType "Opal Ring" "Prismatic Ring" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Blue Pearl Amulet" "Bone Helmet" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Two-Toned Boots" "Vanguard Belt" "Stygian Vise" "Seaglass Amulet" "Blessed Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
 	SetFontSize 40
 	SetTextColor 232 203 121
 	SetBorderColor 232 203 121 150
@@ -1389,7 +1419,7 @@ Show
 Show
 	ItemLevel >= 75
 	Rarity Rare
-	BaseType "Royal Axe" "Runic Hatchet" "Fleshripper" "Vaal Axe"
+	BaseType "404" "Runic Hatchet" "Fleshripper" "Vaal Axe"
 	SetFontSize 35
 	SetTextColor 235 220 50
 	SetBorderColor 255 240 40 150
@@ -2003,7 +2033,7 @@ Show
 	
 Show
 	 LinkedSockets >= 4
-	 AreaLevel <= 30
+	 AreaLevel <= 35
 	 SetFontSize 60
 	 SetTextColor 255 255 255
 	 SetBorderColor 255 255 255 150
