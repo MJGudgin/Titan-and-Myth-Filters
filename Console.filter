@@ -1,7 +1,7 @@
-#=================================
-#	Sempervivum SSF Filter v1.6
-#			1/13/21
-#=================================
+#====================================#
+#	Sempervivum SSF Filter v1.3.14	 #
+#			1/13/21					 #
+#====================================#
 
 #=================================
 #		Table of Contents
@@ -45,12 +45,21 @@
 # Vendor Recipe
 # Hide Catch-All
 
+#=================================
+#			Override
+#=================================
+
+Show
+	BaseType "Diamond Flask" "Silver Flask"
+	SetFontSize 55
+	SetTextColor 150 255 255
+	SetBorderColor 200 255 255 150	
+	PlayEffect White
+	MinimapIcon 0 White Circle
 
 #=================================
 #			Currency
 #=================================
-
-
 
 Show 
 	Class Currency
@@ -101,10 +110,20 @@ Show
 	SetBorderColor 60 195 255 150
 	SetBackgroundColor 30 30 30
 	
+Show
+	Class Currency
+	BaseType "Orb of Alteration"
+	SetFontSize 40
+	SetTextColor 60 195 255
+	SetBorderColor 60 195 255 150
+	SetBackgroundColor 30 30 30
+	PlayEffect Blue
+	MinimapIcon 2 Blue Circle
+
 #Rare Item Currency
 Show
 	Class Currency
-	BaseType "Orb of Alteration" "Orb of Alchemy" "Regal Orb" "Chaos Orb"
+	BaseType "Orb of Alchemy" "Regal Orb" "Chaos Orb" "Veiled Chaos Orb"
 	SetFontSize 40
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
@@ -269,7 +288,7 @@ Show
 #T0
 Show
 	Class "Divination"
-	BaseType "The Polymath" "The Samurai's Eye" "Abandoned Wealth" "Beauty Through Death" "Immortal Resolve" "Succor of the Sinless" "Alluring Bounty" "The Doctor" "The Nurse" "House of Mirrors" "The Demon" "The Immortal" "The Saint's Treasure" "The Dragon's Heart" "The Fiend" "Wealth and Power" "Seven Years Bad Luck" "The Cheater" "The Strategist" "The Progeny of Lunaris" "The Eldritch Decay" "The Greatest Intentions" "The White Knight" "Peaceful Moments" "The Gulf" "Triskaidekaphobia" "Unrequited Love" "Desecrated Virtue" "Brother's Stash"
+	BaseType "The Polymath" "The Samurai's Eye" "Abandoned Wealth" "Beauty Through Death" "Immortal Resolve" "Succor of the Sinless" "Alluring Bounty" "The Doctor" "The Nurse" "House of Mirrors" "The Demon" "The Immortal" "The Saint's Treasure" "The Dragon's Heart" "The Fiend" "Wealth and Power" "Seven Years Bad Luck" "The Cheater" "The Strategist" "The Progeny of Lunaris" "The Eldritch Decay" "The Greatest Intentions" "The White Knight" "Peaceful Moments" "The Gulf" "Triskaidekaphobia" "Unrequited Love" "Desecrated Virtue" "Brother's Stash" "Winter's Embrace" "Sombodhi's Wisdom" "The Enthusiasts" "Broken Promises" "Brush, Paint and Palette" "Deadly Joy" "The Adventuring Spirit" "The Eternal War" "Prejudice" "The Shortcut" "The Card Sharp" "A Modest Request" "Luminous Trove" "The Hook"
 	SetFontSize 50
 	SetTextColor 0 0 0
 	SetBorderColor 0 255 210 255
@@ -280,7 +299,7 @@ Show
 #T1
 Show
 	Class "Divination"
-	BaseType "Divine Justice" "Heterochromia" "The Throne" "Blessing of God" "Buried Treasure" "Friendship" "Hunter's Reward" "Void of the Elements" "Left to Fate" "The Price of Loyalty" "The Professor" "The Sacrifice" "Underground Forest" "Alone in the Darkness"  "The Bargain" "The Chosen" "The Escape" "The Jeweller's Boon" "The Primordial" "The Rite of Elements" "The Undaunted" "Boon of the First Ones" "Bowyer's Dream" "The Bones" "The Celestial Justicar" "The Dapper Prodigy" "The Dark Mage" "The Dreamer" "The Enlightened" "The Porcupine" "The Warlord" "Deathly Designs" "Emperor of Purity" "More is Never Enough" "Pride of the First Ones" "The Ethereal" "The Obscured" "The Sword King's Salute" "The Wilted Rose" "The Wind" "Arrogance of the Vaal" "Pride Before the Fall" "Remembrance" "The Cacophony" "The Eye of Terror" "The King's Heart" "The Offering" "The Valkyrie" "The Wolven King's Bite" "The World Eater" "Azyran's Reward" "Etched in Blood" "Harmony of Souls" "Humility" "The Endless Dark" "The Iron Bard" "The Pact" "Vanity" "Volatile Power" "The Celestial Stone" "The Last One Standing" "Time-Lost Relic" "The Artist" "The Chains that Bind" "The Sephirot" "The Hoarder" "The Cataclysm" "Rebirth" "Council of Cats" "The Tumbleweed" "The Hive of Knowledge" "Gift of Asenath" "A Note in the Wind" "The Sustenance" "The Awakened" "A Familiar Call" "The Long Con" "The Bitter Blossom" "Fateful Meeting"
+	BaseType "Divine Justice" "Heterochromia" "The Throne" "Blessing of God" "Buried Treasure" "Friendship" "Hunter's Reward" "Void of the Elements" "Left to Fate" "The Price of Loyalty" "The Professor" "The Sacrifice" "Underground Forest" "Alone in the Darkness"  "The Bargain" "The Chosen" "The Escape" "The Jeweller's Boon" "The Primordial" "The Rite of Elements" "The Undaunted" "Boon of the First Ones" "Bowyer's Dream" "The Bones" "The Celestial Justicar" "The Dapper Prodigy" "The Dark Mage" "The Dreamer" "The Enlightened" "The Porcupine" "The Warlord" "Deathly Designs" "Emperor of Purity" "More is Never Enough" "Pride of the First Ones" "The Ethereal" "The Obscured" "The Wilted Rose" "The Wind" "Arrogance of the Vaal" "Pride Before the Fall" "Remembrance" "The Cacophony" "The Eye of Terror" "The King's Heart" "The Offering" "The Valkyrie" "The Wolven King's Bite" "The World Eater" "Azyran's Reward" "Etched in Blood" "Harmony of Souls" "Humility" "The Endless Dark" "The Iron Bard" "The Pact" "Vanity" "Volatile Power" "The Celestial Stone" "The Last One Standing" "Time-Lost Relic" "The Artist" "The Chains that Bind" "The Sephirot" "The Hoarder" "The Cataclysm" "Rebirth" "Council of Cats" "The Tumbleweed" "The Hive of Knowledge" "Gift of Asenath" "A Note in the Wind" "The Sustenance" "The Awakened" "A Familiar Call" "The Long Con" "The Bitter Blossom" "Fateful Meeting"
 	SetFontSize 40
 	SetTextColor 0 0 0
 	SetBorderColor 0 255 220 150
@@ -291,7 +310,7 @@ Show
 #T2
 Show
 	Class "Divination"
-	BaseType "Chaotic Disposition" "The Cartographer" "The Void" "Cameria's Cut" "The Heroic Shot" "Monochrome" "The Gemcutter" "The Journey" "The Survivalist" "Forbidden Power" "The Body" "The Breach" "The Fool" "The Hale Heart" "The Messenger" "The Stormcaller" "The Wolf's Legacy" "Audacity" "Earth Drinker" "Hope" "Perfection" "Squandered Prosperity" "The Landing" "The Lion" "The Mayor" "The Puzzle" "The Realm" "The Side Quest" "The Wolf" "Vinia's Token" "Boon of Justice" "The Deal" "The Penitent" "Burning Blood" "The Beast" "The Calling" "The Damned" "The Fox" "The Inventor" "The Life Thief" "The Oath" "The One With All" "The Pack Leader" "The Skeleton" "The Summoner" "The Twilight Moon" "The Wretched" "Blind Venture" "Demigod's Wager" "Dialla's Subjugation" "Lucky Connections" "Scholar of the Seas" "The Formless Sea" "The Trial" "The Union" "Treasure Hunter" "The Aesthete" "The Dreamland" "The Encroaching Darkness" "The Scavenger" "The Undisputed" "The Wrath" "A Dab of Ink" "Coveted Possession" "Gift of the Gemling Queen" "Lucky Deck" "No Traces" "The Admirer" "The Betrayal" "The Hunger" "The Poet" "The Seeker" "The Valley of Steel Boxes" "The Innocent" "Lingering Remnants" "Imperial Legacy" "The Tinkerer's Table" "Prometheus' Armoury" "The Academic" "Unchained" "The Unexpected Prize" "Cursed Words" "Acclimatisation" "Haunting Shadows" "The Whiteout" "Society's Remorse" "Dying Light" "The Astromancer" "Keeper's Corruption" "Reckless Ambition" "Love Through Ice" "Draped in Dreams" "The Patient" "The Long Watch" "The Bear Woman" "Brotherhood in Exile"
+	BaseType "Chaotic Disposition" "The Cartographer" "The Void" "Cameria's Cut" "The Heroic Shot" "Monochrome" "The Gemcutter" "The Journey" "The Survivalist" "Forbidden Power" "The Body" "The Breach" "The Fool" "The Hale Heart" "The Messenger" "The Stormcaller" "The Wolf's Legacy" "Audacity" "Earth Drinker" "Hope" "Perfection" "Squandered Prosperity" "The Landing" "The Lion" "The Mayor" "The Puzzle" "The Realm" "The Side Quest" "The Wolf" "Vinia's Token" "Boon of Justice" "The Deal" "The Penitent" "Burning Blood" "The Beast" "The Calling" "The Damned" "The Fox" "The Inventor" "The Life Thief" "The Oath" "The One With All" "The Pack Leader" "The Skeleton" "The Summoner" "The Twilight Moon" "The Wretched" "Blind Venture" "Demigod's Wager" "Dialla's Subjugation" "Lucky Connections" "Scholar of the Seas" "The Formless Sea" "The Trial" "The Union" "Treasure Hunter" "The Aesthete" "The Dreamland" "The Encroaching Darkness" "The Scavenger" "The Undisputed" "The Wrath" "A Dab of Ink" "Coveted Possession" "Gift of the Gemling Queen" "Lucky Deck" "No Traces" "The Admirer" "The Betrayal" "The Hunger" "The Poet" "The Seeker" "The Valley of Steel Boxes" "The Innocent" "Lingering Remnants" "Imperial Legacy" "The Tinkerer's Table" "Prometheus' Armoury" "The Academic" "Unchained" "The Unexpected Prize" "Cursed Words" "Acclimatisation" "Haunting Shadows" "The Whiteout" "Society's Remorse" "Dying Light" "The Astromancer" "Keeper's Corruption" "Reckless Ambition" "Love Through Ice" "Draped in Dreams" "The Patient" "The Long Watch" "The Bear Woman" "Brotherhood in Exile" "The Sword King's Salute"
 	SetFontSize 40
 	SetTextColor 0 255 210 255
 	SetBorderColor 0 250 255 150
@@ -485,9 +504,11 @@ Show
 Show
 	Class Currency
 	BaseType "Rogue's Marker"
-	SetFontSize 35
+	SetFontSize 40
 	SetBorderColor 215 50 25 150
 	SetTextColor 215 50 25
+	PlayEffect Red
+	MinimapIcon 2 Red Circle
 	
 Show
 	Class Currency
@@ -510,7 +531,7 @@ Show
 	
 Show
 	Class "Contract"
-	SetFontSize 40
+	SetFontSize 45
 	SetBorderColor 180 70 15 150
 	SetTextColor 180 70 15
 	PlayEffect Brown
@@ -518,14 +539,14 @@ Show
 	
 Show
 	Class "Blueprint"
-	SetFontSize 40
+	SetFontSize 45
 	SetBorderColor 40 110 150 150
 	SetTextColor 40 110 150
 	MinimapIcon 1 Blue Square
 	
 Show
 	Class "Heist Cloak" "Heist Brooch" "Heist Tool" "Heist Gear"
-	SetFontSize 35
+	SetFontSize 40
 	SetBorderColor 140 70 30 150
 	SetTextColor 140 70 30
 	PlayEffect Brown
@@ -546,15 +567,6 @@ Show
 	SetBackgroundColor 30 30 30
 	PlayEffect Orange
 	MinimapIcon 2 Orange Circle
-
-Show
-	Class "Map Fragments"
-	BaseType "Winged Cartography Scarab" "Winged Reliquary Scarab" "Winged Bestiary Scarab" "Winged Shaper Scarab" "Winged Elder Scarab" "Winged Sulphite Scarab" "Winged Divination Scarab"	"Winged Torment Scarab" "Winged Ambush Scarab" "Winged Harbinger Scarab" "Winged Perandus Scarab" "Winged Breach Scarab" "Winged Legion Scarab" "Winged Metamorph Scarab"
-	SetBorderColor 0 255 220 150
-	SetTextColor 255 175 0 
-	SetFontSize 50
-	PlayEffect Blue
-	MinimapIcon 1 Blue Pentagon
 	
 Show
 	BaseType "Tribute to the Goddess" "Gift to the Goddess" "Dedication to the Goddess"
@@ -686,11 +698,10 @@ Show
 #		Chancing Bases
 #=================================
 
-
 #Show
 #	Corrupted False
 #	Rarity Normal
-#	BaseType "Short Bow"
+#	BaseType
 #	SetFontSize 80
 #	PlayEffect Grey
 #	MinimapIcon 2 Grey Triangle
@@ -815,7 +826,16 @@ Show
 
 Show
 	Class "Map Fragments"
-	BaseType "Gilded Bestiary Scarab" "Gilded Cartography Scarab" "Gilded Legion Scarab" "Gilded Sulphite Scarab" "Gilded Metamorph Scarab"
+	BaseType "Winged Cartography Scarab" "Winged Reliquary Scarab" "Winged Bestiary Scarab" "Winged Shaper Scarab" "Winged Elder Scarab" "Winged Sulphite Scarab" "Winged Divination Scarab"	"Winged Torment Scarab" "Winged Ambush Scarab" "Winged Harbinger Scarab" "Winged Perandus Scarab" "Winged Breach Scarab" "Winged Legion Scarab" "Winged Metamorph Scarab" "Winged Blight Scarab" "Winged Abyss Scarab"
+	SetBorderColor 0 255 220 150
+	SetTextColor 255 175 0 
+	SetFontSize 50
+	PlayEffect Blue
+	MinimapIcon 1 Blue Pentagon
+
+Show
+	Class "Map Fragments"
+	BaseType "Gilded Bestiary Scarab" "Gilded Cartography Scarab" "Gilded Legion Scarab" "Gilded Sulphite Scarab" "Gilded Metamorph Scarab" "Gilded Blight Scarab" "Gilded Abyss Scarab"
 	SetBorderColor 0 255 220 150
 	SetTextColor 255 175 0 
 	SetFontSize 50
@@ -1044,7 +1064,7 @@ Show
 	SetFontSize 45
 	SetTextColor 249 150 25
 	SetBorderColor 249 150 25 150
-	DisableDropSound True
+	#DisableDropSound True
 	
 #=================================
 #			Incursion
@@ -1081,6 +1101,15 @@ Show
 #			Blight
 #=================================
 
+Show
+	Class Currency
+	BaseType "Silver Oil" "Golden Oil" "Tainted Oil"
+	SetBackgroundColor 30 30 30
+	SetBorderColor 250 185 0 150
+	SetTextColor 250 185 0
+	SetFontSize 40
+	MinimapIcon 0 Brown Circle
+	
 Show
 	Class Currency
 	BaseType "Oil"
@@ -1127,7 +1156,7 @@ Show
 	
 
 #Show
-#	BaseType "Mesh Gloves"
+#	BaseType
 #	Rarity = Unique
 #	SetFontSize 50
 #	SetTextColor 250 142 27
@@ -1147,6 +1176,14 @@ Show
 #=================================
 #			Fragments
 #=================================
+
+Show
+	BaseType "Scared Blossom" "Vaal Reliquary Key" "Chronicle of Atzoatl" "Inscribed Ultimatum"
+	SetFontSize 45
+	SetTextColor 210 35 65 255
+	SetBorderColor 210 35 65 150
+	SetBackgroundColor 0 0 0
+	PlayEffect Green
 
 Show
 	BaseType "Offering to the Goddess"
@@ -1261,21 +1298,22 @@ Show
 	PlayEffect Orange
 	MinimapIcon 0 Orange Cross
 	
-#Show
-#	LinkedSockets 5
-#	SetFontSize 45
-#	SetTextColor 229 190 66
-#	SetBorderColor 245 214 113 150
-#	SetBackgroundColor 120 120 120
-#	PlayEffect White
-#	MinimapIcon 1 White Cross
+Show
+	AreaLevel <= 60
+	LinkedSockets 5
+	SetFontSize 45
+	SetTextColor 229 190 66
+	SetBorderColor 245 214 113 150
+	SetBackgroundColor 120 120 120
+	PlayEffect White
+	MinimapIcon 1 White Cross
 
 #=================================
 #		Atlas Bases
 #=================================
 
 Show
-	BaseType "Opal Ring" "Prismatic Ring" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Blue Pearl Amulet" "Bone Helmet" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Two-Toned Boots" "Vanguard Belt" "Stygian Vise"
+	BaseType "Opal Ring" "Prismatic Ring" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Blue Pearl Amulet" "Bone Helmet" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Two-Toned Boots" "Vanguard Belt" "Stygian Vise" "Seaglass Amulet" "Blessed Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
 	ItemLevel >= 83
 	SetFontSize 50
 	SetTextColor 232 203 121
@@ -1283,7 +1321,7 @@ Show
 	PlayEffect Brown
 
 Show
-	BaseType "Opal Ring" "Prismatic Ring" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Blue Pearl Amulet" "Bone Helmet" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Two-Toned Boots" "Vanguard Belt" "Stygian Vise"
+	BaseType "Opal Ring" "Prismatic Ring" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Blue Pearl Amulet" "Bone Helmet" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Two-Toned Boots" "Vanguard Belt" "Stygian Vise" "Seaglass Amulet" "Blessed Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
 	SetFontSize 40
 	SetTextColor 232 203 121
 	SetBorderColor 232 203 121 150
@@ -1330,7 +1368,7 @@ Show
 Show
 	ItemLevel >= 75
 	Rarity Rare
-	BaseType "Royal Axe" "Runic Hatchet" "Fleshripper" "Vaal Axe"
+	BaseType "404" "Runic Hatchet" "Fleshripper" "Vaal Axe"
 	SetFontSize 35
 	SetTextColor 235 220 50
 	SetBorderColor 255 240 40 150
@@ -1378,7 +1416,7 @@ Show
 Show
 	ItemLevel >= 75
 	Rarity Rare
-	BaseType "Midnight Blade" "Tiger Hook" "Dragoon Sword" "Harpy Rapier" "Infernal Sword" "Exquisite Blade"
+	BaseType "Midnight Blade" "Tiger Hook" "Dragoon Sword" "Harpy Rapier" "Infernal Sword" "Exquisite Blade" "Legion Sword"
 	SetFontSize 35
 	SetTextColor 235 220 50
 	SetBorderColor 255 240 40 150
@@ -1404,7 +1442,7 @@ Show
 Show
 	ItemLevel >= 75
 	Rarity Rare
-	BaseType "Colossal Tower Shield"
+	BaseType "Ezomyte Tower Shield" "Colossal Tower Shield"
 	SetFontSize 35
 	SetTextColor 235 220 50
 	SetBorderColor 255 240 40 150
@@ -1665,29 +1703,29 @@ Show
 #		Chromatic Recipe/sockets
 #=================================
 
-#Show
-#	Width <= 2
-#	Height <= 2
-#	SocketGroup RGB
-#	SetFontSize 36
-#	SetTextColor 255 255 255
-#	SetBorderColor 0 255 255 150
+Show
+	Width <= 2
+	Height <= 2
+	SocketGroup RGB
+	SetFontSize 36
+	SetTextColor 255 255 255
+	SetBorderColor 0 255 255 150
 	
-#Show
-#	Width <= 1
-#	Height <= 3
-#	SocketGroup RGB
-#	SetFontSize 36
-#	SetTextColor 255 255 255
-#	SetBorderColor 0 255 255 150
+Show
+	Width <= 1
+	Height <= 3
+	SocketGroup RGB
+	SetFontSize 36
+	SetTextColor 255 255 255
+	SetBorderColor 0 255 255 150
 	
-#Show
-#	Sockets 6
-#	Rarity <= Rare
-#	SetFontSize 45
-#	SetTextColor 255 255 255
-#	SetBorderColor 255 255 255 150
-#	PlayEffect White Temp
+Show
+	Sockets 6
+	Rarity <= Rare
+	SetFontSize 45
+	SetTextColor 255 255 255
+	SetBorderColor 255 255 255 150
+	PlayEffect White Temp
 
 	
 #=================================
@@ -1942,13 +1980,13 @@ Show
 #			Links
 #=================================
 	
- #Show
-#	 LinkedSockets >= 4
-#	 AreaLevel <= 30
-#	 SetFontSize 60
-#	 SetTextColor 255 255 255
-#	 SetBorderColor 255 255 255 150
-#	 PlayEffect White Temp
+Show
+	 LinkedSockets >= 4
+	 AreaLevel <= 35
+	 SetFontSize 60
+	 SetTextColor 255 255 255
+	 SetBorderColor 255 255 255 150
+	 PlayEffect White Temp
 	
 
 #=================================
