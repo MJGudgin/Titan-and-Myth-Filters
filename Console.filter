@@ -49,13 +49,13 @@
 #			Override
 #=================================
 
-#Show
-#	BaseType "Diamond Flask" "Silver Flask"
-#	SetFontSize 55
-#	SetTextColor 150 255 255
-#	SetBorderColor 200 255 255 150	
-#	PlayEffect White
-#	MinimapIcon 0 White Circle
+Show
+	BaseType "Sapphire Flask" "Ruby Flask" "Topaz Flask"
+	SetFontSize 55
+	SetTextColor 150 255 255
+	SetBorderColor 200 255 255 150	
+	PlayEffect White
+	MinimapIcon 0 White Circle
 
 #=================================
 #			Currency
@@ -164,12 +164,12 @@ Show
 	SetTextColor 255 255 255
 	SetBorderColor 255 255 255 150
 	
-Show
-	Class Currency
-	BaseType "Perandus Coin"
-	SetFontSize 35
-	SetTextColor 255 230 181
-	SetBorderColor 181 181 181 150
+#Show
+#	Class Currency
+#	BaseType "Perandus Coin"
+#	SetFontSize 35
+#	SetTextColor 255 230 181
+#	SetBorderColor 181 181 181 150
 	
 #Crafting Currency
 Show
@@ -306,10 +306,21 @@ Show
 #			Div Cards
 #=================================
 
+#Untiered/Unknown
+Show
+	Class "Divination"
+	BaseType == "The Emptiness" "A Sea of Blue" "The Offspring" "The Price of Prescience" "The Mind's Eyes" "Terrible Secret of Space" "Costly Curio" "Lachrymal Necrosis" "Ambitious Obsession" “Desperate Crusade” “A Stone Perfected” “The Rabbit's Foot” “Chasing Risk” “The Prince of Darkness” “The Catch” “Eternal Bonds” “Disdain” “The Scout” “Guardian's Challenge” “The Forgotten Treasure” “The Fox in the Brambles” “The Aspirant”
+	SetFontSize 50
+	SetTextColor 0 0 0
+	SetBorderColor 0 255 210 255
+	SetBackgroundColor 255 255 255
+	PlayEffect Orange
+	MinimapIcon 0 Orange UpsideDownHouse
+
 #T0
 Show
 	Class "Divination"
-	BaseType == "The Polymath" "The Samurai's Eye" "Abandoned Wealth" "Beauty Through Death" "Immortal Resolve" "Succor of the Sinless" "Alluring Bounty" "The Doctor" "The Nurse" "House of Mirrors" "The Demon" "The Immortal" "The Saint's Treasure" "The Dragon's Heart" "The Fiend" "Wealth and Power" "Seven Years Bad Luck" "The Cheater" "The Strategist" "The Progeny of Lunaris" "The Eldritch Decay" "The Greatest Intentions" "The White Knight" "Peaceful Moments" "The Gulf" "Triskaidekaphobia" "Unrequited Love" "Desecrated Virtue" "Brother's Stash" "Winter's Embrace" "A Modest Request" "Broken Promises" "The Eternal War" "Luminous Trove" "The Hook"
+	BaseType == "The Polymath" "The Samurai's Eye" "Abandoned Wealth" "Beauty Through Death" "Immortal Resolve" "Succor of the Sinless" "Alluring Bounty" "The Doctor" "The Nurse" "House of Mirrors" "The Demon" "The Immortal" "The Saint's Treasure" "The Dragon's Heart" "The Fiend" "Wealth and Power" "Seven Years Bad Luck" "The Cheater" "The Strategist" "The Progeny of Lunaris" "The Eldritch Decay" "The Greatest Intentions" "The White Knight" "Peaceful Moments" "The Gulf" "Triskaidekaphobia" "Unrequited Love" "Desecrated Virtue" "Brother's Stash" "Winter's Embrace" "A Modest Request" "Broken Promises" "The Eternal War" "Luminous Trove" "The Hook" "Dementophobia"
 	SetFontSize 50
 	SetTextColor 0 0 0
 	SetBorderColor 0 255 210 255
@@ -320,7 +331,7 @@ Show
 #T1
 Show
 	Class "Divination"
-	BaseType == "Divine Justice" "Heterochromia" "The Throne" "Blessing of God" "Buried Treasure"  "Hunter's Reward" "Void of the Elements" "Left to Fate" "The Price of Loyalty" "The Professor" "The Sacrifice" "Underground Forest" "Alone in the Darkness"  "The Bargain" "The Chosen" "The Escape" "The Jeweller's Boon" "The Primordial" "The Rite of Elements" "The Undaunted" "Boon of the First Ones" "Bowyer's Dream" "The Bones" "The Celestial Justicar" "The Dapper Prodigy" "The Dark Mage" "The Dreamer" "The Enlightened" "The Porcupine" "The Warlord" "Deathly Designs" "Emperor of Purity" "More is Never Enough" "Pride of the First Ones" "The Ethereal" "The Obscured" "The Wilted Rose" "The Wind" "Arrogance of the Vaal" "Pride Before the Fall" "Remembrance" "The Cacophony" "The Eye of Terror" "The King's Heart" "The Offering" "The Valkyrie" "The Wolven King's Bite" "The World Eater" "Azyran's Reward" "Etched in Blood" "Harmony of Souls" "Humility" "The Endless Darkness" "The Iron Bard" "The Pact" "Vanity" "Volatile Power" "The Celestial Stone" "The Last One Standing" "Time-Lost Relic" "The Artist" "The Chains that Bind" "The Sephirot" "The Hoarder" "The Cataclysm" "Rebirth" "Council of Cats" "The Tumbleweed" "The Hive of Knowledge" "Gift of Asenath" "A Note in the Wind" "The Sustenance" "The Awakened" "A Familiar Call" "The Long Con" "The Bitter Blossom" "Fateful Meeting" "The Card Sharp" "Deadly Joy" "The Cartographer"
+	BaseType == "Divine Justice" "Heterochromia" "The Throne" "Blessing of God" "Buried Treasure"  "Hunter's Reward" "Void of the Elements" "Left to Fate" "The Price of Loyalty" "The Professor" "The Sacrifice" "Underground Forest" "Alone in the Darkness"  "The Bargain" "The Chosen" "The Escape" "The Jeweller's Boon" "The Primordial" "The Rite of Elements" "The Undaunted" "Boon of the First Ones" "Bowyer's Dream" "The Bones" "The Celestial Justicar" "The Dapper Prodigy" "The Dark Mage" "The Dreamer" "The Enlightened" "The Porcupine" "The Warlord" "Deathly Designs" "Emperor of Purity" "More is Never Enough" "Pride of the First Ones" "The Ethereal" "The Obscured" "The Wilted Rose" "The Wind" "Arrogance of the Vaal" "Pride Before the Fall" "Remembrance" "The Cacophony" "The Eye of Terror" "The King's Heart" "The Offering" "The Valkyrie" "The Wolven King's Bite" "The World Eater" "Azyran's Reward" "Etched in Blood" "Harmony of Souls" "Humility" "The Endless Darkness" "The Iron Bard" "The Pact" "Vanity" "Volatile Power" "The Celestial Stone" "The Last One Standing" "Time-Lost Relic" "The Artist" "The Chains that Bind" "The Sephirot" "The Hoarder" "The Cataclysm" "Rebirth" "Council of Cats" "The Tumbleweed" "The Hive of Knowledge" "Gift of Asenath" "A Note in the Wind" "The Sustenance" "The Awakened" "A Familiar Call" "The Long Con" "The Bitter Blossom" "Fateful Meeting" "The Card Sharp" "Deadly Joy" "The Cartographer" "The Blessing of Moosh" "The Last Supper"
 	SetFontSize 40
 	SetTextColor 0 0 0
 	SetBorderColor 0 255 220 150
@@ -485,6 +496,52 @@ Show
 	SetFontSize 30
 	SetBorderColor 0 250 255 150
 	SetBackgroundColor 6 0 60
+
+#=================================
+#			Scourge
+#=================================
+
+Show
+	Scourged True
+	SetFontSize 45
+	SetTextColor 185 0 255 255
+	SetBorderColor 185 0 255 150
+	
+Show
+	Class "Currency"
+	BaseType “Sacred Orb” “Tainted Blessing” “Tainted Chromatic Orb” “Tainted Orb of Fusing” “Tainted Jeweller's Orb” “Kalguuran Delirium Orb” “Deft Fossil” “Fundamental Fossil” “Tainted Exalted Orb” “Tainted Mythic Orb” “Tainted Blacksmith's Whetstone” “Tainted Armourer's Scrap” “Tainted Chaos Orb” “Tainted Divine Teardrop”
+	SetFontSize 40
+	SetTextColor 185 0 255 255
+	SetBorderColor 185 0 255 150
+	
+
+#=================================
+#			Expedition
+#=================================
+
+Show
+	Class Currency
+	BaseType "Enkindling Orb" "Instilling Orb" "Exotic Coinage" "Scrap Metal" "Astragali" "Burial Medallion" "Lesser Broken Circle Artifact" "Common Broken Circle Artifact" "Greater Broken Circle Artifact" "Grand Broken Circle Artifact" "Lesser Black Scythe Artifact" "Common Black Scythe Artifact" "Greater Black Scythe Artifact" "Grand Black Scythe Artifact" "Lesser Order Artifact" "Common Order Artifact" "Greater Order Artifact" "Grand Order Artifact" "Lesser Sun Artifact" "Common Sun Artifact" "Greater Sun Artifact" "Grand Sun Artifact"
+	SetFontSize 40
+	SetTextColor 45 180 215
+	SetBorderColor 45 180 215 150
+	
+Show
+	BaseType "Expedition Logbook"
+	SetFontSize 50
+	SetTextColor 45 180 215
+	SetBorderColor 45 180 215 150
+	PlayEffect Blue
+	MinimapIcon 2 Cyan Circle
+	
+Show
+	Class "Expedition Logbook"
+	SetFontSize 50
+	SetTextColor 45 180 215
+	SetBorderColor 45 180 215 150
+	PlayEffect Blue
+	MinimapIcon 2 Cyan Circle
+	
 
 #=================================
 #			Ritual
@@ -858,7 +915,7 @@ Show
 
 Show
 	Class "Map Fragments"
-	BaseType "Winged Cartography Scarab" "Winged Reliquary Scarab" "Winged Bestiary Scarab" "Winged Shaper Scarab" "Winged Elder Scarab" "Winged Sulphite Scarab" "Winged Divination Scarab"	"Winged Torment Scarab" "Winged Ambush Scarab" "Winged Harbinger Scarab" "Winged Perandus Scarab" "Winged Breach Scarab" "Winged Legion Scarab" "Winged Metamorph Scarab" "Winged Blight Scarab" "Winged Abyss Scarab"
+	BaseType "Winged Cartography Scarab" "Winged Reliquary Scarab" "Winged Bestiary Scarab" "Winged Shaper Scarab" "Winged Elder Scarab" "Winged Sulphite Scarab" "Winged Divination Scarab"	"Winged Torment Scarab" "Winged Ambush Scarab" "Winged Harbinger Scarab" "Winged Breach Scarab" "Winged Legion Scarab" "Winged Metamorph Scarab" "Winged Blight Scarab" "Winged Abyss Scarab" "Winged Expedition Scarab"
 	SetBorderColor 0 255 220 150
 	SetTextColor 255 175 0 
 	SetFontSize 50
@@ -867,7 +924,7 @@ Show
 
 Show
 	Class "Map Fragments"
-	BaseType "Gilded Bestiary Scarab" "Gilded Cartography Scarab" "Gilded Legion Scarab" "Gilded Sulphite Scarab" "Gilded Metamorph Scarab" "Gilded Blight Scarab" "Gilded Abyss Scarab"
+	BaseType "Gilded Bestiary Scarab" "Gilded Cartography Scarab" "Gilded Legion Scarab" "Gilded Sulphite Scarab" "Gilded Metamorph Scarab" "Gilded Blight Scarab" "Gilded Abyss Scarab" "Gilded Expedition Scarab"
 	SetBorderColor 0 255 220 150
 	SetTextColor 255 175 0 
 	SetFontSize 50
@@ -959,7 +1016,7 @@ Show
 	
 Show
 	Class "Map Fragments"
-	BaseType "Xoph's Breachstone" "Xoph's Charged Breachstone" "Xoph's Enriched Breachstone" "Xoph's Pure Breachstone"
+	BaseType "Xoph's Breachstone" "Xoph's Charged Breachstone" "Xoph's Enriched Breachstone" "Xoph's Pure Breachstone" "Xoph's Flawless Breachstone"
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
@@ -977,7 +1034,7 @@ Show
 
 Show
 	Class "Map Fragments"
-	BaseType "Esh's Breachstone" "Esh's Charged Breachstone" "Esh's Enriched Breachstone" "Chayula's Pure Breachstone"
+	BaseType "Esh's Breachstone" "Esh's Charged Breachstone" "Esh's Enriched Breachstone" "Esh's Pure Breachstone" "Esh's Flawless Breachstone"
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
@@ -995,7 +1052,7 @@ Show
 	
 Show
 	Class "Map Fragments"
-	BaseType "Tul's Breachstone" "Tul's Charged Breachstone" "Tul's Enriched Breachstone" "Tul's Pure Breachstone"
+	BaseType "Tul's Breachstone" "Tul's Charged Breachstone" "Tul's Enriched Breachstone" "Tul's Pure Breachstone" "Tul's Flawless Breachstone"
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
@@ -1013,7 +1070,7 @@ Show
 	
 Show
 	Class "Map Fragments"
-	BaseType "Uul-Netol's Breachstone" "Uul-Netol's Charged Breachstone" "Uul-Netol's Enriched Breachstone" "Uul-Netol's Pure Breachstone"
+	BaseType "Uul-Netol's Breachstone" "Uul-Netol's Charged Breachstone" "Uul-Netol's Enriched Breachstone" "Uul-Netol's Pure Breachstone" "Uul-Netol's Flawless Breachstone"
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
@@ -1031,7 +1088,7 @@ Show
 	
 Show
 	Class "Map Fragments"
-	BaseType "Chayula's Breachstone" "Chayula's Charged Breachstone" "Chayula's Enriched Breachstone" "Chayula's Pure Breachstone"
+	BaseType "Chayula's Breachstone" "Chayula's Charged Breachstone" "Chayula's Enriched Breachstone" "Chayula's Pure Breachstone" "Chayula's Flawless Breachstone"
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
@@ -1085,7 +1142,7 @@ Show
 	
 Show
 	Class "Map Fragments"
-	BaseType "Timeless Vaal Emblem" "Timeless Templar Emblem" "Timeless Karui Emblem" "Timeless Eternal Emblem" "Timeless Maraketh Emblem"
+	BaseType "Timeless Vaal Emblem" "Timeless Templar Emblem" "Timeless Karui Emblem" "Timeless Eternal Emblem" "Timeless Maraketh Emblem" "Unrelenting Timeless Vaal Emblem" "Unrelenting Timeless Templar Emblem" "Unrelenting Timeless Karui Emblem" "Unrelenting Timeless Eternal Emblem" "Unrelenting Timeless Maraketh Emblem"
 	SetFontSize 50
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
@@ -1386,7 +1443,7 @@ Show
 #=================================
 
 Show
-	BaseType "Opal Ring" "Prismatic Ring" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Blue Pearl Amulet" "Bone Helmet" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Two-Toned Boots" "Vanguard Belt" "Stygian Vise" "Seaglass Amulet" "Blessed Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
+	BaseType "Opal Ring" "Prismatic Ring" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Blue Pearl Amulet" "Bone Helmet" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Two-Toned Boots" "Vanguard Belt" "Stygian Vise" "Seaglass Amulet" "Fugitive Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
 	ItemLevel >= 83
 	SetFontSize 50
 	SetTextColor 232 203 121
@@ -1394,7 +1451,7 @@ Show
 	PlayEffect Brown
 
 Show
-	BaseType "Opal Ring" "Prismatic Ring" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Blue Pearl Amulet" "Bone Helmet" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Two-Toned Boots" "Vanguard Belt" "Stygian Vise" "Seaglass Amulet" "Blessed Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
+	BaseType "Opal Ring" "Prismatic Ring" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Blue Pearl Amulet" "Bone Helmet" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Two-Toned Boots" "Vanguard Belt" "Stygian Vise" "Seaglass Amulet" "Fugitive Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
 	SetFontSize 40
 	SetTextColor 232 203 121
 	SetBorderColor 232 203 121 150
