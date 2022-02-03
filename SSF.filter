@@ -49,14 +49,24 @@
 #			Override
 #=================================
 
-Show
-	BaseType "Sapphire Flask" "Ruby Flask" "Topaz Flask"
-	SetFontSize 55
-	SetTextColor 150 255 255
-	SetBorderColor 200 255 255 150	
-	PlayEffect White
-	MinimapIcon 0 White Circle
-	CustomAlertSound "hero_unsheath.wav"
+
+
+#=================================
+#			Scourge
+#=================================
+
+#Show
+#	Scourged True
+#	SetFontSize 45
+#	SetTextColor 200 0 25 255
+#	SetBorderColor 255 255 255 150
+	
+#Show
+#	Class "Currency"
+#	BaseType "Sacred Orb" "Tainted Blessing" "Tainted Chromatic Orb" "Tainted Orb of Fusing" "Tainted Jeweller's Orb" "Kalguuran Delirium Orb" "Deft Fossil" "Fundamental Fossil" "Tainted Exalted Orb" "Tainted Mythic Orb" "#Tainted Blacksmith's Whetstone" "Tainted Armourer's Scrap" "Tainted Chaos Orb" "Tainted Divine Teardrop"
+#	SetFontSize 40
+#	SetTextColor 200 0 25 255
+#	SetBorderColor 255 255 255 150
 
 #=================================
 #			Currency
@@ -65,7 +75,6 @@ Show
 Show 
 	Class Currency
 	BaseType "Scroll of Wisdom"
-	AreaLevel < 70
 	AreaLevel < 70
 	SetFontSize 30
 	SetBorderColor 100 0 0 150
@@ -245,12 +254,20 @@ Show
 	SetBorderColor 20 255 68 150
 	PlayEffect Green
 	
+#Show
+#	BaseType "Watchstone"
+#	SetFontSize 45
+#	SetTextColor 20 255 68
+#	SetBorderColor 20 255 68 150
+#	PlayEffect Green
+
 Show
-	BaseType "Watchstone"
+	BaseType "Voidstone"
 	SetFontSize 45
 	SetTextColor 20 255 68
 	SetBorderColor 20 255 68 150
 	PlayEffect Green
+	
 	
 Show
 	Class "Labyrinth"
@@ -320,7 +337,7 @@ Show
 #Untiered/Unknown
 Show
 	Class "Divination"
-	BaseType == "The Emptiness" "A Sea of Blue" "The Offspring" "The Price of Prescience" "The Mind's Eyes" "Terrible Secret of Space" "Costly Curio" "Lachrymal Necrosis" "Ambitious Obsession" “Desperate Crusade” “A Stone Perfected” “The Rabbit's Foot” “Chasing Risk” “The Prince of Darkness” “The Catch” “Eternal Bonds” “Disdain” “The Scout” “Guardian's Challenge” “The Forgotten Treasure” “The Fox in the Brambles” “The Aspirant”
+	BaseType == "The Emptiness" "A Sea of Blue" "The Offspring" "The Price of Prescience" "The Mind's Eyes" "Terrible Secret of Space" "Costly Curio" "Lachrymal Necrosis" "Ambitious Obsession" "Desperate Crusade" "A Stone Perfected" "The Rabbit's Foot" "Chasing Risk" "The Prince of Darkness" "The Catch" "Eternal Bonds" "Disdain" "The Scout" "Guardian's Challenge" "The Forgotten Treasure" "The Fox in the Brambles" "The Aspirant" "Judging Voices" "Bijoux" "Silence and Frost" "Misery in Darkness" "The Tireless Extractor" "Justified Ambition" "Parasitic Passengers" "Duality" "The One That Got Away" "The Transformation" "Magnum Opus" "Imperfect Memories" "The Magma Crab"
 	SetFontSize 50
 	SetTextColor 0 0 0
 	SetBorderColor 0 255 210 255
@@ -385,17 +402,113 @@ Show
 	SetBorderColor 0 250 255 150
 	PlayEffect Blue Temp
 	MinimapIcon 2 Blue UpsideDownHouse
+
+#=================================
+#		Siege of the Atlas
+#=================================
+
+Show
+	Class Currency
+	BaseType "Surveyor's Compass" "Charged Compass"
+	SetFontSize 40
+	SetTextColor 229 190 66
+	SetBorderColor 245 214 113 150
+	SetBackgroundColor 30 30 30
+	PlayEffect Orange
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "hero_unsheath.wav"
+		
+	
+Show
+	Class Currency
+	BaseType "Lesser Eldritch Ember" "Greater Eldritch Ember" "Grand Eldritch Ember" "Exceptional Eldritch Ember" "Lesser Eldritch Ichor" "Greater Eldritch Ichor" "Grand Eldritch Ichor" "Exceptional Eldritch Ichor"	
+	SetFontSize 50
+	SetTextColor 209 187 113
+	SetBorderColor 245 214 113 150
+	#SetBackgroundColor 30 30 30
+	PlayEffect Cyan
+	MinimapIcon 2 Cyan Circle
+	CustomAlertSound "bell_rise.wav"
+	
+	
+Show
+	Class Currency
+	BaseType "Orb of Conflict" "Orb of Dominance"
+	SetFontSize 50
+	SetTextColor 40 40 40
+	SetBorderColor 40 40 40 150
+	SetBackgroundColor 255 255 255
+	PlayEffect Orange
+	MinimapIcon 0 Orange Circle
+	CustomAlertSound "dream_orb_pickup.wav"
+	
+	
+Show
+	Class Currency
+	BaseType "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment"
+	SetFontSize 50
+	SetTextColor 40 40 40
+	SetBorderColor 40 40 40 150
+	SetBackgroundColor 255 255 255
+	PlayEffect Orange
+	MinimapIcon 0 Orange Circle
+	CustomAlertSound "dream_orb_pickup.wav"
+	
+	
+Show
+	Class Currency
+	BaseType "Scouting Report"
+	SetFontSize 40
+	SetTextColor 229 190 66
+	SetBorderColor 245 214 113 150
+	SetBackgroundColor 30 30 30
+	PlayEffect Orange
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "hero_unsheath.wav"
+	
+	
+Show
+	Class Currency
+	BaseType "Oil Extractor"
+	SetFontSize 40
+	SetTextColor 229 190 66
+	SetBorderColor 245 214 113 150
+	SetBackgroundColor 30 30 30
+	PlayEffect Orange
+	MinimapIcon 2 Yellow Circle
+	CustomAlertSound "hero_unsheath.wav"
+	
+Show
+	BaseType "Writing Invitation" "Screaming Invitation" "Polaric Invitation" "Incandescent Invitation" "Maven's Invitation: The Atlas"
+	SetFontSize 40
+	SetTextColor 45 220 195
+	SetBorderColor 45 220 195 150
+	
+#=================================
+#			Archnemesis
+#=================================	
+	
+Show
+	Class "Archnemesis Mod"
+	SetFontSize 40
+	SetTextColor 255 205 40
+	SetBorderColor 225 210 30 150
+	PlayEffect Yellow
+	MinimapIcon 2 Yellow Circle
+	
 	
 #=================================
 #			Prophecies
 #=================================
 
-Show
-	Class Currency
-	BaseType "Prophecy"
-	SetFontSize 50
-	SetTextColor 210 85 255
-	SetBorderColor 210 85 255 150
+#Deprecated
+
+#Show
+#	Class Currency
+#	BaseType "Prophecy"
+#	SetFontSize 50
+#	SetTextColor 210 85 255
+#	SetBorderColor 210 85 255 150
 	
 #=================================
 #			Talisman
@@ -436,15 +549,6 @@ Show
 Show
 	Class Gems
 	GemLevel >= 21
-	SetFontSize 40
-	SetBorderColor 0 250 255 150
-	SetBackgroundColor 6 0 60
-	PlayEffect White
-	MinimapIcon 2 White Star
-	
-Show
-	Class Gems
-	Quality >= 21
 	SetFontSize 40
 	SetBorderColor 0 250 255 150
 	SetBackgroundColor 6 0 60
@@ -510,25 +614,7 @@ Show
 	AreaLevel <= 45
 	SetFontSize 30
 	SetBorderColor 0 250 255 150
-	SetBackgroundColor 6 0 60
-
-#=================================
-#			Scourge
-#=================================
-
-Show
-	Scourged True
-	SetFontSize 45
-	SetTextColor 185 0 255 255
-	SetBorderColor 185 0 255 150
-	
-Show
-	Class "Currency"
-	BaseType “Sacred Orb” “Tainted Blessing” “Tainted Chromatic Orb” “Tainted Orb of Fusing” “Tainted Jeweller's Orb” “Kalguuran Delirium Orb” “Deft Fossil” “Fundamental Fossil” “Tainted Exalted Orb” “Tainted Mythic Orb” “Tainted Blacksmith's Whetstone” “Tainted Armourer's Scrap” “Tainted Chaos Orb” “Tainted Divine Teardrop”
-	SetFontSize 40
-	SetTextColor 185 0 255 255
-	SetBorderColor 185 0 255 150
-	
+	SetBackgroundColor 6 0 60	
 
 #=================================
 #			Expedition
@@ -791,8 +877,8 @@ Show
 
 #Show
 #	Corrupted False
-#	BaseType "Solaris Circlet"
-#	ItemLevel >= 83
+#	BaseType "Void Sceptre" "Royal Burgonet"
+#	ItemLevel >= 84
 #	SetFontSize 80
 #	SetTextColor 255 255 255 255
 #	SetBorderColor 255 255 225 255
@@ -806,7 +892,7 @@ Show
 #Show
 #	Corrupted False
 #	Rarity Normal
-#	BaseType
+#	BaseType "Void Sceptre"
 #	SetFontSize 80
 #	PlayEffect Grey
 #	MinimapIcon 2 Grey Triangle
@@ -1436,6 +1522,17 @@ Show
 	PlayEffect Orange
 	MinimapIcon 1 Orange Pentagon
 	CustomAlertSound "bell_hit.wav"
+	
+Show
+	Class "Map Fragments"
+	BaseType "Al-Hezmin's Crest" "Baran's Crest" "Drox's Crest" "Veritania's Crest"
+	SetFontSize 45
+	SetTextColor 210 35 65 255
+	SetBorderColor 210 35 65 150
+	SetBackgroundColor 0 0 0
+	PlayEffect Cyan
+	MinimapIcon 1 Cyan Pentagon
+	CustomAlertSound "bell_hit.wav"
 
 Show
 	Class "Map Fragments"
@@ -1865,9 +1962,9 @@ Show
 	
 
 Show
-	AreaLevel < 75
-	BaseType "Basalt Flask" "Bismuth Flask" "Diamond Flask" "Granite Flask" "Jade Flask" "Quicksilver Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Stibnite Flask" "Topaz Flask"
-	SetFontSize 30
+	AreaLevel 75
+	BaseType "Basalt Flask" "Bismuth Flask" "Diamond Flask" "Granite Flask" "Jade Flask" "Quicksilver Flask" "Ruby Flask" "Sapphire Flask" "Silver Flask" "Stibnite Flask" "Topaz Flask" "Quartz Flask" 
+	SetFontSize 50
 	SetTextColor 150 255 255
 	SetBorderColor 200 255 255 150	
 	
