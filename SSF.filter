@@ -346,7 +346,7 @@ Show
 #Untiered/Unknown
 Show
 	Class "Divination"
-	BaseType == "The Emptiness" "A Sea of Blue" "The Offspring" "The Price of Prescience" "The Mind's Eyes" "Terrible Secret of Space" "Costly Curio" "Lachrymal Necrosis" "Ambitious Obsession" "Desperate Crusade" "A Stone Perfected" "The Rabbit's Foot" "Chasing Risk" "The Prince of Darkness" "The Catch" "Eternal Bonds" "Disdain" "The Scout" "Guardian's Challenge" "The Forgotten Treasure" "The Fox in the Brambles" "The Aspirant" "Judging Voices" "Bijoux" "Silence and Frost" "Misery in Darkness" "The Tireless Extractor" "Justified Ambition" "Parasitic Passengers" "Duality" "The One That Got Away" "The Transformation" "Magnum Opus" "Imperfect Memories" "The Magma Crab"
+	BaseType == "The Emptiness" "The Offspring" "The Price of Prescience" "The Mind's Eyes" "Terrible Secret of Space" "Costly Curio" "Lachrymal Necrosis" "Ambitious Obsession" "Desperate Crusade" "A Stone Perfected" "The Rabbit's Foot" "Chasing Risk" "The Prince of Darkness" "The Catch" "Eternal Bonds" "The Scout" "Guardian's Challenge" "The Forgotten Treasure" "The Fox in the Brambles" "The Aspirant" "Judging Voices" "Bijoux" "Silence and Frost" "Misery in Darkness" "The Tireless Extractor" "Justified Ambition" "Parasitic Passengers" "Duality" "The One That Got Away" "The Transformation" "Magnum Opus" "Imperfect Memories" "The Magma Crab" "Altered Perception" "Further Invention" "The Brawny Battle Mage" "A Fate Worse Than Death" "The Destination" "Rebirth and Renewal" "The Forward Gaze" "The Apothecary" "Home" "The Dungeon Master" "From Bone to Ashes" "Darker Half" 
 	SetFontSize 50
 	SetTextColor 0 0 0
 	SetBorderColor 0 255 210 255
@@ -382,8 +382,8 @@ Show
 #T2
 Show
 	Class "Divination"
-	BaseType == "Chaotic Disposition" "The Void" "Cameria's Cut" "The Heroic Shot" "Monochrome" "The Gemcutter" "The Journey" "The Survivalist" "Forbidden Power" "The Body" "The Breach" "The Fool" "The Hale Heart" "The Messenger" "The Stormcaller" "The Wolf's Legacy" "Audacity" "Earth Drinker" "Hope" "Perfection" "Squandered Prosperity" "The Landing" "The Lion" "The Mayor" "The Puzzle" "The Realm" "The Side Quest" "The Wolf" "Vinia's Token" "Boon of Justice" "The Deal" "The Penitent" "Burning Blood" "The Beast" "The Calling" "The Damned" "The Fox" "The Inventor" "The Life Thief" "The Oath" "The One With All" "The Pack Leader" "The Skeleton" "The Summoner" "The Twilight Moon" "The Wretched" "Blind Venture" "Demigod's Wager" "Dialla's Subjugation" "Lucky Connections" "Scholar of the Seas" "The Formless Sea" "The Trial" "The Union" "Treasure Hunter" "The Aesthete" "The Dreamland" "The Encroaching Darkness" "The Scavenger" "The Undisputed" "The Wrath" "A Dab of Ink" "Coveted Possession" "Gift of the Gemling Queen" "Lucky Deck" "No Traces" "The Admirer" "The Betrayal" "The Hunger" "The Poet" "The Seeker" "The Valley of Steel Boxes" "The Innocent" "Lingering Remnants" "Imperial Legacy" "The Tinkerer's Table" "Prometheus' Armoury" "The Academic" "Unchained" "The Unexpected Prize" "Cursed Words" "Acclimatisation" "Haunting Shadows" "The Whiteout" "Society's Remorse" "Dying Light" "The Astromancer" "Keeper's Corruption" "Reckless Ambition" "Love Through Ice" "Draped in Dreams" "The Patient" "The Long Watch" "The Bear Woman" "Brotherhood in Exile" "The Sword King's Salute" "Brush, Paint and Palette" "Sambodhi's Wisdom" "Friendship" "The Shortcut"
-	SetFontSize 40 
+	BaseType == "Chaotic Disposition" "The Void" "Cameria's Cut" "The Heroic Shot" "Monochrome" "The Gemcutter" "The Journey" "The Survivalist" "Forbidden Power" "The Body" "The Breach" "The Fool" "The Hale Heart" "The Messenger" "The Stormcaller" "The Wolf's Legacy" "Audacity" "Earth Drinker" "Hope" "Perfection" "Squandered Prosperity" "The Landing" "The Lion" "The Mayor" "The Puzzle" "The Realm" "The Side Quest" "The Wolf" "Vinia's Token" "Boon of Justice" "The Deal" "The Penitent" "Burning Blood" "The Beast" "The Calling" "The Damned" "The Fox" "The Inventor" "The Life Thief" "The Oath" "The One With All" "The Pack Leader" "The Skeleton" "The Summoner" "The Twilight Moon" "The Wretched" "Blind Venture" "Demigod's Wager" "Dialla's Subjugation" "Lucky Connections" "Scholar of the Seas" "The Formless Sea" "The Trial" "The Union" "Treasure Hunter" "The Aesthete" "The Dreamland" "The Encroaching Darkness" "The Scavenger" "The Undisputed" "The Wrath" "A Dab of Ink" "Coveted Possession" "Gift of the Gemling Queen" "Lucky Deck" "No Traces" "The Admirer" "The Betrayal" "The Hunger" "The Poet" "The Seeker" "The Valley of Steel Boxes" "The Innocent" "Lingering Remnants" "Imperial Legacy" "The Tinkerer's Table" "Prometheus' Armoury" "The Academic" "Unchained" "The Unexpected Prize" "Cursed Words" "Acclimatisation" "Haunting Shadows" "The Whiteout" "Society's Remorse" "Dying Light" "The Astromancer" "Keeper's Corruption" "Reckless Ambition" "Love Through Ice" "Draped in Dreams" "The Patient" "The Long Watch" "The Bear Woman" "Brotherhood in Exile" "The Sword King's Salute" "Brush, Paint and Palette" "Sambodhi's Wisdom" "Friendship" "The Shortcut" "A Sea of Blue" "Disdain"
+	SetFontSize 40  
 	SetTextColor 0 255 210 255
 	SetBorderColor 0 250 255 150
 	PlayEffect Blue
@@ -529,6 +529,28 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 2 Yellow Circle
 	
+#=================================
+#			Sentinel
+#=================================	
+
+Show
+	Class "Sentinel Drone"
+	SetFontSize 40
+	SetTextColor 25 105 200
+	SetBorderColor 25 105 200 150
+	PlayEffect Blue
+	MinimapIcon 1 Blue Circle
+	
+Show
+	Class "Stackable Currency"
+	BaseType "Core" "Recombinator"
+	SetFontSize 40
+	SetTextColor 25 105 200
+	SetBorderColor 25 105 200 150
+	PlayEffect Blue
+	MinimapIcon 2 Blue Circle
+	
+	
 	
 #=================================
 #			Prophecies
@@ -596,6 +618,15 @@ Show
 	SetBackgroundColor 6 0 60
 	PlayEffect White
 	MinimapIcon 2 White Star
+	
+Show
+	Class Gems
+	BaseType "Awakened Empower" "Awakened Enlighten" "Awakened Enhance"
+	SetFontSize 40
+	SetBorderColor 0 250 255 150
+	SetBackgroundColor 6 0 60
+	PlayEffect White
+	MinimapIcon 0 Cyan Star
 	
 Show
 	Class Gems
@@ -918,10 +949,9 @@ Show
 #		Crafting Bases
 #=================================
 
-#how
+#Show
+#	BaseType "Slink Gloves" "Opal Sceptre" "Void Sceptre"
 #	Corrupted False
-#	BaseType 
-#	ItemLevel >= 83
 #	SetFontSize 80
 #	SetTextColor 255 255 255 255
 #	SetBorderColor 255 255 225 255
@@ -932,13 +962,13 @@ Show
 #		Chancing Bases
 #=================================
 
-#Show
-#	Corrupted False
-#	Rarity Normal
-#	BaseType "Void Sceptre"
-#	SetFontSize 80
-#	PlayEffect Grey
-#	MinimapIcon 2 Grey Triangle
+Show
+	Corrupted False
+	Rarity Normal
+	BaseType "Embroidered Gloves"
+	SetFontSize 80
+	PlayEffect Grey
+	MinimapIcon 2 Grey Triangle
 
 	
 #=================================
