@@ -144,7 +144,7 @@ Show
 	
 Show
 	Class Currency
-	BaseType "Orb of Alchemy" "Regal Orb" "Chaos Orb"
+	BaseType "Orb of Alchemy" "Regal Orb" "Chaos Orb" "Orb of Binding" 
 	SetFontSize 40
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
@@ -231,7 +231,7 @@ Show
 #Sextants
 Show
 	Class Currency
-	BaseType "Simple Sextant" "Prime Sextant" "Awakened Sextant"
+	BaseType "Simple Sextant" "Prime Sextant" "Awakened Sextant" "Elevated Sextant"
 	SetFontSize 40
 	SetTextColor 75 245 200
 	SetBorderColor 75 245 200 150
@@ -514,6 +514,7 @@ Show
 
 Show
 	Class "Sentinel Drone"
+	Rarity "Magic" "Rare" "Unique"
 	SetFontSize 40
 	SetTextColor 25 105 200
 	SetBorderColor 25 105 200 150
@@ -701,7 +702,7 @@ Show
 
 Show
 	Class Currency
-	BaseType "Ritual Splinter" "Ritual Vessel" "Crescent Splinter"
+	BaseType "Ritual Splinter" "Ritual Vessel"
 	SetFontSize 40
 	SetTextColor 255 70 70
 	SetBorderColor 55 70 70 150
@@ -736,6 +737,14 @@ Show
 	SetFontSize 40
 	SetTextColor 45 220 195
 	SetBorderColor 45 220 195 150
+	
+Show
+	BaseType "Crescent Splinter"
+	SetFontSize 45
+	SetTextColor 255 40 240
+	SetBorderColor 255 40 240 150
+	PlayEffect Pink
+	MinimapIcon 1 Pink Kite
 
 #=================================
 #			Heist
@@ -926,31 +935,52 @@ Show
 #		Crafting Bases
 #=================================
 
-#Show
-#	BaseType "Slink Gloves" "Opal Sceptre" "Void Sceptre"
-#	Corrupted False
-#	SetFontSize 80
-#	SetTextColor 255 255 255 255
-#	SetBorderColor 255 255 225 255
-#	PlayEffect White
-#	MinimapIcon 2 White Triangle
+Show
+	BaseType "Full Dragonscale"
+	Corrupted False
+	ItemLevel >= 83
+	SetFontSize 80
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 225 255
+	PlayEffect White
+	MinimapIcon 2 White Triangle
 	
 #=================================
 #		Chancing Bases
 #=================================
 
-Show
-	Corrupted False
-	Rarity Normal
-	BaseType "Embroidered Gloves"
-	SetFontSize 80
-	PlayEffect Grey
-	MinimapIcon 2 Grey Triangle
+#Show
+#	Corrupted False
+#	Rarity Normal
+#	BaseType "Embroidered Gloves"
+#	SetFontSize 80
+#	PlayEffect Grey
+#	MinimapIcon 2 Grey Triangle
 
 	
 #=================================
 #			Influence
 #=================================
+
+Show
+	HasInfluence Shaper
+	Rarity Unique
+	SetFontSize 50
+	SetTextColor 250 142 27
+	SetBorderColor 250 142 27 150
+	SetBackgroundColor 255 255 255
+	PlayEffect Orange
+	MinimapIcon 0 Orange Cross
+
+Show
+	HasInfluence Elder
+	Rarity Unique
+	SetFontSize 50
+	SetTextColor 250 142 27
+	SetBorderColor 250 142 27 150
+	SetBackgroundColor 255 255 255
+	PlayEffect Orange
+	MinimapIcon 0 Orange Cross
 
 Show
 	HasInfluence Shaper
@@ -1014,7 +1044,7 @@ Show
 	
 Show
 	Class Currency
-	BaseType "Orb of Binding" "Binding Shard" "Engineer's Orb" "Engineer's Shard" "Annulment Shard" "Transmutation Shard" "Chaos Shard" "Regal Shard" "Alchemy Shard" "Alteration Shard" 
+	BaseType "Binding Shard" "Engineer's Orb" "Engineer's Shard" "Annulment Shard" "Transmutation Shard" "Chaos Shard" "Regal Shard" "Alchemy Shard" "Alteration Shard" 
 	SetFontSize 35
 	SetTextColor 30 180 255
 	SetBorderColor 30 180 255 150
@@ -1998,6 +2028,7 @@ Show
 	Width <= 2
 	Height <= 2
 	SocketGroup RGB
+	AreaLevel <= 77
 	SetFontSize 36
 	SetTextColor 255 255 255
 	SetBorderColor 0 255 255 150
@@ -2006,6 +2037,7 @@ Show
 	Width <= 1
 	Height <= 3
 	SocketGroup RGB
+	AreaLevel <= 77
 	SetFontSize 36
 	SetTextColor 255 255 255
 	SetBorderColor 0 255 255 150
@@ -2013,6 +2045,7 @@ Show
 Show
 	Sockets 6
 	Rarity <= Rare
+	AreaLevel <= 77
 	SetFontSize 45
 	SetTextColor 255 255 255
 	SetBorderColor 255 255 255 150
