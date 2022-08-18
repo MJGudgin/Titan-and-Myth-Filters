@@ -43,18 +43,18 @@
 	# Talisman
 
 # Gear Filtering
-	# Crafting Bases
-	# Chancing Bases
 	# Influence
 	# Fractured
+	# Enchantments
 	# Six/Five Links
 	# Four Links
+	# Crafting Bases
+	# Chancing Bases
 	# Atlas Bases
 	# Specific Affix Filter
 	# High Level Bases
 	# Leveling Rares
 	# Leveling Magic
-	# Enchantments
 
 # Currency Farm
 	# Chaos Recipe
@@ -1414,33 +1414,6 @@ Show
 	SetBorderColor 255 240 40 150
 	
 #=================================
-#		Crafting Bases
-#=================================
-
-#Show
-#	BaseType "Full Dragonscale"
-#	Corrupted False
-#	ItemLevel >= 83
-#	SetFontSize 80
-#	SetTextColor 255 255 255 255
-#	SetBorderColor 255 255 225 255
-#	PlayEffect White
-#	MinimapIcon 2 White Triangle
-	
-#=================================
-#		Chancing Bases
-#=================================
-
-Show
-	Corrupted False
-	Rarity Normal
-	BaseType "Prophecy Wand"
-	SetFontSize 80
-	PlayEffect Grey
-	MinimapIcon 2 Grey Triangle
-
-	
-#=================================
 #			Influence
 #=================================
 
@@ -1552,6 +1525,18 @@ Show
 	SetFontSize 40
 	SetTextColor 45 220 195
 	SetBorderColor 45 220 195 150
+	
+#=================================
+#			Enchantments
+#=================================
+
+Show
+	AnyEnchantment True
+	SetFontSize 45
+	SetTextColor 40 255 235
+	SetBorderColor 40 255 235 150
+	PlayEffect Cyan
+	MinimapIcon 1 Cyan Moon
 
 #=================================
 #		Six/Five Links
@@ -1586,7 +1571,33 @@ Show
 	 SetFontSize 60
 	 SetTextColor 255 255 255
 	 SetBorderColor 255 255 255 150
-	 PlayEffect White Temp	
+	 PlayEffect White Temp
+
+#=================================
+#		Crafting Bases
+#=================================
+
+#Show
+#	BaseType "Full Dragonscale"
+#	Corrupted False
+#	ItemLevel >= 83
+#	SetFontSize 80
+#	SetTextColor 255 255 255 255
+#	SetBorderColor 255 255 225 255
+#	PlayEffect White
+#	MinimapIcon 2 White Triangle
+	
+#=================================
+#		Chancing Bases
+#=================================
+
+Show
+	Corrupted False
+	Rarity Normal
+	BaseType "Prophecy Wand"
+	SetFontSize 80
+	PlayEffect Grey
+	MinimapIcon 2 Grey Triangle	 
 
 #=================================
 #		Atlas Bases
@@ -2097,17 +2108,7 @@ Show
 	SetTextColor 20 145 210
 	SetBorderColor 20 140 210 150	
 
-#=================================
-#			Enchantments
-#=================================
 
-Show
-	AnyEnchantment True
-	SetFontSize 45
-	SetTextColor 40 255 235
-	SetBorderColor 40 255 235 150
-	PlayEffect Cyan
-	MinimapIcon 1 Cyan Moon
 
 #=================================
 #			Chaos Recipe
