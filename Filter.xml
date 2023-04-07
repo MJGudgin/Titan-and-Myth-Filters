@@ -28,7 +28,7 @@
             <Keywords name="Keywords2">Class&#x000D;&#x000A;BaseType&#x000D;&#x000A;Rarity</Keywords>
             <Keywords name="Keywords3">SetFontSize&#x000D;&#x000A;SetTextColor&#x000D;&#x000A;SetBorderColor&#x000D;&#x000A;SetBackgroundColor</Keywords>
             <Keywords name="Keywords4">PlayEffect&#x000D;&#x000A;MinimapIcon&#x000D;&#x000A;CustomAlertSound</Keywords>
-            <Keywords name="Keywords5">HasInfluence&#x000D;&#x000A;HasExplicitMod</Keywords>
+            <Keywords name="Keywords5">HasInfluence&#x000D;&#x000A;HasExplicitMod&#x000D;&#x000A;HasCruciblePassiveTree</Keywords>
             <Keywords name="Keywords6">Identified&#x000D;&#x000A;Corrupted</Keywords>
             <Keywords name="Keywords7"></Keywords>
             <Keywords name="Keywords8"></Keywords>

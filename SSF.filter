@@ -1,6 +1,6 @@
 #====================================#
-#	Sempervivum SSF Filter v2.3.19	 #
-#			4/15/21					 #
+#	Sempervivum SSF Filter v2.3.21	 #
+#			06/04/23				 #
 #====================================#
 
 #=================================
@@ -22,6 +22,8 @@
 # Map Systems
 	# Scarabs
 	# Fragments
+	
+# Current League
 
 # Core League Mechanics
 	# Abyss
@@ -432,7 +434,7 @@ Show
 #Untiered/Unknown
 Show
 	Class "Divination"
-	BaseType ==  "Broken Truce" "Doryani's Epiphany" "Endless Night" "The Shieldbearer" "Choking Guilt" "The Enforcer" "The Shepherd's Sandals" "Azure Rage" "The Leviathan" "The Price of Devotion" "Astral Protection" "Gemcutter's Mercy" "Checkmate" "Lethean Temptation" "Something Dark"
+	BaseType ==  "Broken Truce" "Doryani's Epiphany" "Endless Night" "The Shieldbearer" "Choking Guilt" "The Enforcer" "The Shepherd's Sandals" "Azure Rage" "The Leviathan" "The Price of Devotion" "Astral Protection" "Gemcutter's Mercy" "Checkmate" "Lethean Temptation" "Something Dark" "Soul Quenched" "Poisoned Faith" "A Chilling Wind" "Matryoshka"
 	SetFontSize 50
 	SetTextColor 0 0 0
 	SetBorderColor 0 255 210 255
@@ -444,7 +446,7 @@ Show
 #T0
 Show
 	Class "Divination"
-	BaseType == "The Polymath" "The Samurai's Eye" "Abandoned Wealth" "Beauty Through Death" "Immortal Resolve" "Succor of the Sinless" "Alluring Bounty" "The Doctor" "The Nurse" "House of Mirrors" "The Demon" "The Immortal" "The Saint's Treasure" "The Dragon's Heart" "The Fiend" "Wealth and Power" "Seven Years Bad Luck" "The Cheater" "The Strategist" "The Progeny of Lunaris" "The Eldritch Decay" "The Greatest Intentions" "The White Knight" "Peaceful Moments" "The Gulf" "Triskaidekaphobia" "Unrequited Love" "Desecrated Virtue" "Brother's Stash" "Winter's Embrace" "A Modest Request" "Broken Promises" "The Eternal War" "Luminous Trove" "The Hook" "Dementophobia" "Eternal Bonds" "The Scout" "Altered Perception" "The Destination" "The Apothecary" "Home"
+	BaseType == "The Polymath" "The Samurai's Eye" "Abandoned Wealth" "Beauty Through Death" "Immortal Resolve" "Succor of the Sinless" "Alluring Bounty" "The Doctor" "The Nurse" "House of Mirrors" "The Demon" "The Immortal" "The Saint's Treasure" "The Dragon's Heart" "The Fiend" "Wealth and Power" "Seven Years Bad Luck" "The Cheater" "The Strategist" "The Progeny of Lunaris" "The Eldritch Decay" "The Greatest Intentions" "The White Knight" "Peaceful Moments" "The Gulf" "Triskaidekaphobia" "Unrequited Love" "Desecrated Virtue" "Brother's Stash" "Winter's Embrace" "A Modest Request" "Broken Promises" "The Eternal War" "Luminous Trove" "The Hook" "Dementophobia" "Eternal Bonds" "The Scout" "Altered Perception" "The Destination" "The Apothecary" "Home" "Brother's Gift"
 	SetFontSize 50
 	SetTextColor 0 0 0
 	SetBorderColor 0 255 210 255
@@ -456,7 +458,7 @@ Show
 #T1
 Show
 	Class "Divination"
-	BaseType == "Divine Justice" "Heterochromia" "The Throne" "Blessing of God" "Buried Treasure"  "Hunter's Reward" "Void of the Elements" "Left to Fate" "The Price of Loyalty" "The Professor" "The Sacrifice" "Underground Forest" "Alone in the Darkness"  "The Bargain" "The Chosen" "The Escape" "The Jeweller's Boon" "The Primordial" "The Rite of Elements" "The Undaunted" "Boon of the First Ones" "Bowyer's Dream" "The Bones" "The Celestial Justicar" "The Dapper Prodigy" "The Dark Mage" "The Dreamer" "The Enlightened" "The Porcupine" "The Warlord" "Deathly Designs" "Emperor of Purity" "More is Never Enough" "Pride of the First Ones" "The Ethereal" "The Obscured" "The Wilted Rose" "The Wind" "Arrogance of the Vaal" "Pride Before the Fall" "Remembrance" "The Cacophony" "The Eye of Terror" "The King's Heart" "The Offering" "The Valkyrie" "The Wolven King's Bite" "The World Eater" "Azyran's Reward" "Etched in Blood" "Harmony of Souls" "Humility" "The Endless Darkness" "The Iron Bard" "The Pact" "Vanity" "Volatile Power" "The Celestial Stone" "The Last One Standing" "Time-Lost Relic" "The Artist" "The Chains that Bind" "The Sephirot" "The Hoarder" "The Cataclysm" "Rebirth" "Council of Cats" "The Tumbleweed" "The Hive of Knowledge" "Gift of Asenath" "A Note in the Wind" "The Sustenance" "The Awakened" "A Familiar Call" "The Long Con" "The Bitter Blossom" "Fateful Meeting" "The Card Sharp" "Deadly Joy" "The Cartographer" "The Blessing of Moosh" "The Last Supper" "The Price of Prescience" "The Mind's Eyes" "Ambitious Obsession" "Desperate Crusade" "A Stone Perfected" "Guardian's Challenge" "The Forgotten Treasure" "The Aspirant" "Judging Voices" "Justified Ambition" "Magnum Opus" "Imperfect Memories" "A Fate Worse Than Death" "Rebirth and Renewal" "Darker Half"
+	BaseType == "Divine Justice" "Heterochromia" "The Throne" "Blessing of God" "Buried Treasure"  "Hunter's Reward" "Void of the Elements" "Left to Fate" "The Price of Loyalty" "The Professor" "The Sacrifice" "Underground Forest" "Alone in the Darkness"  "The Bargain" "The Chosen" "The Escape" "The Jeweller's Boon" "The Primordial" "The Rite of Elements" "The Undaunted" "Boon of the First Ones" "Bowyer's Dream" "The Bones" "The Celestial Justicar" "The Dapper Prodigy" "The Dark Mage" "The Dreamer" "The Enlightened" "The Porcupine" "The Warlord" "Deathly Designs" "Emperor of Purity" "More is Never Enough" "Pride of the First Ones" "The Ethereal" "The Obscured" "The Wilted Rose" "The Wind" "Arrogance of the Vaal" "Pride Before the Fall" "Remembrance" "The Cacophony" "The Eye of Terror" "The King's Heart" "The Offering" "The Valkyrie" "The Wolven King's Bite" "The World Eater" "Azyran's Reward" "Etched in Blood" "Harmony of Souls" "Humility" "The Endless Darkness" "The Rusted Bard" "The Pact" "Vanity" "Volatile Power" "The Celestial Stone" "The Last One Standing" "Time-Lost Relic" "The Artist" "The Chains that Bind" "The Sephirot" "The Hoarder" "The Cataclysm" "Rebirth" "Council of Cats" "The Tumbleweed" "The Hive of Knowledge" "Gift of Asenath" "A Note in the Wind" "The Sustenance" "The Awakened" "A Familiar Call" "The Long Con" "The Bitter Blossom" "Fateful Meeting" "The Card Sharp" "Deadly Joy" "The Cartographer" "The Blessing of Moosh" "The Last Supper" "The Price of Prescience" "The Mind's Eyes" "Ambitious Obsession" "Desperate Crusade" "A Stone Perfected" "Guardian's Challenge" "The Forgotten Treasure" "The Aspirant" "Judging Voices" "Justified Ambition" "Magnum Opus" "Imperfect Memories" "A Fate Worse Than Death" "Rebirth and Renewal" "Darker Half"
 	SetFontSize 40
 	SetTextColor 0 0 0
 	SetBorderColor 0 255 220 150
@@ -865,6 +867,24 @@ Show
 	SetBackgroundColor 159 15 213 255
 	PlayEffect White
 
+#=================================
+#			Current League
+#=================================
+
+Show
+	Class "Stackable Currency"
+	BaseType "Geode" "Ore"
+	SetFontSize 45
+	SetTextColor 255 140 25 255
+	SetBorderColor 255 255 255 150
+	
+Show
+	HasCruciblePassiveTree True
+	SetFontSize 40
+	SetTextColor 255 140 25 255
+	SetBorderColor 255 255 255 150
+	
+
 #StrictIgnore
 #=================================
 #			Abyss
@@ -995,8 +1015,8 @@ Show
 	CustomAlertSound "pot_death_1.wav"
 	
 Show
-	Class "Map Fragments"
-	BaseType "Xoph's Breachstone" "Xoph's Charged Breachstone" "Xoph's Enriched Breachstone" "Xoph's Pure Breachstone" "Xoph's Flawless Breachstone"
+	Class "Breachstone"
+	BaseType "Xoph's Breachstone" "Xoph's Flawless Breachstone"
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
@@ -1015,8 +1035,8 @@ Show
 	CustomAlertSound "pot_death_1.wav"
 
 Show
-	Class "Map Fragments"
-	BaseType "Esh's Breachstone" "Esh's Charged Breachstone" "Esh's Enriched Breachstone" "Esh's Pure Breachstone" "Esh's Flawless Breachstone"
+	Class "Breachstone"
+	BaseType "Esh's Breachstone" "Esh's Flawless Breachstone"
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
@@ -1035,8 +1055,8 @@ Show
 	CustomAlertSound "pot_death_1.wav"
 	
 Show
-	Class "Map Fragments"
-	BaseType "Tul's Breachstone" "Tul's Charged Breachstone" "Tul's Enriched Breachstone" "Tul's Pure Breachstone" "Tul's Flawless Breachstone"
+	Class "Breachstone"
+	BaseType "Tul's Breachstone" "Tul's Flawless Breachstone"
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
@@ -1055,8 +1075,8 @@ Show
 	CustomAlertSound "pot_death_1.wav"
 	
 Show
-	Class "Map Fragments"
-	BaseType "Uul-Netol's Breachstone" "Uul-Netol's Charged Breachstone" "Uul-Netol's Enriched Breachstone" "Uul-Netol's Pure Breachstone" "Uul-Netol's Flawless Breachstone"
+	Class "Breachstone"
+	BaseType "Uul-Netol's Breachstone" "Uul-Netol's Flawless Breachstone"
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
@@ -1075,8 +1095,8 @@ Show
 	CustomAlertSound "pot_death_1.wav"
 	
 Show
-	Class "Map Fragments"
-	BaseType "Chayula's Breachstone" "Chayula's Charged Breachstone" "Chayula's Enriched Breachstone" "Chayula's Pure Breachstone" "Chayula's Flawless Breachstone"
+	Class "Breachstone"
+	BaseType "Chayula's Breachstone" "Chayula's Flawless Breachstone"
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
