@@ -560,7 +560,7 @@ Show
 	
 Show
 	Class Gems
-	AlternateQuality True
+	TransfiguredGem True
 	SetFontSize 45
 	SetBorderColor 0 250 255 150
 	SetBackgroundColor 6 0 60
@@ -844,7 +844,7 @@ Show
 
 Show
 	Class "Map Fragments"
-	BaseType "Winged Cartography Scarab" "Winged Reliquary Scarab" "Winged Bestiary Scarab" "Winged Shaper Scarab" "Winged Elder Scarab" "Winged Sulphite Scarab" "Winged Divination Scarab"	"Winged Torment Scarab" "Winged Ambush Scarab" "Winged Harbinger Scarab" "Winged Breach Scarab" "Winged Legion Scarab" "Winged Metamorph Scarab" "Winged Blight Scarab" "Winged Abyss Scarab" "Winged Expedition Scarab"
+	BaseType "Winged Cartography Scarab" "Winged Reliquary Scarab" "Winged Bestiary Scarab" "Winged Shaper Scarab" "Winged Elder Scarab" "Winged Sulphite Scarab" "Winged Divination Scarab"	"Winged Torment Scarab" "Winged Ambush Scarab" "Winged Harbinger Scarab" "Winged Breach Scarab" "Winged Legion Scarab" "Winged Ultimatum Scarab" "Winged Blight Scarab" "Winged Abyss Scarab" "Winged Expedition Scarab"
 	SetBorderColor 0 255 220 150
 	SetTextColor 255 175 0 
 	SetFontSize 50
@@ -854,7 +854,7 @@ Show
 
 Show
 	Class "Map Fragments"
-	BaseType "Gilded Bestiary Scarab" "Gilded Cartography Scarab" "Gilded Legion Scarab" "Gilded Sulphite Scarab" "Gilded Metamorph Scarab" "Gilded Blight Scarab" "Gilded Abyss Scarab" "Gilded Expedition Scarab"
+	BaseType "Gilded Bestiary Scarab" "Gilded Cartography Scarab" "Gilded Legion Scarab" "Gilded Sulphite Scarab" "Gilded Ultimatum Scarab" "Gilded Blight Scarab" "Gilded Abyss Scarab" "Gilded Expedition Scarab"
 	SetBorderColor 0 255 220 150
 	SetTextColor 255 175 0 
 	SetFontSize 50
@@ -995,8 +995,29 @@ Show
 #			Current League
 #=================================
 
-
+Show
+	Class Tincture
+	SetFontSize 45
+	SetTextColor 125 40 180
+	SetBorderColor 125 40 180 150
+	PlayEffect Purple
+	MinimapIcon 1 Purple Circle
 	
+Show
+	BaseType "Charm"
+	SetFontSize 45
+	SetTextColor 125 40 180
+	SetBorderColor 125 40 180 150
+	PlayEffect Purple
+	MinimapIcon 1 Purple Circle
+	
+Show
+	Class Corpse
+	SetFontSize 45
+	SetTextColor 125 40 180
+	SetBorderColor 125 40 180 150
+	PlayEffect Purple
+	MinimapIcon 1 Purple Circle
 
 #StrictIgnore
 #=================================
@@ -1018,6 +1039,19 @@ Show
 	SetTextColor 130 200 140
 	SetBorderColor 130 200 140 150
 #EndStrictIgnore
+
+#=================================
+#			Ancestor
+#=================================
+
+Show
+	Class "Currency"
+	BaseType Omen
+	SetFontSize 40
+	SetTextColor 50 185 190
+	SetBackgroundColor 45 125 185
+	PlayEffect Cyan
+	MinimapIcon 1 Cyan Circle
 	
 #=================================
 #			Betrayal
@@ -1540,27 +1574,7 @@ Show
 	SetBorderColor 249 150 25 150
 	#DisableDropSound True
 	
-#=================================
-#			Metamorph
-#=================================
 
-Show
-	Class "Metamorph Sample"
-	SetBackgroundColor 30 30 30
-	SetBorderColor 112 247 82 150
-	SetTextColor 112 247 82
-	SetFontSize 45
-	PlayEffect Green
-	CustomAlertSound "plant_trap_bite.wav"
-	
-Show
-	BaseType "Abrasive Catalyst" "Accelerating Catalyst" "Fertile Catalyst" "Imbued Catalyst" "Intrinsic Catalyst" "Noxious Catalyst" "Prismatic Catalyst" "Tempering Catalyst" "Turbulent Catalyst" "Unstable Catalyst" 
-	SetBackgroundColor 30 30 30
-	SetBorderColor 112 247 82 150
-	SetTextColor 112 247 82
-	SetFontSize 40
-	PlayEffect Green
-	CustomAlertSound "vine_plat_land.wav"
 
 #=================================
 #			Ritual
@@ -1620,6 +1634,27 @@ Show
 	SetFontSize 35
 	SetTextColor 235 220 50
 	SetBorderColor 255 240 40 150
+	
+#=================================
+#			Ultimatum
+#=================================
+
+Show
+	BaseType "Inscribed Ultimatum"
+	SetTextColor 210 35 65 255
+	SetBorderColor 210 35 65 150
+	SetBackgroundColor 0 0 0
+	SetFontSize 45
+	PlayEffect Green
+
+Show
+	BaseType "Abrasive Catalyst" "Accelerating Catalyst" "Fertile Catalyst" "Imbued Catalyst" "Intrinsic Catalyst" "Noxious Catalyst" "Prismatic Catalyst" "Tempering Catalyst" "Turbulent Catalyst" "Unstable Catalyst" "Tainted Catalyst"
+	SetBackgroundColor 30 30 30
+	SetBorderColor 112 247 82 150
+	SetTextColor 112 247 82
+	SetFontSize 40
+	PlayEffect Green
+	CustomAlertSound "vine_plat_land.wav"
 	
 #=================================
 #			Influence
@@ -2512,21 +2547,40 @@ Hide
 #		Deprecated Content
 #=================================
 
-#Show
-#	Class "Stackable Currency"
-#	BaseType "Geode" "Ore"
-#	SetFontSize 45
-#	SetTextColor 255 140 25 255
-#	SetBorderColor 255 255 255 150
+
+	#=================================
+	#			Metamorph
+	#=================================
+
+	#Show
+	#	Class "Metamorph Sample"
+	#	SetBackgroundColor 30 30 30
+	#	SetBorderColor 112 247 82 150
+	#	SetTextColor 112 247 82
+	#	SetFontSize 45
+	#	PlayEffect Green
+	#	CustomAlertSound "plant_trap_bite.wav"
 	
-#Show
-#	HasCruciblePassiveTree True
-#	SetFontSize 40
-#	SetTextColor 255 140 25 255
-#	SetBorderColor 255 255 255 150
-#	PlayEffect Orange
-#	MinimapIcon 1 Orange Star
-	
+	#=================================
+	#			Crucible
+	#=================================
+
+	#Show
+	#	Class "Stackable Currency"
+	#	BaseType "Geode" "Ore"
+	#	SetFontSize 45
+	#	SetTextColor 255 140 25 255
+	#	SetBorderColor 255 255 255 150
+		
+	#Show
+	#	HasCruciblePassiveTree True
+	#	SetFontSize 40
+	#	SetTextColor 255 140 25 255
+	#	SetBorderColor 255 255 255 150
+	#	PlayEffect Orange
+	#	MinimapIcon 1 Orange Star
+
+
 #=================================
 #		Notes
 #=================================
