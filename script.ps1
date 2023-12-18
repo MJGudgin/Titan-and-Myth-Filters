@@ -7,6 +7,9 @@ New-Item Console.filter
 rm SSF-Strict.filter
 New-Item SSF-Strict.filter
 
+rm Console-Strict.filter
+New-Item Console-Strict.filter
+
 $objCount
 $StrictOutput = $true
 
@@ -28,6 +31,10 @@ foreach ($line in (Get-Content $file))
 		elseif ($StrictOutput -eq $true)
 		{
 			Add-Content SSF-Strict.filter $line
+			if ($a[0] -ne '	CustomAlertSound')
+			{
+			Add-Content Console-Strict.filter $line
+			}
 		}
 }
 
