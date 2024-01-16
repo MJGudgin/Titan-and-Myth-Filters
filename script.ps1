@@ -1,17 +1,17 @@
 #Select-String -Path SSF.filter -Pattern 'CustomAlertSound' -NotMatch -Raw | Out-File Console.filter
 
-$file = "SSF.filter"
+$file = "Myth.filter"
 rm Console.filter
 New-Item Console.filter
 
-rm SSF-Strict.filter
-New-Item SSF-Strict.filter
+rm Myth-Strict.filter
+New-Item Myth-Strict.filter
 
 rm Console-Strict.filter
 New-Item Console-Strict.filter
 
-rm SSF-Super-Strict.filter
-New-Item SSF-Super-Strict.filter
+rm Myth-Super-Strict.filter
+New-Item Myth-Super-Strict.filter
 
 rm Console-Super-Strict.filter
 New-Item Console-Super-Strict.filter

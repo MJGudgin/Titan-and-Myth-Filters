@@ -97,18 +97,107 @@ Show
 	MinimapIcon 1 Purple Circle
 
 #Show scrolls through T10 maps
+#SuperStrictIgnore
+Show 
+	Class Currency
+	StackSize >= 5
+	BaseType "Scroll of Wisdom" "Portal Scroll"
 #EndSuperStrictIgnore
+#StrictIgnore
+Show 
+	Class Currency
+	BaseType "Scroll of Wisdom"
+	AreaLevel <= 77
+	SetFontSize 35
+	SetBorderColor 200 0 0 210
+
+Show
+	Class Currency
+	BaseType "Portal Scroll"
+	AreaLevel <= 77
+	SetFontSize 35
+	SetBorderColor 45 180 235 140
 #EndStrictIgnore
+#SuperStrictIgnore
+Show
+	Class Currency
+	StackSize >= 5
+	BaseType "Blacksmith's Whetstone" "Armourer's Scrap"
+	SetFontSize 30
+	SetTextColor 150 150 150
 #EndSuperStrictIgnore
+#StrictIgnore
+Show
+	Class Currency
+	BaseType "Blacksmith's Whetstone" "Armourer's Scrap"
+	SetFontSize 30
+	SetTextColor 150 150 150
 #EndStrictIgnore
 	
 # Magic Item Currency
+#StrictIgnore
+Show
+	Class Currency
+	BaseType "Orb of Transmutation" "Orb of Augmentation"
+	SetFontSize 35
+	SetTextColor 60 195 255
+	SetBorderColor 60 195 255 150
+	SetBackgroundColor 30 30 30
 #EndStrictIgnore
 	
+#SuperStrictIgnore
+Show
+	Class Currency
+	StackSize >= 10
+	BaseType "Orb of Transmutation" "Orb of Augmentation"
+	SetFontSize 35
+	SetTextColor 60 195 255
+	SetBorderColor 60 195 255 150
+	SetBackgroundColor 30 30 30
+
+Show
+	Class Currency
+	StackSize >= 10
+	BaseType "Orb of Chance"
+	SetFontSize 40
+	SetTextColor 60 195 255
+	SetBorderColor 60 195 255 150
+	SetBackgroundColor 30 30 30
+	PlayEffect Blue
 #EndSuperStrictIgnore
 
+#StrictIgnore
+Show
+	Class Currency
+	BaseType "Orb of Chance"
+	SetFontSize 40
+	SetTextColor 60 195 255
+	SetBorderColor 60 195 255 150
+	SetBackgroundColor 30 30 30
+	PlayEffect Blue Temp
 #EndStrictIgnore
+#SuperStrictIgnore
+Show
+	Class Currency
+	StackSize >= 10
+	BaseType "Orb of Alteration"
+	SetFontSize 40
+	SetTextColor 60 195 255
+	SetBorderColor 60 195 255 150
+	SetBackgroundColor 30 30 30
+	MinimapIcon 1 Blue Circle
+	PlayEffect Blue
 #EndSuperStrictIgnore
+#StrictIgnore
+Show
+	Class Currency
+	BaseType "Orb of Alteration"
+	SetFontSize 40
+	SetTextColor 60 195 255
+	SetBorderColor 60 195 255 150
+	SetBackgroundColor 30 30 30
+	MinimapIcon 2 Blue Circle
+	PlayEffect Blue Temp
 #EndStrictIgnore
 
 #Rare Item Currency
@@ -119,10 +208,36 @@ Show
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
 	SetBackgroundColor 140 140 140
-	PlayAlertSound 1 300
+	CustomAlertSound "hero_unsheath.wav"
 	MinimapIcon 1 Brown Circle
 	PlayEffect Yellow
+#SuperStrictIgnore
+Show
+	Class Currency
+	BaseType == "Orb of Alchemy" "Regal Orb" "Orb of Binding" "Engineer's Orb"
+	SetFontSize 40
+	SetTextColor 229 190 66
+	SetBorderColor 245 214 113 150
+	SetBackgroundColor 30 30 30	
+#StrictIgnore
+	CustomAlertSound "hero_unsheath.wav"
 #EndStrictIgnore
+#SuperStrictIgnore
+	PlayEffect Yellow
+	MinimapIcon 2 Yellow Circle
+#EndSuperStrictIgnore	
+
+Show
+	Class Currency
+	BaseType == "Chaos Orb"
+	StackSize >= 2
+	SetFontSize 40
+	SetTextColor 229 190 66
+	SetBorderColor 245 214 113 150
+	SetBackgroundColor 30 30 30
+#SuperStrictIgnore
+	CustomAlertSound "hero_unsheath.wav"
+	PlayEffect Yellow
 #EndSuperStrictIgnore
 	MinimapIcon 1 Yellow Circle
 	
@@ -133,6 +248,9 @@ Show
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
 	SetBackgroundColor 30 30 30
+#SuperStrictIgnore
+	CustomAlertSound "hero_unsheath.wav"
+	PlayEffect Yellow
 #EndSuperStrictIgnore
 	MinimapIcon 2 Yellow Circle
 
@@ -143,10 +261,20 @@ Show
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
 	SetBackgroundColor 30 30 30
-	PlayAlertSound 1 300
+	CustomAlertSound "hero_unsheath.wav"
 	MinimapIcon 1 Brown Circle
 	PlayEffect Yellow
 	
+#StrictIgnore
+Show
+	Class Currency
+	BaseType == "Exalted Shard"
+	SetFontSize 40
+	SetTextColor 229 190 66
+	SetBorderColor 245 214 113 150
+	SetBackgroundColor 30 30 30
+	CustomAlertSound "hero_unsheath.wav"
+	MinimapIcon 2 Brown Circle
 #EndStrictIgnore
 
 Show
@@ -155,6 +283,8 @@ Show
 	SetFontSize 45
 	SetTextColor 255 0 30
 	SetBorderColor 255 0 30 150
+#StrictIgnore
+	MinimapIcon 2 Red Circle
 #EndStrictIgnore
 	
 Show
@@ -163,10 +293,27 @@ Show
 	SetFontSize 40
 	SetTextColor 255 255 255
 	SetBorderColor 255 255 255 150
+#StrictIgnore
+	MinimapIcon 2 White Circle
 #EndStrictIgnore
 	
 #Crafting Currency
+#SuperStrictIgnore
+Show
+	Class Currency
+	StackSize >= 5
+	BaseType "Orb of Fusing" "Jeweller's Orb" "Chromatic Orb"
+	SetFontSize 40
+	SetTextColor 85 225 255
+	SetBorderColor 85 225 255 150
 #EndSuperStrictIgnore
+#StrictIgnore
+Show
+	Class Currency
+	BaseType "Orb of Fusing" "Jeweller's Orb" "Chromatic Orb"
+	SetFontSize 40
+	SetTextColor 85 225 255
+	SetBorderColor 85 225 255 150
 #EndStrictIgnore
 	
 #Quality Currency
@@ -176,6 +323,9 @@ Show
 	SetFontSize 45
 	SetTextColor 50 230 100
 	SetBorderColor 50 230 100 150
+#SuperStrictIgnore
+	MinimapIcon 2 Green Circle
+	PlayEffect Yellow
 #EndSuperStrictIgnore
 Show
 	Class Currency
@@ -183,6 +333,9 @@ Show
 	SetFontSize 45
 	SetTextColor 50 230 100
 	SetBorderColor 50 230 100 150
+#SuperStrictIgnore
+	MinimapIcon 2 Green Circle
+	PlayEffect Yellow
 #EndSuperStrictIgnore
 	
 #Mod Currency
@@ -192,7 +345,12 @@ Show
 	SetFontSize 50
 	SetTextColor 209 187 113
 	SetBorderColor 245 214 113 150
+#SuperStrictIgnore
+	CustomAlertSound "bell_rise.wav"
+	MinimapIcon 1 Brown Circle
 #EndSuperStrictIgnore
+#StrictIgnore
+	PlayEffect Yellow
 #EndStrictIgnore
 #Rare Currency
 Show
@@ -202,7 +360,7 @@ Show
 	SetTextColor 40 40 40
 	SetBorderColor 255 136 0 150
 	SetBackgroundColor 255 255 255
-	PlayAlertSound 6 300
+	CustomAlertSound "dream_orb_pickup.wav"
 	MinimapIcon 0 Orange Circle
 	PlayEffect Orange
 	
@@ -221,7 +379,7 @@ Show
 	SetFontSize 40
 	SetTextColor 75 245 200
 	SetBorderColor 75 245 200 150
-	PlayAlertSound 1 300
+	CustomAlertSound "hero_unsheath.wav"
 	MinimapIcon 1 Grey Circle
 	PlayEffect Grey
 	
@@ -232,7 +390,7 @@ Show
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
 	SetBackgroundColor 30 30 30
-	PlayAlertSound 1 300
+	CustomAlertSound "hero_unsheath.wav"
 	MinimapIcon 1 Grey Circle
 	PlayEffect Grey
 #SuperStrictIgnore	
@@ -244,6 +402,9 @@ Show
 	SetBorderColor 245 214 113 150
 	SetBackgroundColor 30 30 30
 #EndSuperStrictIgnore
+#StrictIgnore
+	CustomAlertSound "hero_unsheath.wav"
+	MinimapIcon 2 White Circle
 #EndStrictIgnore
 
 Show
@@ -254,8 +415,33 @@ Show
 	SetBorderColor 45 220 195 150
 	MinimapIcon 2 White Circle
 
+#SuperStrictIgnore
+Show
+	Class Currency
+	StackSize >= 2
+	BaseType "Orb of Horizons"
+	SetFontSize 40
+	SetTextColor 30 180 255
+	SetBorderColor 30 180 255 150
+	MinimapIcon 2 Blue Circle
 #EndSuperStrictIgnore
+#StrictIgnore
+Show
+	Class Currency
+	BaseType "Orb of Horizons"
+	SetFontSize 40
+	SetTextColor 30 180 255
+	SetBorderColor 30 180 255 150
+	MinimapIcon 2 Blue Circle
 #EndStrictIgnore
+#SuperStrictIgnore
+Show
+	Class Currency
+	BaseType "Enkindling Orb" "Instilling Orb"
+	SetFontSize 40
+	SetTextColor 50 230 100
+	SetBorderColor 50 230 100 150
+	MinimapIcon 2 Green Circle
 #EndSuperStrictIgnore
 #Eldritch Currency
 Show
@@ -264,9 +450,20 @@ Show
 	SetFontSize 50
 	SetTextColor 0 255 255
 	SetBorderColor 255 0 0 150
-	PlayAlertSound 4 200
+	CustomAlertSound "bell_rise.wav"
 	MinimapIcon 2 Cyan Circle
+#SuperStrictIgnore
+	PlayEffect Cyan
+	
+Show
+	Class Currency
+	BaseType "Lesser Eldritch Ember" "Lesser Eldritch Ichor"
+	SetFontSize 50
+	SetTextColor 0 255 255
+	SetBorderColor 255 0 0 150
 #EndSuperStrictIgnore
+#StrictIgnore
+	MinimapIcon 2 Cyan Circle
 #EndStrictIgnore
 	
 Show
@@ -276,7 +473,7 @@ Show
 	SetTextColor 0 255 255
 	SetBorderColor 255 0 0
 	SetBackgroundColor 255 255 255 150
-	PlayAlertSound 6 300
+	CustomAlertSound "dream_orb_pickup.wav"
 	MinimapIcon 1 Cyan Circle
 	PlayEffect Cyan
 	
@@ -287,6 +484,7 @@ Show
 	SetTextColor 0 255 255
 	SetBorderColor 255 0 0
 	SetBackgroundColor 255 255 255 150
+	CustomAlertSound "dream_orb_pickup.wav"	
 	MinimapIcon 0 Cyan Circle
 	PlayEffect Cyan
 
@@ -328,7 +526,7 @@ Show
 	SetFontSize 45
 	SetTextColor 45 220 195
 	SetBorderColor 45 220 195 150
-	PlayAlertSound 2 300
+	CustomAlertSound "bell_hit.wav"
 	MinimapIcon 1 Cyan Pentagon
 	PlayEffect Cyan
 	
@@ -346,7 +544,7 @@ Show
 	SetTextColor 255 155 30
 	SetBorderColor 255 155 30 150
 	SetBackgroundColor 255 255 255
-	PlayAlertSound 6 300
+	CustomAlertSound "dream_orb_pickup.wav"
 	MinimapIcon 0 Orange Pentagon
 	PlayEffect Orange
 	
@@ -355,7 +553,7 @@ Show
 	SetFontSize 40
 	SetTextColor 45 220 195
 	SetBorderColor 255 155 30 150
-	PlayAlertSound 2 300
+	CustomAlertSound "bell_hit.wav"
 	MinimapIcon 0 Orange Pentagon
 	PlayEffect Orange
 	
@@ -364,7 +562,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 155 30
 	SetBorderColor 255 155 30 150
-	PlayAlertSound 2 300
+	CustomAlertSound "bell_hit.wav"
 	MinimapIcon 1 Orange Kite
 	PlayEffect Orange
 
@@ -379,7 +577,7 @@ Show
 	SetTextColor 250 142 27
 	SetBorderColor 245 225 160
 	SetBackgroundColor 255 255 255
-	PlayAlertSound 7 200
+	CustomAlertSound "buzzer_startle_01.wav"
 	MinimapIcon 0 Orange Square
 	PlayEffect Orange
 
@@ -389,7 +587,7 @@ Show
 	SetFontSize 60
 	SetTextColor 250 142 27
 	SetBorderColor 245 225 160
-	PlayAlertSound 7 200
+	CustomAlertSound "buzzer_startle_01.wav"
 	MinimapIcon 0 Brown Square
 	PlayEffect Brown
 
@@ -399,7 +597,7 @@ Show
 	SetFontSize 60
 	SetTextColor 250 142 27
 	SetBorderColor 245 225 160
-	PlayAlertSound 7 200
+	CustomAlertSound "buzzer_startle_01.wav"
 	MinimapIcon 0 Orange Square
 	PlayEffect Orange
 	
@@ -409,7 +607,7 @@ Show
 	SetTextColor 0 255 0
 	SetBorderColor 255 155 0
 	SetBackgroundColor 100 35 65
-	PlayAlertSound 7 200
+	CustomAlertSound "buzzer_startle_01.wav"
 	MinimapIcon 0 Orange Square
 	PlayEffect Orange
 
@@ -419,7 +617,7 @@ Show
 	SetFontSize 45
 	SetTextColor 191 244 0
 	SetBorderColor 98 128 0 
-	PlayAlertSound 7 200
+	CustomAlertSound "buzzer_startle_01.wav"
 	MinimapIcon 0 Green Square
 	PlayEffect Green
 
@@ -430,7 +628,7 @@ Show
 	SetTextColor 200 0 255
 	SetBorderColor 200 0 255
 	SetBackgroundColor 255 255 255
-	PlayAlertSound 7 200
+	CustomAlertSound "buzzer_startle_01.wav"
 	MinimapIcon 0 Grey Square
 	PlayEffect Grey
 
@@ -440,12 +638,53 @@ Show
 	SetFontSize 45
 	SetTextColor 170 0 255
 	SetBorderColor 245 225 160
-	PlayAlertSound 7 200
+	CustomAlertSound "buzzer_startle_01.wav"
 	MinimapIcon 1 Purple Square
 	PlayEffect Purple
 	DisableDropSound True
 
+#SuperStrictIgnore
+Show
+	MapTier >= 11
+	Class Maps
+	SetFontSize 45
+	SetTextColor 255 0 0
+	SetBorderColor 245 225 160
+	CustomAlertSound "buzzer_startle_01.wav"
+	MinimapIcon 1 Red Square
+	DisableDropSound True
+
+Show
+	MapTier >= 6
+	AreaLevel <= 77
+	Class Maps
+	SetFontSize 45
+	SetTextColor 255 255 0
+	SetBorderColor 245 225 160
+	CustomAlertSound "buzzer_startle_02.wav"
+	MinimapIcon 2 Yellow Square
+	DisableDropSound True
 #EndSuperStrictIgnore
+#StrictIgnore
+Show
+	MapTier >= 6
+	Class Maps
+	SetFontSize 45
+	SetTextColor 255 255 0
+	SetBorderColor 245 225 160
+	CustomAlertSound "buzzer_startle_02.wav"
+	MinimapIcon 2 Yellow Square
+	DisableDropSound True
+
+Show
+	MapTier >= 1
+	Class Maps
+	SetFontSize 45
+	SetTextColor 255 255 255
+	SetBorderColor 245 225 160
+	CustomAlertSound "buzzer_startle_03.wav"
+	MinimapIcon 2 White Square
+	DisableDropSound True
 #EndStrictIgnore
 
 Show
@@ -478,7 +717,7 @@ Show
 	SetTextColor 0 0 0
 	SetBorderColor 0 255 210 255
 	SetBackgroundColor 255 255 255
-	PlayAlertSound 6 300
+	CustomAlertSound "dream_orb_pickup.wav"
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Orange
 	
@@ -490,11 +729,35 @@ Show
 	SetTextColor 0 0 0
 	SetBorderColor 0 255 220 150
 	SetBackgroundColor 255 255 255
-	PlayAlertSound 5 200
+	CustomAlertSound "boss_stun.wav"
 	MinimapIcon 1 Cyan UpsideDownHouse
 	PlayEffect Cyan
 
+#SuperStrictIgnore
+#T3
+Show
+	Class "Divination"
+	BaseType == "A Familiar Call" "A Stone Perfected" "Abandoned Wealth" "Akil's Prophecy" "Altered Perception" "Arrogance of the Vaal" "Azyran's Reward" "Boon of the First Ones" "Chaotic Disposition" "Council of Cats" "Dark Dreams" "Dementophobia" "Desperate Crusade" "Divine Justice" "Draped in Dreams" "Eternal Bonds" "Ever-Changing" "Fateful Meeting" "Gift of Asenath" "Guardian's Challenge" "Hunter's Reward" "Judging Voices" "Justified Ambition" "Keeper's Corruption" "Lachrymal Necrosis" "Lingering Remnants" "Magnum Opus" "Mawr Blaidd" "Peaceful Moments" "Remembrance" "Something Dark" "The Aspirant" "The Astromancer" "The Bitter Blossom" "The Celestial Justicar" "The Celestial Stone" "The Dreamer" "The Eldritch Decay" "The Enforcer" "The Enthusiasts" "The Escape" "The Eternal War" "The Eye of the Dragon" "The Fishmonger" "The Last Supper" "The Leviathan" "The Life Thief" "The Offering" "The Old Man" "The One That Got Away" "The Polymath" "The Primordial" "The Professor" "The Risk" "The Saint's Treasure" "The Scout" "The Spark and the Flame" "The Transformation" "The Undaunted" "The Union" "The Valkyrie" "The Void" "The Wedding Gift" "The White Knight" "The Wretched" "Underground Forest" "Winter's Embrace" "The Cartographer"
+	SetFontSize 40  
+	SetTextColor 0 255 210 255
+	SetBorderColor 0 250 255 150
+	MinimapIcon 2 Blue UpsideDownHouse
 #EndSuperStrictIgnore
+#StrictIgnore
+#T4
+Show
+	Class "Divination"
+	BaseType == "A Sea of Blue" "Acclimatisation" "Ambitious Obsession" "Boon of Justice" "Bowyer's Dream" "Cameria's Cut" "Checkmate" "Coveted Possession" "Demigod's Wager" "Disdain" "Emperor of Purity" "Emperor's Luck" "Harmony of Souls" "Humility" "Immortal Resolve" "Imperial Legacy" "Last Hope" "Lucky Connections" "Lucky Deck" "Man With Bear" "More is Never Enough" "No Traces" "Rebirth and Renewal" "Sambodhi's Vow" "Society's Remorse" "The Cacophony" "The Card Sharp" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Ethereal" "The Finishing Touch" "The Fool" "The Gemcutter" "The Heroic Shot" "The Hoarder" "The Innocent" "The Inventor" "The Obscured" "The Porcupine" "The Price of Prescience" "The Price of Protection" "The Rusted Bard" "The Seeker" "The Side Quest" "The Survivalist" "The Tinkerer's Table" "The Warlord" "The Wrath" "Three Faces in the Dark" "Three Voices" "Vanity" "Vinia's Token"
+	SetFontSize 35 
+	SetTextColor 0 255 210 255
+	SetBorderColor 0 250 255 150
+
+#T4 (Remaining)
+Show
+	Class "Divination"
+	SetFontSize 35
+	SetTextColor 0 255 240
+	SetBorderColor 0 215 175 150
 #EndStrictIgnore
 	
 Show
@@ -515,7 +778,7 @@ Show
 	SetTextColor 30 200 200
 	SetBorderColor 255 170 0
 	SetBackgroundColor 255 255 255
-	PlayAlertSound 6 300
+	CustomAlertSound "dream_orb_pickup.wav"
 	MinimapIcon 1 Orange Star
 	PlayEffect Orange
 
@@ -543,7 +806,7 @@ Show
 	SetTextColor 0 146 214
 	SetBorderColor 0 250 255 150
 	SetBackgroundColor 255 255 255
-	PlayAlertSound 6 300
+	CustomAlertSound "dream_orb_pickup.wav"
 	MinimapIcon 1 Yellow Star
 	PlayEffect Orange
 	
@@ -555,8 +818,36 @@ Show
 	SetBackgroundColor 6 0 60
 	MinimapIcon 2 Cyan Star
 
+#SuperStrictIgnore
+Show
+	Class Gems
+	Quality = 20
+	SetFontSize 40
+	SetBorderColor 0 250 255 150
+	SetBackgroundColor 6 0 60
 #EndSuperStrictIgnore
 
+#StrictIgnore
+Show
+	Class Gems
+	Quality >= 15
+	SetFontSize 40
+	SetBorderColor 0 250 255 150
+	SetBackgroundColor 6 0 60
+
+Show
+	Class Gems
+	Quality >= 5
+	SetFontSize 30
+	SetBorderColor 0 250 255 150
+	SetBackgroundColor 6 0 60
+
+Show
+	Class Gems
+	GemLevel >= 10
+	SetFontSize 40
+	SetBorderColor 0 250 255 150
+	SetBackgroundColor 6 0 60
 #EndStrictIgnore
 
 Show
@@ -590,6 +881,17 @@ Show
 	SetBorderColor 0 250 255 150
 	SetBackgroundColor 6 0 60	
 
+#SuperStrictIgnore
+#=================================
+#			Jewels
+#=================================
+
+Show
+	BaseType "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel"
+	Rarity Rare
+	SetFontSize 40
+	SetTextColor 130 200 140
+	SetBorderColor 130 200 140 150
 #EndSuperStrictIgnore
 #=================================
 #			Uniques
@@ -603,7 +905,7 @@ Show
 	SetTextColor 250 142 27
 	SetBorderColor 250 142 27 150
 	SetBackgroundColor 255 255 255
-	PlayAlertSound 2 300
+	CustomAlertSound "bell_hit.wav"
 	MinimapIcon 1 White Cross
 	
 #Corrupted Uniques
@@ -625,7 +927,7 @@ Show #Uber Impresence
 	SetTextColor 250 142 27
 	SetBorderColor 250 142 27 150
 	SetBackgroundColor 255 255 255
-	PlayAlertSound 6 300
+	CustomAlertSound "dream_orb_pickup.wav"
 	MinimapIcon 1 Orange Cross
 	PlayEffect Orange
 	
@@ -637,7 +939,7 @@ Show #Squire
 	SetTextColor 250 142 27
 	SetBorderColor 250 142 27 150
 	SetBackgroundColor 255 255 255
-	PlayAlertSound 6 300
+	CustomAlertSound "dream_orb_pickup.wav"
 	MinimapIcon 1 Orange Cross
 	PlayEffect Orange
 	
@@ -649,7 +951,7 @@ Show #Uber Cortex Jewel
 	SetTextColor 250 142 27
 	SetBorderColor 250 142 27 150
 	SetBackgroundColor 255 255 255
-	PlayAlertSound 6 300
+	CustomAlertSound "dream_orb_pickup.wav"
 	MinimapIcon 1 Orange Cross
 	PlayEffect Orange
 	
@@ -669,7 +971,7 @@ Show #3 Abyss Shroud
 	SetTextColor 250 142 27
 	SetBorderColor 250 142 27 150
 	SetBackgroundColor 255 255 255
-	PlayAlertSound 4 200
+	CustomAlertSound "bell_rise.wav"
 	MinimapIcon 1 Green Cross
 	PlayEffect Orange
 	
@@ -681,7 +983,7 @@ Show #2 Abyss Uniques
 	SetTextColor 250 142 27
 	SetBorderColor 250 142 27 150
 	SetBackgroundColor 255 255 255
-	PlayAlertSound 4 200
+	CustomAlertSound "bell_rise.wav"
 	MinimapIcon 2 Green Cross
 	PlayEffect Orange
 
@@ -693,7 +995,7 @@ Show
 	SetTextColor 250 142 27
 	SetBorderColor 250 142 27 150
 	SetBackgroundColor 255 255 255
-	PlayAlertSound 6 300
+	CustomAlertSound "dream_orb_pickup.wav"
 	MinimapIcon 0 Orange Cross
 	PlayEffect Orange
 
@@ -705,7 +1007,7 @@ Show
 	SetTextColor 250 142 27
 	SetBorderColor 250 142 27 150
 	SetBackgroundColor 255 255 255
-	PlayAlertSound 4 200
+	CustomAlertSound "bell_rise.wav"
 	MinimapIcon 1 Orange Cross
 	PlayEffect Orange Temp
 	
@@ -736,9 +1038,59 @@ Show # Jewels
 	MinimapIcon 2 Brown Cross
 
 
+#StrictIgnore
+Show
+	Rarity Unique
+	SetFontSize 40
+	SetTextColor 250 142 27
+	SetBorderColor 250 142 27 150
 #EndStrictIgnore
 
+#SuperStrictIgnore
+#=================================
+#			Flasks
+#=================================
+
+Show
+	Class "Utility Flask"
+	Rarity Normal Magic
+	ItemLevel >= 84
+	SetFontSize 50
+	SetTextColor 150 255 255
+	SetBorderColor 200 255 255 150
+	
+Show
+	Class "Flask"
+	BaseType "Divine"
+	Rarity Normal Magic
+	ItemLevel >= 84
+	SetFontSize 35
+	SetTextColor 150 255 255
+	SetBorderColor 200 255 255 150
 #EndSuperStrictIgnore
+#StrictIgnore
+Show
+	Class "Life Flask"
+	Rarity Normal Magic
+	AreaLevel < 65
+	SetFontSize 35
+	SetTextColor 150 255 255
+	SetBorderColor 200 255 255 150
+
+Show
+	Class "Mana Flask"
+	Rarity Normal Magic
+	AreaLevel < 65
+	SetFontSize 30
+	SetTextColor 150 255 255
+	SetBorderColor 200 255 255 150
+
+Show
+	Class "Utility Flask"
+	Rarity Normal Magic
+	SetFontSize 50
+	SetTextColor 150 255 255
+	SetBorderColor 200 255 255 150
 #EndStrictIgnore
 
 #=================================
@@ -752,7 +1104,7 @@ Show
 	SetTextColor 160 100 0 
 	SetBackgroundColor 255 255 255
 	SetFontSize 50
-	PlayAlertSound 6 300
+	CustomAlertSound "dream_orb_pickup.wav"
 	MinimapIcon 0 Orange Diamond
 	PlayEffect Orange
 
@@ -806,7 +1158,7 @@ Show
 	SetFontSize 45
 	SetTextColor 0 255 190
 	SetBorderColor 0 255 190
-	PlayAlertSound 7 200
+	CustomAlertSound "buzzer_startle_01.wav"
 	MinimapIcon 1 Cyan Square
 
 Show
@@ -851,7 +1203,7 @@ Show
 	SetTextColor 155 0 255
 	SetBorderColor 155 0 255 150
 	SetBackgroundColor 0 0 0
-	PlayAlertSound 2 300
+	CustomAlertSound "bell_hit.wav"
 	MinimapIcon 1 Purple Pentagon
 	PlayEffect Purple
 
@@ -862,7 +1214,7 @@ Show
 	SetTextColor 155 0 255
 	SetBorderColor 155 0 255 150
 	SetBackgroundColor 0 0 0
-	PlayAlertSound 2 300
+	CustomAlertSound "bell_hit.wav"
 	MinimapIcon 1 Purple Pentagon
 	PlayEffect Purple
 	
@@ -873,7 +1225,7 @@ Show
 	SetTextColor 50 25 0
 	SetBorderColor 50 25 0 150
 	SetBackgroundColor 255 255 255
-	PlayAlertSound 2 300
+	CustomAlertSound "bell_hit.wav"
 	MinimapIcon 1 Brown Pentagon
 	PlayEffect Brown
 	
@@ -884,8 +1236,17 @@ Show
 	SetTextColor 84 84 84
 	SetBorderColor 84 84 84 150
 	SetBackgroundColor 255 255 255
-	PlayAlertSound 2 300
+	CustomAlertSound "bell_hit.wav"
 	MinimapIcon 1 Grey Pentagon
+#SuperStrictIgnore
+Show
+	Class "Map Fragments"
+	BaseType "Divine Vessel"
+	SetFontSize 45
+	SetTextColor 35 96 210
+	SetBorderColor 35 96 210 150
+	SetBackgroundColor 0 0 0
+	MinimapIcon 2 Blue Pentagon
 #EndSuperStrictIgnore
 # Don't think this should ever be needed	
 Show 
@@ -937,7 +1298,24 @@ Show
 	MinimapIcon 1 Green Hexagon
 	PlayEffect Green
 
+#SuperStrictIgnore
+Show
+	Class "Abyss Jewel"
+	ItemLevel >= 83
+	SetFontSize 40
+	SetTextColor 130 200 140
+	SetBorderColor 130 200 140 150
+	MinimapIcon 2 Green Hexagon
+	PlayEffect Green
 #EndSuperStrictIgnore
+#StrictIgnore
+Show
+	Class "Abyss Jewel"
+	SetFontSize 30
+	SetTextColor 130 200 140
+	SetBorderColor 130 200 140 150
+	MinimapIcon 2 Green Hexagon
+	PlayEffect Green
 #EndStrictIgnore
 
 #=================================
@@ -980,7 +1358,7 @@ Show
 	SetBorderColor 0 250 54 150
 	SetTextColor 0 135 30
 	SetFontSize 45
-	PlayAlertSound 3 200
+	CustomAlertSound "water_cut_01.wav"
 	MinimapIcon 0 Orange Raindrop
 	PlayEffect Orange
 
@@ -991,11 +1369,26 @@ Show
 	SetBorderColor 0 250 54 150
 	SetTextColor 0 250 54
 	SetFontSize 40
-	PlayAlertSound 3 200
+	CustomAlertSound "water_cut_01.wav"
 	MinimapIcon 1 Green Raindrop
 	
+#StrictIgnore
+Show
+	Class Currency
+	BaseType "Oil"
+	SetBackgroundColor 30 30 30
+	SetBorderColor 30 250 84 150
+	SetTextColor 30 250 84
+	SetFontSize 30
+	MinimapIcon 2 Green Raindrop
 #EndStrictIgnore
 
+#SuperStrictIgnore
+Show
+	Class Currency
+	BaseType "Oil"
+	SetBackgroundColor 30 30 30
+	SetTextColor 30 250 84
 #EndSuperStrictIgnore
 
 Show
@@ -1005,6 +1398,7 @@ Show
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
 	SetBackgroundColor 30 30 30
+	CustomAlertSound "hero_unsheath.wav"	
 	
 #=================================
 #			Breach
@@ -1016,7 +1410,7 @@ Show
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
-	PlayAlertSound 3 200
+	CustomAlertSound "pot_death_1.wav"
 	MinimapIcon 2 Purple Kite
 	PlayEffect Purple Temp
 	
@@ -1026,7 +1420,7 @@ Show
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
-	PlayAlertSound 3 200
+	CustomAlertSound "pot_death_1.wav"
 	MinimapIcon 2 Purple Kite
 	PlayEffect Purple Temp
 	
@@ -1036,7 +1430,7 @@ Show
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
-	PlayAlertSound 3 200
+	CustomAlertSound "pot_death_1.wav"
 	MinimapIcon 2 Purple Kite
 	PlayEffect Purple Temp
 	
@@ -1046,7 +1440,7 @@ Show
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
-	PlayAlertSound 3 200
+	CustomAlertSound "pot_death_1.wav"
 	MinimapIcon 2 Purple Kite
 	PlayEffect Purple Temp
 	
@@ -1056,7 +1450,7 @@ Show
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
-	PlayAlertSound 3 200
+	CustomAlertSound "pot_death_1.wav"
 	MinimapIcon 2 Purple Kite
 	PlayEffect Purple Temp
 	
@@ -1066,7 +1460,7 @@ Show
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
-	PlayAlertSound 3 200
+	CustomAlertSound "pot_death_1.wav"
 	MinimapIcon 0 Purple Kite
 	PlayEffect Purple
 	
@@ -1076,7 +1470,7 @@ Show
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
-	PlayAlertSound 3 200
+	CustomAlertSound "pot_death_1.wav"
 	MinimapIcon 0 Purple Kite
 	PlayEffect Purple
 	
@@ -1086,7 +1480,7 @@ Show
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
-	PlayAlertSound 3 200
+	CustomAlertSound "pot_death_1.wav"
 	MinimapIcon 0 Purple Kite
 	PlayEffect Purple
 
@@ -1096,7 +1490,7 @@ Show
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
-	PlayAlertSound 3 200
+	CustomAlertSound "pot_death_1.wav"
 	MinimapIcon 0 Purple Kite
 	PlayEffect Purple
 
@@ -1106,7 +1500,7 @@ Show
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
-	PlayAlertSound 3 200
+	CustomAlertSound "pot_death_1.wav"
 	MinimapIcon 0 Purple Kite
 	PlayEffect Purple
 	
@@ -1116,7 +1510,7 @@ Show
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
-	PlayAlertSound 3 200
+	CustomAlertSound "pot_death_1.wav"
 	MinimapIcon 0 Purple Kite
 	PlayEffect Purple
 	
@@ -1126,7 +1520,7 @@ Show
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
-	PlayAlertSound 3 200
+	CustomAlertSound "pot_death_1.wav"
 	MinimapIcon 0 Purple Kite
 	PlayEffect Purple
 	
@@ -1136,7 +1530,7 @@ Show
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
-	PlayAlertSound 3 200
+	CustomAlertSound "pot_death_1.wav"
 	MinimapIcon 0 Purple Kite
 	PlayEffect Purple
 	
@@ -1146,7 +1540,7 @@ Show
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
-	PlayAlertSound 3 200
+	CustomAlertSound "pot_death_1.wav"
 	MinimapIcon 0 Purple Kite
 	PlayEffect Purple
 	
@@ -1156,7 +1550,7 @@ Show
 	SetFontSize 45
 	SetTextColor 185 0 255 255
 	SetBorderColor 185 0 255 150
-	PlayAlertSound 3 200
+	CustomAlertSound "pot_death_1.wav"
 	MinimapIcon 0 Purple Kite
 	PlayEffect Purple
 	
@@ -1177,7 +1571,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 255 255
 	SetBorderColor 173 173 173 150
-	PlayAlertSound 3 200
+	CustomAlertSound "pot_death_1.wav"
 	MinimapIcon 2 Grey Kite
 	
 Show
@@ -1186,12 +1580,49 @@ Show
 	SetFontSize 45
 	SetTextColor 245 85 60
 	SetBorderColor 245 85 60 150
-	PlayAlertSound 1 300
+	CustomAlertSound "hero_unsheath.wav"
 	MinimapIcon 0 Grey Star
 	PlayEffect Grey
 	
+#SuperStrictIgnore
+	
+Show
+	BaseType "Large Cluster Jewel"
+	EnchantmentPassiveNum 8
+	SetFontSize 40
+	SetTextColor 245 85 60
+	SetBorderColor 245 85 60 150
+	MinimapIcon 1 Grey Star
+	PlayEffect Grey
+	
+Show
+	BaseType "Medium Cluster Jewel"
+	EnchantmentPassiveNum <= 5
+	SetFontSize 40
+	SetTextColor 245 85 60
+	SetBorderColor 245 85 60 150
+	MinimapIcon 1 Grey Star
+	PlayEffect Grey
+	
+Show
+	BaseType "Small Cluster Jewel"
+	EnchantmentPassiveNum 2
+	SetFontSize 40
+	SetTextColor 245 85 60
+	SetBorderColor 245 85 60 150
+	MinimapIcon 1 Grey Star
+	PlayEffect Grey
+
 #EndSuperStrictIgnore
 
+#StrictIgnore
+Show
+	BaseType "Large Cluster Jewel" "Medium Cluster Jewel" "Small Cluster Jewel"
+	SetFontSize 35
+	SetTextColor 245 85 60
+	SetBorderColor 245 85 60 150
+	MinimapIcon 1 Grey Star
+	PlayEffect Grey
 #EndStrictIgnore
 
 	
@@ -1279,6 +1710,27 @@ Show
 	PlayEffect Orange
 	MinimapIcon 0 Orange Pentagon
 
+#StrictIgnore
+Show
+	Class Currency
+	BaseType "Harbinger's Orb" "Horizon Shard" "Harbinger's Shard"
+	SetFontSize 40
+	SetTextColor 30 180 255
+	SetBorderColor 30 180 255 150
+
+Show
+	Class Currency
+	BaseType "Annulment Shard" "Regal Shard"
+	SetFontSize 40
+	SetTextColor 30 180 255
+	SetBorderColor 30 180 255 150
+
+Show
+	Class Currency
+	BaseType "Binding Shard" "Engineer's Shard" "Transmutation Shard" "Chaos Shard" "Alchemy Shard" "Alteration Shard" 
+	SetFontSize 35
+	SetTextColor 30 180 255
+	SetBorderColor 30 180 255 150
 #EndStrictIgnore
 
 #=================================
@@ -1299,7 +1751,7 @@ Show
 	SetTextColor 0 0 0 
 	SetBackgroundColor 255 255 255
 	SetBorderColor 0 0 0 150
-	PlayAlertSound 6 300
+	CustomAlertSound "dream_orb_pickup.wav"
 	MinimapIcon 0 White Raindrop
 	PlayEffect White
 	
@@ -1347,6 +1799,14 @@ Show
 	SetTextColor 255 48 231
 	MinimapIcon 2 Pink Circle
 
+#SuperStrictIgnore
+Show
+	Class Currency
+	BaseType "Rogue's Marker"
+	SetFontSize 40
+	SetBorderColor 255 48 231 150
+	SetTextColor 255 48 231
+	MinimapIcon 2 Pink Circle
 #EndSuperStrictIgnore
 	
 Show
@@ -1369,6 +1829,14 @@ Show
 	SetBorderColor 180 45 25 150
 	SetTextColor 180 45 25
 
+#StrictIgnore
+Show 
+	Rarity Unique
+	Class "Contract"
+	SetFontSize 45
+	SetTextColor 255 48 231
+	SetBorderColor 255 48 231 150
+	MinimapIcon 1 Pink Square
 #EndStrictIgnore
 
 Hide
@@ -1431,7 +1899,7 @@ Show
 	SetFontSize 40
 	SetTextColor 255 23 240
 	SetBorderColor 255 23 240 150
-	PlayAlertSound 3 200
+	CustomAlertSound "pot_death_1.wav"
 	MinimapIcon 2 Pink Kite
 	PlayEffect Pink Temp
 
@@ -1441,7 +1909,7 @@ Show
 	SetFontSize 40
 	SetTextColor 255 23 240
 	SetBorderColor 255 23 240 150
-	PlayAlertSound 3 200
+	CustomAlertSound "pot_death_1.wav"
 	MinimapIcon 2 Pink Kite
 	PlayEffect Pink Temp
 	
@@ -1451,7 +1919,7 @@ Show
 	SetFontSize 40
 	SetTextColor 255 23 240
 	SetBorderColor 255 23 240 150
-	PlayAlertSound 3 200
+	CustomAlertSound "pot_death_1.wav"
 	MinimapIcon 2 Pink Kite
 	PlayEffect Pink Temp
 
@@ -1461,7 +1929,7 @@ Show
 	SetFontSize 40
 	SetTextColor 255 23 240
 	SetBorderColor 255 23 240 150
-	PlayAlertSound 3 200
+	CustomAlertSound "pot_death_1.wav"
 	MinimapIcon 2 Pink Kite
 	PlayEffect Pink Temp
 	
@@ -1471,7 +1939,7 @@ Show
 	SetFontSize 40
 	SetTextColor 255 23 240
 	SetBorderColor 255 23 240 150
-	PlayAlertSound 3 200
+	CustomAlertSound "pot_death_1.wav"
 	MinimapIcon 2 Pink Kite
 	PlayEffect Pink Temp
 	
@@ -1482,7 +1950,7 @@ Show
 	SetTextColor 255 23 240
 	SetBorderColor 255 23 240 150
 	SetBackgroundColor 255 255 255
-	PlayAlertSound 3 200
+	CustomAlertSound "pot_death_1.wav"
 	MinimapIcon 1 Pink Pentagon
 	PlayEffect Pink
 
@@ -1546,6 +2014,13 @@ Show
 	SetTextColor 250 142 27
 	SetBorderColor 250 142 27 150
 
+#StrictIgnore
+Show
+	Class "Amulet"
+	BaseType "Talisman"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
 #EndStrictIgnore
 
 #=================================
@@ -1566,6 +2041,7 @@ Show
 	SetBorderColor 190 0 0 150
 	SetTextColor 190 0 0
 	SetFontSize 40
+	CustomAlertSound "vine_plat_land.wav"
 	MinimapIcon 2 Red Hexagon
 	
 #=================================
@@ -1580,7 +2056,7 @@ Show
 	SetTextColor 250 142 27
 	SetBorderColor 250 142 27 150
 	SetBackgroundColor 255 255 255
-	PlayAlertSound 2 300
+	CustomAlertSound "bell_hit.wav"
 	MinimapIcon 0 Brown Moon
 
 Show
@@ -1591,7 +2067,7 @@ Show
 	SetTextColor 250 142 27
 	SetBorderColor 250 142 27 150
 	SetBackgroundColor 255 255 255
-	PlayAlertSound 2 300
+	CustomAlertSound "bell_hit.wav"
 	MinimapIcon 0 Brown Moon
 
 Show
@@ -1600,6 +2076,7 @@ Show
 	SetFontSize 55
 	SetTextColor 90 255 180
 	SetBorderColor 90 255 180 150
+	CustomAlertSound "hero_parry.wav"
 	MinimapIcon 1 Grey Moon
 	
 Show
@@ -1608,6 +2085,7 @@ Show
 	SetFontSize 55
 	SetTextColor 90 255 180
 	SetBorderColor 90 255 180 150
+	CustomAlertSound "hero_parry.wav"
 	MinimapIcon 1 Grey Moon
 	
 	
@@ -1617,6 +2095,7 @@ Show
 	SetFontSize 55
 	SetTextColor 90 255 180
 	SetBorderColor 90 255 180 150
+	CustomAlertSound "hero_parry.wav"
 	MinimapIcon 1 Purple Moon
 	
 Show
@@ -1625,6 +2104,7 @@ Show
 	SetFontSize 55
 	SetTextColor 90 255 180
 	SetBorderColor 90 255 180 150
+	CustomAlertSound "hero_parry.wav"
 	MinimapIcon 1 Purple Moon
 	
 Show
@@ -1633,6 +2113,7 @@ Show
 	SetFontSize 55
 	SetTextColor 90 255 180
 	SetBorderColor 90 255 180 150
+	CustomAlertSound "hero_parry.wav"
 	MinimapIcon 1 Red Moon
 	
 Show
@@ -1641,6 +2122,7 @@ Show
 	SetFontSize 55
 	SetTextColor 90 255 180
 	SetBorderColor 90 255 180 150
+	CustomAlertSound "hero_parry.wav"
 	MinimapIcon 1 Red Moon
 	
 Show
@@ -1649,6 +2131,7 @@ Show
 	SetFontSize 55
 	SetTextColor 90 255 180
 	SetBorderColor 90 255 180 150
+	CustomAlertSound "hero_parry.wav"
 	MinimapIcon 1 Green Moon
 	
 Show
@@ -1657,6 +2140,7 @@ Show
 	SetFontSize 55
 	SetTextColor 90 255 180
 	SetBorderColor 90 255 180 150
+	CustomAlertSound "hero_parry.wav"
 	MinimapIcon 1 Green Moon
 	
 Show
@@ -1665,6 +2149,7 @@ Show
 	SetFontSize 55
 	SetTextColor 90 255 180
 	SetBorderColor 90 255 180 150
+	CustomAlertSound "hero_parry.wav"
 	MinimapIcon 1 Yellow Moon
 	
 Show
@@ -1673,6 +2158,7 @@ Show
 	SetFontSize 55
 	SetTextColor 90 255 180
 	SetBorderColor 90 255 180 150
+	CustomAlertSound "hero_parry.wav"
 	MinimapIcon 1 Yellow Moon
 	
 Show
@@ -1681,6 +2167,7 @@ Show
 	SetFontSize 55
 	SetTextColor 90 255 180
 	SetBorderColor 90 255 180 150
+	CustomAlertSound "hero_parry.wav"
 	MinimapIcon 1 Cyan Moon
 	
 Show
@@ -1689,8 +2176,30 @@ Show
 	SetFontSize 55
 	SetTextColor 90 255 180
 	SetBorderColor 90 255 180 150
+	CustomAlertSound "hero_parry.wav"
 	MinimapIcon 1 Cyan Moon
 
+#StrictIgnore
+Show
+	HasSearingExarchImplicit >= 1
+	BaseType "Glorious Plate" "Astral Plate" "Zodiac Leather" "Vaal Regalia" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saintly Chainmail" "Saint's Hauberk" "Sadist Garb" "Sacrificial Garb" "Grasping Mail" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Deicide Mask" "Praetor Crown" "Infernal Axe" "Royal Axe" "Void Axe" "Karui Chopper" "Maraketh Bow" "Harbinger Bow" "Imperial Bow" "Assassin Bow" "Thicket Bow" "Grove Bow" "Short Bow" "Gemini Claw" "Imperial Claw" "Behemoth Mace" "Coronal Maul" "Imperial Maul" "Eclipse Staff" "Judgement Staff" "Midnight Blade" "Jewelled Foil" "Infernal Sword" "Exquisite Blade" "Profane Wand" "Prophecy Wand" "Convoking Wand" "Primal Arrow Quiver" "Heavy Arrow Quiver" "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Pinnacle Tower Shield" "Colossal Tower Shield" "Ezomyte Tower Shield" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Cardinal Round Shield" "Archon Kite Shield" "Supreme Spiked Shield"
+	Rarity <= Rare
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 160 0 0 200
+	CustomAlertSound "hero_unsheath.wav"
+	
+	
+Show
+	HasEaterOfWorldsImplicit >= 1
+	BaseType "Glorious Plate" "Astral Plate" "Zodiac Leather" "Vaal Regalia" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saintly Chainmail" "Saint's Hauberk" "Sadist Garb" "Sacrificial Garb" "Grasping Mail" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Deicide Mask" "Praetor Crown" "Infernal Axe" "Royal Axe" "Void Axe" "Karui Chopper" "Maraketh Bow" "Harbinger Bow" "Imperial Bow" "Assassin Bow" "Thicket Bow" "Grove Bow" "Short Bow" "Gemini Claw" "Imperial Claw" "Behemoth Mace" "Coronal Maul" "Imperial Maul" "Eclipse Staff" "Judgement Staff" "Midnight Blade" "Jewelled Foil" "Infernal Sword" "Exquisite Blade" "Profane Wand" "Prophecy Wand" "Convoking Wand" "Primal Arrow Quiver" "Heavy Arrow Quiver" "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Pinnacle Tower Shield" "Colossal Tower Shield" "Ezomyte Tower Shield" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Cardinal Round Shield" "Archon Kite Shield" "Supreme Spiked Shield"
+	Rarity <= Rare
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 0 100 160 200
+	CustomAlertSound "hero_unsheath.wav"
 #EndStrictIgnore
 	
 #=================================
@@ -1736,6 +2245,13 @@ Show
 #=================================
 #		Six/Five Links
 #=================================
+#SuperStrictIgnore
+Show
+	LinkedSockets 6
+	SetFontSize 50
+	SetTextColor 229 190 66
+	SetBorderColor 245 214 113 150
+	SetBackgroundColor 120 120 120
 #EndSuperStrictIgnore
 Show
 	LinkedSockets 5
@@ -1782,7 +2298,24 @@ Show
 #		Atlas Bases
 #=================================
 
+#SuperStrictIgnore
+Show
+	BaseType "Opal Ring" "Prismatic Ring" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Blue Pearl Amulet" "Bone Helmet" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Two-Toned Boots" "Vanguard Belt" "Stygian Vise" "Seaglass Amulet" "Fugitive Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
+	ItemLevel >= 83
+	Rarity Normal Magic Rare
+	Corrupted False
+	SetFontSize 40
+	SetTextColor 70 140 255
+	SetBorderColor 232 203 121 150
 #EndSuperStrictIgnore
+#StrictIgnore
+	MinimapIcon 2 Blue Triangle
+
+Show
+	BaseType "Opal Ring" "Prismatic Ring" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Blue Pearl Amulet" "Bone Helmet" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Two-Toned Boots" "Vanguard Belt" "Stygian Vise" "Seaglass Amulet" "Fugitive Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring"
+	SetFontSize 35
+	SetTextColor 70 140 255
+	SetBorderColor 232 203 121 150
 #EndStrictIgnore
 
 #=================================
@@ -1797,6 +2330,176 @@ Show
 	MinimapIcon 1 Cyan Triangle
 	PlayEffect Cyan
 
+#StrictIgnore
+
+#=================================
+#		Specific Affix Filter
+#=================================
+
+#Life Mods
+Show
+	Identified True
+	Corrupted False
+	HasExplicitMod "Prime" "Rapturous"
+	SetFontSize 45
+	SetTextColor 235 220 50
+	SetBorderColor 250 200 255 150
+	
+Show
+	Identified True
+	Corrupted False
+	DropLevel < 81
+	AreaLevel < 70
+	HasExplicitMod "Vigorous" "Fecund"
+	SetFontSize 45
+	SetTextColor 235 220 50
+	SetBorderColor 250 200 255 150
+	
+Show
+	Identified True
+	Corrupted False
+	Class "Ring" "Amulet"
+	DropLevel < 54
+	HasExplicitMod "Virile" "Athlete's"
+	SetFontSize 45
+	SetTextColor 235 220 50
+	SetBorderColor 250 200 255 150
+	
+#Res Mods
+Show
+	Identified True
+	Corrupted False
+	HasExplicitMod "of Haast" "of Bameth" "of Tzteosh" "of Ephij"
+	SetFontSize 45
+	SetTextColor 235 220 50
+	SetBorderColor 250 200 255 150
+	
+Show
+	Identified True
+	Corrupted False
+	DropLevel < 84
+	AreaLevel < 70
+	HasExplicitMod "of Exile" "of the Ice" "of the Magma" "of the Lightning"
+	SetFontSize 45
+	SetTextColor 235 220 50
+	SetBorderColor 250 200 255 150
+
+Show
+	Identified True
+	Corrupted False
+	DropLevel < 72
+	AreaLevel < 60
+	HasExplicitMod "of the Polar Bear" "of the Volcano" "of the Maelstrom"
+	SetFontSize 45
+	SetTextColor 235 220 50
+	SetBorderColor 250 200 255 150
+	
+#Spell Damage
+Show
+	Identified True
+	Corrupted False
+	HasExplicitMod "Runic"
+	SetFontSize 45
+	SetTextColor 235 220 50
+	SetBorderColor 250 200 255 150
+	
+Show
+	Identified True
+	Corrupted False
+	#DropLevel < 84
+	#AreaLevel < 70
+	HasExplicitMod "Glyphic" "Incanter's"
+	SetFontSize 45
+	SetTextColor 235 220 50
+	SetBorderColor 250 200 255 150
+	
+Show
+	Identified True
+	Corrupted False
+	DropLevel < 58
+	AreaLevel < 50
+	HasExplicitMod "Occultist's" "Professor's"
+	SetFontSize 45
+	SetTextColor 235 220 50
+	SetBorderColor 250 200 255 150
+
+#Chaos Damage
+Show
+	Identified True
+	Corrupted False
+	HasExplicitMod "Disintegrating"
+	SetFontSize 45
+	SetTextColor 235 220 50
+	SetBorderColor 250 200 255 150
+	
+Show
+	Identified True
+	Corrupted False
+	DropLevel < 78
+	HasExplicitMod "Atrophying"
+	SetFontSize 45
+	SetTextColor 235 220 50
+	SetBorderColor 250 200 255 150
+
+#Phys Damage
+Show
+	Identified True
+	Corrupted False
+	HasExplicitMod "Merciless" "Tyrannical" "Cruel"
+	HasExplicitMod "Razor-sharp" "Tempered" "Flaring"
+	SetFontSize 45
+	SetTextColor 235 220 50
+	SetBorderColor 250 200 255 150
+	
+#Level of Skill Gems
+Show
+	Identified True
+	Corrupted False
+	HasExplicitMod "Lava Conjurer's" "Winter Beckoner's" "Tempest Master's" "Splintermind's" "Tecton's" "Weaponmaster's"
+	SetFontSize 45
+	SetTextColor 235 220 50
+	SetBorderColor 250 200 255 150
+	
+#Movement Speed
+
+#35%
+Show
+	Identified True
+	Corrupted False
+	HasExplicitMod "Hellion's" 
+	SetFontSize 45
+	SetTextColor 235 220 50
+	SetBorderColor 250 200 255 150
+	
+#30%	
+Show
+	Identified True
+	Corrupted False
+	DropLevel < 86
+	HasExplicitMod "Cheetah's" 
+	SetFontSize 45
+	SetTextColor 235 220 50
+	SetBorderColor 250 200 255 150
+	
+#25%	
+Show
+	Identified True
+	Corrupted False
+	DropLevel < 55
+	HasExplicitMod "Gazelle's" 
+	SetFontSize 45
+	SetTextColor 235 220 50
+	SetBorderColor 250 200 255 150
+	
+#20%	
+Show
+	Identified True
+	Corrupted False
+	DropLevel < 40
+	HasExplicitMod "Stallion's" 
+	SetFontSize 45
+	SetTextColor 235 220 50
+	SetBorderColor 250 200 255 150
 #EndStrictIgnore
 
 
@@ -1819,12 +2522,148 @@ Show
 	MinimapIcon 2 Red Triangle
 
 
+#StrictIgnore
+#=================================
+#			High Level Bases
+#=================================	
+
+#Armour
+Show
+	ItemLevel >= 84
+	Rarity Rare
+	BaseType "Glorious Plate" "Astral Plate" "Zodiac Leather" "Vaal Regalia" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saintly Chainmail" "Saint's Hauberk" "Sadist Garb" "Sacrificial Garb" "Grasping Mail"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+
+
+Show
+	ItemLevel >= 84
+	Rarity Rare
+	BaseType "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	ItemLevel >= 84
+	Rarity Rare
+	BaseType "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+
+Show
+	ItemLevel >= 84
+	Rarity Rare
+	BaseType "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Deicide Mask" "Praetor Crown"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+#Weapons
+Show
+	ItemLevel >= 84
+	Rarity Rare
+	BaseType "Infernal Axe" "Royal Axe" "Void Axe" "Karui Chopper"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	ItemLevel >= 84
+	Rarity Rare
+	BaseType "Maraketh Bow" "Harbinger Bow" "Imperial Bow" "Assassin Bow" "Thicket Bow"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	ItemLevel >= 84
+	Rarity Rare
+	BaseType "Gemini Claw" "Imperial Claw"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+
+Show
+	ItemLevel >= 84
+	Rarity Rare
+	BaseType ==  "Sai" "Demon Dagger"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	ItemLevel >= 84
+	Rarity Rare
+	BaseType "Behemoth Mace" "Coronal Maul" "Imperial Maul"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	ItemLevel >= 84
+	Rarity Rare
+	BaseType "Eclipse Staff" "Judgement Staff"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	ItemLevel >= 84
+	Rarity Rare
+	BaseType "Midnight Blade" "Jewelled Foil" "Infernal Sword" "Exquisite Blade"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	ItemLevel >= 84
+	Rarity Rare
+	BaseType "Profane Wand" "Prophecy Wand" "Convoking Wand"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	ItemLevel >= 84
+	BaseType "Primal Arrow Quiver" "Heavy Arrow Quiver" "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver"
+	Rarity Rare
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+#Shields
+
+Show
+	ItemLevel >= 84
+	Rarity Rare
+	BaseType "Pinnacle Tower Shield" "Colossal Tower Shield" "Ezomyte Tower Shield" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Cardinal Round Shield" "Archon Kite Shield" "Supreme Spiked Shield"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
 #EndStrictIgnore
 
 #=================================
 #			Leveling Rares
 #=================================
 
+#StrictIgnore
+Show
+	Class "Ring"
+	BaseType "Breach Ring"
+	SetFontSize 40
+	SetBorderColor 185 0 255 150
+
+
+Show
+	Rarity Rare
+	Class "Ring" "Amulet" "Belt"
+	Identified False
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
 #EndStrictIgnore
 
 Show
@@ -2058,12 +2897,42 @@ Show
 #	SetTextColor 235 220 50
 #	SetBorderColor 255 240 40 150
 
+#StrictIgnore
+#=================================
+#		Chromatic Recipe
+#=================================
+
+Show
+	Width <= 2
+	Height <= 2
+	SocketGroup RGB
+	AreaLevel <= 77
+	SetFontSize 36
+	SetTextColor 255 255 255
+	SetBorderColor 0 255 255 150
+	
+Show
+	Width <= 1
+	Height <= 3
+	SocketGroup RGB
+	AreaLevel <= 77
+	SetFontSize 36
+	SetTextColor 255 255 255
+	SetBorderColor 0 255 255 150
 #EndStrictIgnore
 	
 #=================================
 #		Jewellers 6-Sockets
 #=================================
 	
+#StrictIgnore
+Show
+	Sockets 6
+	Rarity <= Rare
+	AreaLevel <= 77
+	SetFontSize 45
+	SetTextColor 255 255 255
+	SetBorderColor 255 255 255 150
 #EndStrictIgnore
 
 #=================================

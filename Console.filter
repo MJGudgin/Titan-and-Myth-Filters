@@ -1,6 +1,6 @@
 #====================================#
-#  Sempervivum SSF Filter v3.0.3.23  #
-#				1/9/24				 #
+#  		 Myth Filter v3.2.3.23  	 #
+#				1/15/24				 #
 #====================================#
 
 #=================================
@@ -97,12 +97,12 @@ Show
 	MinimapIcon 1 Purple Circle
 
 #Show scrolls through T10 maps
-
+#SuperStrictIgnore
 Show 
 	Class Currency
 	StackSize >= 5
 	BaseType "Scroll of Wisdom" "Portal Scroll"
-
+#EndSuperStrictIgnore
 #StrictIgnore
 Show 
 	Class Currency
@@ -219,12 +219,14 @@ Show
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
 	SetBackgroundColor 30 30 30	
-#EndSuperStrictIgnore
 #StrictIgnore
-	MinimapIcon 2 Yellow Circle
-	PlayEffect Yellow
+	PlayAlertSound 1 300
 #EndStrictIgnore
-	
+#SuperStrictIgnore
+	PlayEffect Yellow
+	MinimapIcon 2 Yellow Circle
+#EndSuperStrictIgnore	
+
 Show
 	Class Currency
 	BaseType == "Chaos Orb"
@@ -233,8 +235,10 @@ Show
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
 	SetBackgroundColor 30 30 30
+#SuperStrictIgnore
 	PlayAlertSound 1 300
 	PlayEffect Yellow
+#EndSuperStrictIgnore
 	MinimapIcon 1 Yellow Circle
 	
 Show
@@ -244,8 +248,10 @@ Show
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
 	SetBackgroundColor 30 30 30
+#SuperStrictIgnore
 	PlayAlertSound 1 300
 	PlayEffect Yellow
+#EndSuperStrictIgnore
 	MinimapIcon 2 Yellow Circle
 
 Show
@@ -317,17 +323,20 @@ Show
 	SetFontSize 45
 	SetTextColor 50 230 100
 	SetBorderColor 50 230 100 150
+#SuperStrictIgnore
 	MinimapIcon 2 Green Circle
 	PlayEffect Yellow
-
+#EndSuperStrictIgnore
 Show
 	Class Currency
 	BaseType "Glassblower's Bauble"
 	SetFontSize 45
 	SetTextColor 50 230 100
 	SetBorderColor 50 230 100 150
+#SuperStrictIgnore
 	MinimapIcon 2 Green Circle
 	PlayEffect Yellow
+#EndSuperStrictIgnore
 	
 #Mod Currency
 Show
@@ -336,10 +345,13 @@ Show
 	SetFontSize 50
 	SetTextColor 209 187 113
 	SetBorderColor 245 214 113 150
+#SuperStrictIgnore
 	PlayAlertSound 4 200
 	MinimapIcon 1 Brown Circle
+#EndSuperStrictIgnore
+#StrictIgnore
 	PlayEffect Yellow
-
+#EndStrictIgnore
 #Rare Currency
 Show
 	Class Currency
@@ -381,7 +393,7 @@ Show
 	PlayAlertSound 1 300
 	MinimapIcon 1 Grey Circle
 	PlayEffect Grey
-	
+#SuperStrictIgnore	
 Show
 	Class Currency
 	BaseType "Scouting Report"
@@ -389,6 +401,7 @@ Show
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
 	SetBackgroundColor 30 30 30
+#EndSuperStrictIgnore
 #StrictIgnore
 	PlayAlertSound 1 300
 	MinimapIcon 2 White Circle
@@ -439,6 +452,7 @@ Show
 	SetBorderColor 255 0 0 150
 	PlayAlertSound 4 200
 	MinimapIcon 2 Cyan Circle
+#SuperStrictIgnore
 	PlayEffect Cyan
 	
 Show
@@ -447,6 +461,7 @@ Show
 	SetFontSize 50
 	SetTextColor 0 255 255
 	SetBorderColor 255 0 0 150
+#EndSuperStrictIgnore
 #StrictIgnore
 	MinimapIcon 2 Cyan Circle
 #EndStrictIgnore
@@ -498,10 +513,19 @@ Show
 	PlayEffect Green
 	
 Show
-	BaseType "Writhing Invitation" "Screaming Invitation" "Polaric Invitation" "Incandescent Invitation"
+	BaseType "Writhing Invitation" "Polaric Invitation"
 	SetFontSize 45
 	SetTextColor 45 220 195
 	SetBorderColor 45 220 195 150
+	MinimapIcon 1 Cyan Pentagon
+	PlayEffect Cyan
+	
+Show
+	BaseType "Screaming Invitation" "Incandescent Invitation"
+	SetFontSize 45
+	SetTextColor 45 220 195
+	SetBorderColor 45 220 195 150
+	PlayAlertSound 2 300
 	MinimapIcon 1 Cyan Pentagon
 	PlayEffect Cyan
 	
@@ -519,6 +543,7 @@ Show
 	SetTextColor 255 155 30
 	SetBorderColor 255 155 30 150
 	SetBackgroundColor 255 255 255
+	PlayAlertSound 6 300
 	MinimapIcon 0 Orange Pentagon
 	PlayEffect Orange
 	
@@ -526,15 +551,19 @@ Show
 	BaseType "Maven's Invitation"
 	SetFontSize 40
 	SetTextColor 45 220 195
-	SetBorderColor 45 220 195 150
+	SetBorderColor 255 155 30 150
+	PlayAlertSound 2 300
 	MinimapIcon 0 Orange Pentagon
+	PlayEffect Orange
 	
 Show
 	BaseType "Crescent Splinter"
 	SetFontSize 45
 	SetTextColor 255 155 30
 	SetBorderColor 255 155 30 150
+	PlayAlertSound 2 300
 	MinimapIcon 1 Orange Kite
+	PlayEffect Orange
 
 #=================================
 #			Maps
@@ -574,8 +603,8 @@ Show
 Show
 	BaseType "Reliquary Key"
 	SetFontSize 45
-	SetTextColor 0 200 0
-	SetBorderColor 255 255 255 150
+	SetTextColor 0 255 0
+	SetBorderColor 255 155 0
 	SetBackgroundColor 100 35 65
 	PlayAlertSound 7 200
 	MinimapIcon 0 Orange Square
@@ -611,7 +640,9 @@ Show
 	PlayAlertSound 7 200
 	MinimapIcon 1 Purple Square
 	PlayEffect Purple
+	DisableDropSound True
 
+#SuperStrictIgnore
 Show
 	MapTier >= 11
 	Class Maps
@@ -620,7 +651,19 @@ Show
 	SetBorderColor 245 225 160
 	PlayAlertSound 7 200
 	MinimapIcon 1 Red Square
+	DisableDropSound True
 
+Show
+	MapTier >= 6
+	AreaLevel <= 77
+	Class Maps
+	SetFontSize 45
+	SetTextColor 255 255 0
+	SetBorderColor 245 225 160
+	PlayAlertSound 8 200
+	MinimapIcon 2 Yellow Square
+	DisableDropSound True
+#EndSuperStrictIgnore
 #StrictIgnore
 Show
 	MapTier >= 6
@@ -630,6 +673,7 @@ Show
 	SetBorderColor 245 225 160
 	PlayAlertSound 8 200
 	MinimapIcon 2 Yellow Square
+	DisableDropSound True
 
 Show
 	MapTier >= 1
@@ -639,6 +683,7 @@ Show
 	SetBorderColor 245 225 160
 	PlayAlertSound 9 200
 	MinimapIcon 2 White Square
+	DisableDropSound True
 #EndStrictIgnore
 
 Show
@@ -772,13 +817,15 @@ Show
 	SetBackgroundColor 6 0 60
 	MinimapIcon 2 Cyan Star
 
+#SuperStrictIgnore
 Show
 	Class Gems
 	Quality = 20
 	SetFontSize 40
 	SetBorderColor 0 250 255 150
 	SetBackgroundColor 6 0 60
-	
+#EndSuperStrictIgnore
+
 #StrictIgnore
 Show
 	Class Gems
@@ -813,7 +860,7 @@ Show
 
 Show
 	Class Gems
-	BaseType "Portal"
+	BaseType "Portal" "Item Rarity"
 	SetFontSize 40
 	SetBorderColor 0 250 255 150
 	SetBackgroundColor 6 0 60
@@ -972,7 +1019,6 @@ Show
 	SetBorderColor 250 142 27 150
 	MinimapIcon 2 Orange Cross
 
-#SuperStrictIgnore
 #T3 uniques
 Show
 	Rarity Unique
@@ -981,7 +1027,7 @@ Show
 	SetTextColor 250 142 27
 	SetBorderColor 250 142 27 150
 	MinimapIcon 2 Brown Cross
-	
+
 Show # Jewels
 	Rarity Unique
 	BaseType == "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel"
@@ -989,7 +1035,7 @@ Show # Jewels
 	SetTextColor 250 142 27
 	SetBorderColor 250 142 27 150
 	MinimapIcon 2 Brown Cross
-#EndSuperStrictIgnore
+
 
 #StrictIgnore
 Show
@@ -999,7 +1045,7 @@ Show
 	SetBorderColor 250 142 27 150
 #EndStrictIgnore
 
-
+#SuperStrictIgnore
 #=================================
 #			Flasks
 #=================================
@@ -1012,6 +1058,15 @@ Show
 	SetTextColor 150 255 255
 	SetBorderColor 200 255 255 150
 	
+Show
+	Class "Flask"
+	BaseType "Divine"
+	Rarity Normal Magic
+	ItemLevel >= 84
+	SetFontSize 35
+	SetTextColor 150 255 255
+	SetBorderColor 200 255 255 150
+#EndSuperStrictIgnore
 #StrictIgnore
 Show
 	Class "Life Flask"
@@ -1055,8 +1110,9 @@ Show
 Show
 	Class "Map Fragments"
 	BaseType "Gilded"
+	SetTextColor 0 0 0
 	SetBorderColor 0 255 220 150
-	SetTextColor 255 175 0 
+	SetBackgroundColor 255 175 0
 	SetFontSize 45
 	MinimapIcon 1 Cyan Diamond
 	PlayEffect Cyan
@@ -1181,7 +1237,7 @@ Show
 	SetBackgroundColor 255 255 255
 	PlayAlertSound 2 300
 	MinimapIcon 1 Grey Pentagon
-
+#SuperStrictIgnore
 Show
 	Class "Map Fragments"
 	BaseType "Divine Vessel"
@@ -1190,7 +1246,7 @@ Show
 	SetBorderColor 35 96 210 150
 	SetBackgroundColor 0 0 0
 	MinimapIcon 2 Blue Pentagon
-
+#EndSuperStrictIgnore
 # Don't think this should ever be needed	
 Show 
 	Class "Pantheon Soul"
@@ -1231,6 +1287,18 @@ Show
 #=================================
 
 Show
+	Corrupted True
+	Rarity Rare
+	Class "Abyss Jewel"
+	HasExplicitMod >=5 "a" "e" "i" "o" "u"
+	SetFontSize 40
+	SetTextColor 130 200 140
+	SetBorderColor 255 0 0 150
+	MinimapIcon 1 Green Hexagon
+	PlayEffect Green
+
+#SuperStrictIgnore
+Show
 	Class "Abyss Jewel"
 	ItemLevel >= 83
 	SetFontSize 40
@@ -1238,7 +1306,7 @@ Show
 	SetBorderColor 130 200 140 150
 	MinimapIcon 2 Green Hexagon
 	PlayEffect Green
-	
+#EndSuperStrictIgnore
 #StrictIgnore
 Show
 	Class "Abyss Jewel"
@@ -1314,11 +1382,13 @@ Show
 	MinimapIcon 2 Green Raindrop
 #EndStrictIgnore
 
+#SuperStrictIgnore
 Show
 	Class Currency
 	BaseType "Oil"
 	SetBackgroundColor 30 30 30
 	SetTextColor 30 250 84
+#EndSuperStrictIgnore
 
 Show
 	Class Currency
@@ -1502,6 +1572,16 @@ Show
 	PlayAlertSound 3 200
 	MinimapIcon 2 Grey Kite
 	
+Show
+	BaseType "Large Cluster Jewel" "Medium Cluster Jewel" "Small Cluster Jewel"
+	ItemLevel >= 84
+	SetFontSize 45
+	SetTextColor 245 85 60
+	SetBorderColor 245 85 60 150
+	PlayAlertSound 1 300
+	MinimapIcon 0 Grey Star
+	PlayEffect Grey
+	
 #SuperStrictIgnore
 	
 Show
@@ -1662,6 +1742,16 @@ Show
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
 	SetBackgroundColor 30 30 30
+
+Show
+	BaseType "Sacred Crystallised Lifeforce"
+	SetFontSize 45
+	SetTextColor 0 0 0 
+	SetBackgroundColor 255 255 255
+	SetBorderColor 0 0 0 150
+	PlayAlertSound 6 300
+	MinimapIcon 0 White Raindrop
+	PlayEffect White
 	
 Show
 	BaseType "Vivid Crystallised Lifeforce"
@@ -1697,6 +1787,15 @@ Show
 	SetBorderColor 215 50 25 150
 	SetTextColor 215 50 25
 	MinimapIcon 0 Orange Triangle	
+
+Show
+	Class Currency
+	BaseType "Rogue's Marker"
+	StackSize >= 300
+	SetFontSize 40
+	SetBorderColor 255 48 231 150
+	SetTextColor 255 48 231
+	MinimapIcon 2 Pink Circle
 
 #SuperStrictIgnore
 Show
@@ -2131,14 +2230,14 @@ Show
 #=================================
 #		Six/Five Links
 #=================================
-
+#SuperStrictIgnore
 Show
 	LinkedSockets 6
 	SetFontSize 50
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
 	SetBackgroundColor 120 120 120
-	
+#EndSuperStrictIgnore
 Show
 	LinkedSockets 5
 	AreaLevel < 75
@@ -2390,6 +2489,15 @@ Show
 
 
 #Double corrupted
+Show
+	Corrupted True
+	CorruptedMods >= 2
+	Rarity Unique
+	SetFontSize 45
+	SetTextColor 250 142 27
+	SetBorderColor 255 0 30 150
+	MinimapIcon 2 Red Triangle
+
 Show
 	Corrupted True
 	CorruptedMods >= 2
@@ -2928,3 +3036,4 @@ Hide
 #	Influence/Enchantment - hero_parry.wav
 #	Harvest Scroll Things - lift_arrive.wav
 #	Scarabs - crystal_break_2.wav
+
