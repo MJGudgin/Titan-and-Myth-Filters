@@ -1,69 +1,112 @@
-#Select-String -Path SSF.filter -Pattern 'CustomAlertSound' -NotMatch -Raw | Out-File Console.filter
+#Select-String -Path Titan.filter -Pattern 'CustomAlertSound' -NotMatch -Raw | Out-File Myth.filter
 
-$file = "Myth.filter"
-rm Console.filter
-New-Item Console.filter
+$file = "BaseFilter.filter"
+
+rm Titan.filter
+New-Item Titan.filter
+
+rm Myth.filter
+New-Item Myth.filter
+
+rm Titan-Strict.filter
+New-Item Titan-Strict.filter
 
 rm Myth-Strict.filter
 New-Item Myth-Strict.filter
 
-rm Console-Strict.filter
-New-Item Console-Strict.filter
+rm Titan-Super-Strict.filter
+New-Item Titan-Super-Strict.filter
 
 rm Myth-Super-Strict.filter
 New-Item Myth-Super-Strict.filter
 
-rm Console-Super-Strict.filter
-New-Item Console-Super-Strict.filter
-
 $objCount
 $StrictOutput = $true
 $SuperStrictOutput = $true
+$lineCount = 0
 
 foreach ($line in (Get-Content $file))
 {
-		$a = $line.Split(' ')
-		#Replace all custom alerts with built in alerts for Console filter
-		if ($line -eq '	CustomAlertSound "dream_orb_pickup.wav"')
+		$lineCount++
+		if ($lineCount -eq 2)
 		{
-			Add-Content Console.filter "	PlayAlertSound 6 300"
+			Add-Content Titan.filter "#		   	 	Titan  	 	 		#"
+			Add-Content Titan-Strict.filter "#		   	 	Titan  	 	 		#"
+			Add-Content Titan-Super-Strict.filter "#		   	 	Titan  	 	 		#"
+			Add-Content Myth.filter "#		   	 	Myth  	 	 		#"
+			Add-Content Myth-Strict.filter "#		   	 	Myth  	 	 		#"
+			Add-Content Myth-Super-Strict.filter "#		   	 	Myth  	 	 		#"
 		}
-		if ($line -eq '	CustomAlertSound "bell_hit.wav"')
+
+		if ($lineCount -eq 3)
 		{
-			Add-Content Console.filter "	PlayAlertSound 2 300"
+			Add-Content Titan-Strict.filter "#			   Strict				#"
+			Add-Content Myth-Strict.filter "#			   Strict				#"
+			Add-Content Titan-Super-Strict.filter "#			 Super Strict			 #"
+			Add-Content Myth-Super-Strict.filter "#			 Super Strict			 #"
 		}
-		if ($line -eq '	CustomAlertSound "hero_unsheath.wav"')
+
+		if ($lineCount -eq 3)
 		{
-			Add-Content Console.filter "	PlayAlertSound 1 300"
-		}
-		if ($line -eq '	CustomAlertSound "bell_rise.wav"')
-		{
-			Add-Content Console.filter "	PlayAlertSound 4 200"
-		}
-		if ($line -eq '	CustomAlertSound "boss_stun.wav"')
-		{
-			Add-Content Console.filter "	PlayAlertSound 5 200"
-		}
-		if ($line -eq '	CustomAlertSound "water_cut_01.wav"' -or $line -eq '	CustomAlertSound "pot_death_1.wav"')
-		{
-			Add-Content Console.filter "	PlayAlertSound 3 200"
-		}
-		if ($line -eq '	CustomAlertSound "buzzer_startle_01.wav"')
-		{
-			Add-Content Console.filter "	PlayAlertSound 7 200"
-		}	
-		if ($line -eq '	CustomAlertSound "buzzer_startle_02.wav"')
-		{
-			Add-Content Console.filter "	PlayAlertSound 8 200"
-		}
-		if ($line -eq '	CustomAlertSound "buzzer_startle_03.wav"')
-		{
-			Add-Content Console.filter "	PlayAlertSound 9 200"
+			Add-Content Titan-Strict.filter "#			   Strict				#"
+			Add-Content Myth-Strict.filter "#			   Strict				#"
+			Add-Content Titan-Super-Strict.filter "#			 Super Strict			 #"
+			Add-Content Myth-Super-Strict.filter "#			 Super Strict			 #"
 		}
 		
-		if ($a[0] -ne '	CustomAlertSound')
+		if ($lineCount -eq 3)
 		{
-			Add-Content Console.filter $line
+			Add-Content Titan.filter "#			 Custom Audio			#"
+			Add-Content Titan-Strict.filter "#			 Custom Audio			#"
+			Add-Content Titan-Super-Strict.filter "#			 Custom Audio			#"
+			Add-Content Myth.filter "#			Native Audio			#"
+			Add-Content Myth-Strict.filter "#			Native Audio			#"
+			Add-Content Myth-Super-Strict.filter "#			Native Audio			#"			
+		}
+		
+		if ($line -ne '#StrictIgnore' -and $line -ne '#SuperStrictIgnore' -and $line -ne '#EndStrictIgnore' -and $line -ne '#EndSuperStrictIgnore')
+		{
+			Add-Content Titan.filter $line
+		}
+		
+		$a = $line.Split(' ')
+		#Replace all custom alerts with built in alerts for Myth filter
+		if ($line -eq '	CustomAlertSound "herocreation.wav"')
+		{
+			Add-Content Myth.filter "	PlayAlertSound 6 300"
+		}
+		if ($line -eq '	CustomAlertSound "error.wav"')
+		{
+			Add-Content Myth.filter "	PlayAlertSound 2 300"
+		}
+		if ($line -eq '	CustomAlertSound "god_power_end.wav"')
+		{
+			Add-Content Myth.filter "	PlayAlertSound 2 300"
+		}
+		if ($line -eq '	CustomAlertSound "find.wav"')
+		{
+			Add-Content Myth.filter "	PlayAlertSound 1 300"
+		}
+		if ($line -eq '	CustomAlertSound "hitpointsmax.wav"')
+		{
+			Add-Content Myth.filter "	PlayAlertSound 4 200"
+		}
+		if ($line -eq '	CustomAlertSound "Titancreate.wav"')
+		{
+			Add-Content Myth.filter "	PlayAlertSound 5 200"
+		}
+		if ($line -eq '	CustomAlertSound "popcaphit.wav"')
+		{
+			Add-Content Myth.filter "	PlayAlertSound 3 200"
+		}
+		if ($line -eq '	CustomAlertSound "repeatoff.wav"')
+		{
+			Add-Content Myth.filter "	PlayAlertSound 7 200"
+		}
+		
+		if ($a[0] -ne '	CustomAlertSound' -and $line -ne '#StrictIgnore' -and $line -ne '#SuperStrictIgnore' -and $line -ne '#EndStrictIgnore' -and $line -ne '#EndSuperStrictIgnore')
+		{
+			Add-Content Myth.filter $line
 		}
 		if ($a[0] -eq '#StrictIgnore')
 		{
@@ -86,95 +129,94 @@ foreach ($line in (Get-Content $file))
 		
 		if ($StrictOutput -eq $true)
 		{
-			Add-Content SSF-Strict.filter $line
+			#if ($line -ne ('#EndStrictIgnore' -or '#EndSuperStrictIgnore'))
+			if ($line -ne '#StrictIgnore' -and $line -ne '#SuperStrictIgnore' -and $line -ne '#EndStrictIgnore' -and $line -ne '#EndSuperStrictIgnore')
+			{
+				Add-Content Titan-Strict.filter $line
+			}
 			
-			#Replace all custom alerts with built in alerts for Strict Console filter
-			if ($line -eq '	CustomAlertSound "dream_orb_pickup.wav"')
+			#Replace all custom alerts with built in alerts for Strict Myth filter
+			if ($line -eq '	CustomAlertSound "herocreation.wav"')
 			{
-				Add-Content Console-Strict.filter "	PlayAlertSound 6 300"
+				Add-Content Myth-Strict.filter "	PlayAlertSound 6 300"
 			}
-			if ($line -eq '	CustomAlertSound "bell_hit.wav"')
+			if ($line -eq '	CustomAlertSound "error.wav"')
 			{
-				Add-Content Console-Strict.filter "	PlayAlertSound 2 300"
+				Add-Content Myth.filter "	PlayAlertSound 2 300"
 			}
-			if ($line -eq '	CustomAlertSound "hero_unsheath.wav"')
+			if ($line -eq '	CustomAlertSound "god_power_end.wav"')
 			{
-				Add-Content Console-Strict.filter "	PlayAlertSound 1 300"
+				Add-Content Myth-Strict.filter "	PlayAlertSound 2 300"
 			}
-			if ($line -eq '	CustomAlertSound "bell_rise.wav"')
+			if ($line -eq '	CustomAlertSound "find.wav"')
 			{
-				Add-Content Console-Strict.filter "	PlayAlertSound 4 200"
+				Add-Content Myth-Strict.filter "	PlayAlertSound 1 300"
 			}
-			if ($line -eq '	CustomAlertSound "boss_stun.wav"')
+			if ($line -eq '	CustomAlertSound "hitpointsmax.wav"')
 			{
-				Add-Content Console-Strict.filter "	PlayAlertSound 5 200"
+				Add-Content Myth-Strict.filter "	PlayAlertSound 4 200"
 			}
-			if ($line -eq '	CustomAlertSound "water_cut_01.wav"' -or $line -eq '	CustomAlertSound "pot_death_1.wav"')
+			if ($line -eq '	CustomAlertSound "Titancreate.wav"')
 			{
-				Add-Content Console-Strict.filter "	PlayAlertSound 3 200"
+				Add-Content Myth-Strict.filter "	PlayAlertSound 5 200"
 			}
-			if ($line -eq '	CustomAlertSound "buzzer_startle_01.wav"')
+			if ($line -eq '	CustomAlertSound "water_cut_01.wav"' -or $line -eq '	CustomAlertSound "popcaphit.wav"')
 			{
-				Add-Content Console-Strict.filter "	PlayAlertSound 7 200"
+				Add-Content Myth-Strict.filter "	PlayAlertSound 3 200"
+			}
+			if ($line -eq '	CustomAlertSound "repeatoff.wav"')
+			{
+				Add-Content Myth-Strict.filter "	PlayAlertSound 7 200"
 			}	
-			if ($line -eq '	CustomAlertSound "buzzer_startle_02.wav"')
+			if ($a[0] -ne '	CustomAlertSound' -and $line -ne '#StrictIgnore' -and $line -ne '#SuperStrictIgnore' -and $line -ne '#EndStrictIgnore' -and $line -ne '#EndSuperStrictIgnore')
 			{
-				Add-Content Console-Strict.filter "	PlayAlertSound 8 200"
-			}
-			if ($line -eq '	CustomAlertSound "buzzer_startle_03.wav"')
-			{
-				Add-Content Console-Strict.filter "	PlayAlertSound 9 200"
-			}
-			if ($a[0] -ne '	CustomAlertSound')
-			{
-			Add-Content Console-Strict.filter $line
+				Add-Content Myth-Strict.filter $line
 			}
 		}
 		
 		if ($StrictOutput -eq $true  -and $SuperStrictOutput -eq $true)
 		{
-			Add-Content SSF-Super-Strict.filter $line
+			if ($line -ne '#StrictIgnore' -and $line -ne '#SuperStrictIgnore' -and $line -ne '#EndStrictIgnore' -and $line -ne '#EndSuperStrictIgnore')
+			{
+				Add-Content Titan-Super-Strict.filter $line
+			}
 			
-			#Replace all custom alerts with built in alerts for Strict Console filter
-			if ($line -eq '	CustomAlertSound "dream_orb_pickup.wav"')
+			#Replace all custom alerts with built in alerts for Strict Myth filter
+			if ($line -eq '	CustomAlertSound "herocreation.wav"')
 			{
-				Add-Content Console-Super-Strict.filter "	PlayAlertSound 6 300"
+				Add-Content Myth-Super-Strict.filter "	PlayAlertSound 6 300"
 			}
-			if ($line -eq '	CustomAlertSound "bell_hit.wav"')
+			if ($line -eq '	CustomAlertSound "error.wav"')
 			{
-				Add-Content Console-Super-Strict.filter "	PlayAlertSound 2 300"
+				Add-Content Myth.filter "	PlayAlertSound 2 300"
 			}
-			if ($line -eq '	CustomAlertSound "hero_unsheath.wav"')
+			if ($line -eq '	CustomAlertSound "god_power_end.wav"')
 			{
-				Add-Content Console-Super-Strict.filter "	PlayAlertSound 1 300"
+				Add-Content Myth-Super-Strict.filter "	PlayAlertSound 2 300"
 			}
-			if ($line -eq '	CustomAlertSound "bell_rise.wav"')
+			if ($line -eq '	CustomAlertSound "find.wav"')
 			{
-				Add-Content Console-Super-Strict.filter "	PlayAlertSound 4 200"
+				Add-Content Myth-Super-Strict.filter "	PlayAlertSound 1 300"
 			}
-			if ($line -eq '	CustomAlertSound "boss_stun.wav"')
+			if ($line -eq '	CustomAlertSound "hitpointsmax.wav"')
 			{
-				Add-Content Console-Super-Strict.filter "	PlayAlertSound 5 200"
+				Add-Content Myth-Super-Strict.filter "	PlayAlertSound 4 200"
 			}
-			if ($line -eq '	CustomAlertSound "water_cut_01.wav"' -or $line -eq '	CustomAlertSound "pot_death_1.wav"')
+			if ($line -eq '	CustomAlertSound "Titancreate.wav"')
 			{
-				Add-Content Console-Super-Strict.filter "	PlayAlertSound 3 200"
+				Add-Content Myth-Super-Strict.filter "	PlayAlertSound 5 200"
 			}
-			if ($line -eq '	CustomAlertSound "buzzer_startle_01.wav"')
+			if ($line -eq '	CustomAlertSound "water_cut_01.wav"' -or $line -eq '	CustomAlertSound "popcaphit.wav"')
 			{
-				Add-Content Console-Super-Strict.filter "	PlayAlertSound 7 200"
+				Add-Content Myth-Super-Strict.filter "	PlayAlertSound 3 200"
+			}
+			if ($line -eq '	CustomAlertSound "repeatoff.wav"')
+			{
+				Add-Content Myth-Super-Strict.filter "	PlayAlertSound 7 200"
 			}	
-			if ($line -eq '	CustomAlertSound "buzzer_startle_02.wav"')
+			if ($a[0] -ne '	CustomAlertSound' -and $line -ne '#StrictIgnore' -and $line -ne '#SuperStrictIgnore' -and $line -ne '#EndStrictIgnore' -and $line -ne '#EndSuperStrictIgnore')
 			{
-				Add-Content Console-Super-Strict.filter "	PlayAlertSound 8 200"
-			}
-			if ($line -eq '	CustomAlertSound "buzzer_startle_03.wav"')
-			{
-				Add-Content Console-Super-Strict.filter "	PlayAlertSound 9 200"
-			}
-			if ($a[0] -ne '	CustomAlertSound')
-			{
-			Add-Content Console-Super-Strict.filter $line
+				Add-Content Myth-Super-Strict.filter $line
 			}
 		}
 		
