@@ -2,7 +2,6 @@
 #		   	 	Myth  	 	 		#
 #		   	 Filter v1.0  	 	 	#
 #			   Strict				#
-#			   Strict				#
 #			Native Audio			#
 #			   1/15/24				#
 #===================================#
@@ -99,7 +98,6 @@ Show
 	SetBorderColor 255 255 255 150
 	PlayEffect Purple
 	MinimapIcon 1 Purple Circle
-
 
 #Show 5+ scrolls
 Show 
@@ -358,7 +356,7 @@ Show
 	SetTextColor 0 255 255
 	SetBorderColor 255 0 0
 	SetBackgroundColor 255 255 255 150
-	PlayAlertSound 6 300
+	PlayAlertSound 1 300
 	MinimapIcon 1 Cyan Circle
 	PlayEffect Cyan
 	
@@ -481,7 +479,7 @@ Show
 	SetFontSize 60
 	SetTextColor 250 142 27
 	SetBorderColor 245 225 160
-	PlayAlertSound 7 200
+	PlayAlertSound 6 300
 	MinimapIcon 0 Orange Square
 	PlayEffect Orange
 	
@@ -491,7 +489,7 @@ Show
 	SetTextColor 0 255 0
 	SetBorderColor 255 155 0
 	SetBackgroundColor 100 35 65
-	PlayAlertSound 7 200
+	PlayAlertSound 6 300
 	MinimapIcon 0 Orange Square
 	PlayEffect Orange
 
@@ -544,6 +542,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 255 0
 	SetBorderColor 245 225 160
+	PlayAlertSound 7 200
 	MinimapIcon 2 Yellow Square
 	DisableDropSound True
 
@@ -591,6 +590,13 @@ Show
 	SetTextColor 0 255 210 255
 	SetBorderColor 0 250 255 150
 	MinimapIcon 2 Blue UpsideDownHouse
+
+Show
+	Class "Divination"
+	BaseType == "A Familiar Call" "A Stone Perfected" "Abandoned Wealth" "Akil's Prophecy" "Altered Perception" "Arrogance of the Vaal" "Azyran's Reward" "Boon of the First Ones" "Chaotic Disposition" "Council of Cats" "Dark Dreams" "Dementophobia" "Desperate Crusade" "Divine Justice" "Draped in Dreams" "Eternal Bonds" "Ever-Changing" "Fateful Meeting" "Gift of Asenath" "Guardian's Challenge" "Hunter's Reward" "Judging Voices" "Justified Ambition" "Keeper's Corruption" "Lachrymal Necrosis" "Lingering Remnants" "Magnum Opus" "Mawr Blaidd" "Peaceful Moments" "Remembrance" "Something Dark" "The Aspirant" "The Astromancer" "The Bitter Blossom" "The Celestial Justicar" "The Celestial Stone" "The Dreamer" "The Eldritch Decay" "The Enforcer" "The Enthusiasts" "The Escape" "The Eternal War" "The Eye of the Dragon" "The Fishmonger" "The Last Supper" "The Leviathan" "The Life Thief" "The Offering" "The Old Man" "The One That Got Away" "The Polymath" "The Primordial" "The Professor" "The Risk" "The Saint's Treasure" "The Scout" "The Spark and the Flame" "The Transformation" "The Undaunted" "The Union" "The Valkyrie" "The Void" "The Wedding Gift" "The White Knight" "The Wretched" "Underground Forest" "Winter's Embrace" "The Cartographer"
+	SetFontSize 30  
+	SetTextColor 0 255 210 255
+	SetBorderColor 0 250 255 150
 
 	
 Show
@@ -827,6 +833,13 @@ Show
 	SetTextColor 250 142 27
 	SetBorderColor 250 142 27 150
 	MinimapIcon 2 Brown Cross
+	
+Show
+	Rarity Unique
+	BaseType == "Agate Amulet" "Ambush Mitts" "Ancient Gauntlets" "Assassin's Boots" "Assassin's Mitts" "Bismuth Flask" "Blood Sceptre" "Broadhead Arrow Quiver" "Butcher Axe" "Candlestick Relic" "Cardinal Round Shield" "Carnal Armour" "Carnal Mitts" "Chain Belt" "Citadel Bow" "Cloth Belt" "Coffer Relic" "Coiled Staff" "Colossal Tower Shield" "Colosseum Plate" "Crimson Round Shield" "Crusader Gloves" "Cutlass" "Dragonscale Boots" "Ezomyte Burgonet" "Ezomyte Spiked Shield" "Ezomyte Staff" "Fingerless Silk Gloves" "Fugitive Boots" "Golden Plate" "Goliath Greaves" "Graceful Sword" "Great Crown" "Harlequin Mask" "Hubris Circlet" "Hydrascale Boots" "Imperial Claw" "Infernal Sword" "Iron Flask" "Jade Amulet" "Judgement Staff" "Lacquered Helmet" "Legion Sword" "Maple Round Shield" "Necromancer Circlet" "Nightmare Mace" "Opal Ring" "Opal Wand" "Praetor Crown" "Primal Arrow Quiver" "Primordial Staff" "Prophet Crown" "Quarterstaff" "Riveted Gloves" "Royal Burgonet" "Ruby Ring" "Runic Crown" "Runic Gages" "Runic Gauntlets" "Runic Helm" "Runic Sabatons" "Runic Sollerets" "Sacrificial Garb" "Sage Wand" "Saint's Hauberk" "Sapphire Ring" "Sentinel Jacket" "Serpentine Staff" "Silken Hood" "Silver Flask" "Slink Boots" "Soldier Gloves" "Sorcerer Boots" "Spiked Gloves" "Steel Kite Shield" "Steel Ring" "Steelscale Gauntlets" "Steelwood Bow" "Sulphur Flask" "Titan Greaves" "Tome Relic" "Topaz Flask" "Topaz Ring" "Tornado Wand" "Triumphant Lamellar" "Unset Ring" "Vaal Axe" "Vaal Gauntlets" "Vaal Greaves" "Vaal Regalia" "Vaal Sceptre" "Varnished Coat" "Visored Sallet" "Void Sceptre" "Archon Kite Shield" "Assassin Bow" "Astral Plate" "Blue Pearl Amulet" "Blunt Arrow Quiver" "Branded Kite Shield" "Brass Spirit Shield" "Carnal Boots" "Citrine Amulet" "Crusader Plate" "Crystal Belt" "Crystal Sceptre" "Desert Brigandine" "Dusk Blade" "Eternal Sword" "Ezomyte Dagger" "Festival Mask" "Full Wyrmscale" "Gavel" "Gemstone Sword" "Gladiator Plate" "Gold Amulet" "Granite Flask" "Highborn Staff" "Imbued Wand" "Imperial Staff" "Iron Circlet" "Iron Ring" "Jewelled Foil" "Lacquered Garb" "Large Hybrid Flask" "Leather Cap" "Legion Boots" "Majestic Plate" "Nubuck Boots" "Occultist's Vestment" "Paua Ring" "Plated Greaves" "Prismatic Ring" "Raven Mask" "Reinforced Greaves" "Saintly Chainmail" "Scholar's Robe" "Serpentscale Gauntlets" "Solaris Circlet" "Stealth Boots" "Stibnite Flask" "Trapper Boots" "Two-Stone Ring" "Vaal Blade" "Vaal Claw" "Vaal Mask" "Vaal Spirit Shield" "Void Axe" "Wolf Pelt"
+	SetFontSize 40
+	SetTextColor 250 142 27
+	SetBorderColor 250 142 27 150
 
 Show # Jewels
 	Rarity Unique
@@ -915,10 +928,12 @@ Show
 Show
 	BaseType "Sacred Blossom"
 	SetFontSize 45
-	SetTextColor 255 255 255
-	SetBorderColor 255 255 255 150
-	SetBackgroundColor 0 0 0
-	MinimapIcon 1 White Raindrop
+	SetTextColor 0 0 0
+	SetBorderColor 0 0 0 150
+	SetBackgroundColor 255 255 255
+	PlayAlertSound 6 300
+	MinimapIcon 0 White Raindrop
+	PlayEffect White
 
 Show
 	Class Memory
@@ -1036,7 +1051,7 @@ Show
 	MinimapIcon 2 Purple Hexagon
 	
 Show
-	BaseType "Charm"
+	Class Charms
 	SetFontSize 45
 	SetTextColor 125 40 180
 	SetBorderColor 125 40 180 150
@@ -2327,15 +2342,3 @@ Hide
 #	Purple
 #Beam Options
 #	Temp
-#	
-#Sounds
-#	High Value Currency/Card - dream_orb_pickup.wav
-#	High Value Item - bell_hit.wav
-#	Splinters - pot_death_1.wav
-#	Maps
-#		High Tier - buzzer_startle_01.wav
-#		Medium Tier - buzzer_startle_02.wav
-#		Low Tier - buzzer_startle_03.wav
-#	Influence/Enchantment - hero_parry.wav
-#	Harvest Scroll Things - lift_arrive.wav
-#	Scarabs - crystal_break_2.wav

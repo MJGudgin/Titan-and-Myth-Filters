@@ -42,16 +42,8 @@ foreach ($line in (Get-Content $file))
 		{
 			Add-Content Titan-Strict.filter "#			   Strict				#"
 			Add-Content Myth-Strict.filter "#			   Strict				#"
-			Add-Content Titan-Super-Strict.filter "#			 Super Strict			 #"
-			Add-Content Myth-Super-Strict.filter "#			 Super Strict			 #"
-		}
-
-		if ($lineCount -eq 3)
-		{
-			Add-Content Titan-Strict.filter "#			   Strict				#"
-			Add-Content Myth-Strict.filter "#			   Strict				#"
-			Add-Content Titan-Super-Strict.filter "#			 Super Strict			 #"
-			Add-Content Myth-Super-Strict.filter "#			 Super Strict			 #"
+			Add-Content Titan-Super-Strict.filter "#			Super Strict			#"
+			Add-Content Myth-Super-Strict.filter "#			Super Strict			#"
 		}
 		
 		if ($lineCount -eq 3)
