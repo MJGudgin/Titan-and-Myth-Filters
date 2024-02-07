@@ -99,7 +99,18 @@
 #Tainted Currency Highlight (Added 3.19)
 Show
 	Class Currency
-	BaseType "Tainted Chromatic Orb" "Tainted Orb of Fusing" "Tainted Jeweller's Orb" "Tainted Exalted Orb" "Tainted Mythic Orb" "Tainted Blacksmith's Whetstone" "Tainted Armourer's Scrap" "Tainted Chaos Orb" "Tainted Divine Teardrop"
+	BaseType "Tainted Exalted Orb" "Tainted Mythic Orb" "Tainted Chaos Orb" "Tainted Divine Teardrop"
+	SetFontSize 40
+	SetTextColor 200 0 240 255
+	SetBorderColor 200 0 240
+	SetBackgroundColor 255 255 255
+	PlayEffect Purple
+	MinimapIcon 0 Purple Circle
+	CustomAlertSound "find.wav"
+	
+Show
+	Class Currency
+	BaseType "Tainted Chromatic Orb" "Tainted Orb of Fusing" "Tainted Jeweller's Orb" "Tainted Blacksmith's Whetstone" "Tainted Armourer's Scrap"
 	SetFontSize 40
 	SetTextColor 200 0 240 255
 	SetBorderColor 255 255 255 150
@@ -111,6 +122,17 @@ Show
 # Magic Item Currency
 	
 
+
+Show
+	Class Currency
+	StackSize >= 20
+	BaseType "Orb of Alteration"
+	SetFontSize 40
+	SetTextColor 60 195 255
+	SetBorderColor 60 195 255 150
+	SetBackgroundColor 30 30 30
+	MinimapIcon 1 Blue Circle
+	PlayEffect Blue
 
 
 
@@ -125,6 +147,16 @@ Show
 	CustomAlertSound "find.wav"
 	MinimapIcon 1 Brown Circle
 	PlayEffect Yellow
+	
+Show
+	Class Currency
+	StackSize >= 5
+	BaseType == "Orb of Alchemy" "Regal Orb" "Orb of Binding" "Engineer's Orb"
+	SetFontSize 40
+	SetTextColor 229 190 66
+	SetBorderColor 245 214 113 150
+	SetBackgroundColor 30 30 30
+	
 
 Show
 	Class Currency
@@ -172,6 +204,15 @@ Show
 	SetBorderColor 255 255 255 150
 	
 #Crafting Currency
+
+Show
+	Class Currency
+	StackSize >= 20
+	BaseType "Orb of Fusing" "Jeweller's Orb" "Chromatic Orb"
+	SetFontSize 40
+	SetTextColor 85 225 255
+	SetBorderColor 85 225 255 150
+
 
 	
 #Quality Currency
@@ -504,8 +545,8 @@ Show
 	Class "Divination"
 	BaseType == "A Familiar Call" "A Stone Perfected" "Abandoned Wealth" "Akil's Prophecy" "Altered Perception" "Arrogance of the Vaal" "Azyran's Reward" "Boon of the First Ones" "Chaotic Disposition" "Council of Cats" "Dark Dreams" "Dementophobia" "Desperate Crusade" "Divine Justice" "Draped in Dreams" "Eternal Bonds" "Ever-Changing" "Fateful Meeting" "Gift of Asenath" "Guardian's Challenge" "Hunter's Reward" "Judging Voices" "Justified Ambition" "Keeper's Corruption" "Lachrymal Necrosis" "Lingering Remnants" "Magnum Opus" "Mawr Blaidd" "Peaceful Moments" "Remembrance" "Something Dark" "The Aspirant" "The Astromancer" "The Bitter Blossom" "The Celestial Justicar" "The Celestial Stone" "The Dreamer" "The Eldritch Decay" "The Enforcer" "The Enthusiasts" "The Escape" "The Eternal War" "The Eye of the Dragon" "The Fishmonger" "The Last Supper" "The Leviathan" "The Life Thief" "The Offering" "The Old Man" "The One That Got Away" "The Polymath" "The Primordial" "The Professor" "The Risk" "The Saint's Treasure" "The Scout" "The Spark and the Flame" "The Transformation" "The Undaunted" "The Union" "The Valkyrie" "The Void" "The Wedding Gift" "The White Knight" "The Wretched" "Underground Forest" "Winter's Embrace" "The Cartographer"
 	SetFontSize 35
-	SetTextColor 0 210 255 255
-	SetBorderColor 0 210 255 150
+	SetTextColor 0 255 210 255
+	SetBorderColor 0 215 175 150
 
 	
 Show
@@ -590,7 +631,6 @@ Show
 	SetFontSize 40
 	SetBorderColor 255 0 0 150
 	SetBackgroundColor 6 0 60
-	MinimapIcon 2 Red Star
 
 Show
 	Class Gems
@@ -1424,47 +1464,7 @@ Show
 
 Show
 	Class Currency
-	BaseType "Timeless Vaal Splinter" 
-	SetFontSize 40
-	SetTextColor 255 23 240
-	SetBorderColor 255 23 240 150
-	CustomAlertSound "popcaphit.wav"
-	MinimapIcon 2 Pink Kite
-	PlayEffect Pink Temp
-
-Show
-	Class Currency
-	BaseType "Timeless Templar Splinter" 
-	SetFontSize 40
-	SetTextColor 255 23 240
-	SetBorderColor 255 23 240 150
-	CustomAlertSound "popcaphit.wav"
-	MinimapIcon 2 Pink Kite
-	PlayEffect Pink Temp
-	
-Show
-	Class Currency
-	BaseType "Timeless Karui Splinter"
-	SetFontSize 40
-	SetTextColor 255 23 240
-	SetBorderColor 255 23 240 150
-	CustomAlertSound "popcaphit.wav"
-	MinimapIcon 2 Pink Kite
-	PlayEffect Pink Temp
-
-Show
-	Class Currency
-	BaseType "Timeless Eternal Empire Splinter"
-	SetFontSize 40
-	SetTextColor 255 23 240
-	SetBorderColor 255 23 240 150
-	CustomAlertSound "popcaphit.wav"
-	MinimapIcon 2 Pink Kite
-	PlayEffect Pink Temp
-	
-Show
-	Class Currency
-	BaseType "Timeless Maraketh Splinter"
+	BaseType "Timeless Vaal Splinter" "Timeless Templar Splinter" "Timeless Karui Splinter" "Timeless Eternal Empire Splinter" "Timeless Maraketh Splinter"
 	SetFontSize 40
 	SetTextColor 255 23 240
 	SetBorderColor 255 23 240 150
@@ -1488,9 +1488,9 @@ Hide
 
 Show
 	Class Incubator
-	SetFontSize 45
-	SetTextColor 255 23 240
-	SetBorderColor 255 23 240 150
+	SetFontSize 40
+	SetTextColor 255 196 244
+	SetBorderColor 255 196 244
 	MinimapIcon 2 Pink Hexagon
 
 #=================================
@@ -1707,7 +1707,7 @@ Show
 	
 #High level bases
 Show
-	BaseType "Glorious Plate" "Astral Plate" "Zodiac Leather" "Vaal Regalia" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saintly Chainmail" "Saint's Hauberk" "Sadist Garb" "Sacrificial Garb" "Grasping Mail" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Deicide Mask" "Praetor Crown" "Infernal Axe" "Royal Axe" "Void Axe" "Karui Chopper" "Maraketh Bow" "Harbinger Bow" "Imperial Bow" "Assassin Bow" "Thicket Bow" "Grove Bow" "Short Bow" "Gemini Claw" "Imperial Claw" "Behemoth Mace" "Coronal Maul" "Imperial Maul" "Eclipse Staff" "Judgement Staff" "Midnight Blade" "Jewelled Foil" "Infernal Sword" "Exquisite Blade" "Profane Wand" "Prophecy Wand" "Convoking Wand" "Primal Arrow Quiver" "Heavy Arrow Quiver" "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Pinnacle Tower Shield" "Colossal Tower Shield" "Ezomyte Tower Shield" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Cardinal Round Shield" "Archon Kite Shield" "Supreme Spiked Shield" "Jewel"
+	BaseType "Glorious Plate" "Astral Plate" "Zodiac Leather" "Vaal Regalia" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saintly Chainmail" "Saint's Hauberk" "Sadist Garb" "Sacrificial Garb" "Grasping Mail" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Deicide Mask" "Praetor Crown" "Infernal Axe" "Royal Axe" "Void Axe" "Karui Chopper" "Maraketh Bow" "Harbinger Bow" "Imperial Bow" "Assassin Bow" "Thicket Bow" "Grove Bow" "Short Bow" "Gemini Claw" "Imperial Claw" "Behemoth Mace" "Coronal Maul" "Imperial Maul" "Eclipse Staff" "Judgement Staff" "Midnight Blade" "Jewelled Foil" "Infernal Sword" "Exquisite Blade" "Profane Wand" "Prophecy Wand" "Convoking Wand" "Primal Arrow Quiver" "Heavy Arrow Quiver" "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Pinnacle Tower Shield" "Colossal Tower Shield" "Ezomyte Tower Shield" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Cardinal Round Shield" "Archon Kite Shield" "Supreme Spiked Shield" "Jewel" "Fossilised Spirit Shield"
 	FracturedItem True
 	Identified False
 	SetFontSize 40
@@ -1741,7 +1741,7 @@ Show
 
 Show
 	LinkedSockets 5
-	AreaLevel < 75
+	AreaLevel < 80
 	SetFontSize 45
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
@@ -1762,8 +1762,8 @@ Show
 #		Crafting Bases
 #=================================
 
-#Show
-#	BaseType "Lion Pelt"
+#how
+#	BaseType "Convening" "Convoking"
 	#Rarity Rare
 #	ItemLevel >= 84
 #	SetFontSize 80

@@ -98,7 +98,18 @@
 #Tainted Currency Highlight (Added 3.19)
 Show
 	Class Currency
-	BaseType "Tainted Chromatic Orb" "Tainted Orb of Fusing" "Tainted Jeweller's Orb" "Tainted Exalted Orb" "Tainted Mythic Orb" "Tainted Blacksmith's Whetstone" "Tainted Armourer's Scrap" "Tainted Chaos Orb" "Tainted Divine Teardrop"
+	BaseType "Tainted Exalted Orb" "Tainted Mythic Orb" "Tainted Chaos Orb" "Tainted Divine Teardrop"
+	SetFontSize 40
+	SetTextColor 200 0 240 255
+	SetBorderColor 200 0 240
+	SetBackgroundColor 255 255 255
+	PlayEffect Purple
+	MinimapIcon 0 Purple Circle
+	CustomAlertSound "find.wav"
+	
+Show
+	Class Currency
+	BaseType "Tainted Chromatic Orb" "Tainted Orb of Fusing" "Tainted Jeweller's Orb" "Tainted Blacksmith's Whetstone" "Tainted Armourer's Scrap"
 	SetFontSize 40
 	SetTextColor 200 0 240 255
 	SetBorderColor 255 255 255 150
@@ -109,6 +120,7 @@ Show
 Show 
 	Class Currency
 	StackSize >= 5
+	AreaLevel >= 78
 	BaseType "Scroll of Wisdom" "Portal Scroll"
 
 #Show single stack scrolls through T10 maps
@@ -177,6 +189,17 @@ Show
 
 Show
 	Class Currency
+	StackSize >= 20
+	BaseType "Orb of Alteration"
+	SetFontSize 40
+	SetTextColor 60 195 255
+	SetBorderColor 60 195 255 150
+	SetBackgroundColor 30 30 30
+	MinimapIcon 1 Blue Circle
+	PlayEffect Blue
+
+Show
+	Class Currency
 	StackSize >= 10
 	BaseType "Orb of Alteration"
 	SetFontSize 40
@@ -207,6 +230,16 @@ Show
 	CustomAlertSound "find.wav"
 	MinimapIcon 1 Brown Circle
 	PlayEffect Yellow
+	
+Show
+	Class Currency
+	StackSize >= 5
+	BaseType == "Orb of Alchemy" "Regal Orb" "Orb of Binding" "Engineer's Orb"
+	SetFontSize 40
+	SetTextColor 229 190 66
+	SetBorderColor 245 214 113 150
+	SetBackgroundColor 30 30 30
+	
 Show
 	Class Currency
 	BaseType == "Orb of Alchemy" "Regal Orb" "Orb of Binding" "Engineer's Orb"
@@ -279,6 +312,15 @@ Show
 	MinimapIcon 2 White Circle
 	
 #Crafting Currency
+
+Show
+	Class Currency
+	StackSize >= 20
+	BaseType "Orb of Fusing" "Jeweller's Orb" "Chromatic Orb"
+	SetFontSize 40
+	SetTextColor 85 225 255
+	SetBorderColor 85 225 255 150
+
 Show
 	Class Currency
 	StackSize >= 5
@@ -709,22 +751,22 @@ Show
 	Class "Divination"
 	BaseType == "A Familiar Call" "A Stone Perfected" "Abandoned Wealth" "Akil's Prophecy" "Altered Perception" "Arrogance of the Vaal" "Azyran's Reward" "Boon of the First Ones" "Chaotic Disposition" "Council of Cats" "Dark Dreams" "Dementophobia" "Desperate Crusade" "Divine Justice" "Draped in Dreams" "Eternal Bonds" "Ever-Changing" "Fateful Meeting" "Gift of Asenath" "Guardian's Challenge" "Hunter's Reward" "Judging Voices" "Justified Ambition" "Keeper's Corruption" "Lachrymal Necrosis" "Lingering Remnants" "Magnum Opus" "Mawr Blaidd" "Peaceful Moments" "Remembrance" "Something Dark" "The Aspirant" "The Astromancer" "The Bitter Blossom" "The Celestial Justicar" "The Celestial Stone" "The Dreamer" "The Eldritch Decay" "The Enforcer" "The Enthusiasts" "The Escape" "The Eternal War" "The Eye of the Dragon" "The Fishmonger" "The Last Supper" "The Leviathan" "The Life Thief" "The Offering" "The Old Man" "The One That Got Away" "The Polymath" "The Primordial" "The Professor" "The Risk" "The Saint's Treasure" "The Scout" "The Spark and the Flame" "The Transformation" "The Undaunted" "The Union" "The Valkyrie" "The Void" "The Wedding Gift" "The White Knight" "The Wretched" "Underground Forest" "Winter's Embrace" "The Cartographer"
 	SetFontSize 35
-	SetTextColor 0 210 255 255
-	SetBorderColor 0 210 255 150
+	SetTextColor 0 255 210 255
+	SetBorderColor 0 215 175 150
 
 #T4
 Show
 	Class "Divination"
 	BaseType == "A Sea of Blue" "Acclimatisation" "Ambitious Obsession" "Boon of Justice" "Bowyer's Dream" "Cameria's Cut" "Checkmate" "Coveted Possession" "Demigod's Wager" "Disdain" "Emperor of Purity" "Emperor's Luck" "Harmony of Souls" "Humility" "Immortal Resolve" "Imperial Legacy" "Last Hope" "Lucky Connections" "Lucky Deck" "Man With Bear" "More is Never Enough" "No Traces" "Rebirth and Renewal" "Sambodhi's Vow" "Society's Remorse" "The Cacophony" "The Card Sharp" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Ethereal" "The Finishing Touch" "The Fool" "The Gemcutter" "The Heroic Shot" "The Hoarder" "The Innocent" "The Inventor" "The Obscured" "The Porcupine" "The Price of Prescience" "The Price of Protection" "The Rusted Bard" "The Seeker" "The Side Quest" "The Survivalist" "The Tinkerer's Table" "The Warlord" "The Wrath" "Three Faces in the Dark" "Three Voices" "Vanity" "Vinia's Token"
 	SetFontSize 30
-	SetTextColor 0 210 255
-	SetBorderColor 0 210 255 150
+	SetTextColor 0 255 210 255
+	SetBorderColor 0 215 175 150
 
 #T4 (Remaining)
 Show
 	Class "Divination"
-	SetFontSize 25
-	SetTextColor 0 210 255
+	SetFontSize 30
+	SetTextColor 0 255 210 255
 	SetBorderColor 0 215 175 150
 	
 Show
@@ -1269,7 +1311,7 @@ Show
 
 Show
 	Class "Abyss Jewel"
-	SetFontSize 30
+	SetFontSize 40
 	SetTextColor 130 200 140
 	SetBorderColor 130 200 140 150
 	MinimapIcon 2 Green Hexagon
@@ -1838,47 +1880,7 @@ Show
 
 Show
 	Class Currency
-	BaseType "Timeless Vaal Splinter" 
-	SetFontSize 40
-	SetTextColor 255 23 240
-	SetBorderColor 255 23 240 150
-	CustomAlertSound "popcaphit.wav"
-	MinimapIcon 2 Pink Kite
-	PlayEffect Pink Temp
-
-Show
-	Class Currency
-	BaseType "Timeless Templar Splinter" 
-	SetFontSize 40
-	SetTextColor 255 23 240
-	SetBorderColor 255 23 240 150
-	CustomAlertSound "popcaphit.wav"
-	MinimapIcon 2 Pink Kite
-	PlayEffect Pink Temp
-	
-Show
-	Class Currency
-	BaseType "Timeless Karui Splinter"
-	SetFontSize 40
-	SetTextColor 255 23 240
-	SetBorderColor 255 23 240 150
-	CustomAlertSound "popcaphit.wav"
-	MinimapIcon 2 Pink Kite
-	PlayEffect Pink Temp
-
-Show
-	Class Currency
-	BaseType "Timeless Eternal Empire Splinter"
-	SetFontSize 40
-	SetTextColor 255 23 240
-	SetBorderColor 255 23 240 150
-	CustomAlertSound "popcaphit.wav"
-	MinimapIcon 2 Pink Kite
-	PlayEffect Pink Temp
-	
-Show
-	Class Currency
-	BaseType "Timeless Maraketh Splinter"
+	BaseType "Timeless Vaal Splinter" "Timeless Templar Splinter" "Timeless Karui Splinter" "Timeless Eternal Empire Splinter" "Timeless Maraketh Splinter"
 	SetFontSize 40
 	SetTextColor 255 23 240
 	SetBorderColor 255 23 240 150
@@ -1902,9 +1904,9 @@ Hide
 
 Show
 	Class Incubator
-	SetFontSize 45
-	SetTextColor 255 23 240
-	SetBorderColor 255 23 240 150
+	SetFontSize 40
+	SetTextColor 255 196 244
+	SetBorderColor 255 196 244
 	MinimapIcon 2 Pink Hexagon
 
 #=================================
@@ -2147,7 +2149,7 @@ Show
 	
 #High level bases
 Show
-	BaseType "Glorious Plate" "Astral Plate" "Zodiac Leather" "Vaal Regalia" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saintly Chainmail" "Saint's Hauberk" "Sadist Garb" "Sacrificial Garb" "Grasping Mail" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Deicide Mask" "Praetor Crown" "Infernal Axe" "Royal Axe" "Void Axe" "Karui Chopper" "Maraketh Bow" "Harbinger Bow" "Imperial Bow" "Assassin Bow" "Thicket Bow" "Grove Bow" "Short Bow" "Gemini Claw" "Imperial Claw" "Behemoth Mace" "Coronal Maul" "Imperial Maul" "Eclipse Staff" "Judgement Staff" "Midnight Blade" "Jewelled Foil" "Infernal Sword" "Exquisite Blade" "Profane Wand" "Prophecy Wand" "Convoking Wand" "Primal Arrow Quiver" "Heavy Arrow Quiver" "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Pinnacle Tower Shield" "Colossal Tower Shield" "Ezomyte Tower Shield" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Cardinal Round Shield" "Archon Kite Shield" "Supreme Spiked Shield" "Jewel"
+	BaseType "Glorious Plate" "Astral Plate" "Zodiac Leather" "Vaal Regalia" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saintly Chainmail" "Saint's Hauberk" "Sadist Garb" "Sacrificial Garb" "Grasping Mail" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Deicide Mask" "Praetor Crown" "Infernal Axe" "Royal Axe" "Void Axe" "Karui Chopper" "Maraketh Bow" "Harbinger Bow" "Imperial Bow" "Assassin Bow" "Thicket Bow" "Grove Bow" "Short Bow" "Gemini Claw" "Imperial Claw" "Behemoth Mace" "Coronal Maul" "Imperial Maul" "Eclipse Staff" "Judgement Staff" "Midnight Blade" "Jewelled Foil" "Infernal Sword" "Exquisite Blade" "Profane Wand" "Prophecy Wand" "Convoking Wand" "Primal Arrow Quiver" "Heavy Arrow Quiver" "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Pinnacle Tower Shield" "Colossal Tower Shield" "Ezomyte Tower Shield" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Cardinal Round Shield" "Archon Kite Shield" "Supreme Spiked Shield" "Jewel" "Fossilised Spirit Shield"
 	FracturedItem True
 	Identified False
 	SetFontSize 40
@@ -2187,7 +2189,7 @@ Show
 
 Show
 	LinkedSockets 5
-	AreaLevel < 75
+	AreaLevel < 80
 	SetFontSize 45
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
@@ -2208,8 +2210,8 @@ Show
 #		Crafting Bases
 #=================================
 
-#Show
-#	BaseType "Lion Pelt"
+#how
+#	BaseType "Convening" "Convoking"
 	#Rarity Rare
 #	ItemLevel >= 84
 #	SetFontSize 80
@@ -2449,14 +2451,135 @@ Show
 
 
 #=================================
-#			High Level Bases
+#		Early Mapping Bases
+#=================================	
+
+#Armour
+Show
+	Rarity Rare
+	AreaLevel <= 81
+	BaseType "Glorious Plate" "Astral Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Widowsilk Robe" "Triumphant Lamellar" "Full Dragonscale" "General's Brigandine" "Saint's Hauberk" "Saintly Chainmail" "Blood Raiment" "Carnal Armour" "Sadist Garb"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+
+
+Show
+	Rarity Rare
+	AreaLevel <= 81
+	BaseType "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Murder Boots"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	Rarity Rare
+	AreaLevel <= 81
+	BaseType "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+
+Show
+	Rarity Rare
+	AreaLevel <= 81
+	BaseType "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Pig-Faced Bascinet" "Prophet Crown" "Praetor Crown" "Deicide Mask" "Vaal Mask"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+#Weapons
+Show
+	Rarity Rare
+	AreaLevel <= 81
+	BaseType "Infernal Axe" "Vaal Hatchet" "Royal Axe" "Void Axe" "Vaal Axe" "Karui Chopper"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	Rarity Rare
+	AreaLevel <= 81
+	BaseType "Maraketh Bow" "Harbinger Bow" "Spine Bow" "Imperial Bow" "Assassin Bow" "Thicket Bow"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	Rarity Rare
+	AreaLevel <= 81
+	BaseType "Gemini Claw" "Imperial Claw"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+
+Show
+	Rarity Rare
+	AreaLevel <= 81
+	BaseType ==  "Sai" "Demon Dagger"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	Rarity Rare
+	AreaLevel <= 81
+	BaseType "Behemoth Mace" "Coronal Maul" "Imperial Maul"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	Rarity Rare
+	AreaLevel <= 81
+	BaseType "Imperial Staff" "Eclipse Staff" "Judgement Staff" "Maelström Staff"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	Rarity Rare
+	AreaLevel <= 81
+	BaseType "Midnight Blade" "Legion Sword" "Jewelled Foil" "Infernal Sword" "Lion Sword"  "Vaal Greatsword"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	Rarity Rare
+	AreaLevel <= 81
+	BaseType "Profane Wand" "Prophecy Wand" "Convoking Wand"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	Rarity Rare
+	AreaLevel <= 81
+	BaseType "Primal Arrow Quiver" "Heavy Arrow Quiver" "Broadhead Arrow Quiver"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+#Shields
+
+Show
+	Rarity Rare
+	AreaLevel <= 81
+	BaseType "Pinnacle Tower Shield" "Colossal Tower Shield" "Ezomyte Tower Shield" "Imperial Buckler" "Lacquered Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Cardinal Round Shield" "Archon Kite Shield" "Champion Kite Shield" "Supreme Spiked Shield" "Fossilised Spirit Shield"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+
+#=================================
+#		 High Level Bases
 #=================================	
 
 #Armour
 Show
 	ItemLevel >= 84
 	Rarity Rare
-	BaseType "Glorious Plate" "Astral Plate" "Zodiac Leather" "Vaal Regalia" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saintly Chainmail" "Saint's Hauberk" "Sadist Garb" "Sacrificial Garb" "Grasping Mail"
+	BaseType "Glorious Plate" "Astral Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Widowsilk Robe" "Triumphant Lamellar" "Full Dragonscale" "General's Brigandine" "Saint's Hauberk" "Saintly Chainmail" "Blood Raiment" "Carnal Armour" "Sadist Garb"
 	SetFontSize 35
 	SetTextColor 235 220 50
 	SetBorderColor 255 240 40 150
@@ -2465,7 +2588,7 @@ Show
 Show
 	ItemLevel >= 84
 	Rarity Rare
-	BaseType "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots"
+	BaseType "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Murder Boots"
 	SetFontSize 35
 	SetTextColor 235 220 50
 	SetBorderColor 255 240 40 150
@@ -2481,7 +2604,7 @@ Show
 Show
 	ItemLevel >= 84
 	Rarity Rare
-	BaseType "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Deicide Mask" "Praetor Crown"
+	BaseType "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Pig-Faced Bascinet" "Prophet Crown" "Praetor Crown" "Deicide Mask" "Vaal Mask"
 	SetFontSize 35
 	SetTextColor 235 220 50
 	SetBorderColor 255 240 40 150
@@ -2490,7 +2613,7 @@ Show
 Show
 	ItemLevel >= 84
 	Rarity Rare
-	BaseType "Infernal Axe" "Royal Axe" "Void Axe" "Karui Chopper"
+	BaseType "Infernal Axe" "Vaal Hatchet" "Royal Axe" "Void Axe" "Vaal Axe" "Karui Chopper"
 	SetFontSize 35
 	SetTextColor 235 220 50
 	SetBorderColor 255 240 40 150
@@ -2498,7 +2621,7 @@ Show
 Show
 	ItemLevel >= 84
 	Rarity Rare
-	BaseType "Maraketh Bow" "Harbinger Bow" "Imperial Bow" "Assassin Bow" "Thicket Bow"
+	BaseType "Maraketh Bow" "Harbinger Bow" "Spine Bow" "Imperial Bow" "Assassin Bow" "Thicket Bow"
 	SetFontSize 35
 	SetTextColor 235 220 50
 	SetBorderColor 255 240 40 150
@@ -2530,7 +2653,7 @@ Show
 Show
 	ItemLevel >= 84
 	Rarity Rare
-	BaseType "Eclipse Staff" "Judgement Staff"
+	BaseType "Imperial Staff" "Eclipse Staff" "Judgement Staff" "Maelström Staff"
 	SetFontSize 35
 	SetTextColor 235 220 50
 	SetBorderColor 255 240 40 150
@@ -2538,7 +2661,7 @@ Show
 Show
 	ItemLevel >= 84
 	Rarity Rare
-	BaseType "Midnight Blade" "Jewelled Foil" "Infernal Sword" "Exquisite Blade"
+	BaseType "Midnight Blade" "Legion Sword" "Jewelled Foil" "Infernal Sword" "Lion Sword"  "Vaal Greatsword"
 	SetFontSize 35
 	SetTextColor 235 220 50
 	SetBorderColor 255 240 40 150
@@ -2553,7 +2676,7 @@ Show
 	
 Show
 	ItemLevel >= 84
-	BaseType "Primal Arrow Quiver" "Heavy Arrow Quiver" "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver"
+	BaseType "Primal Arrow Quiver" "Heavy Arrow Quiver" "Broadhead Arrow Quiver"
 	Rarity Rare
 	SetFontSize 35
 	SetTextColor 235 220 50
@@ -2564,7 +2687,7 @@ Show
 Show
 	ItemLevel >= 84
 	Rarity Rare
-	BaseType "Pinnacle Tower Shield" "Colossal Tower Shield" "Ezomyte Tower Shield" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Cardinal Round Shield" "Archon Kite Shield" "Supreme Spiked Shield"
+	BaseType "Pinnacle Tower Shield" "Colossal Tower Shield" "Ezomyte Tower Shield" "Imperial Buckler" "Lacquered Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Cardinal Round Shield" "Archon Kite Shield" "Champion Kite Shield" "Supreme Spiked Shield" "Fossilised Spirit Shield"
 	SetFontSize 35
 	SetTextColor 235 220 50
 	SetBorderColor 255 240 40 150
