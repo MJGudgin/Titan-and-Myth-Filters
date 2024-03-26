@@ -1,6 +1,6 @@
 #===================================#
-#		   	 Filter v1.1  	 	 	#
-#			   2/7/24				#
+#		   	 Filter v1.2  	 	 	#
+#			   3/25/24				#
 #===================================#
 
 #=================================
@@ -238,7 +238,7 @@ Show
 #Rare Item Currency
 Show
 	Class Currency
-	BaseType "Veiled Chaos Orb"
+	BaseType "Veiled Orb"
 	SetFontSize 50
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
@@ -422,34 +422,7 @@ Show
 	PlayEffect Orange
 	
 #Map Currency
-Show
-	Class Currency
-	BaseType "Cartographer's Chisel"
-	SetFontSize 40
-	SetTextColor 245 225 160
-	SetBorderColor 245 225 160
-	MinimapIcon 2 White Circle
 
-Show
-	Class Currency
-	BaseType "Awakened Sextant" "Elevated Sextant"
-	SetFontSize 40
-	SetTextColor 75 245 200
-	SetBorderColor 75 245 200 150
-	CustomAlertSound "find.wav"
-	MinimapIcon 1 Grey Circle
-	PlayEffect Grey
-	
-Show
-	Class Currency
-	BaseType "Surveyor's Compass" "Charged Compass"
-	SetFontSize 40
-	SetTextColor 229 190 66
-	SetBorderColor 245 214 113 150
-	SetBackgroundColor 30 30 30
-	CustomAlertSound "find.wav"
-	MinimapIcon 1 Grey Circle
-	PlayEffect Grey
 #SuperStrictIgnore
 
 Show
@@ -592,11 +565,13 @@ Show
 	PlayEffect Cyan
 	
 Show
-	BaseType "Maven's Invitation: The Atlas"
-	SetFontSize 40
+	BaseType "Cosmic Fragment" "Decaying Fragment" "Awakening Fragment" "Synthesising Fragment" "Reality Fragment" "Devouring Fragment" "Blazing Fragment"
+	SetFontSize 45
 	SetTextColor 45 220 195
 	SetBorderColor 45 220 195 150
-	MinimapIcon 1 Yellow Pentagon
+	CustomAlertSound "god_power_end.wav"
+	MinimapIcon 1 Cyan Pentagon
+	PlayEffect Cyan
 
 Show
 	Class "Map Fragments"
@@ -606,15 +581,6 @@ Show
 	SetBorderColor 255 155 30 150
 	SetBackgroundColor 255 255 255
 	CustomAlertSound "herocreation.wav"
-	MinimapIcon 0 Orange Pentagon
-	PlayEffect Orange
-	
-Show
-	BaseType "Maven's Invitation"
-	SetFontSize 40
-	SetTextColor 45 220 195
-	SetBorderColor 255 155 30 150
-	CustomAlertSound "god_power_end.wav"
 	MinimapIcon 0 Orange Pentagon
 	PlayEffect Orange
 	
@@ -1177,7 +1143,7 @@ Show
 
 Show
 	Class "Map Fragments"
-	BaseType "Winged"
+	BaseType "Scarab of Monstrous Lineage" "Scarab of Adversaries" "Mysterious Scarab" "Scarab of Hunted Traitors" "Scarab of Stability" "Horned Scarab"
 	SetBorderColor 255 175 0 
 	SetTextColor 160 100 0 
 	SetBackgroundColor 255 255 255
@@ -1188,18 +1154,7 @@ Show
 
 Show
 	Class "Map Fragments"
-	BaseType "Gilded"
-	SetTextColor 0 0 0
-	SetBorderColor 0 255 220 150
-	SetBackgroundColor 255 175 0
-	SetFontSize 45
-	CustomAlertSound "error.wav"
-	MinimapIcon 1 Cyan Diamond
-	PlayEffect Cyan
-
-Show
-	Class "Map Fragments"
-	BaseType "Polished"
+	BaseType "Scarab of"
 	SetBorderColor 0 255 220 150
 	SetTextColor 255 175 0 
 	SetFontSize 40
@@ -1214,6 +1169,17 @@ Show
 	SetFontSize 40
 	CustomAlertSound "error.wav"
 	MinimapIcon 2 White Diamond
+	
+Show
+	Class Currency
+	BaseType "Veiled Scarab"
+	SetTextColor 0 0 0
+	SetBorderColor 0 255 220 150
+	SetBackgroundColor 255 175 0
+	SetFontSize 45
+	CustomAlertSound "error.wav"
+	MinimapIcon 1 Cyan Diamond
+	PlayEffect Cyan	
 	
 #=================================
 #			Fragments
@@ -1346,27 +1312,27 @@ Show
 #			Current League
 #=================================
 
-Show
-	Class Tincture
-	SetFontSize 45
-	SetTextColor 125 40 180
-	SetBorderColor 125 40 180 150
-	MinimapIcon 2 Purple Hexagon
-	
-Show
-	Class Charms
-	SetFontSize 45
-	SetTextColor 125 40 180
-	SetBorderColor 125 40 180 150
-	MinimapIcon 2 Purple Hexagon
-	
-Show
-	Class Corpse
-	SetFontSize 45
-	SetTextColor 125 40 180
-	SetBorderColor 125 40 180 150
-	MinimapIcon 2 Purple Hexagon
+	Show
+		BaseType "Coffin"
+		SetFontSize 45
+		SetTextColor 125 40 180
+		SetBorderColor 125 40 180 150
+		MinimapIcon 2 Purple Hexagon
 
+	Show
+		BaseType "Flaring Allflame Ember"
+		SetFontSize 45
+		SetTextColor 255 140 25 255
+		SetBorderColor 255 255 255 150
+		CustomAlertSound "god_power_end.wav"
+		MinimapIcon 0 Purple Hexagon	
+	
+	Show
+		BaseType "Allflame Ember"
+		SetFontSize 45
+		SetTextColor 255 140 25 255
+		SetBorderColor 255 255 255 150
+		MinimapIcon 2 Purple Hexagon
 
 #=================================
 #			Abyss
@@ -1870,7 +1836,7 @@ Show
 #=================================
 
 Show
-	BaseType == "Accumulator Wand" "Alternating Sceptre" "Anarchic Spiritblade" "Apex Cleaver" "Astrolabe Amulet" "Banishing Blade" "Battery Staff" "Blasting Blade" "Boom Mace" "Capricious Spiritblade" "Cogwork Ring" "Cold-attuned Buckler" "Composite Ring" "Congregator Wand" "Crack Mace" "Crushing Force Magnifier" "Disapprobation Axe" "Eventuality Rod" "Flashfire Blade" "Focused Amulet" "Foundry Bow" "Geodesic Ring" "Heat-attuned Tower Shield" "Helical Ring" "Honed Cleaver" "Impact Force Propagator" "Infernal Blade" "Magmatic Tower Shield" "Malign Fangs" "Manifold Ring" "Mechalarm Belt" "Micro-Distillery Belt" "Oscillating Sceptre" "Pneumatic Dagger" "Polar Buckler" "Potentiality Rod" "Pressurised Dagger" "Psychotic Axe" "Ratcheting Ring" "Reciprocation Staff" "Simplex Amulet" "Solarine Bow" "Stabilising Sceptre" "Subsuming Spirit Shield" "Transfer-attuned Spirit Shield" "Void Fangs"
+	BaseType == "Accumulator Wand" "Alternating Sceptre" "Anarchic Spiritblade" "Apex Cleaver" "Astrolabe Amulet" "Banishing Blade" "Battery Staff" "Blasting Blade" "Boom Mace" "Capricious Spiritblade" "Cogwork Ring" "Cold-attuned Buckler" "Composite Ring" "Congregator Wand" "Crack Mace" "Crushing Force Magnifier" "Disapprobation Axe" "Eventuality Rod" "Flashfire Blade" "Focused Amulet" "Foundry Bow" "Geodesic Ring" "Heat-attuned Tower Shield" "Helical Ring" "Honed Cleaver" "Impact Force Propagator" "Infernal Blade" "Magmatic Tower Shield" "Malign Fangs" "Manifold Ring" "Mechalarm Belt" "Micro-Distillery Belt" "Oscillating Sceptre" "Pneumatic Dagger" "Polar Buckler" "Potentiality Rod" "Pressurised Dagger" "Psychotic Axe" "Ratcheting Ring" "Reciprocation Staff" "Simplex Amulet" "Solarine Bow" "Stabilising Sceptre" "Subsuming Spirit Shield" "Transfer-attuned Spirit Shield" "Void Fangs" "Mechanical Belt"
 	SetFontSize 40
 	SetBorderColor 215 50 25 150
 	SetTextColor 215 50 25
@@ -2070,6 +2036,18 @@ Show
 #EndStrictIgnore
 
 #=================================
+#		Trial of the Ancients
+#=================================
+
+Show
+	BaseType "Tattoo"
+	SetTextColor 100 230 255
+	SetBorderColor 100 230 255 150
+	SetFontSize 40
+	MinimapIcon 2 Brown Hexagon
+	
+
+#=================================
 #			Ultimatum
 #=================================
 
@@ -2087,7 +2065,6 @@ Show
 	SetBorderColor 190 0 0 150
 	SetTextColor 190 0 0
 	SetFontSize 40
-	CustomAlertSound "vine_plat_land.wav"
 	MinimapIcon 2 Red Hexagon
 	
 #=================================
@@ -3111,6 +3088,52 @@ Hide
 #		Deprecated Content
 #=================================
 
+	#Old Maven invitations
+		
+	#Show
+	#	BaseType "Maven's Invitation: The Atlas"
+	#	SetFontSize 40
+	#	SetTextColor 45 220 195
+	#	SetBorderColor 45 220 195 150
+	#	MinimapIcon 1 Yellow Pentagon	
+		
+	#Show
+	#	BaseType "Maven's Invitation"
+	#	SetFontSize 40
+	#	SetTextColor 45 220 195
+	#	SetBorderColor 255 155 30 150
+	#	CustomAlertSound "god_power_end.wav"
+	#	MinimapIcon 0 Orange Pentagon
+	#	PlayEffect Orange
+	
+	#Show
+	#	Class Currency
+	#	BaseType "Cartographer's Chisel"
+	#	SetFontSize 40
+	#	SetTextColor 245 225 160
+	#	SetBorderColor 245 225 160
+	#	MinimapIcon 2 White Circle
+
+	#Show
+	#	Class Currency
+	#	BaseType "Awakened Sextant" "Elevated Sextant"
+	#	SetFontSize 40
+	#	SetTextColor 75 245 200
+	#	SetBorderColor 75 245 200 150
+	#	CustomAlertSound "find.wav"
+	#	MinimapIcon 1 Grey Circle
+	#	PlayEffect Grey
+	
+	#Show
+	#	Class Currency
+	#	BaseType "Surveyor's Compass" "Charged Compass"
+	#	SetFontSize 40
+	#	SetTextColor 229 190 66
+	#	SetBorderColor 245 214 113 150
+	#	SetBackgroundColor 30 30 30
+	#	CustomAlertSound "find.wav"
+	#	MinimapIcon 1 Grey Circle
+	#	PlayEffect Grey
 
 	#=================================
 	#			Metamorph
@@ -3140,6 +3163,31 @@ Hide
 	#	SetFontSize 40
 	#	SetTextColor 255 140 25 255
 	#	SetBorderColor 255 255 255 150
+		
+	#=================================
+	#			Affliction
+	#=================================
+	
+	#Show
+	#	Class Tincture
+	#	SetFontSize 45
+	#	SetTextColor 125 40 180
+	#	SetBorderColor 125 40 180 150
+	#	MinimapIcon 2 Purple Hexagon
+		
+	#Show
+	#	Class Charms
+	#	SetFontSize 45
+	#	SetTextColor 125 40 180
+	#	SetBorderColor 125 40 180 150
+	#	MinimapIcon 2 Purple Hexagon
+		
+	#Show
+	#	Class Corpse
+	#	SetFontSize 45
+	#	SetTextColor 125 40 180
+	#	SetBorderColor 125 40 180 150
+	#	MinimapIcon 2 Purple Hexagon
 
 
 #=================================
