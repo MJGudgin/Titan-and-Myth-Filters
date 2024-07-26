@@ -1,9 +1,9 @@
 #===================================#
 #		   	 	Titan  	 	 		#
-#		    Filter v1.2.1 	 	 	#
+#		    Filter v1.2.2 	 	 	#
 #			Super Strict			#
 #			 Custom Audio			#
-#			   3/25/24				#
+#			   7/25/24				#
 #===================================#
 
 #=================================
@@ -210,7 +210,7 @@ Show
 	
 Show
 	Class Currency
-	BaseType "Cartographer's Chisel"
+	BaseType "Chisel"
 	SetFontSize 40
 	SetTextColor 245 225 160
 	SetBorderColor 245 225 160
@@ -298,6 +298,15 @@ Show
 	CustomAlertSound "herocreation.wav"	
 	MinimapIcon 0 Cyan Circle
 	PlayEffect Cyan
+	
+Show
+	Class Currency
+	BaseType "Reflecting Mist"
+	SetFontSize 50
+	SetTextColor 45 220 195
+	SetBorderColor 45 220 195 150
+	MinimapIcon 0 White Star
+	
 
 #=================================
 #			Quest Items
@@ -935,32 +944,34 @@ Show
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 159 15 213 255
 	MinimapIcon 2 Blue Pentagon
+	
+#=================================
+#			Tinctures
+#=================================	
+
+Show
+	Class Tincture
+	SetFontSize 45
+	SetTextColor 125 40 180
+	SetBorderColor 125 40 180 150
+	MinimapIcon 2 Purple Hexagon
 
 #=================================
 #			Current League
 #=================================
 
 Show
-	BaseType "Coffin"
-	SetFontSize 45
-	SetTextColor 125 40 180
-	SetBorderColor 125 40 180 150
-	MinimapIcon 2 Purple Hexagon
-
+	Class "Gold"
+	SetFontSize 35
+	SetTextColor 214 169 45
+	SetBorderColor 153 124 44
+	
 Show
-	BaseType "Flaring Allflame Ember"
-	SetFontSize 45
-	SetTextColor 255 140 25 255
-	SetBorderColor 255 255 255 150
-	CustomAlertSound "god_power_end.wav"
-	MinimapIcon 0 Purple Hexagon	
-
-Show
-	BaseType "Allflame Ember"
-	SetFontSize 45
-	SetTextColor 255 140 25 255
-	SetBorderColor 255 255 255 150
-	MinimapIcon 2 Purple Hexagon
+	BaseType "Rune"
+	SetFontSize 40
+	SetTextColor 45 180 215
+	SetBorderColor 45 180 215 150
+	
 
 #=================================
 #			Abyss
@@ -1014,7 +1025,7 @@ Show
 
 Show
 	Class Currency
-	BaseType "Silver Oil" "Golden Oil" "Tainted Oil" "Reflective Oil"
+	BaseType "Silver Oil" "Golden Oil" "Tainted Oil" "Reflective Oil" "Prismatic Oil"
 	SetBackgroundColor 255 255 255
 	SetBorderColor 0 250 54 150
 	SetTextColor 0 135 30
@@ -1034,15 +1045,6 @@ Show
 	MinimapIcon 1 Green Raindrop
 	
 
-
-Show
-	Class Currency
-	BaseType "Oil Extractor"
-	SetFontSize 40
-	SetTextColor 229 190 66
-	SetBorderColor 245 214 113 150
-	SetBackgroundColor 30 30 30
-	CustomAlertSound "find.wav"	
 	
 #=================================
 #			Breach
@@ -1508,6 +1510,21 @@ Show
 	SetTextColor 255 25 25
 	SetBorderColor 255 25 25 150
 	MinimapIcon 1 Red Kite
+	
+Show
+	Class "Map Fragments"
+	BaseType "An Audience With The King"
+	SetFontSize 45
+	SetTextColor 125 40 180
+	SetBorderColor 125 40 180 150
+	MinimapIcon 0 Purple Hexagon
+	
+Show
+	Class Corpse
+	SetFontSize 45
+	SetTextColor 125 40 180
+	SetBorderColor 125 40 180 150
+	MinimapIcon 2 Purple Hexagon
 
 #=================================
 #			Sanctum
@@ -1771,13 +1788,13 @@ Show
 #		Personal Base Search
 #=================================
 
-Show
-	HasInfluence Crusader Hunter Redeemer Warlord Elder Shaper
+#Show
+#	HasInfluence Crusader Hunter Redeemer Warlord Elder Shaper
 	#ItemLevel >= 84
-	SetFontSize 80
-	SetTextColor 255 255 255 255
-	SetBorderColor 255 255 225 255
-	MinimapIcon 2 White Triangle
+#	SetFontSize 80
+#	SetTextColor 255 255 255 255
+#	SetBorderColor 255 255 225 255
+#	MinimapIcon 2 White Triangle
 	
 Show
 	BaseType "Marble Amulet"
@@ -2027,6 +2044,16 @@ Show
 	SetBorderColor 20 140 210 150	
 
 #=================================
+#		Early Game Items
+#=================================
+	
+Show
+	Rarity Normal
+	BaseType "Iron Ring"
+	AreaLevel <= 22
+	SetFontSize 40
+
+#=================================
 #			Chaos Recipe
 #=================================
 
@@ -2223,7 +2250,45 @@ Hide
 	#	SetTextColor 125 40 180
 	#	SetBorderColor 125 40 180 150
 	#	MinimapIcon 2 Purple Hexagon
+	
+	#=================================
+	#			Necropolis
+	#=================================
+	
+	#Show
+	#	BaseType "Coffin"
+	#	SetFontSize 45
+	#	SetTextColor 125 40 180
+	#	SetBorderColor 125 40 180 150
+	#	MinimapIcon 2 Purple Hexagon
 
+	#Show
+	#	BaseType "Flaring Allflame Ember"
+	#	SetFontSize 45
+	#	SetTextColor 255 140 25 255
+	#	SetBorderColor 255 255 255 150
+	#	CustomAlertSound "god_power_end.wav"
+	#	MinimapIcon 0 Purple Hexagon	
+
+	#Show
+	#	BaseType "Allflame Ember"
+	#	SetFontSize 45
+	#	SetTextColor 255 140 25 255
+	#	SetBorderColor 255 255 255 150
+	#	MinimapIcon 2 Purple Hexagon
+	
+	#=================================
+	#			Blight
+	#=================================	
+
+	#Show
+	#	Class Currency
+	#	BaseType "Oil Extractor"
+	#	SetFontSize 40
+	#	SetTextColor 229 190 66
+	#	SetBorderColor 245 214 113 150
+	#	SetBackgroundColor 30 30 30
+	#	CustomAlertSound "find.wav"	
 
 #=================================
 #		Notes

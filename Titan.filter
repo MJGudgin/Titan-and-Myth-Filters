@@ -1,8 +1,8 @@
 #===================================#
 #		   	 	Titan  	 	 		#
-#		    Filter v1.2.1 	 	 	#
+#		    Filter v1.2.2 	 	 	#
 #			 Custom Audio			#
-#			   3/25/24				#
+#			   7/25/24				#
 #===================================#
 
 #=================================
@@ -337,7 +337,7 @@ Show
 	
 Show
 	Class Currency
-	BaseType "Cartographer's Chisel"
+	BaseType "Chisel"
 	SetFontSize 40
 	SetTextColor 245 225 160
 	SetBorderColor 245 225 160
@@ -486,6 +486,15 @@ Show
 	CustomAlertSound "herocreation.wav"	
 	MinimapIcon 0 Cyan Circle
 	PlayEffect Cyan
+	
+Show
+	Class Currency
+	BaseType "Reflecting Mist"
+	SetFontSize 50
+	SetTextColor 45 220 195
+	SetBorderColor 45 220 195 150
+	MinimapIcon 0 White Star
+	
 
 #=================================
 #			Quest Items
@@ -1273,32 +1282,34 @@ Show
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 159 15 213 255
 	MinimapIcon 2 Blue Pentagon
+	
+#=================================
+#			Tinctures
+#=================================	
+
+Show
+	Class Tincture
+	SetFontSize 45
+	SetTextColor 125 40 180
+	SetBorderColor 125 40 180 150
+	MinimapIcon 2 Purple Hexagon
 
 #=================================
 #			Current League
 #=================================
 
 Show
-	BaseType "Coffin"
-	SetFontSize 45
-	SetTextColor 125 40 180
-	SetBorderColor 125 40 180 150
-	MinimapIcon 2 Purple Hexagon
-
+	Class "Gold"
+	SetFontSize 35
+	SetTextColor 214 169 45
+	SetBorderColor 153 124 44
+	
 Show
-	BaseType "Flaring Allflame Ember"
-	SetFontSize 45
-	SetTextColor 255 140 25 255
-	SetBorderColor 255 255 255 150
-	CustomAlertSound "god_power_end.wav"
-	MinimapIcon 0 Purple Hexagon	
-
-Show
-	BaseType "Allflame Ember"
-	SetFontSize 45
-	SetTextColor 255 140 25 255
-	SetBorderColor 255 255 255 150
-	MinimapIcon 2 Purple Hexagon
+	BaseType "Rune"
+	SetFontSize 40
+	SetTextColor 45 180 215
+	SetBorderColor 45 180 215 150
+	
 
 #=================================
 #			Abyss
@@ -1367,7 +1378,7 @@ Show
 
 Show
 	Class Currency
-	BaseType "Silver Oil" "Golden Oil" "Tainted Oil" "Reflective Oil"
+	BaseType "Silver Oil" "Golden Oil" "Tainted Oil" "Reflective Oil" "Prismatic Oil"
 	SetBackgroundColor 255 255 255
 	SetBorderColor 0 250 54 150
 	SetTextColor 0 135 30
@@ -1400,15 +1411,6 @@ Show
 	BaseType "Oil"
 	SetBackgroundColor 30 30 30
 	SetTextColor 30 250 84
-
-Show
-	Class Currency
-	BaseType "Oil Extractor"
-	SetFontSize 40
-	SetTextColor 229 190 66
-	SetBorderColor 245 214 113 150
-	SetBackgroundColor 30 30 30
-	CustomAlertSound "find.wav"	
 	
 #=================================
 #			Breach
@@ -1732,7 +1734,16 @@ Show
 
 Show
 	Class Currency
-	BaseType "Binding Shard" "Engineer's Shard" "Transmutation Shard" "Chaos Shard" "Alchemy Shard" "Alteration Shard" 
+	BaseType "Chaos Shard"
+	AreaLevel <= 77
+	SetFontSize 35
+	SetTextColor 30 180 255
+	SetBorderColor 30 180 255 150
+
+Show
+	Class Currency
+	BaseType "Binding Shard" "Engineer's Shard" "Transmutation Shard" "Alchemy Shard" "Alteration Shard"
+	AreaLevel <= 72
 	SetFontSize 35
 	SetTextColor 30 180 255
 	SetBorderColor 30 180 255 150
@@ -1943,6 +1954,21 @@ Show
 	SetTextColor 255 25 25
 	SetBorderColor 255 25 25 150
 	MinimapIcon 1 Red Kite
+	
+Show
+	Class "Map Fragments"
+	BaseType "An Audience With The King"
+	SetFontSize 45
+	SetTextColor 125 40 180
+	SetBorderColor 125 40 180 150
+	MinimapIcon 0 Purple Hexagon
+	
+Show
+	Class Corpse
+	SetFontSize 45
+	SetTextColor 125 40 180
+	SetBorderColor 125 40 180 150
+	MinimapIcon 2 Purple Hexagon
 
 #=================================
 #			Sanctum
@@ -2238,13 +2264,13 @@ Show
 #		Personal Base Search
 #=================================
 
-Show
-	HasInfluence Crusader Hunter Redeemer Warlord Elder Shaper
+#Show
+#	HasInfluence Crusader Hunter Redeemer Warlord Elder Shaper
 	#ItemLevel >= 84
-	SetFontSize 80
-	SetTextColor 255 255 255 255
-	SetBorderColor 255 255 225 255
-	MinimapIcon 2 White Triangle
+#	SetFontSize 80
+#	SetTextColor 255 255 255 255
+#	SetBorderColor 255 255 225 255
+#	MinimapIcon 2 White Triangle
 	
 Show
 	BaseType "Marble Amulet"
@@ -2638,6 +2664,25 @@ Show
 	SetBorderColor 255 240 40 150
 
 #=================================
+#		 New Bases (3.25)
+#=================================	
+
+Show
+	ItemLevel >= 84
+	Rarity Rare
+	BaseType "General's Helmet" "Conqueror's Helmet" "Giantslayer Helmet" "Dire Pelt" "Grizzly Pelt" "Majestic Pelt" "Moonlit Circlet" "Sunfire Circlet" "Lich's Circlet" "Knight Helm" "Conquest Helmet" "Haunted Bascinet" "Faithful Helmet" "Paladin Crown" "Divine Crown" "Jester Mask" "Ancient Mask" "Torturer's Mask" "Titan Plate" "Legion Plate" "Royal Plate" "Supreme Leather" "Astral Leather" "Syndicate's Garb" "Arcane Vestment" "Nightweave Robe" "Twilight Regalia" "Full Wyvernscale" "Marshall's Brigandine" "Conquest Lamellar" "Grand Ringmail" "Paladin's Hauberk" "Sacred Chainmail" "Sanguine Raiment" "Torturer Garb" "Necrotic Armour" "Precursor Greaves" "Leviathan Greaves" "Harpyskin Boots" "Velour Boots" "Sage Slippers" "Warlock Boots" "Chimerascale Boots" "Wyvernscale Boots" "Martyr Boots" "Paladin Boots" "Infiltrator Boots" "Phantom Boots" "Precursor Gauntlets" "Leviathan Gauntlets" "Harpyskin Gloves" "Velour Gloves" "Sage Gloves" "Warlock Gloves" "Chimerascale Gauntlets" "Wyvernscale Gauntlets" "Martyr Gloves" "Paladin Gloves" "Infiltrator Mitts" "Phantom Mitts"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+	
+Show
+	Rarity Rare
+	BaseType "General's Helmet" "Conqueror's Helmet" "Giantslayer Helmet" "Dire Pelt" "Grizzly Pelt" "Majestic Pelt" "Moonlit Circlet" "Sunfire Circlet" "Lich's Circlet" "Knight Helm" "Conquest Helmet" "Haunted Bascinet" "Faithful Helmet" "Paladin Crown" "Divine Crown" "Jester Mask" "Ancient Mask" "Torturer's Mask" "Titan Plate" "Legion Plate" "Royal Plate" "Supreme Leather" "Astral Leather" "Syndicate's Garb" "Arcane Vestment" "Nightweave Robe" "Twilight Regalia" "Full Wyvernscale" "Marshall's Brigandine" "Conquest Lamellar" "Grand Ringmail" "Paladin's Hauberk" "Sacred Chainmail" "Sanguine Raiment" "Torturer Garb" "Necrotic Armour" "Precursor Greaves" "Leviathan Greaves" "Harpyskin Boots" "Velour Boots" "Sage Slippers" "Warlock Boots" "Chimerascale Boots" "Wyvernscale Boots" "Martyr Boots" "Paladin Boots" "Infiltrator Boots" "Phantom Boots" "Precursor Gauntlets" "Leviathan Gauntlets" "Harpyskin Gloves" "Velour Gloves" "Sage Gloves" "Warlock Gloves" "Chimerascale Gauntlets" "Wyvernscale Gauntlets" "Martyr Gloves" "Paladin Gloves" "Infiltrator Mitts" "Phantom Mitts"
+	SetFontSize 35
+	SetTextColor 235 220 50
+	SetBorderColor 255 240 40 150
+
+#=================================
 #		 High Level Bases
 #=================================	
 
@@ -2649,7 +2694,6 @@ Show
 	SetFontSize 35
 	SetTextColor 235 220 50
 	SetBorderColor 255 240 40 150
-
 
 Show
 	ItemLevel >= 84
@@ -2932,6 +2976,16 @@ Show
 	SetBorderColor 20 140 210 150	
 
 #=================================
+#		Early Game Items
+#=================================
+	
+Show
+	Rarity Normal
+	BaseType "Iron Ring"
+	AreaLevel <= 22
+	SetFontSize 40
+
+#=================================
 #			Chaos Recipe
 #=================================
 
@@ -3160,7 +3214,45 @@ Hide
 	#	SetTextColor 125 40 180
 	#	SetBorderColor 125 40 180 150
 	#	MinimapIcon 2 Purple Hexagon
+	
+	#=================================
+	#			Necropolis
+	#=================================
+	
+	#Show
+	#	BaseType "Coffin"
+	#	SetFontSize 45
+	#	SetTextColor 125 40 180
+	#	SetBorderColor 125 40 180 150
+	#	MinimapIcon 2 Purple Hexagon
 
+	#Show
+	#	BaseType "Flaring Allflame Ember"
+	#	SetFontSize 45
+	#	SetTextColor 255 140 25 255
+	#	SetBorderColor 255 255 255 150
+	#	CustomAlertSound "god_power_end.wav"
+	#	MinimapIcon 0 Purple Hexagon	
+
+	#Show
+	#	BaseType "Allflame Ember"
+	#	SetFontSize 45
+	#	SetTextColor 255 140 25 255
+	#	SetBorderColor 255 255 255 150
+	#	MinimapIcon 2 Purple Hexagon
+	
+	#=================================
+	#			Blight
+	#=================================	
+
+	#Show
+	#	Class Currency
+	#	BaseType "Oil Extractor"
+	#	SetFontSize 40
+	#	SetTextColor 229 190 66
+	#	SetBorderColor 245 214 113 150
+	#	SetBackgroundColor 30 30 30
+	#	CustomAlertSound "find.wav"	
 
 #=================================
 #		Notes
