@@ -17,7 +17,7 @@
 #		Table of Contents
 #=================================
 
-# Override
+# 000 | Override
 
 # 100 | Base Game Systems
 	# 101 | Currency
@@ -37,36 +37,42 @@
 
 # 300 | Core League Mechanics
 	# 301 | Abyss
-	# 302 | Betrayal
-	# 303 | Blight
-	# 304 | Breach
-	# 305 | Delirium
-	# 306 | Delve
-	# 307 | Essence
-	# 308 | Expedition
-	# 309 | Harbinger
-	# 310 | Harvest
-	# 311 | Heist
-	# 312 | Incursion
-	# 313 | Legion
-	# 314 | Metamorph
+	# 302 | Ancestor
+	# 303 | Betrayal
+	# 304 | Blight
+	# 305 | Breach
+	# 306 | Delirium
+	# 307 | Delve
+	# 308 | Essence
+	# 309 | Expedition
+	# 310 | Harbinger
+	# 311 | Harvest
+	# 312 | Heist
+	# 313 | Incursion
+	# 314 | Legion
 	# 315 | Ritual
 	# 316 | Sanctum
 	# 317 | Talisman
+	# 318 | Ultimatum
 
 # 400 | Gear Filtering
 	# 401 | Influence
-	# 402 | Fractured
-	# 403 | Enchantments
-	# 404 | Six/Five Links
-	# 405 | Four Links
-	# 406 | Crafting Bases
-	# 407 | Chancing Bases
-	# 408 | Atlas Bases
-	# 409 | Specific Affix Filter
-	# 410 | High Level Bases
-	# 411 | Leveling Rares
-	# 412 | Leveling Magic
+	# 402 | Memory Strands
+	# 403 | Fractured
+	# 404 | Enchantments
+	# 405 | Six/Five Links
+	# 406 | Four Links
+#EndMythIgnore
+	# 407 | Crafting Bases
+	# 408 | Chancing Bases
+	# 409 | Atlas Bases
+	# 410 | Synth Bases
+	# 411 | Specific Affix Filter
+	# 412 | 3.25 Bases 
+	# 413 | High Level Bases
+	# 414 | Leveling Rares
+	# 415 | Leveling Magic
+	# 416 | Early Game Items
 
 # 500 | Currency Farm
 	# 501 | Chaos Recipe
@@ -81,7 +87,7 @@
 # 800 | Notes
 
 #=================================
-#			Override
+#		000 | Override
 #=================================
 
 #Show
@@ -92,11 +98,11 @@
 #	Rarity Rare
 	
 #=======================================
-#			Base Game Systems
+#		100 | Base Game Systems
 #=======================================
 
 #=================================
-#			Currency
+#		101 | Currency
 #=================================
 
 #Tainted Currency Highlight (Added 3.19)
@@ -121,6 +127,13 @@ Show
 	MinimapIcon 1 Purple Circle
 
 
+
+Show
+	Class "Gold"
+	SetFontSize 35
+	SetTextColor 214 169 45
+	SetBorderColor 153 124 44
+	PlayEffect Yellow Temp
 	
 # Magic Item Currency
 	
@@ -142,7 +155,7 @@ Show
 #Rare Item Currency
 Show
 	Class Currency
-	BaseType "Veiled Orb"
+	BaseType "Veiled Exalted Orb" "Veiled Chaos Orb"
 	SetFontSize 50
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
@@ -178,6 +191,17 @@ Show
 Show
 	Class Currency
 	BaseType == "Exalted Orb"
+	SetFontSize 40
+	SetTextColor 229 190 66
+	SetBorderColor 245 214 113 150
+	SetBackgroundColor 30 30 30
+	PlayAlertSound 1 300
+	MinimapIcon 1 Brown Circle
+	PlayEffect Yellow
+	
+Show
+	Class Currency
+	BaseType == "Shaper's Exalted Orb" "Elder's Exalted Orb" "Crusader's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Warlords Exalted Orb"
 	SetFontSize 40
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
@@ -239,7 +263,7 @@ Show
 #Mod Currency
 Show
 	Class Currency
-	BaseType == "Orb of Annulment" "Blessed Orb" "Ancient Orb" "Ancient Shard" "Sacred Orb"
+	BaseType == "Orb of Annulment" "Blessed Orb" "Ancient Orb" "Ancient Shard" "Sacred Orb" "Orb of Remembrance" "Orb of Unravelling" "Orb of Intention"
 	SetFontSize 50
 	SetTextColor 209 187 113
 	SetBorderColor 245 214 113 150
@@ -311,7 +335,7 @@ Show
 	
 
 #=================================
-#			Quest Items
+#		102 | Quest Items
 #=================================
 
 Show
@@ -344,7 +368,7 @@ Show
 	PlayEffect Cyan
 	
 Show
-	BaseType "Screaming Invitation" "Incandescent Invitation"
+	BaseType "Screaming Invitation" "Incandescent Invitation" "Echo of"
 	SetFontSize 45
 	SetTextColor 45 220 195
 	SetBorderColor 45 220 195 150
@@ -382,7 +406,7 @@ Show
 	PlayEffect Orange
 
 #=================================
-#			Maps
+#		103 | Maps
 #=================================
 
 Show
@@ -503,20 +527,20 @@ Show
 	SetBackgroundColor 235 220 245 255
 	
 #=================================
-#			Div Cards
+#		104 | Div Cards
 #=================================
 
 #Unknown
-#Show
-#	Class "Divination"
-#	BaseType == "Friendship" "Rebirth and Renewal" "More is Never Enough" "The Long Watch" "Father's Love" "Avian Pursuit" "Temperance" "Lonely Warrior" "Toxic Tidings"
-#	SetFontSize 50
-#	SetTextColor 0 0 0
-#	SetBorderColor 0 255 210 255
-#	SetBackgroundColor 255 255 255
-#	CustomAlertSound "herocreation.wav"
-#	MinimapIcon 0 Orange UpsideDownHouse
-#	PlayEffect Orange
+Show
+	Class "Divination"
+	BaseType == "Sambodhi's Wisdom" "The Bargain" "The Mayor" "Monochrome" "Squandered Prosperity" "Underground Forest"
+	SetFontSize 50
+	SetTextColor 0 0 0
+	SetBorderColor 0 255 210 255
+	SetBackgroundColor 255 255 255
+	PlayAlertSound 6 300
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange
 
 #T1
 Show
@@ -559,7 +583,7 @@ Show
 	MinimapIcon 2 Grey UpsideDownHouse
 	
 #=================================
-#			Gems
+#		105 | Gems
 #=================================
 
 Show 
@@ -633,7 +657,14 @@ Show
 	SetFontSize 40
 	SetBorderColor 255 0 0 150
 	SetBackgroundColor 6 0 60
-
+	
+Show
+	Class Gems
+	BaseType "of Trarthus"
+	SetFontSize 30
+	SetBorderColor 0 250 255 150
+	SetBackgroundColor 6 0 60
+	
 Show
 	Class Gems
 	AreaLevel <= 45
@@ -642,7 +673,7 @@ Show
 	SetBackgroundColor 6 0 60	
 
 #=================================
-#			Uniques
+#		107 | Uniques
 #=================================
 
 #Six-linked Uniques
@@ -797,8 +828,19 @@ Show # Jewels
 
 
 
+Show
+	Class Tincture
+	SetFontSize 45
+	SetTextColor 125 40 180
+	SetBorderColor 125 40 180 150
+	MinimapIcon 2 Purple Hexagon
+
 #=================================
-#			Scarabs
+#		200 | Map Systems
+#=================================
+
+#=================================
+#		201 | Scarabs
 #=================================
 
 Show
@@ -842,7 +884,7 @@ Show
 	PlayEffect Cyan	
 	
 #=================================
-#			Fragments
+#		202 | Fragments
 #=================================
 
 Show
@@ -861,14 +903,6 @@ Show
 	PlayAlertSound 6 300
 	MinimapIcon 0 White Raindrop
 	PlayEffect White
-
-Show
-	Class Memory
-	SetFontSize 45
-	SetTextColor 0 255 190
-	SetBorderColor 0 255 190
-	PlayAlertSound 1 300
-	MinimapIcon 1 Cyan Square
 
 Show
 	BaseType "Offering to the Goddess"
@@ -957,38 +991,32 @@ Show
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 159 15 213 255
 	MinimapIcon 2 Blue Pentagon
-	
-#=================================
-#			Tinctures
-#=================================	
-
-Show
-	Class Tincture
-	SetFontSize 45
-	SetTextColor 125 40 180
-	SetBorderColor 125 40 180 150
-	MinimapIcon 2 Purple Hexagon
 
 #=================================
-#			Current League
+#		250 | Current League
 #=================================
 
 Show
-	Class "Gold"
-	SetFontSize 35
-	SetTextColor 214 169 45
-	SetBorderColor 153 124 44
-	PlayEffect Yellow Temp
-	
-Show
-	BaseType "Rune"
+	BaseType "Runegraft"
 	SetFontSize 40
 	SetTextColor 45 180 215
 	SetBorderColor 45 180 215 150
 	
+Show
+	BaseType "Allflame Ember"
+	SetFontSize 45
+	SetTextColor 255 140 25 255
+	SetBorderColor 255 255 255 150
+	MinimapIcon 2 Purple Hexagon
+	
+	
+
+#===========================================
+#		300 | Core League Mechanics
+#===========================================
 
 #=================================
-#			Abyss
+#		301 | Abyss
 #=================================
 
 Show
@@ -1005,18 +1033,19 @@ Show
 
 
 #=================================
-#			Ancestor
+#		302 | Ancestor
 #=================================
 
 Show
-	Class "Currency"
-	BaseType Omen
+	BaseType "Tattoo"
+	SetTextColor 100 230 255
+	SetBorderColor 100 230 255 150
 	SetFontSize 40
-	SetTextColor 50 185 190
-	SetBackgroundColor 45 125 185
+	MinimapIcon 2 Brown Hexagon
+	PlayAlertSound 1 300
 	
 #=================================
-#			Betrayal
+#		303 | Betrayal
 #=================================
 
 Show
@@ -1034,7 +1063,7 @@ Show
 	MinimapIcon 2 Yellow Triangle
 	
 #=================================
-#			Blight
+#		304 | Blight
 #=================================
 
 Show
@@ -1061,7 +1090,7 @@ Show
 
 	
 #=================================
-#			Breach
+#		305 | Breach
 #=================================
 
 Show
@@ -1215,7 +1244,7 @@ Show
 	PlayEffect Purple
 	
 #=================================
-#			Delirium
+#		306 | Delirium
 #=================================
 	
 Show
@@ -1248,7 +1277,7 @@ Show
 
 	
 #=================================
-#			Delve
+#		307 | Delve
 #=================================
 
 Show
@@ -1269,7 +1298,7 @@ Show
 	MinimapIcon 1 White Hexagon
 	
 #=================================
-#			Essence
+#		308 | Essence
 #=================================
 
 Show
@@ -1289,7 +1318,7 @@ Show
 	MinimapIcon 2 Cyan Hexagon
 
 #=================================
-#			Expedition
+#		309 | Expedition
 #=================================
 
 Show
@@ -1309,16 +1338,10 @@ Show
 	MinimapIcon 1 Cyan Square
 	PlayEffect Cyan
 
-#=================================
-#		Forbidden Sanctum
-#=================================
 
-Show
-	Class Currency
-	BaseType "Invocation"
 	
 #=================================
-#			Harbinger
+#		310 | Harbinger
 #=================================
 
 Show
@@ -1333,7 +1356,7 @@ Show
 
 
 #=================================
-#			Harvest
+#		311 | Harvest
 #=================================
 
 Show
@@ -1379,7 +1402,7 @@ Show
 	MinimapIcon 1 Purple Raindrop
 
 #=================================
-#			Heist
+#		312 | Heist
 #=================================
 
 Show
@@ -1446,7 +1469,7 @@ Show
 	SetTextColor 140 70 30
 
 #=================================
-#			Incursion
+#		313 | Incursion
 #=================================
 	
 Show 
@@ -1471,7 +1494,7 @@ Show
 	SetBorderColor 255 0 0 180
 
 #=================================
-#			Legion
+#		314 | Legion
 #=================================
 
 Show
@@ -1506,7 +1529,7 @@ Show
 	MinimapIcon 2 Pink Hexagon
 
 #=================================
-#			Ritual
+#		315 | Ritual
 #=================================
 
 Show
@@ -1539,9 +1562,16 @@ Show
 	SetTextColor 125 40 180
 	SetBorderColor 125 40 180 150
 	MinimapIcon 2 Purple Hexagon
+	
+Show
+	Class "Currency"
+	BaseType Omen
+	SetFontSize 40
+	SetTextColor 50 185 190
+	SetBackgroundColor 45 125 185
 
 #=================================
-#			Sanctum
+#		316 | Sanctum
 #=================================
 
 Show
@@ -1559,7 +1589,7 @@ Show
 	SetFontSize 45
 	
 #=================================
-#			Talisman
+#		317 | Talisman
 #=================================
 
 Show
@@ -1570,166 +1600,16 @@ Show
 	SetTextColor 250 142 27
 	SetBorderColor 250 142 27 150
 
-
-#=================================
-#		Trial of the Ancients
-#=================================
-
-Show
-	BaseType "Tattoo"
-	SetTextColor 100 230 255
-	SetBorderColor 100 230 255 150
-	SetFontSize 40
-	MinimapIcon 2 Brown Hexagon
-	PlayAlertSound 1 300
 	
-
 #=================================
-#			Ultimatum
+#		402 | Memory Strands
 #=================================
 
 Show
-	BaseType "Inscribed Ultimatum"
-	SetTextColor 210 35 65 255
-	SetBorderColor 210 35 65 150
-	SetBackgroundColor 0 0 0
-	SetFontSize 45
-	MinimapIcon 1 Red Hexagon
+	MemoryStrands > 0
 
-Show
-	BaseType "Abrasive Catalyst" "Accelerating Catalyst" "Fertile Catalyst" "Imbued Catalyst" "Intrinsic Catalyst" "Noxious Catalyst" "Prismatic Catalyst" "Tempering Catalyst" "Turbulent Catalyst" "Unstable Catalyst" "Tainted Catalyst"
-	SetBackgroundColor 30 30 30
-	SetBorderColor 190 0 0 150
-	SetTextColor 190 0 0
-	SetFontSize 40
-	MinimapIcon 2 Red Hexagon
-	
 #=================================
-#			Influence
-#=================================
-
-Show
-	HasInfluence Shaper
-	BaseType "Glorious Plate" "Astral Plate" "Zodiac Leather" "Vaal Regalia" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saintly Chainmail" "Saint's Hauberk" "Sadist Garb" "Sacrificial Garb" "Grasping Mail" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Deicide Mask" "Praetor Crown" "Infernal Axe" "Royal Axe" "Void Axe" "Karui Chopper" "Maraketh Bow" "Harbinger Bow" "Imperial Bow" "Assassin Bow" "Thicket Bow" "Grove Bow" "Short Bow" "Gemini Claw" "Imperial Claw" "Behemoth Mace" "Coronal Maul" "Imperial Maul" "Eclipse Staff" "Judgement Staff" "Midnight Blade" "Jewelled Foil" "Infernal Sword" "Exquisite Blade" "Profane Wand" "Prophecy Wand" "Convoking Wand" "Primal Arrow Quiver" "Heavy Arrow Quiver" "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Pinnacle Tower Shield" "Colossal Tower Shield" "Ezomyte Tower Shield" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Cardinal Round Shield" "Archon Kite Shield" "Supreme Spiked Shield"
-	Rarity Unique
-	SetFontSize 50
-	SetTextColor 250 142 27
-	SetBorderColor 250 142 27 150
-	SetBackgroundColor 255 255 255
-	PlayAlertSound 2 300
-	MinimapIcon 0 Brown Moon
-
-Show
-	HasInfluence Elder
-	BaseType "Glorious Plate" "Astral Plate" "Zodiac Leather" "Vaal Regalia" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saintly Chainmail" "Saint's Hauberk" "Sadist Garb" "Sacrificial Garb" "Grasping Mail" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Deicide Mask" "Praetor Crown" "Infernal Axe" "Royal Axe" "Void Axe" "Karui Chopper" "Maraketh Bow" "Harbinger Bow" "Imperial Bow" "Assassin Bow" "Thicket Bow" "Grove Bow" "Short Bow" "Gemini Claw" "Imperial Claw" "Behemoth Mace" "Coronal Maul" "Imperial Maul" "Eclipse Staff" "Judgement Staff" "Midnight Blade" "Jewelled Foil" "Infernal Sword" "Exquisite Blade" "Profane Wand" "Prophecy Wand" "Convoking Wand" "Primal Arrow Quiver" "Heavy Arrow Quiver" "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Pinnacle Tower Shield" "Colossal Tower Shield" "Ezomyte Tower Shield" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Cardinal Round Shield" "Archon Kite Shield" "Supreme Spiked Shield"
-	Rarity Unique
-	SetFontSize 50
-	SetTextColor 250 142 27
-	SetBorderColor 250 142 27 150
-	SetBackgroundColor 255 255 255
-	PlayAlertSound 2 300
-	MinimapIcon 0 Brown Moon
-
-Show
-	HasInfluence Shaper
-	BaseType "Glorious Plate" "Astral Plate" "Zodiac Leather" "Vaal Regalia" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saintly Chainmail" "Saint's Hauberk" "Sadist Garb" "Sacrificial Garb" "Grasping Mail" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Deicide Mask" "Praetor Crown" "Infernal Axe" "Royal Axe" "Void Axe" "Karui Chopper" "Maraketh Bow" "Harbinger Bow" "Imperial Bow" "Assassin Bow" "Thicket Bow" "Grove Bow" "Short Bow" "Gemini Claw" "Imperial Claw" "Behemoth Mace" "Coronal Maul" "Imperial Maul" "Eclipse Staff" "Judgement Staff" "Midnight Blade" "Jewelled Foil" "Infernal Sword" "Exquisite Blade" "Profane Wand" "Prophecy Wand" "Convoking Wand" "Primal Arrow Quiver" "Heavy Arrow Quiver" "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Pinnacle Tower Shield" "Colossal Tower Shield" "Ezomyte Tower Shield" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Cardinal Round Shield" "Archon Kite Shield" "Supreme Spiked Shield"
-	SetFontSize 55
-	SetTextColor 90 255 180
-	SetBorderColor 90 255 180 150
-	MinimapIcon 1 Grey Moon
-	
-Show
-	HasInfluence Shaper
-	Class "Ring" "Amulet" "Belt"
-	SetFontSize 55
-	SetTextColor 90 255 180
-	SetBorderColor 90 255 180 150
-	MinimapIcon 1 Grey Moon
-	
-	
-Show
-	HasInfluence Elder
-	BaseType "Glorious Plate" "Astral Plate" "Zodiac Leather" "Vaal Regalia" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saintly Chainmail" "Saint's Hauberk" "Sadist Garb" "Sacrificial Garb" "Grasping Mail" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Deicide Mask" "Praetor Crown" "Infernal Axe" "Royal Axe" "Void Axe" "Karui Chopper" "Maraketh Bow" "Harbinger Bow" "Imperial Bow" "Assassin Bow" "Thicket Bow" "Grove Bow" "Short Bow" "Gemini Claw" "Imperial Claw" "Behemoth Mace" "Coronal Maul" "Imperial Maul" "Eclipse Staff" "Judgement Staff" "Midnight Blade" "Jewelled Foil" "Infernal Sword" "Exquisite Blade" "Profane Wand" "Prophecy Wand" "Convoking Wand" "Primal Arrow Quiver" "Heavy Arrow Quiver" "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Pinnacle Tower Shield" "Colossal Tower Shield" "Ezomyte Tower Shield" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Cardinal Round Shield" "Archon Kite Shield" "Supreme Spiked Shield"
-	SetFontSize 55
-	SetTextColor 90 255 180
-	SetBorderColor 90 255 180 150
-	MinimapIcon 1 Purple Moon
-	
-Show
-	HasInfluence Elder
-	Class "Ring" "Amulet" "Belt"
-	SetFontSize 55
-	SetTextColor 90 255 180
-	SetBorderColor 90 255 180 150
-	MinimapIcon 1 Purple Moon
-	
-Show
-	HasInfluence Crusader
-	BaseType "Glorious Plate" "Astral Plate" "Zodiac Leather" "Vaal Regalia" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saintly Chainmail" "Saint's Hauberk" "Sadist Garb" "Sacrificial Garb" "Grasping Mail" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Deicide Mask" "Praetor Crown" "Infernal Axe" "Royal Axe" "Void Axe" "Karui Chopper" "Maraketh Bow" "Harbinger Bow" "Imperial Bow" "Assassin Bow" "Thicket Bow" "Grove Bow" "Short Bow" "Gemini Claw" "Imperial Claw" "Behemoth Mace" "Coronal Maul" "Imperial Maul" "Eclipse Staff" "Judgement Staff" "Midnight Blade" "Jewelled Foil" "Infernal Sword" "Exquisite Blade" "Profane Wand" "Prophecy Wand" "Convoking Wand" "Primal Arrow Quiver" "Heavy Arrow Quiver" "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Pinnacle Tower Shield" "Colossal Tower Shield" "Ezomyte Tower Shield" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Cardinal Round Shield" "Archon Kite Shield" "Supreme Spiked Shield"
-	SetFontSize 55
-	SetTextColor 90 255 180
-	SetBorderColor 90 255 180 150
-	MinimapIcon 1 Red Moon
-	
-Show
-	HasInfluence Crusader
-	Class "Ring" "Amulet" "Belt"
-	SetFontSize 55
-	SetTextColor 90 255 180
-	SetBorderColor 90 255 180 150
-	MinimapIcon 1 Red Moon
-	
-Show
-	HasInfluence Hunter
-	BaseType "Glorious Plate" "Astral Plate" "Zodiac Leather" "Vaal Regalia" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saintly Chainmail" "Saint's Hauberk" "Sadist Garb" "Sacrificial Garb" "Grasping Mail" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Deicide Mask" "Praetor Crown" "Infernal Axe" "Royal Axe" "Void Axe" "Karui Chopper" "Maraketh Bow" "Harbinger Bow" "Imperial Bow" "Assassin Bow" "Thicket Bow" "Grove Bow" "Short Bow" "Gemini Claw" "Imperial Claw" "Behemoth Mace" "Coronal Maul" "Imperial Maul" "Eclipse Staff" "Judgement Staff" "Midnight Blade" "Jewelled Foil" "Infernal Sword" "Exquisite Blade" "Profane Wand" "Prophecy Wand" "Convoking Wand" "Primal Arrow Quiver" "Heavy Arrow Quiver" "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Pinnacle Tower Shield" "Colossal Tower Shield" "Ezomyte Tower Shield" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Cardinal Round Shield" "Archon Kite Shield" "Supreme Spiked Shield"
-	SetFontSize 55
-	SetTextColor 90 255 180
-	SetBorderColor 90 255 180 150
-	MinimapIcon 1 Green Moon
-	
-Show
-	HasInfluence Hunter
-	Class "Ring" "Amulet" "Belt"
-	SetFontSize 55
-	SetTextColor 90 255 180
-	SetBorderColor 90 255 180 150
-	MinimapIcon 1 Green Moon
-	
-Show
-	HasInfluence Warlord
-	BaseType "Glorious Plate" "Astral Plate" "Zodiac Leather" "Vaal Regalia" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saintly Chainmail" "Saint's Hauberk" "Sadist Garb" "Sacrificial Garb" "Grasping Mail" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Deicide Mask" "Praetor Crown" "Infernal Axe" "Royal Axe" "Void Axe" "Karui Chopper" "Maraketh Bow" "Harbinger Bow" "Imperial Bow" "Assassin Bow" "Thicket Bow" "Grove Bow" "Short Bow" "Gemini Claw" "Imperial Claw" "Behemoth Mace" "Coronal Maul" "Imperial Maul" "Eclipse Staff" "Judgement Staff" "Midnight Blade" "Jewelled Foil" "Infernal Sword" "Exquisite Blade" "Profane Wand" "Prophecy Wand" "Convoking Wand" "Primal Arrow Quiver" "Heavy Arrow Quiver" "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Pinnacle Tower Shield" "Colossal Tower Shield" "Ezomyte Tower Shield" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Cardinal Round Shield" "Archon Kite Shield" "Supreme Spiked Shield"
-	SetFontSize 55
-	SetTextColor 90 255 180
-	SetBorderColor 90 255 180 150
-	MinimapIcon 1 Yellow Moon
-	
-Show
-	HasInfluence Warlord
-	Class "Ring" "Amulet" "Belt"
-	SetFontSize 55
-	SetTextColor 90 255 180
-	SetBorderColor 90 255 180 150
-	MinimapIcon 1 Yellow Moon
-	
-Show
-	HasInfluence Redeemer
-	BaseType "Glorious Plate" "Astral Plate" "Zodiac Leather" "Vaal Regalia" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale" "Saintly Chainmail" "Saint's Hauberk" "Sadist Garb" "Sacrificial Garb" "Grasping Mail" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Deicide Mask" "Praetor Crown" "Infernal Axe" "Royal Axe" "Void Axe" "Karui Chopper" "Maraketh Bow" "Harbinger Bow" "Imperial Bow" "Assassin Bow" "Thicket Bow" "Grove Bow" "Short Bow" "Gemini Claw" "Imperial Claw" "Behemoth Mace" "Coronal Maul" "Imperial Maul" "Eclipse Staff" "Judgement Staff" "Midnight Blade" "Jewelled Foil" "Infernal Sword" "Exquisite Blade" "Profane Wand" "Prophecy Wand" "Convoking Wand" "Primal Arrow Quiver" "Heavy Arrow Quiver" "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Pinnacle Tower Shield" "Colossal Tower Shield" "Ezomyte Tower Shield" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Cardinal Round Shield" "Archon Kite Shield" "Supreme Spiked Shield"
-	SetFontSize 55
-	SetTextColor 90 255 180
-	SetBorderColor 90 255 180 150
-	MinimapIcon 1 Cyan Moon
-	
-Show
-	HasInfluence Redeemer
-	Class "Ring" "Amulet" "Belt"
-	SetFontSize 55
-	SetTextColor 90 255 180
-	SetBorderColor 90 255 180 150
-	MinimapIcon 1 Cyan Moon
-
-	
-#=================================
-#			Fractured
+#		403 | Fractured
 #=================================
 	
 #High level bases
@@ -1752,7 +1632,7 @@ Show
 	MinimapIcon 1 White Triangle
 	
 #=================================
-#			Enchantments
+#		404 | Enchantments
 #=================================
 
 Show
@@ -1763,7 +1643,7 @@ Show
 	SetBorderColor 40 255 235 150
 
 #=================================
-#		Six/Five Links
+#		405 | Six/Five Links
 #=================================
 
 Show
@@ -1776,7 +1656,7 @@ Show
 	MinimapIcon 0 White Triangle
 	
 #=================================
-#			Four Links
+#		406 | Four Links
 #=================================
 	
 Show
@@ -1789,7 +1669,7 @@ Show
 #EndMythIgnore
 
 #=================================
-#		Crafting Bases
+#		407 | Crafting Bases
 #=================================
 
 Show
@@ -1801,7 +1681,7 @@ Show
 	SetBorderColor 255 255 225 255
 	
 #=================================
-#		Chancing Bases
+#		408 | Chancing Bases
 #=================================
 
 #Show
@@ -1811,12 +1691,12 @@ Show
 #	SetFontSize 80
 
 #=================================
-#		Atlas Bases
+#		409 | Atlas Bases
 #=================================
 
 
 #=================================
-#		Synth Bases
+#		410 | Synth Bases
 #=================================
 
 Show
@@ -1861,7 +1741,7 @@ Show
 
 
 #=================================
-#			Leveling Rares
+#		414 | Leveling Rares
 #=================================
 
 
@@ -1982,7 +1862,7 @@ Show
 	SetBorderColor 255 240 40 150
 	
 #=================================
-#			Leveling Magic
+#		415 | Leveling Magic
 #=================================
 	
 Show
@@ -2021,7 +1901,7 @@ Show
 	SetBorderColor 20 140 210 150	
 
 #=================================
-#		Early Game Items
+#		416 | Early Game Items
 #=================================
 	
 Show
@@ -2031,7 +1911,11 @@ Show
 	SetFontSize 40
 
 #=================================
-#			Chaos Recipe
+#		500 | Currency Farm
+#=================================
+
+#=================================
+#		501 | Chaos Recipe
 #=================================
 
 # 2 Chaos Recipe
@@ -2070,7 +1954,7 @@ Show
 #	SetBorderColor 255 240 40 150
 
 #=================================
-#			Regal Recipe
+#		502 | Regal Recipe
 #=================================
 
 #2 Regal Recipe
@@ -2097,7 +1981,7 @@ Show
 
 
 #=================================
-#		Hide Catch-All
+#		600 | Hide Catch-All
 #=================================
 
 Show
@@ -2124,7 +2008,7 @@ Hide
 	SetBackgroundColor 0 0 0 75
 
 #=================================
-#		Deprecated Content
+#		700 | Deprecated Content
 #=================================
 
 	#Old Maven invitations
@@ -2266,9 +2150,36 @@ Hide
 	#	SetBorderColor 245 214 113 150
 	#	SetBackgroundColor 30 30 30
 	#	CustomAlertSound "find.wav"	
+	
+	#=================================
+	#		Forbidden Sanctum
+	#=================================
+
+	#Show
+	#	Class Currency
+	#	BaseType "Invocation"
+	
+	#=================================
+	#		N/A
+	#=================================
+	
+	#Show
+	#	BaseType "Rune"
+	#	SetFontSize 40
+	#	SetTextColor 45 180 215
+	#	SetBorderColor 45 180 215 150
+	
+	#Show
+	#	Class Memory
+	#	SetFontSize 45
+	#	SetTextColor 0 255 190
+	#	SetBorderColor 0 255 190
+	#	CustomAlertSound "find.wav"
+	#	MinimapIcon 1 Cyan Square
+
 
 #=================================
-#		Notes
+#		800 | Notes
 #=================================
 
 

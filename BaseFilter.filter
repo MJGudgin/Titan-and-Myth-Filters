@@ -52,7 +52,6 @@
 	# 317 | Talisman
 	# 318 | Ultimatum
 
-
 # 400 | Gear Filtering
 	# 401 | Influence
 	# 402 | Memory Strands
@@ -170,6 +169,13 @@ Show
 	SetBorderColor 250 250 250 140
 	
 #EndStrictIgnore
+
+Show
+	Class "Gold"
+	SetFontSize 35
+	SetTextColor 214 169 45
+	SetBorderColor 153 124 44
+	PlayEffect Yellow Temp
 	
 # Magic Item Currency
 #StrictIgnore
@@ -253,7 +259,7 @@ Show
 #Rare Item Currency
 Show
 	Class Currency
-	BaseType "Veiled Orb"
+	BaseType "Veiled Exalted Orb" "Veiled Chaos Orb"
 	SetFontSize 50
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
@@ -330,6 +336,17 @@ Show
 Show
 	Class Currency
 	BaseType == "Exalted Orb"
+	SetFontSize 40
+	SetTextColor 229 190 66
+	SetBorderColor 245 214 113 150
+	SetBackgroundColor 30 30 30
+	CustomAlertSound "find.wav"
+	MinimapIcon 1 Brown Circle
+	PlayEffect Yellow
+	
+Show
+	Class Currency
+	BaseType == "Shaper's Exalted Orb" "Elder's Exalted Orb" "Crusader's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Warlords Exalted Orb"
 	SetFontSize 40
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
@@ -436,7 +453,7 @@ Show
 #Mod Currency
 Show
 	Class Currency
-	BaseType == "Orb of Annulment" "Blessed Orb" "Ancient Orb" "Ancient Shard" "Sacred Orb"
+	BaseType == "Orb of Annulment" "Blessed Orb" "Ancient Orb" "Ancient Shard" "Sacred Orb" "Orb of Remembrance" "Orb of Unravelling" "Orb of Intention"
 	SetFontSize 50
 	SetTextColor 209 187 113
 	SetBorderColor 245 214 113 150
@@ -604,7 +621,7 @@ Show
 	PlayEffect Cyan
 	
 Show
-	BaseType "Screaming Invitation" "Incandescent Invitation"
+	BaseType "Screaming Invitation" "Incandescent Invitation" "Echo of"
 	SetFontSize 45
 	SetTextColor 45 220 195
 	SetBorderColor 45 220 195 150
@@ -800,16 +817,16 @@ Show
 #=================================
 
 #Unknown
-#Show
-#	Class "Divination"
-#	BaseType == "Friendship" "Rebirth and Renewal" "More is Never Enough" "The Long Watch" "Father's Love" "Avian Pursuit" "Temperance" "Lonely Warrior" "Toxic Tidings"
-#	SetFontSize 50
-#	SetTextColor 0 0 0
-#	SetBorderColor 0 255 210 255
-#	SetBackgroundColor 255 255 255
-#	CustomAlertSound "herocreation.wav"
-#	MinimapIcon 0 Orange UpsideDownHouse
-#	PlayEffect Orange
+Show
+	Class "Divination"
+	BaseType == "Sambodhi's Wisdom" "The Bargain" "The Mayor" "Monochrome" "Squandered Prosperity" "Underground Forest"
+	SetFontSize 50
+	SetTextColor 0 0 0
+	SetBorderColor 0 255 210 255
+	SetBackgroundColor 255 255 255
+	CustomAlertSound "herocreation.wav"
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange
 
 #T1
 Show
@@ -979,7 +996,14 @@ Show
 #StrictIgnore
 	MinimapIcon 2 Red Star
 #EndStrictIgnore
-
+	
+Show
+	Class Gems
+	BaseType "of Trarthus"
+	SetFontSize 30
+	SetBorderColor 0 250 255 150
+	SetBackgroundColor 6 0 60
+	
 Show
 	Class Gems
 	AreaLevel <= 45
@@ -1303,14 +1327,6 @@ Show
 	PlayEffect White
 
 Show
-	Class Memory
-	SetFontSize 45
-	SetTextColor 0 255 190
-	SetBorderColor 0 255 190
-	CustomAlertSound "find.wav"
-	MinimapIcon 1 Cyan Square
-
-Show
 	BaseType "Offering to the Goddess"
 	SetFontSize 45
 	SetTextColor 90 250 205 
@@ -1413,17 +1429,19 @@ Show
 #=================================
 
 Show
-	Class "Gold"
-	SetFontSize 35
-	SetTextColor 214 169 45
-	SetBorderColor 153 124 44
-	PlayEffect Yellow Temp
-	
-Show
-	BaseType "Rune"
+	BaseType "Runegraft"
 	SetFontSize 40
 	SetTextColor 45 180 215
 	SetBorderColor 45 180 215 150
+	
+Show
+	BaseType "Allflame Ember"
+	SetFontSize 45
+	SetTextColor 255 140 25 255
+	SetBorderColor 255 255 255 150
+	MinimapIcon 2 Purple Hexagon
+	
+	
 
 #===========================================
 #		300 | Core League Mechanics
@@ -3422,6 +3440,25 @@ Hide
 	#Show
 	#	Class Currency
 	#	BaseType "Invocation"
+	
+	#=================================
+	#		N/A
+	#=================================
+	
+	#Show
+	#	BaseType "Rune"
+	#	SetFontSize 40
+	#	SetTextColor 45 180 215
+	#	SetBorderColor 45 180 215 150
+	
+	#Show
+	#	Class Memory
+	#	SetFontSize 45
+	#	SetTextColor 0 255 190
+	#	SetBorderColor 0 255 190
+	#	CustomAlertSound "find.wav"
+	#	MinimapIcon 1 Cyan Square
+
 
 #=================================
 #		800 | Notes
