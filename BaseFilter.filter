@@ -1,6 +1,6 @@
 #===================================#
-#		    Filter v1.2.25	 	 	#
-#			   7/25/24				#
+#		    Filter v1.2.26	 	 	#
+#			   6/11/24				#
 #===================================#
 
 #=================================
@@ -14,71 +14,80 @@
 #		Table of Contents
 #=================================
 
-# Override
+# 000 | Override
 
-# Base Game Systems
-	# Currency
-	# Quest Items
-	# Maps
-	# Div Cards
-	# Gems
-	# Jewels
-	# Uniques
-	# Flasks
+# 100 | Base Game Systems
+	# 101 | Currency
+	# 102 | Quest Items
+	# 103 | Maps
+	# 104 | Div Cards
+	# 105 | Gems
+	# 106 | Jewels
+	# 107 | Uniques
+	# 108 | Flasks
 
-# Map Systems
-	# Scarabs
-	# Fragments
+# 200 | Map Systems
+	# 201 | Scarabs
+	# 202 | Fragments
 	
-# Current League
+# 250 | Current League
 
-# Core League Mechanics
-	# Abyss
-	# Betrayal
-	# Blight
-	# Breach
-	# Delirium
-	# Delve
-	# Essence
-	# Expedition
-	# Harbinger
-	# Harvest
-	# Heist
-	# Incursion
-	# Legion
-	# Metamorph
-	# Ritual
-	# Sanctum
-	# Talisman
+# 300 | Core League Mechanics
+	# 301 | Abyss
+	# 302 | Ancestor
+	# 303 | Betrayal
+	# 304 | Blight
+	# 305 | Breach
+	# 306 | Delirium
+	# 307 | Delve
+	# 308 | Essence
+	# 309 | Expedition
+	# 310 | Harbinger
+	# 311 | Harvest
+	# 312 | Heist
+	# 313 | Incursion
+	# 314 | Legion
+	# 315 | Ritual
+	# 316 | Sanctum
+	# 317 | Talisman
+	# 318 | Ultimatum
 
-# Gear Filtering
-	# Influence
-	# Fractured
-	# Enchantments
-	# Six/Five Links
-	# Four Links
-	# Crafting Bases
-	# Chancing Bases
-	# Atlas Bases
-	# Specific Affix Filter
-	# High Level Bases
-	# Leveling Rares
-	# Leveling Magic
 
-# Currency Farm
-	# Chaos Recipe
-	# Regal Recipe
-	# Chromatic Recipe
-	# Jewellers 6-Sockets
+# 400 | Gear Filtering
+	# 401 | Influence
+	# 402 | Memory Strands
+	# 403 | Fractured
+	# 404 | Enchantments
+	# 405 | Six/Five Links
+	# 406 | Four Links
+#MythIgnore
+	# 406.5 | Personal Base Search
+#EndMythIgnore
+	# 407 | Crafting Bases
+	# 408 | Chancing Bases
+	# 409 | Atlas Bases
+	# 410 | Synth Bases
+	# 411 | Specific Affix Filter
+	# 412 | 3.25 Bases 
+	# 413 | High Level Bases
+	# 414 | Leveling Rares
+	# 415 | Leveling Magic
+	# 416 | Early Game Items
 
-# Hide Catch-All
+# 500 | Currency Farm
+	# 501 | Chaos Recipe
+	# 502 | Regal Recipe
+	# 503 | Chromatic Recipe
+	# 504 | Jewellers 6-Sockets
 
-# Deprecated Content
+# 600 | Hide Catch-All
 
-# Notes
+# 700 | Deprecated Content
+
+# 800 | Notes
 
 #=================================
-#			Override
+#		000 | Override
 #=================================
 
 #Show
@@ -88,9 +97,12 @@
 #Show
 #	Rarity Rare
 	
+#=======================================
+#		100 | Base Game Systems
+#=======================================
 
 #=================================
-#			Currency
+#		101 | Currency
 #=================================
 
 #Tainted Currency Highlight (Added 3.19)
@@ -559,7 +571,7 @@ Show
 	
 
 #=================================
-#			Quest Items
+#		102 | Quest Items
 #=================================
 
 Show
@@ -630,7 +642,7 @@ Show
 	PlayEffect Orange
 
 #=================================
-#			Maps
+#		103 | Maps
 #=================================
 
 Show
@@ -784,7 +796,7 @@ Show
 	SetBackgroundColor 235 220 245 255
 	
 #=================================
-#			Div Cards
+#		104 | Div Cards
 #=================================
 
 #Unknown
@@ -860,7 +872,7 @@ Show
 	MinimapIcon 2 Grey UpsideDownHouse
 	
 #=================================
-#			Gems
+#		105 | Gems
 #=================================
 
 Show 
@@ -977,7 +989,7 @@ Show
 
 #SuperStrictIgnore
 #=================================
-#			Jewels
+#		106 | Jewels
 #=================================
 
 Show
@@ -988,7 +1000,7 @@ Show
 	SetBorderColor 130 200 140 150
 #EndSuperStrictIgnore
 #=================================
-#			Uniques
+#		107 | Uniques
 #=================================
 
 #Six-linked Uniques
@@ -1168,7 +1180,7 @@ Show
 
 #SuperStrictIgnore
 #=================================
-#			Flasks
+#		108 | Flasks
 #=================================
 
 Show
@@ -1214,8 +1226,19 @@ Show
 	SetBorderColor 200 255 255 150
 #EndStrictIgnore
 
+Show
+	Class Tincture
+	SetFontSize 45
+	SetTextColor 125 40 180
+	SetBorderColor 125 40 180 150
+	MinimapIcon 2 Purple Hexagon
+
 #=================================
-#			Scarabs
+#		200 | Map Systems
+#=================================
+
+#=================================
+#		201 | Scarabs
 #=================================
 
 Show
@@ -1259,7 +1282,7 @@ Show
 	PlayEffect Cyan	
 	
 #=================================
-#			Fragments
+#		202 | Fragments
 #=================================
 
 Show
@@ -1384,20 +1407,9 @@ Show
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 159 15 213 255
 	MinimapIcon 2 Blue Pentagon
-	
-#=================================
-#			Tinctures
-#=================================	
-
-Show
-	Class Tincture
-	SetFontSize 45
-	SetTextColor 125 40 180
-	SetBorderColor 125 40 180 150
-	MinimapIcon 2 Purple Hexagon
 
 #=================================
-#			Current League
+#		250 | Current League
 #=================================
 
 Show
@@ -1412,10 +1424,13 @@ Show
 	SetFontSize 40
 	SetTextColor 45 180 215
 	SetBorderColor 45 180 215 150
-	
+
+#===========================================
+#		300 | Core League Mechanics
+#===========================================
 
 #=================================
-#			Abyss
+#		301 | Abyss
 #=================================
 
 Show
@@ -1451,18 +1466,19 @@ Show
 #EndStrictIgnore
 
 #=================================
-#			Ancestor
+#		302 | Ancestor
 #=================================
 
 Show
-	Class "Currency"
-	BaseType Omen
+	BaseType "Tattoo"
+	SetTextColor 100 230 255
+	SetBorderColor 100 230 255 150
 	SetFontSize 40
-	SetTextColor 50 185 190
-	SetBackgroundColor 45 125 185
+	MinimapIcon 2 Brown Hexagon
+	CustomAlertSound "find.wav"
 	
 #=================================
-#			Betrayal
+#		303 | Betrayal
 #=================================
 
 Show
@@ -1480,7 +1496,7 @@ Show
 	MinimapIcon 2 Yellow Triangle
 	
 #=================================
-#			Blight
+#		304 | Blight
 #=================================
 
 Show
@@ -1524,7 +1540,7 @@ Show
 #EndSuperStrictIgnore
 	
 #=================================
-#			Breach
+#		305 | Breach
 #=================================
 
 Show
@@ -1678,7 +1694,7 @@ Show
 	PlayEffect Purple
 	
 #=================================
-#			Delirium
+#		306 | Delirium
 #=================================
 	
 Show
@@ -1750,7 +1766,7 @@ Show
 
 	
 #=================================
-#			Delve
+#		307 | Delve
 #=================================
 
 Show
@@ -1771,7 +1787,7 @@ Show
 	MinimapIcon 1 White Hexagon
 	
 #=================================
-#			Essence
+#		308 | Essence
 #=================================
 
 Show
@@ -1791,7 +1807,7 @@ Show
 	MinimapIcon 2 Cyan Hexagon
 
 #=================================
-#			Expedition
+#		309 | Expedition
 #=================================
 
 Show
@@ -1811,16 +1827,10 @@ Show
 	MinimapIcon 1 Cyan Square
 	PlayEffect Cyan
 
-#=================================
-#		Forbidden Sanctum
-#=================================
 
-Show
-	Class Currency
-	BaseType "Invocation"
 	
 #=================================
-#			Harbinger
+#		310 | Harbinger
 #=================================
 
 Show
@@ -1866,7 +1876,7 @@ Show
 #EndStrictIgnore
 
 #=================================
-#			Harvest
+#		311 | Harvest
 #=================================
 
 Show
@@ -1912,7 +1922,7 @@ Show
 	MinimapIcon 1 Purple Raindrop
 
 #=================================
-#			Heist
+#		312 | Heist
 #=================================
 
 Show
@@ -1997,7 +2007,7 @@ Show
 	SetTextColor 140 70 30
 
 #=================================
-#			Incursion
+#		313 | Incursion
 #=================================
 	
 Show 
@@ -2022,7 +2032,7 @@ Show
 	SetBorderColor 255 0 0 180
 
 #=================================
-#			Legion
+#		314 | Legion
 #=================================
 
 Show
@@ -2057,7 +2067,7 @@ Show
 	MinimapIcon 2 Pink Hexagon
 
 #=================================
-#			Ritual
+#		315 | Ritual
 #=================================
 
 Show
@@ -2090,9 +2100,16 @@ Show
 	SetTextColor 125 40 180
 	SetBorderColor 125 40 180 150
 	MinimapIcon 2 Purple Hexagon
+	
+Show
+	Class "Currency"
+	BaseType Omen
+	SetFontSize 40
+	SetTextColor 50 185 190
+	SetBackgroundColor 45 125 185
 
 #=================================
-#			Sanctum
+#		316 | Sanctum
 #=================================
 
 Show
@@ -2110,7 +2127,7 @@ Show
 	SetFontSize 45
 	
 #=================================
-#			Talisman
+#		317 | Talisman
 #=================================
 
 Show
@@ -2128,23 +2145,10 @@ Show
 	SetFontSize 35
 	SetTextColor 235 220 50
 	SetBorderColor 255 240 40 150
-#EndStrictIgnore
+#EndStrictIgnore	
 
 #=================================
-#		Trial of the Ancients
-#=================================
-
-Show
-	BaseType "Tattoo"
-	SetTextColor 100 230 255
-	SetBorderColor 100 230 255 150
-	SetFontSize 40
-	MinimapIcon 2 Brown Hexagon
-	CustomAlertSound "find.wav"
-	
-
-#=================================
-#			Ultimatum
+#		318 | Ultimatum
 #=================================
 
 Show
@@ -2162,9 +2166,13 @@ Show
 	SetTextColor 190 0 0
 	SetFontSize 40
 	MinimapIcon 2 Red Hexagon
-	
+
 #=================================
-#			Influence
+#		400 | Gear Filtering
+#=================================
+
+#=================================
+#		401 | Influence
 #=================================
 
 Show
@@ -2322,7 +2330,14 @@ Show
 #EndStrictIgnore
 	
 #=================================
-#			Fractured
+#		402 | Memory Strands
+#=================================
+
+Show
+	MemoryStrands > 0
+
+#=================================
+#		403 | Fractured
 #=================================
 	
 #High level bases
@@ -2345,7 +2360,7 @@ Show
 	MinimapIcon 1 White Triangle
 	
 #=================================
-#			Enchantments
+#		404 | Enchantments
 #=================================
 
 Show
@@ -2356,7 +2371,7 @@ Show
 	SetBorderColor 40 255 235 150
 
 #=================================
-#		Six/Five Links
+#		405 | Six/Five Links
 #=================================
 #SuperStrictIgnore
 Show
@@ -2369,7 +2384,7 @@ Show
 
 Show
 	LinkedSockets 5
-	AreaLevel < 80
+	#AreaLevel < 80
 	SetFontSize 45
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
@@ -2377,7 +2392,7 @@ Show
 	MinimapIcon 0 White Triangle
 	
 #=================================
-#			Four Links
+#		406 | Four Links
 #=================================
 	
 Show
@@ -2389,7 +2404,7 @@ Show
 
 #MythIgnore
 #=================================
-#		Personal Base Search
+#		406.5 | Personal Base Search
 #=================================
 
 #Show
@@ -2416,19 +2431,19 @@ Show
 #EndMythIgnore
 
 #=================================
-#		Crafting Bases
+#		407 | Crafting Bases
 #=================================
 
 Show
-	BaseType "Leviathan Greaves" "Leviathan Gauntlets"
+	BaseType "Siege Axe"
 	#Rarity Rare
-#	ItemLevel >= 84
+	ItemLevel >= 84
 	SetFontSize 80
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 225 255
 	
 #=================================
-#		Chancing Bases
+#		408 | Chancing Bases
 #=================================
 
 #Show
@@ -2438,7 +2453,7 @@ Show
 #	SetFontSize 80
 
 #=================================
-#		Atlas Bases
+#		409 | Atlas Bases
 #=================================
 
 #SuperStrictIgnore
@@ -2462,7 +2477,7 @@ Show
 #EndStrictIgnore
 
 #=================================
-#		Synth Bases
+#		410 | Synth Bases
 #=================================
 
 Show
@@ -2476,7 +2491,7 @@ Show
 #StrictIgnore
 
 #=================================
-#		Specific Affix Filter
+#		411 | Specific Affix Filter
 #=================================
 
 #Life Mods
@@ -2678,7 +2693,7 @@ Show
 
 #StrictIgnore
 #=================================
-#		Early Mapping Bases
+#		412 | Early Mapping Bases
 #=================================	
 
 #Armour
@@ -2799,7 +2814,7 @@ Show
 	SetBorderColor 255 240 40 150
 
 #=================================
-#		 New Bases (3.25)
+#		 412 | 3.25 Bases
 #=================================	
 
 Show
@@ -2818,7 +2833,7 @@ Show
 	SetBorderColor 255 240 40 150
 
 #=================================
-#		 High Level Bases
+#		 413 | High Level Bases
 #=================================	
 
 #Armour
@@ -2939,7 +2954,7 @@ Show
 #EndStrictIgnore
 
 #=================================
-#			Leveling Rares
+#		414 | Leveling Rares
 #=================================
 
 #StrictIgnore
@@ -3075,7 +3090,7 @@ Show
 	SetBorderColor 255 240 40 150
 	
 #=================================
-#			Leveling Magic
+#		415 | Leveling Magic
 #=================================
 	
 Show
@@ -3114,7 +3129,7 @@ Show
 	SetBorderColor 20 140 210 150	
 
 #=================================
-#		Early Game Items
+#		416 | Early Game Items
 #=================================
 	
 Show
@@ -3124,7 +3139,11 @@ Show
 	SetFontSize 40
 
 #=================================
-#			Chaos Recipe
+#		500 | Currency Farm
+#=================================
+
+#=================================
+#		501 | Chaos Recipe
 #=================================
 
 # 2 Chaos Recipe
@@ -3163,7 +3182,7 @@ Show
 #	SetBorderColor 255 240 40 150
 
 #=================================
-#			Regal Recipe
+#		502 | Regal Recipe
 #=================================
 
 #2 Regal Recipe
@@ -3189,7 +3208,7 @@ Show
 
 #StrictIgnore
 #=================================
-#		Chromatic Recipe
+#		503 | Chromatic Recipe
 #=================================
 
 Show
@@ -3213,7 +3232,7 @@ Show
 
 #StrictIgnore
 #=================================
-#		Jewellers 6-Sockets
+#		504 | Jewellers 6-Sockets
 #=================================
 
 Show
@@ -3226,7 +3245,7 @@ Show
 #EndStrictIgnore
 
 #=================================
-#		Hide Catch-All
+#		600 | Hide Catch-All
 #=================================
 
 Show
@@ -3253,7 +3272,7 @@ Hide
 	SetBackgroundColor 0 0 0 75
 
 #=================================
-#		Deprecated Content
+#		700 | Deprecated Content
 #=================================
 
 	#Old Maven invitations
@@ -3395,9 +3414,17 @@ Hide
 	#	SetBorderColor 245 214 113 150
 	#	SetBackgroundColor 30 30 30
 	#	CustomAlertSound "find.wav"	
+	
+	#=================================
+	#		Forbidden Sanctum
+	#=================================
+
+	#Show
+	#	Class Currency
+	#	BaseType "Invocation"
 
 #=================================
-#		Notes
+#		800 | Notes
 #=================================
 
 

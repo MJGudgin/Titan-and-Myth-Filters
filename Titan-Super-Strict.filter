@@ -1,9 +1,9 @@
 #===================================#
 #		   	 	Titan  	 	 		#
-#		    Filter v1.2.25	 	 	#
+#		    Filter v1.2.26	 	 	#
 #			Super Strict			#
 #			 Custom Audio			#
-#			   7/25/24				#
+#			   6/11/24				#
 #===================================#
 
 #=================================
@@ -19,66 +19,66 @@
 
 # Override
 
-# Base Game Systems
-	# Currency
-	# Quest Items
-	# Maps
-	# Div Cards
-	# Gems
-	# Jewels
-	# Uniques
-	# Flasks
+# 100 | Base Game Systems
+	# 101 | Currency
+	# 102 | Quest Items
+	# 103 | Maps
+	# 104 | Div Cards
+	# 105 | Gems
+	# 106 | Jewels
+	# 107 | Uniques
+	# 108 | Flasks
 
-# Map Systems
-	# Scarabs
-	# Fragments
+# 200 | Map Systems
+	# 201 | Scarabs
+	# 202 | Fragments
 	
-# Current League
+# 250 | Current League
 
-# Core League Mechanics
-	# Abyss
-	# Betrayal
-	# Blight
-	# Breach
-	# Delirium
-	# Delve
-	# Essence
-	# Expedition
-	# Harbinger
-	# Harvest
-	# Heist
-	# Incursion
-	# Legion
-	# Metamorph
-	# Ritual
-	# Sanctum
-	# Talisman
+# 300 | Core League Mechanics
+	# 301 | Abyss
+	# 302 | Betrayal
+	# 303 | Blight
+	# 304 | Breach
+	# 305 | Delirium
+	# 306 | Delve
+	# 307 | Essence
+	# 308 | Expedition
+	# 309 | Harbinger
+	# 310 | Harvest
+	# 311 | Heist
+	# 312 | Incursion
+	# 313 | Legion
+	# 314 | Metamorph
+	# 315 | Ritual
+	# 316 | Sanctum
+	# 317 | Talisman
 
-# Gear Filtering
-	# Influence
-	# Fractured
-	# Enchantments
-	# Six/Five Links
-	# Four Links
-	# Crafting Bases
-	# Chancing Bases
-	# Atlas Bases
-	# Specific Affix Filter
-	# High Level Bases
-	# Leveling Rares
-	# Leveling Magic
+# 400 | Gear Filtering
+	# 401 | Influence
+	# 402 | Fractured
+	# 403 | Enchantments
+	# 404 | Six/Five Links
+	# 405 | Four Links
+	# 406 | Crafting Bases
+	# 407 | Chancing Bases
+	# 408 | Atlas Bases
+	# 409 | Specific Affix Filter
+	# 410 | High Level Bases
+	# 411 | Leveling Rares
+	# 412 | Leveling Magic
 
-# Currency Farm
-	# Chaos Recipe
-	# Regal Recipe
-	# Chromatic Recipe
-	# Jewellers 6-Sockets
+# 500 | Currency Farm
+	# 501 | Chaos Recipe
+	# 502 | Regal Recipe
+	# 503 | Chromatic Recipe
+	# 504 | Jewellers 6-Sockets
 
-# Hide Catch-All
+# 600 | Hide Catch-All
 
-# Deprecated Content
+# 700 | Deprecated Content
 
-# Notes
+# 800 | Notes
 
 #=================================
 #			Override
@@ -91,6 +91,9 @@
 #Show
 #	Rarity Rare
 	
+#=======================================
+#			Base Game Systems
+#=======================================
 
 #=================================
 #			Currency
@@ -1779,7 +1782,7 @@ Show
 
 Show
 	LinkedSockets 5
-	AreaLevel < 80
+	#AreaLevel < 80
 	SetFontSize 45
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
@@ -1830,9 +1833,9 @@ Show
 #=================================
 
 Show
-	BaseType "Leviathan Greaves" "Leviathan Gauntlets"
+	BaseType "Siege Axe"
 	#Rarity Rare
-#	ItemLevel >= 84
+	ItemLevel >= 84
 	SetFontSize 80
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 225 255
