@@ -274,7 +274,7 @@ Show
 	
 Show
 	Class Currency
-	BaseType == "Shaper's Exalted Orb" "Elder's Exalted Orb" "Crusader's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Warlords Exalted Orb"
+	BaseType == "Shaper's Exalted Orb" "Elder's Exalted Orb" "Crusader's Exalted Orb" "Hunter's Exalted Orb" "Redeemer's Exalted Orb" "Warlord's Exalted Orb"
 	SetFontSize 40
 	SetTextColor 229 190 66
 	SetBorderColor 245 214 113 150
@@ -791,12 +791,12 @@ Show
 	SetBorderColor 255 0 0 150
 	SetBackgroundColor 6 0 60
 	
-Show
-	Class Gems
-	BaseType "of Trarthus"
-	SetFontSize 30
-	SetBorderColor 0 250 255 150
-	SetBackgroundColor 6 0 60
+#Show
+#	Class Gems
+#	BaseType "of Trarthus"
+#	SetFontSize 30
+#	SetBorderColor 0 250 255 150
+#	SetBackgroundColor 6 0 60
 	
 Show
 	Class Gems
@@ -808,6 +808,7 @@ Show
 #=================================
 #		106 | Jewels
 #=================================
+
 
 Show
 	BaseType "Cobalt Jewel" "Crimson Jewel" "Viridian Jewel"
@@ -1393,6 +1394,7 @@ Show
 	PlayAlertSound 3 200
 	MinimapIcon 0 Purple Kite
 	PlayEffect Purple
+
 	
 Show
 	Class Currency
@@ -1833,6 +1835,11 @@ Show
 
 Show
 	MemoryStrands > 0
+	SetFontSize 45
+	SetTextColor 168 255 233
+	SetBorderColor 168 255 233
+	#SetBackgroundColor 255 255 255
+	PlayEffect Cyan Temp
 
 #=================================
 #		403 | Fractured
@@ -1904,13 +1911,13 @@ Show
 #		407 | Crafting Bases
 #=================================
 
-Show
-	BaseType "Siege Axe"
+#Show
+#	BaseType "Siege Axe"
 	#Rarity Rare
-	ItemLevel >= 84
-	SetFontSize 80
-	SetTextColor 255 255 255 255
-	SetBorderColor 255 255 225 255
+#	ItemLevel >= 84
+#	SetFontSize 80
+#	SetTextColor 255 255 255 255
+#	SetBorderColor 255 255 225 255
 	
 #=================================
 #		408 | Chancing Bases
@@ -2227,8 +2234,8 @@ Show
 Show
 	AreaLevel = 1
 	SetFontSize 35
-	SetTextColor 235 220 50
-	SetBorderColor 255 240 40 150
+	#SetTextColor 235 220 50
+	#SetBorderColor 255 240 40 150
 
 Hide
 	Class "Amulets" "Belts" "Body Armour" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Helmets" "Jewel" "One Hand" "Quivers" "Rings" "Rune Dagger" "Sceptre" "Shield" "Staves" "Two Hand" "Wand" "Warstaves" "Map" "Currency" "Divination Card"
