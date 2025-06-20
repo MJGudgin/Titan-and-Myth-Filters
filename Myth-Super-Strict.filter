@@ -3,7 +3,7 @@
 #		    Filter v1.2.26	 	 	#
 #			Super Strict			#
 #			Native Audio			#
-#			   6/11/24				#
+#			   6/19/24				#
 #===================================#
 
 #=================================
@@ -773,7 +773,7 @@ Show #2 Abyss Uniques
 #T1 Uniques
 Show
 	Rarity Unique
-	BaseType == "Cabalist Regalia" "Champion Kite Shield" "Engraved Greatsword" "Ezomyte Tower Shield" "Fluted Bascinet" "Foul Staff" "Ghastly Eye Jewel" "Golden Buckler" "Greatwolf Talisman" "Hypnotic Eye Jewel" "Karui Maul" "Lacewood Spirit Shield" "Leather Hood" "Murderous Eye Jewel" "Papyrus Relic" "Prismatic Jewel" "Processional Relic" "Prophecy Wand" "Quarterstaff" "Rawhide Boots" "Ring" "Riveted Boots" "Ruby Flask" "Searching Eye Jewel" "Siege Axe" "Slaughter Knife" "Unset Amulet" "Vaal Hatchet"
+	BaseType == "Cabalist Regalia" "Champion Kite Shield" "Engraved Greatsword" "Ezomyte Tower Shield" "Foul Staff" "Ghastly Eye Jewel" "Girded Tower Shield" "Gold Flask" "Golden Buckler" "Greatwolf Talisman" "Martyr Gloves" "Papyrus Relic" "Piledriver" "Prismatic Jewel" "Processional Relic" "Ring" "Riveted Boots" "Ruby Flask" "Savant's Robe" "Siege Axe" "Siege Helmet" "Spiked Gloves" "Unset Amulet" "Vaal Rapier"
 	SetFontSize 60
 	SetTextColor 250 142 27
 	SetBorderColor 250 142 27 150
@@ -785,7 +785,7 @@ Show
 #T2 Uniques
 Show
 	Rarity Unique
-	BaseType == "Assassin's Boots" "Blood Raiment" "Candlestick Relic" "Crusader Boots" "Cutlass" "Gladiator Plate" "Goliath Greaves" "Large Cluster Jewel" "Magistrate Crown" "Medium Cluster Jewel" "Pig-Faced Bascinet" "Rawhide Tower Shield" "Riveted Gloves" "Runic Sollerets" "Savant's Robe" "Silk Gloves" "Steel Kite Shield" "Stygian Vise" "Timeless Jewel" "Topaz Flask" "Vaal Rapier" "Void Axe" "Wyrmscale Doublet"
+	BaseType == "Amethyst Flask" "Antique Gauntlets" "Assassin's Boots" "Astrolabe Amulet" "Blood Raiment" "Censer Relic" "Crusader Boots" "Dusk Blade" "Fluted Bascinet" "Karui Maul" "Lacewood Spirit Shield" "Large Cluster Jewel" "Medium Cluster Jewel" "Ornate Quiver" "Pagan Wand" "Prophecy Wand" "Quarterstaff" "Rawhide Boots" "Runic Crown" "Silk Gloves" "Slaughter Knife" "Studded Belt" "Timeless Jewel" "Titanium Spirit Shield" "Topaz Flask" "Vermillion Ring" "Visored Sallet" "Void Axe" "Wyrmscale Boots" "Wyrmscale Doublet"
 	SetFontSize 55
 	SetTextColor 250 142 27
 	SetBorderColor 250 142 27 150
@@ -797,7 +797,7 @@ Show
 #Potential HQ uniques
 Show
 	Rarity Unique
-	BaseType ==  "Amethyst Flask" "Crusader Plate" "Heavy Belt" "Imperial Bow" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Paua Amulet" "Small Cluster Jewel" "Spine Bow" "Studded Belt" "Vaal Blade" "Amber Amulet" "Amethyst Ring" "Exquisite Leather" "Fiend Dagger" "Gold Ring" "Hellion's Paw" "Hydrascale Gauntlets" "Imperial Skean" "Moonstone Ring" "Murder Mitts" "Onyx Amulet" "Primordial Staff" "Sadist Garb" "Sage's Robe" "Sorcerer Boots" "Spidersilk Robe" "Stealth Boots" "Titanium Spirit Shield" "Topaz Ring" "Turquoise Amulet" "Two-Stone Ring" "Unset Ring" "Vaal Axe" "Vaal Claw" "Zodiac Leather"
+	BaseType ==  "Amber Amulet" "Heavy Belt" "Leather Belt" "Magistrate Crown" "Paua Amulet" "Small Cluster Jewel" "Spine Bow" "Amethyst Ring" "Gold Ring" "Hellion's Paw" "Hydrascale Gauntlets" "Imperial Bow" "Imperial Skean" "Lapis Amulet" "Moonstone Ring" "Onyx Amulet" "Sadist Garb" "Sage's Robe" "Saint's Hauberk" "Solaris Circlet" "Spidersilk Robe" "Stealth Boots" "Vaal Blade" "Vaal Claw"
 	SetFontSize 55
 	SetTextColor 250 142 27
 	SetBorderColor 250 142 27 150
@@ -805,13 +805,6 @@ Show
 
 #T3 uniques
 
-	
-Show
-	Rarity Unique
-	BaseType == "Archon Kite Shield" "Astral Plate" "Blue Pearl Amulet" "Brass Spirit Shield" "Citrine Amulet" "Colosseum Plate" "Crude Bow" "Devout Chainmail" "Ezomyte Burgonet" "Gemstone Sword" "Gladius" "Gold Amulet" "Granite Flask" "Harmonic Spirit Shield" "Imbued Wand" "Imperial Maul" "Imperial Staff" "Iron Ring" "Jingling Spirit Shield" "Lacquered Garb" "Large Hybrid Flask" "Legion Boots" "Majestic Plate" "Necromancer Silks" "Nubuck Boots" "Occultist's Vestment" "Ornate Quiver" "Paua Ring" "Plated Greaves" "Prismatic Ring" "Sacrificial Garb" "Saintly Chainmail" "Sapphire Flask" "Scholar's Robe" "Titan Gauntlets" "Wolf Pelt"
-	SetFontSize 30
-	SetTextColor 250 142 27
-	SetBorderColor 250 142 27 150
 	
 #T4 Uniques
 
