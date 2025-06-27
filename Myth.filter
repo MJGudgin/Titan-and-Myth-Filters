@@ -1088,7 +1088,7 @@ Show
 	
 Show
 	Rarity Unique
-	BaseType == "Archon Kite Shield" "Ashbark Tincture" "Astral Plate" "Blue Pearl Amulet" "Bone Helmet" "Citrine Amulet" "Crude Bow" "Crusader Gloves" "Crusader Plate" "Crystal Sceptre" "Desert Brigandine" "Devout Chainmail" "Ebony Tower Shield" "Ezomyte Blade" "Ezomyte Burgonet" "Fiend Dagger" "Full Wyrmscale" "Gavel" "Gemstone Sword" "Gladiator Plate" "Granite Flask" "Harmonic Spirit Shield" "Highborn Staff" "Imbued Wand" "Imperial Maul" "Imperial Staff" "Iron Ring" "Ironwood Tincture" "Jingling Spirit Shield" "Karui Sceptre" "Lacquered Buckler" "Lacquered Garb" "Large Hybrid Flask" "Leather Hood" "Legion Boots" "Maelström Staff" "Majestic Plate" "Mirrored Spiked Shield" "Necromancer Silks" "Oakbranch Tincture" "Occultist's Vestment" "Plated Greaves" "Primordial Staff" "Prismatic Tincture" "Raven Mask" "Royal Bow" "Sacrificial Garb" "Saintly Chainmail" "Sapphire Flask" "Scholar's Robe" "Simple Robe" "Sorcerer Boots" "Sporebloom Tincture" "Steel Kite Shield" "Stibnite Flask" "Turquoise Amulet" "Two-Stone Ring" "Vaal Gauntlets" "Vaal Sceptre" "Vile Arrow Quiver" "Wolf Pelt"
+	BaseType == "Archon Kite Shield" "Ashbark Tincture" "Astral Plate" "Blue Pearl Amulet" "Bone Helmet" "Citrine Amulet" "Crude Bow" "Crusader Gloves" "Crusader Plate" "Crystal Sceptre" "Desert Brigandine" "Devout Chainmail" "Ebony Tower Shield" "Ezomyte Blade" "Ezomyte Burgonet" "Fiend Dagger" "Full Wyrmscale" "Gavel" "Gemstone Sword" "Gladiator Plate" "Granite Flask" "Harmonic Spirit Shield" "Highborn Staff" "Imbued Wand" "Imperial Maul" "Imperial Staff" "Iron Ring" "Ironwood Tincture" "Jingling Spirit Shield" "Karui Sceptre" "Lacquered Buckler" "Lacquered Garb" "Large Hybrid Flask" "Leather Hood" "Legion Boots" "Maelström Staff" "Majestic Plate" "Mirrored Spiked Shield" "Necromancer Silks" "Oakbranch Tincture" "Occultist's Vestment" "Plated Greaves" "Primordial Staff" "Prismatic Tincture" "Raven Mask" "Royal Bow" "Sacrificial Garb" "Saintly Chainmail" "Sapphire Flask" "Scholar's Robe" "Simple Robe" "Sorcerer Boots" "Sporebloom Tincture" "Steel Kite Shield" "Stibnite Flask" "Turquoise Amulet" "Two-Stone Ring" "Vaal Gauntlets" "Vaal Sceptre" "Vile Arrow Quiver" "Wolf Pelt" "Karui Chopper"
 	SetFontSize 30
 	SetTextColor 250 142 27
 	SetBorderColor 250 142 27 150
@@ -1129,7 +1129,8 @@ Show
 	SetFontSize 50
 	SetTextColor 150 255 255
 	SetBorderColor 200 255 255 150
-	
+
+#StrictIgnore	
 Show
 	Class "Flask"
 	BaseType "Divine"
@@ -1138,6 +1139,7 @@ Show
 	SetFontSize 35
 	SetTextColor 150 255 255
 	SetBorderColor 200 255 255 150
+
 
 Show
 	Class "Life Flask"

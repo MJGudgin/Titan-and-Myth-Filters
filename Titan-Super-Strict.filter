@@ -824,6 +824,39 @@ Show # Jewels
 
 
 
+#StrictIgnore	
+Show
+	Class "Flask"
+	BaseType "Divine"
+	Rarity Normal Magic
+	ItemLevel >= 84
+	SetFontSize 35
+	SetTextColor 150 255 255
+	SetBorderColor 200 255 255 150
+
+
+Show
+	Class "Life Flask"
+	Rarity Normal Magic
+	AreaLevel < 65
+	SetFontSize 35
+	SetTextColor 150 255 255
+	SetBorderColor 200 255 255 150
+
+Show
+	Class "Mana Flask"
+	Rarity Normal Magic
+	AreaLevel < 65
+	SetFontSize 30
+	SetTextColor 150 255 255
+	SetBorderColor 200 255 255 150
+
+Show
+	Class "Utility Flask"
+	Rarity Normal Magic
+	SetFontSize 50
+	SetTextColor 150 255 255
+	SetBorderColor 200 255 255 150
 
 Show
 	Class Tincture
